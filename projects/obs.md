@@ -9,6 +9,4 @@ We applied statistical techniques, such as *nowcasting*, to data; we simulated s
 
 This project is fully volunteering and there is no financial interest.
 
-{% include image.html url="http://www.gratisography.com" image="projects/proj-1/dog.jpg" %}
 
-{% include image.html url="http://www.gratisography.com" image="projects/proj-1/wall.jpg" %}
