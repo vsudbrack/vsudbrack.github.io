@@ -6,7 +6,7 @@ title: 'Observatório Covid-19 BR'
 
 I joined a group of over 50 trans-disciplinary researches in the **Observatório COVID-19 BR** (Observatory COVID-19 BR), a project meant to make real-time studies of COVID-19 data and micro-data, to inform population and guide authorities with scientific analysis in Brazil. We established partnerships with the Secretaries of Health of São Paulo State, 9 northeast Brazilian states (*Consórcio Nordeste*) and a few municipalities. 
 
-We **applied statistical techniques**, such as *nowcasting*, to data; we simulated scenarios with mathematical modelings; we **calculated epidemic indices**, such as Effective Reproductive number ($$R_{eff}$$); we **projected the number of hospital beds needed, cases and deaths in the short-term**, among many other analysis. We **released few technical notes** about state's reestablishment plannings and took part in several interviews and media agenda. Our homepage peaked 120.000 monthly viewers, with an average of 29.400 weekly viewers.
+We **applied statistical techniques**, such as *nowcasting*, to data; we simulated scenarios with mathematical modelings; we **calculated epidemic indices**, such as Effective Reproductive number ($$R_{eff}$$); we **projected the number of hospital beds needed, cases and deaths in the short-term**, among many other analysis. We **released few technical notes** about state's reestablishment plannings and took part in several interviews and media agenda. Our homepage peaked 120.000 weekly viewers in March, and nowadays has an average of 29.400 weekly viewers.
 
 This project is fully volunteering and there is no financial interest.
 
