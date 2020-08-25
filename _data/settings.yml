@@ -38,7 +38,7 @@ disqus:
 projects:
 - {name: 'About me', folder: 'about', file: 'about/'}
 - {name: 'Observatório Covid-19 BR', folder: 'obs', file: 'projects/obs.html'}
-- {name: 'Project Three', folder: 'proj-3', file: 'projects/proj-3.html'}
+- {name: 'Population dynamics in highly fragmented landscapes', folder: 'frag', file: 'projects/frag.html'}
 - {name: 'Project Four', folder: 'proj-4', file: 'projects/proj-4.html'}
 - {name: 'Project Five', folder: 'proj-5', file: 'projects/proj-5.html'}
 
