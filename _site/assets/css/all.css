@@ -866,3 +866,33 @@ blockquote {
     display: block;
     right: 75%;
     position: relative; }
+
+.rwd-table {
+  margin: 1em 3em 1em 3em;
+  min-width: 300px; }
+  .rwd-table th {
+    display: none; }
+  .rwd-table td {
+    display: block; }
+    .rwd-table td:first-child {
+      padding-top: 0.5em; }
+    .rwd-table td:last-child {
+      padding-bottom: 0.5em; }
+    .rwd-table td:before {
+      content: attr(data-th) ": ";
+      font-weight: bold;
+      width: 4.5em;
+      display: inline-block; }
+
+.rwd-table {
+  background: #e5eaee;
+  color: #424242;
+  border-radius: 1.6em;
+  overflow: hidden; }
+  .rwd-table tr {
+    border-color: #46637f; }
+  .rwd-table th, .rwd-table td {
+    margin: 0.1em 1em; }
+  .rwd-table th, .rwd-table td:before {
+    color: #c99065;
+    text-align: left; }

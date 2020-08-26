@@ -1,0 +1,37 @@
+.rwd-table
+  margin: 1em 3em 1em 3em
+  min-width: 300px
+
+  th
+    display: none
+
+  td
+    display: block
+
+    &:first-child
+      padding-top: .5em
+
+    &:last-child
+      padding-bottom: .5em
+
+    &:before
+      content: attr(data-th) ": "
+      font-weight: bold
+      width: 4.5em
+      display: inline-block
+
+.rwd-table
+  background: #e5eaee
+  color: #424242
+  border-radius: 1.6em
+  overflow: hidden
+
+  tr
+    border-color: #46637f
+
+  th, td
+    margin: 0.1em 1em
+
+  th, td:before
+    color: #c99065
+    text-align: left
