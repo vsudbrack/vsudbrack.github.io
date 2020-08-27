@@ -37,10 +37,10 @@ disqus:
 
 projects:
 - {name: 'About me', folder: 'about', file: 'about/'}
-- {name: 'Observatório Covid-19 BR', folder: 'obs', file: 'projects/obs.html'}
 - {name: 'Population dynamics in highly fragmented landscapes', folder: 'frag', file: 'projects/frag.html'}
-- {name: 'Bidimensional turbulance', folder: 'turb', file: 'projects/turb.html'}
-- {name: 'Other MathBio problems', folder: 'mathbio', file: 'projects/mathbio.html'}
+- {name: 'Observatório Covid-19 BR', folder: 'obs', file: 'projects/obs.html'}
+- {name: 'Turbulance in bidimensional fluids', folder: 'turb', file: 'projects/turb.html'}
+- {name: 'Miscellaneous of Mathematical Biology projects', folder: 'mathbio', file: 'projects/mathbio.html'}
 
 #-------------------------------
 # Contact Section

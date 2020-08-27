@@ -10,7 +10,7 @@
 
   <title>
     
-      Bidimensional Turbulance | Vitor Sudbrack
+      Turbulance in bidimensional fluids | Vitor Sudbrack
     
   </title>
 
@@ -30,9 +30,9 @@
 
   <!-- Use Jekyll SEO plugin -->
   <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Bidimensional Turbulance | Vitor Sudbrack</title>
+<title>Turbulance in bidimensional fluids | Vitor Sudbrack</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="Bidimensional Turbulance" />
+<meta property="og:title" content="Turbulance in bidimensional fluids" />
 <meta name="author" content="Vitor Sudbrack" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="My personal homepage" />
@@ -41,7 +41,7 @@
 <meta property="og:url" content="http://localhost:4000/projects/turb.html" />
 <meta property="og:site_name" content="Vitor Sudbrack" />
 <script type="application/ld+json">
-{"description":"My personal homepage","headline":"Bidimensional Turbulance","@type":"WebPage","url":"http://localhost:4000/projects/turb.html","author":{"@type":"Person","name":"Vitor Sudbrack"},"@context":"https://schema.org"}</script>
+{"description":"My personal homepage","headline":"Turbulance in bidimensional fluids","@type":"WebPage","url":"http://localhost:4000/projects/turb.html","author":{"@type":"Person","name":"Vitor Sudbrack"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -68,7 +68,7 @@
 
   <section>
   <div class="work-container">
-    <h1 class="project-title">Bidimensional Turbulance</h1>
+    <h1 class="project-title">Turbulance in bidimensional fluids</h1>
     <div class="project-load"><h2 id="turbulence-in-fluid-dynamics">Turbulence in fluid dynamics</h2>
 
 <p>Fluid dynamics (the study of liquid and gases behaviour) has some open problems for centuries. The reason for that is its <strong>non-linear equations of motion</strong>, which need state-of-the-art mathematical and computational tools to solve and understand the particular behaviours of self-organizing structures in bidimensional turbulent flows.</p>
@@ -86,15 +86,48 @@
   </div>
 </div>
 
-<p>Through spectral methods, we study in this project the instability and turbulence in incompressible 2D fluids solving numerically Navier-Stokes equation in the vanishing viscosity limit and, then, comparing the results with data from point-vortex methods, which simulates an ideal fluid (zero viscosity).</p>
+<p>Through spectral methods, we studied in this project the instability and turbulence in incompressible 2D fluids solving numerically <strong>Navier-Stokes equation in the vanishing viscosity limit</strong> and, then, comparing the results with data from <strong>point-vortex methods, which simulates an ideal fluid</strong> (zero viscosity). You can see below both simulations: the solution for NS-Eq and the point-vortex, both experiencing the Kelvin-Helmholtz instability.</p>
+
+<div class="img-container" style="padding:10px">
+  
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/SJYyEOP0KVE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+</div>
+
+<div class="img-container" style="padding:10px">
+  
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/fUS3b7OAdtM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+</div>
 
 <h2 id="kelvin-helmholtz-instability">Kelvin-Helmholtz instability</h2>
 
-<p>In the case of Kelvin-Helmholtz instability, we find many similarities in the behaviour of both fluids, although we found differences in the energy spectra of an ideal and viscous fluid. We can see there exists <strong>energy and enstrophy transfers between multiple scales</strong> of structures.</p>
+<p>Kelvin-Helmholtz instability occurs when the interface of two
+fluid layers presenting relative motion is perturbed, generating turbulence. In the description of vorticity field, it happens when a vorticity line is perturbed.</p>
+
+<p>In the case of Kelvin-Helmholtz instability, we could find many similarities in the behaviour of both fluids, although we found differences in the energy spectra of an ideal and viscous fluid. We can see there exists <strong>energy and enstrophy transfers between multiple scales</strong> of structures.</p>
+
+<p>The theoretical description of bidimensional turbulence is an open problem in classical physics, with great contributions of Kolmogorov and Kraichnan, Leith and Batchelor (KLB) to local forcing and isotropic scenarios. There
+is yet no theoretical description in the literature of <strong>bidimensional turbulence with a spectrally nonlocalized input of energy and space anisotropy</strong>, which is the case of KHI generated turbulence. My final undergraduation thesis described phenomenologically the KHI scenario in an ideal and vanishing-viscosity bidimensional fluids.</p>
+
+<table class="rwd-table">
+  <tr> 
+    <td data-th="Title" colspan="4" style="font-weight: bold">Estudo da turbulência bidimensional na instabilidade de Kelvin-Helmholtz: descrição fenomenológica</td>
+  </tr>
+  <tr>
+    <td data-th="Authors" colspan="4">V. Sudbrack</td>
+  </tr>
+  <tr>
+    <td data-th="Journal" colspan="3">Federal University of Rio Grande do Sul repository<a href="/assets/docs/projects/turb/tcc.pdf" target="_blank"><strong>↗</strong></a></td>
+    <td data-th="Year">2018</td>
+  </tr>
+</table>
+
+<p>This work was done under <strong><a href="http://alexei.impa.br/">Alexei Mailybaev</a></strong> supervision and in collaboration with <strong>Simon Thalabard</strong> at the <a href="http://fluid.impa.br/Home">Fluid Lab - IMPA</a>. It was funded by federal government (CNPq).</p>
 
 <div class="image-container">
-  <a href="http://www.gratisography.com" target="_blank">
-    <img src="/assets/img/projects/turb/slides.jpg" alt="Avatar" class="image" />
+  <a href="/assets/docs/projects/turb/TCC_slides.pdf" target="_blank">
+    <img src="/assets/img//projects/turb/slides.jpg" alt="Avatar" class="image" />
     <div class="overlay">
       <div class="text">
         
@@ -105,7 +138,6 @@
   </a>
 </div>
 
-<p>This work was done under <strong><a href="http://alexei.impa.br/">Alexei Mailybaev</a></strong> supervision and in collaboration with <strong>Simon Thalabard</strong> at the <a href="http://fluid.impa.br/Home">Fluid Lab - IMPA</a>. It was funded by federal government (CNPq).</p>
 </div>
   </div>
   
