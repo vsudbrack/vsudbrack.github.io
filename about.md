@@ -29,5 +29,5 @@ It is a kind of personal love, as one has for a person to whom one is grateful f
 
 #### About this homepage
 
-This is a personal portfolio theme built created with Jekyll by [LeNPaul](https://github.com/LeNPaul). You can [check out the demo](lenpaul.github.io/portfolio-jekyll-theme/) to see his work. Additional images in this website are all marked with "reuse for non-commercial purposes" CC-licenses. 
+This is a personal portfolio theme built created with Jekyll by [LeNPaul](https://github.com/LeNPaul). You can [check out the demo](lenpaul.github.io/portfolio-jekyll-theme/) to see his work. Additional images in this website are all marked with "reuse for non-commercial purposes" CC-licenses. Additional codings are my own (I really have fun doing these things...).
 

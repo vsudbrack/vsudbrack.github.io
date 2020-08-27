@@ -9,7 +9,7 @@ Networks (or graphs) are mathematical tools we use to model real problems (in bi
 
 The importance of this work is predicting the future behaviour of the real systems described by the studied networks and understanding and quantifying the parameters related to this modeling.
 
-{% include cite.html title="Master equation for the degree distribution of a Duplication and Divergence network" author="Sudbrack, Vítor, et al." journal="Physica A: Statistical Mechanics and its Applications" year="2018" %}
+{% include cite.html title="Master equation for the degree distribution of a Duplication and Divergence network" author="Sudbrack, V., Brunnet, L. G., de Almeida, R. M., Ferreira, R. M., & Gamermann, D." journal="Physica A: Statistical Mechanics and its Applications" year="2018" url="https://doi.org/10.1016/j.physa.2018.06.066" %}
 
 This work is a collaboration with professors Leonardo G. Brunnet, Rita M. C. de Almeida, Ricardo M. Ferreira and Daniel Gamermann within LabCel group at the Physics Institute at UFRGS. It was funded by federal government (CNPq).
 
