@@ -28,9 +28,9 @@ Such **statistical technique** is called *nowcasting* and it's based on Bayesian
 
 You can see **nowcasted data of cases and deaths** of a few [Brazilian municipalities](https://covid19br.github.io/municipios.html?aba=aba1&uf=SP&mun=Sao_Paulo&q=dia) and all [Brazilian states](https://covid19br.github.io/estados.html?aba=aba1&uf=SP&q=dia), updated as soon as new microdata is available by the Ministry of Health. Based on nowcasted data, we calculate the $$R_{eff}$$, an index to measuare the progression of the pandemic in cities and states. 
 
-## How this pandemic increases Brazilian giant social inequality?
+## How does this pandemic affect Brazilian social inequality?
 
-The following quote describes the Brazilian scenario of this pandemic in a nutshell. 
+The pandemic clearly **accentuated** the huge Brazilian social inequality. The (mis-)belif that health crisis and finantial crisis belong to opposite ideals boosted all over the country. The following quote describes the Brazilian scenario of this pandemic in a nutshell. 
 
 {% include quote.html author="Maria Amélia Veras" text="[...] as economy is weakened by the pandemic - not only in Brazil, but worldwide, - will the same people suffer twice? I mean... those from the peripheries, the poorest, the least educated, those who have already been more affected by the disease than anyone else, will they also necessarily be more affected by the economic crisis?" %}
  

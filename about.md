@@ -26,6 +26,7 @@ I like to think **I create universes on a computer screen...**, but 95% percent 
 {% include quote.html author="Lise Meitner" text="I love physics with all my heart.
 It is a kind of personal love, as one has for a person to whom one is grateful for many things." %}
 
+*All opinions here are my own.*
 
 #### About this homepage
 
