@@ -750,6 +750,11 @@ body {
 @media (max-width: 768px) {
   .page-content {
     width: 80vw; } }
+.video {
+  width: 100% !important;
+  height: auto !important;
+  padding: 10px; }
+
 .work-container {
   max-width: 600px;
   margin: 0px auto 30px;
