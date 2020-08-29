@@ -841,7 +841,7 @@ body {
   width: 60%;
   margin-bottom: 20px;
   left: 20%; }
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 667px) {
     .quote-container {
       width: 100%;
       left: 0%; } }

@@ -77,9 +77,9 @@
 
 <p>We have also analytically calculated the critical size to allow population growth for bidimensional landscapes within our model, with given symmetries. These results prove that habitat area is not the only factor when it comes to population settling, and hence patch shape matters.</p>
 
-<div class="image-container">
+<!-- <div class="image-container">
   <a href="http://www.gratisography.com" target="_blank">
-    <img src="/assets/img/projects/frag/slides.jpg" alt="Avatar" class="image" />
+    <img src="/assets/img/projects/frag/slides.jpg" alt="Avatar" class="image">
     <div class="overlay">
       <div class="text">
         
@@ -89,12 +89,53 @@
     </div>
   </a>
 </div>
+ -->
 
 <p>In the future we will also explore consequences of fragmentation to communities.</p>
 
 <p>This work is done under <strong>Roberto A. Kraenkel</strong> supervision at IFT - UNESP and collaboration with <strong><a href="http://professor.ufabc.edu.br/~renato.coutinho/">Renato M. Coutinho</a></strong> and financed by FAPESP (Grant #2018/23984-0).</p>
 
-<h2 id="how-to-measure-the-communication-between-patches">How to measure the communication between patches?</h2>
+<p>There are a few subprojects available to undegrad students, if <strong>this discussion sounds apealling to you, get in touch :)</strong></p>
+
+<h2 id="how-to-measure-fragmentation-how-to-create-a-landscape">How to measure fragmentation? How to create a landscape?</h2>
+
+<p>We measure fragmentation in a continous way throught <em>fragmentation metrics</em>. There are many metrics, some mesuare different fragmentations aspects and a few redundant, i.e. highly correlated to others, in a contexts. Some exemples are <strong>complexity and entropy metrics</strong>, such as Shannon Entropy and Mutual information; or metrics of <strong>geometric features</strong>, like Perimeter-Area fractal dimension, average Circumscribed Circle or simply, Perimeter-Area ratio. Others focous on average <strong>patch shapes</strong>, as their Mean Area or Edge density, while others yet focous on a <strong>landscape-level</strong>, as the number of patches, the % of habitat in the largest patch (LPI) or the average Eucledian distance between patches.</p>
+
+<p>Also, in order to study the effects of <em>fragmentation per se</em> in population dynamics numerically, we have to <strong>simulate artificial landscapes</strong>. There several different methods to generate them, and they are known as <em>Neutral Landscape Methods</em>. In the videos below, I show 2000 artificial landscapes, ordered from slightly fragmented to highly fragmented, for four methods. Firstly, I show the <strong>Fractional Browning Motion (FBM) method</strong>, in which we ordered the landscapes by the <em>fractal dimension</em> (between 0 and 2), going from slightly to highly fragmented.</p>
+
+<div class="videoWrapper">
+  
+	<iframe src="https://www.youtube.com/embed/788kqrvQnyA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+</div>
+
+<p>The second, artificial <strong>Mosaic Tessellation (MTS)</strong> landscapes ordered by number of germs, centroid points for a Voronoy tessellation, going from slightly to highly fragmented.</p>
+
+<div class="videoWrapper">
+  
+	<iframe src="https://www.youtube.com/embed/oZXa7XT80Gk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+</div>
+
+<p>Below, we have artificial <strong>Random Rectangular Clustering (RRC)</strong> landscapes, descendingly ordered by average rectangle area (average of minimum and maximum length of suporposing rectangles), going from slightly to highly fragmented.</p>
+
+<div class="videoWrapper">
+  
+	<iframe src="https://www.youtube.com/embed/xgNKsu7eK5M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+</div>
+
+<p>Finally, artificial <strong>Midpoint Displacement (MPD)</strong> landscapes ordered by spatial correlation  (roughness), going from highly  compact to highly fragmented.</p>
+
+<div class="videoWrapper">
+  
+	<iframe src="https://www.youtube.com/embed/Vx_gpdr_AYc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+</div>
+
+<p>Can you se how <strong>different methods impose different characteristics to landscapes</strong> and their fragmentation metrics? It also change how this set of metrics is coupled, i.e. their correlations. It is a challenge to understand <strong>how these characteristics reflect ecologically</strong> under basic mechanisms.</p>
+
+<h2 id="how-do-patches-communicate">How do patches communicate?</h2>
 
 <p>Recent explorations on our model revel the presence of different movement scales, intra-patch and inter-patches. We are now woking on how fragmentation affects features of population spatial distribution and investigating about regimes of fragmentation that allow non-interactive (or weakly interacting) subpopulations to form - i.e. low interpatch communication.</p>
 
