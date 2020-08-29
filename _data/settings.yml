@@ -39,7 +39,7 @@ projects:
 - {name: 'About me', folder: 'about', file: 'about/'}
 - {name: 'Population dynamics in highly fragmented landscapes', folder: 'frag', file: 'projects/frag.html'}
 - {name: 'Observatório Covid-19 BR', folder: 'obs', file: 'projects/obs.html'}
-- {name: 'Turbulance in bidimensional fluids', folder: 'turb', file: 'projects/turb.html'}
+- {name: 'Turbulence in bidimensional fluids', folder: 'turb', file: 'projects/turb.html'}
 - {name: 'Miscellaneous of Mathematical Biology projects', folder: 'mathbio', file: 'projects/mathbio.html'}
 
 #-------------------------------

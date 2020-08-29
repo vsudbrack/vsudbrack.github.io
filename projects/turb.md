@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Turbulance in bidimensional fluids'
+title: 'Turbulence in bidimensional fluids'
 ---
 
 ## Turbulence in fluid dynamics

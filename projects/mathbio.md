@@ -3,6 +3,10 @@ layout: post
 title: 'Mathematical Biology Projects'
 ---
 
+{% include quote.html text="Mathematics is Biology's next microscope, only better;<br>Biology is Mathematics' next Physics, only better." author="Joel E Cohen" %}
+
+Here, I wrote about a few of these lensings I've already worked on... 
+
 ## Graph Theory Applied to Biology
 
 Networks (or graphs) are mathematical tools we use to model real problems (in biology, sociology, geography, economy,...) and study them systematically. In particular, it is possible to study expanding networks, given a node addition rule. We studied numerically the growth of some of these networks based on averages of random initializations and analytically, through master equation formulation applied to these systems, accounting for all possible scenarios that may probabilistically happen within the model.
