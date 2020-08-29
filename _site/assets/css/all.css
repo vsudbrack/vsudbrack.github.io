@@ -750,10 +750,19 @@ body {
 @media (max-width: 768px) {
   .page-content {
     width: 80vw; } }
-.video {
-  width: 100% !important;
-  height: auto !important;
-  padding: 10px; }
+/* Video */
+.videoWrapper {
+  position: relative;
+  margin: 10px;
+  padding-bottom: 56.25%;
+  height: 0; }
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 .work-container {
   max-width: 600px;
