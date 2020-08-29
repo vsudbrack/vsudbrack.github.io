@@ -17,7 +17,11 @@ The importance of this work is predicting the future behaviour of the real syste
 
 This work is a collaboration with professors Leonardo G. Brunnet, Rita M. C. de Almeida, Ricardo M. Ferreira and Daniel Gamermann within LabCel group at the Physics Institute at UFRGS. It was funded by federal government (CNPq).
 
-{% include image.html url="" image="projects/mathbio/slides.jpg" text="Check my presentation of results" %}
+{% include image.html url="./assets/docs/projects/mathbio/slidesDDNetworks.pdf" image="projects/mathbio/slides.jpg" text="Check my presentation with main results" %}
+
+## Magnetoreception in Multicellular Magnetotactic Prokaryotes
+
+Soon... :)
 
 
 
