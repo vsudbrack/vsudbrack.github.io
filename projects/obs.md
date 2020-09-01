@@ -4,9 +4,9 @@ title: 'Observatório Covid-19 BR'
 ---
 
 
-I joined a group of over 50 trans-disciplinary researches in the **Observatório COVID-19 BR** (Observatory COVID-19 BR), a project meant to make real-time studies of COVID-19 data and micro-data, to inform population and guide authorities with scientific analysis in Brazil. We established partnerships with the Secretaries of Health of São Paulo State, 9 northeast Brazilian states (*Consórcio Nordeste*) and a few municipalities. 
+I joined a group of over 50 trans-disciplinary researches in the **Observatório COVID-19 BR** (Observatory COVID-19 BR), a project meant to make real-time studies of COVID-19 data and micro-data, to inform the population and guide authorities with scientific analysis in Brazil. We established partnerships with the Secretaries of Health of São Paulo State, 9 northeast Brazilian states (*Consórcio Nordeste*) and a few municipalities. 
 
-We **applied statistical techniques**, such as *nowcasting*, to data; we simulated scenarios with mathematical modelings; we **calculated epidemic indices**, such as Effective Reproductive number ($$R_{eff}$$); we **projected the number of hospital beds needed, cases and deaths in the short-term**, among many other analysis. We **released few technical notes** about state's reestablishment plannings and took part in several interviews and media agenda. Our homepage peaked 120.000 weekly viewers in March, and nowadays has an average of 29.400 weekly viewers.
+We **applied statistical techniques**, such as *nowcasting*, to data; we simulated scenarios with mathematical modelings; we **calculated epidemic indices**, such as Effective Reproductive number ($$R_{eff}$$); we **projected the number of hospital beds needed, cases and deaths in the short-term**, among many other analyses. We **released few technical notes** about the state's reestablishment plannings and took part in several interviews and media agenda. Our homepage peaked 120.000 weekly viewers in March, and nowadays has an average of 29.400 weekly viewers.
 
 This project is fully volunteering and there is no financial interest.
 
@@ -14,9 +14,9 @@ This project is fully volunteering and there is no financial interest.
 
 ## How can mathematical concepts help us to understand this pandemic crisis?
 
-In this interview on G1 by Laís Modelli and Lara Pinheiro, **[Exponential growth and epidemic curve: understand the main mathematical concepts that explain the coronavirus pandemic](https://g1.globo.com/bemestar/coronavirus/noticia/2020/03/31/crescimento-exponencial-e-curva-epidemica-entenda-os-principais-conceitos-matematicos-que-explicam-a-pandemia-de-coronavirus.ghtml)** (in portuguese), we give some of the main epidemiological concepts to understand a epidemic curve, such as the epidemic cycle that is formed by three stages: exponential growth, saturation and exponential delay. 
+In this interview on G1 by Laís Modelli and Lara Pinheiro, **[Exponential growth and epidemic curve: understand the main mathematical concepts that explain the coronavirus pandemic](https://g1.globo.com/bemestar/coronavirus/noticia/2020/03/31/crescimento-exponencial-e-curva-epidemica-entenda-os-principais-conceitos-matematicos-que-explicam-a-pandemia-de-coronavirus.ghtml)** (in portuguese), we give some of the main epidemiological concepts to understand an epidemic curve, such as the epidemic cycle that is formed by three stages: exponential growth, saturation and exponential delay. 
 
-Besides the exponential growth in the number of case of the COVID-19, there is, however, a more **complex underlying dynamics**, because not only the local transmission of the virus happens throght the **dynamics of spread** by contagion (from one person to other people), but also by a **dynamical spread of focuses** - intercommunications between countries/states resulting new focuses of communitary transmission.
+Besides the exponential growth in the number of case of the COVID-19, there is, however, a more **complex underlying dynamics**, because not only the local transmission of the virus happens through the **dynamics of spread** by contagion (from one person to other people), but also by a **dynamical spread of focuses** - intercommunications between countries/states resulting new focuses of communitary transmission.
 
 ## Why should we correct notification delays?
 
@@ -26,17 +26,20 @@ Such **statistical technique** is called *nowcasting* and it's based on Bayesian
 
 {% include quote.html author="Vitor Sudbrack" text="If I have a friend who is always 10 minutes late for an appointment, I know I can arrive 10 minutes after the scheduled time. Thus, there is a greater chance that we will arrive together. I adapted my response based on average behavior. The logic of the tool is more or less the same." %}
 
-You can see **nowcasted data of cases and deaths** of a few [Brazilian municipalities](https://covid19br.github.io/municipios.html?aba=aba1&uf=SP&mun=Sao_Paulo&q=dia) and all [Brazilian states](https://covid19br.github.io/estados.html?aba=aba1&uf=SP&q=dia), updated as soon as new microdata is available by the Ministry of Health. Based on nowcasted data, we calculate the $$R_{eff}$$, an index to measuare the progression of the pandemic in cities and states. 
+You can see **nowcasted data of cases and deaths** of a few [Brazilian municipalities](https://covid19br.github.io/municipios.html?aba=aba1&uf=SP&mun=Sao_Paulo&q=dia) and all [Brazilian states](https://covid19br.github.io/estados.html?aba=aba1&uf=SP&q=dia), updated as soon as new microdata is available by the Ministry of Health. Based on nowcasted data, we calculate the $$R_{eff}$$, an index to measure the progression of the pandemic in cities and states. 
 
 ## How does this pandemic affect Brazilian social inequality?
 
-The pandemic clearly **accentuated** the huge Brazilian social inequality. The (mis-)belif that health crisis and finantial crisis belong to opposite ideals boosted all over the country. The following quote describes the Brazilian scenario of this pandemic in a nutshell. 
+The pandemic clearly **accentuated** the huge Brazilian social inequality. The (mis-)belief that the health crisis and financial crisis belong to opposite ideals boosted all over the country. The following quote describes the Brazilian scenario of this pandemic in a nutshell. 
 
-{% include quote.html author="Maria Amélia Veras" text="[...] as economy is weakened by the pandemic - not only in Brazil, but worldwide, - will the same people suffer twice? I mean... those from the peripheries, the poorest, the least educated, those who have already been more affected by the disease than anyone else, will they also necessarily be more affected by the economic crisis?" %}
+{% include quote.html author="Maria Amélia Veras" text="[...] as the economy is weakened by the pandemic - not only in Brazil, but worldwide, - will the same people suffer twice? I mean... those from the periphery, the poorest, the least educated, those who have already been more affected by the disease than anyone else, will they also necessarily be more affected by the economic crisis?" %}
  
-It was asked by Maria Amélia Vegas, epidemiologist, to the economist Mônica de Bolle in this excelent talk in Portuguese below, organized by the Observatório COVID-19 BR.
+It was asked by Maria Amélia Vegas, epidemiologist, to the economist Mônica de Bolle in this excellent talk in Portuguese below, organized by the Observatório COVID-19 BR.
 
 {% include video.html src="https://www.youtube.com/embed/5Mq0x_V5KH4" %}
 
-In order to further understand the impacts of Brazilian Emergency Income Aid, **Caio Jardim-Sousa** and **Mel Veneroso**, from *Rede Análise COVID*, develop this Analysis of **[Emergency Income Aid coverage in Brazilian municipalities](https://covid19br.github.io/analises.html?aba=aba9#)**, which I was very happy to help and suggeste. 
+In order to further understand the impacts of Brazilian Emergency Income Aid, **Caio Jardim-Sousa** and **Mel Veneroso**, from *Rede Análise COVID*, develop this Analysis of **[Emergency Income Aid coverage in Brazilian municipalities](https://covid19br.github.io/analises.html?aba=aba9#)**, which I was very happy to help and suggest. 
+
+
+
 

@@ -20,13 +20,13 @@ In the future we will also explore consequences of fragmentation to communities.
 
 This work is done under **Roberto A. Kraenkel** supervision at IFT - UNESP and collaboration with **[Renato M. Coutinho](http://professor.ufabc.edu.br/~renato.coutinho/)** and financed by FAPESP (Grant #2018/23984-0).
 
-There are a few subprojects available to undegrad students, if **this discussion sounds apealling to you, get in touch :)**
+There are a few subprojects available to undergraduate students, if **this discussion sounds appealing to you, get in touch :)**
 
 ## How to measure fragmentation? How to create a landscape?
 
-We measure fragmentation in a continous way throught *fragmentation metrics*. There are many metrics, some mesuare different fragmentations aspects and a few redundant, i.e. highly correlated to others, in a contexts. Some exemples are **complexity and entropy metrics**, such as Shannon Entropy and Mutual information; or metrics of **geometric features**, like Perimeter-Area fractal dimension, average Circumscribed Circle or simply, Perimeter-Area ratio. Others focous on average **patch shapes**, as their Mean Area or Edge density, while others yet focous on a **landscape-level**, as the number of patches, the % of habitat in the largest patch (LPI) or the average Eucledian distance between patches. 
+We measure fragmentation in a continuous way through *fragmentation metrics*. There are many metrics, some measure different fragmentation aspects and a few are redundant, i.e. highly correlated to others in a context. Some examples are **complexity and entropy metrics**, such as Shannon Entropy and Mutual information; or metrics of **geometric features**, like Perimeter-Area fractal dimension, average Circumscribed Circle or simply, Perimeter-Area ratio. Others focus on average **patch shapes**, as their Mean Area or Edge density, while others yet focus on a **landscape-level**, as the number of patches, the % of habitat in the largest patch (LPI) or the average Euclidean distance between patches. 
 
-Also, in order to study the effects of *fragmentation per se* in population dynamics numerically, we have to **simulate artificial landscapes**. There several different methods to generate them, and they are known as *Neutral Landscape Methods*. In the videos below, I show 2000 artificial landscapes, ordered from slightly fragmented to highly fragmented, for four methods. Firstly, I show the **Fractional Browning Motion (FBM) method**, in which we ordered the landscapes by the *fractal dimension* (between 0 and 2), going from slightly to highly fragmented. 
+Also, in order to study the effects of *fragmentation per se* in population dynamics numerically, we have to **simulate artificial landscapes**. There several different methods to generate them, and they are known as *Neutral Landscape Methods*. In the videos below, I show 2000 artificial landscapes, ordered from slightly fragmented to highly fragmented, for four methods. Firstly, I show the **Fractional Brownian Motion (FBM) method**, in which we ordered the landscapes by the *fractal dimension* (between 0 and 2), going from slightly to highly fragmented. 
 
 {% include video.html src="https://www.youtube.com/embed/788kqrvQnyA" %}
 
@@ -46,7 +46,10 @@ Can you se how **different methods impose different characteristics to landscape
 
 ## How do patches communicate?
 
-Recent explorations on our model revel the presence of different movement scales, intra-patch and inter-patches. We are now woking on how fragmentation affects features of population spatial distribution and investigating about regimes of fragmentation that allow non-interactive (or weakly interacting) subpopulations to form - i.e. low interpatch communication.
+Recent explorations on our model revealed the presence of different movement scales, intra-patch and inter-patches. We are now working on how fragmentation affects features of population spatial distribution and investigating regimes of fragmentation that allow non-interactive (or weakly interacting) subpopulations to form - i.e. low interpatch communication.
 
 This work is done under **[Cristóbal López](https://www.ifisc.uib-csic.es/en/people/cristobal-lopez/)** supervision at the *Institute for Cross-Disciplinary Physics and Complex Systems (IFISC)* of *University of the Balearic Islands (UiB)* in Palma de Mallorca, Spain,  financed by FAPESP (Grant #2019/02526-0).
+
+
+
 

@@ -6,7 +6,7 @@ permalink: /contact/
 
 # Get in touch!
 
-You may contact me through my email, **[vitorsudbrack@gmail.com](mailto:vitorsudbrack@gmail.com)** if you have any questions or would like to bring up any issues. I'll be glad to answer you asap!
+You may contact me through my email, **[vitorsudbrack@gmail.com](mailto:vitorsudbrack@gmail.com)**, if you have any questions or would like to bring up any issues. I'll be glad to answer you asap!
 
 I also have digital copies of all my published material, so please, feel free to ask for any! *#ColaborativeScience*
 
