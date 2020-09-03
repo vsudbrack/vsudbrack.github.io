@@ -3,18 +3,20 @@ layout: post
 title: 'Population dynamics in highly fragmented landscapes'
 ---
 
-Human action fragments the natural habitat of several species all around the world. Understanding the effects of fragmentation to ecosystems is key to elaborate the best policies to avoid species extinctions. Therefore, it is important to study how the populations and ecosystems respond to these kinds of changes in landscapes.
+Human action fragments the natural habitat of several species all around the world. Understanding the effects of fragmentation to ecosystems is key to elaborate the best policies to avoid species extinctions. Therefore, it is important to study how the populations and ecosystems respond to these kinds of changes in landscapes. Well, if you experienced the ecological debates from the 70s, these ideas might remind you of the question: **single large or several small ecological reserves?**. This simple question, abbreviated by *SLOSS*, has evolved for almost half a century and the answer is, up to this day, very arguable. We humourly refer to this heated discussion as **FragWars**.
 
+Perhaps, one of the most important progresses of this question was to change it from a binary point of view - i.e. *compact versus fragmented* -  to a continuous problem, **investigating the effect of the degree of fragmentation to the ecological value of landscapes**. It is also important to distinguish between fragmentation and the *fragmentation process*. This latter occurs simultaneously with habitat loss and, therefore, is always detrimental to ecosystems. To make this distinction even clearer, we refer to the difference of spatial configuration while keeping the total habitat amount constant as *fragmentation per se*. 
 
-In this work, we use numerical methods to simulate reaction-diffusion equations in artificial landscapes generated with different structural distributions while keeping the total amount of habitat constant. This guarantees we are observing phenomena caused by *fragmentation per se*. We discuss the net effects of fragmentation into the steady total population. 
+Since there are no two regions differing purely by **spatial configuration**, statistical techniques must be applied to observational data in order to isolate the effects of *fragmentation per se* on abundance, richness, evenness, or other **metrics of ecological value**. And this point is exactly where we believe that computational techniques may be a powerful tool to help researchers to **test hypotheses, mechanisms and concepts** and even **generate controlled artificial data** in order to analyse the suitability of statistical techniques. 
 
-In order to do that correctly, we established the correlation between fragmentation metrics with fixed amount of habitat, to ensure that conclusions are not biased by interdependencies of metrics. 
+In 2020, I was invitedd to give a seminar about it on *EcoEncontros* at IB-USP. We can check the slides and the link for the video with the lecture below.
 
+{% include image.html url="/assets/docs/projects/frag/FragWars.pdf" image="projects/frag/fragwars.png" text="Check the slides of this presentation" %}
 
-We have also analytically calculated the critical size to allow population growth for bidimensional landscapes within our model, with given symmetries. These results prove that habitat area is not the only factor when it comes to population settling, and hence patch shape matters. 
+In our project, we use numerical methods to simulate **Reaction-Diffusion Equations (FKPP Equations) in artificial landscapes** generated with different structural distributions while keeping the total amount of habitat constant. This guarantees we are observing phenomena caused by *fragmentation per se*. We discuss the net effects of fragmentation into the steady total population. In order to do that correctly, we established the correlation between fragmentation metrics with fixed amount of habitat, to ensure that conclusions are not biased by interdependencies of metrics (see a further discussion in the next section). 
 
+We have also analytically calculated the critical size to allow population growth for bidimensional landscapes within our model, with given symmetries. These results prove that **habitat area is not the only factor** when it comes to population settling, and hence **patch shape matters**. 
 
-<!-- {% include image.html url="http://www.gratisography.com" image="projects/frag/slides.jpg" text="Check the poster for eSMB 2020"%} -->
 
 In the future we will also explore consequences of fragmentation to communities. 
 
