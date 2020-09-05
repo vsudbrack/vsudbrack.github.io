@@ -38,7 +38,7 @@ It was asked by Maria Amélia Vegas, epidemiologist, to the economist Mônica de
 
 {% include video.html src="https://www.youtube.com/embed/5Mq0x_V5KH4" %}
 
-In order to further understand the impacts of Brazilian Emergency Income Aid, **Caio Jardim-Sousa** and **Mel Veneroso**, from *Rede Análise COVID*, develop this Analysis of **[Emergency Income Aid coverage in Brazilian municipalities](https://covid19br.github.io/analises.html?aba=aba9#)**, which I was very happy to help and suggest. 
+In order to further understand the impacts of Brazilian Emergency Income Aid, **Caio Jardim-Sousa** and **Mel Veneroso**, from *Rede Análise COVID*, develop this Analysis of **[Emergency Income Aid coverage in Brazilian municipalities](https://covid19br.github.io/analises.html?aba=aba9#)**, which I was very happy to help and give suggestions. 
 
 
 
