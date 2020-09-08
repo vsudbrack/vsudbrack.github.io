@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-![Hello](../assets/img/projects/about/myperfil.jpg){:style="float: right;margin-right: 7px;margin-left: 7px;margin-top: 7px;max-width: 40%"}
+![Hello](../assets/img/projects/about/myperfil.jpg){:style="float: right;margin-right: -25px;margin-left: 10px;margin-top: 7px;max-width: 40%"}
 
 
-<h1>Hello,</h1>
+# Hello,
 
-**I'm Vítor Sudbrack**, a Physics MSc student at the *Institute of Theoretical Physics (IFT - Unesp)* in São Paulo - SP, Brazil; working at the *Institute for Cross-Disciplinary Physics and Complex Systems (IFISC - UiB)* Palma de Mallorca, Spain, to get a *sandwich degree*.
+**I'm Vítor Sudbrack**, Brazilian scientist, pursuing a Physics Master program at the *Institute of Theoretical Physics (IFT - Unesp)* in São Paulo - SP, Brazil; and currently working at the *Institute for Cross-Disciplinary Physics and Complex Systems (IFISC - UiB)* Palma de Mallorca, Spain, to get a *sandwich degree*.
 
 My career ~~overdrinking coffee~~ in Physics started in 2014, but back then I was just learning calculus. In 2019, I was laureated Bachelor in Physics with honors by the *Federal University of Rio Grande do Sul (UFRGS)* in Porto Alegre - RS.
 
@@ -23,10 +23,21 @@ I am mostly **interested** in *mathematical biology*, i.e., modeling population 
 
 I like to think **I create universes on a computer screen...**, but 95% percent of the job is looking at data on this same computer screen *hahah* 
 
+<div>
+<a href="../assets/docs/projects/about/cv.pdf">
+<button type="button" class="btn">Download my CV here</button>
+</a>
+</div>
+
+Studying and researching allowed me knowing **many people, many places and many wonders** of this universe. I share for science the same feeling *Lise Meitner* described to physics in this quote below.
+
 {% include quote.html author="Lise Meitner" text="I love physics with all my heart.
 It is a kind of personal love, as one has for a person to whom one is grateful for many things." %}
 
 *All opinions here are my own.*
+
+
+
 
 <!--## Places
 
