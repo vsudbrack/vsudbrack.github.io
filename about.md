@@ -25,7 +25,7 @@ I like to think **I create universes on a computer screen...**, but 95% percent 
 
 <div>
 <a href="../assets/docs/projects/about/cv.pdf">
-<button type="button" class="btn">Download my CV here</button>
+<button class="mybutton">Download my CV here</button>
 </a>
 </div>
 

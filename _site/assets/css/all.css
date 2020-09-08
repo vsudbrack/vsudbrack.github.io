@@ -765,7 +765,7 @@ body {
   height: 100%; }
 
 /* Button */
-.btn {
+.mybutton {
   position: relative;
   width: 60%;
   left: 20%;
@@ -779,7 +779,7 @@ body {
   color: #c99065;
   border: 0px solid #c99065; }
   @media screen and (max-width: 667px) {
-    .btn {
+    .mybutton {
       width: 100%;
       left: 0%; } }
 
