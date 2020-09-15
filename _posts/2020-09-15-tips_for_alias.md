@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Creating <i>aliases</i> on Ubuntu"
-date:   2020-09-15 00:00:00 +0000
+date:   2020-08-29 16:13:02 +0200
 categories: page update
 ---
 
@@ -30,7 +30,7 @@ Let's start **navigating quickly** through the terminal:
 > alias ...='cd ../..'      #Two folders up
 > alias ....='cd ../../..'  #Three folders up
 ```
-and here you can also add 'cd ./favorite_folders'. And remember you can always go to your *home folder* with a simple *cd* (without any argument).
+and here you can also add 'cd ~/favorite_folders' (remember to use always absolute paths to folders). And remember you can always go to your *home folder* with a simple 'cd' (without any argument).
 
 #### Quick use - one letter
 Some command lines are so recurrent that **they deserve one letter**:
@@ -41,6 +41,7 @@ Some command lines are so recurrent that **they deserve one letter**:
 > alias e='exit'
 > alias u='sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get autoclean'
 > alias j='jobs -l'
+> alias o='xdg-open' #Opens files with default application
 ```
 and now you see how to use alias to **execute multiple commands at the same alias: &&**. 
 
@@ -53,19 +54,19 @@ Add some **colors** to your terminal, and show files and folders variously:
 > alias lr='ls -ltrh'        #List files and folders in rows by recent modified
 > alias l.='ls -d .*'        #List only hidden directories in columns
 ```
-If you used alias to add flags to one command and maintained same name of the original command (as we did with *ls* up here), don't worry: if you need the **original command** for some reason, you can always use it by **starting with a backslash**, e.g. *\ls* is the original non-colored *ls*. Some more examples:
+If you used alias to add flags to one command and maintained the same name of the original command (as we did with 'ls' up here), don't worry: if you ever need the **original command** for some reason, you can always use it by **starting with a backslash**, e.g. '\ls' is the original non-colored 'ls' command. Some other examples are:
 ```
 > alias dir='dir --color=auto'
 > alias egrep='egrep --color=auto'
 > alias grep='grep --color=auto'
 > alias fgrep='fgrep --color=auto'
 > alias df='df -h'               #Size of files in KB, MB,...
+> alias bc='bc -lqi'             #Calculator with libraries
 ```
 
 #### Quick use - two letters
 Some command lines are very useful and **they deserve two or three letters**:
 ```
-> alias bc='bc -lqi'    #Calculator with libraries
 > alias py='python3'
 > alias ipy='ipython3'
 > alias gp='gnuplot'
@@ -75,7 +76,7 @@ Some command lines are very useful and **they deserve two or three letters**:
 ```
 
 #### Github users' best friends
-Alias make our lives of **add, commit, pull and push** way faster... but be careful - don't use generic commit messages if you work in a collective repository!
+Aliases make our lives of **add, commit, pull and push** way faster... but be careful - don't use generic commit messages if you work in a collective repository!
 ```
 > alias gs='git status'
 > alias gl='git pull'
@@ -97,21 +98,21 @@ If you have installed *[cpufreq](http://manpages.ubuntu.com/manpages/bionic/man1
 so before running a simulation run *highclock*, and then return to the regular state by *lowclock*. Using highclock nonstop might harm your hardware by overheating it and overwasting the battery, so keep those things in mind!
 
 #### Log to your remote machines
-You can use it to quickly save the address or access of servers and remote machines, you can use for instance
+You can use it to quickly save the addresses or accesses of servers and remote machines, you can use for instance
 ``` 
 > alias uni_server='ssh -X debian@186.217.XXX.XX'
 ```
 
-#### Alias that help clumsy people
-Your common typos can become aliases: this way you save time from retyping command lines.
+#### Aliases that help clumsy people
+Your common typos can become your helpful aliases: this way you save time from retyping command lines. Some examples:
 
 ``` 
 > alias pdw='pwd'
-> alias dc='cd' #If you need the actual calculator dc, use \dc
+> alias dc='cd' #If you ever need the actual calculator dc, use \dc
 ```
 
 #### Make your own bash scripts 
-Sometimes I had matrices in a file and I wanted to transpose them quickly into a new file. So I opened a hidden folder *~/.scripts/* in my home with a [algorithm](https://stackoverflow.com/questions/1729824/an-efficient-way-to-transpose-a-file-in-bash) in *awk* to transpose files. Finally, I write an alias that accesses this 'hidden file’ so that it becomes the terminal command *transpose*...
+Sometimes I had matrices in a file and I wanted to transpose them quickly into a new file. So, I opened a hidden folder *~/.scripts/* in my home folder with an [algorithm](https://stackoverflow.com/questions/1729824/an-efficient-way-to-transpose-a-file-in-bash) in *awk* to transpose files. Finally, I wrote an alias that accesses this 'hidden file’ so that it becomes the simple terminal line *transpose*...
 ```
 > alias transpose='awk -f ~/.scripts/transpose.awk'
 ```
