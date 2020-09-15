@@ -1,1 +1,103 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-09-08T19:29:11+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Vitor Sudbrack</title><subtitle>My personal homepage</subtitle><author><name>Vitor Sudbrack</name></author><entry><title type="html">Hello, world!</title><link href="http://localhost:4000/page/update/hello-world.html" rel="alternate" type="text/html" title="Hello, world!" /><published>2020-08-29T16:13:02+02:00</published><updated>2020-08-29T16:13:02+02:00</updated><id>http://localhost:4000/page/update/hello-world</id><content type="html" xml:base="http://localhost:4000/page/update/hello-world.html">&lt;p&gt;&lt;strong&gt;Thanks for visiting the page!&lt;/strong&gt; Soon I’ll post here some works, texts and side-projects.&lt;/p&gt;</content><author><name>Vitor Sudbrack</name></author><summary type="html">Thanks for visiting the page! Soon I’ll post here some works, texts and side-projects.</summary></entry></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-09-16T00:24:32+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Vitor Sudbrack</title><subtitle>My personal homepage</subtitle><author><name>Vitor Sudbrack</name></author><entry><title type="html">Creating aliases on Ubuntu</title><link href="http://localhost:4000/page/update/tips_for_alias.html" rel="alternate" type="text/html" title="Creating &lt;i&gt;aliases&lt;/i&gt; on Ubuntu" /><published>2020-08-29T16:13:02+02:00</published><updated>2020-08-29T16:13:02+02:00</updated><id>http://localhost:4000/page/update/tips_for_alias</id><content type="html" xml:base="http://localhost:4000/page/update/tips_for_alias.html">&lt;h2 id=&quot;what-are-alias&quot;&gt;What are Alias?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Alias&lt;/strong&gt; is shell command to create nicknames to abbreviate longer commands during a section on your Ubuntu terminal (and here I’m using &lt;em&gt;Ubuntu 18&lt;/em&gt;, but most commands are simple enough to run in any other version). But because we know that our terminals always run the file &lt;em&gt;~/.bashrc&lt;/em&gt; of your home folder in the begging of every new session, you can write &lt;em&gt;aliases&lt;/em&gt; on this file and have them forever!&lt;/p&gt;
+
+&lt;p&gt;During any session, you can enter the command line&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; alias
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;and it will &lt;strong&gt;show you all valid &lt;em&gt;aliases&lt;/em&gt;&lt;/strong&gt; in your current session. To &lt;strong&gt;add a new alias&lt;/strong&gt; to your session (or to your &lt;em&gt;~/.bashrc&lt;/em&gt;), enter&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; alias Shortname='Long Command Line'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;on your shell (double primes instead of single primes will work just as well).&lt;/p&gt;
+
+&lt;p&gt;You can learn more about &lt;em&gt;aliases&lt;/em&gt; on this &lt;a href=&quot;https://en.wikipedia.org/wiki/Alias_(command)&quot;&gt;Wikipage&lt;/a&gt;. Here, I’ll skip to the practice and share with you &lt;del&gt;(and future me as a backup)&lt;/del&gt; the ones I use the most.&lt;/p&gt;
+
+&lt;h2 id=&quot;which-ones-do-i-use-the-most&quot;&gt;Which ones do I use the most?&lt;/h2&gt;
+&lt;p&gt;I’ll list here some of my favorite &lt;strong&gt;aliases&lt;/strong&gt; to have on your &lt;em&gt;~/.bashrc&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;navigation&quot;&gt;Navigation&lt;/h4&gt;
+&lt;p&gt;Let’s start &lt;strong&gt;navigating quickly&lt;/strong&gt; through the terminal:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; alias ..='cd ..'          #One folder up
+&amp;gt; alias ...='cd ../..'      #Two folders up
+&amp;gt; alias ....='cd ../../..'  #Three folders up
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;and here you can also add ‘cd ./favorite_folders’. And remember you can always go to your &lt;em&gt;home folder&lt;/em&gt; with a simple &lt;em&gt;cd&lt;/em&gt; (without any argument).&lt;/p&gt;
+
+&lt;h4 id=&quot;quick-use---one-letter&quot;&gt;Quick use - one letter&lt;/h4&gt;
+&lt;p&gt;Some command lines are so recurrent that &lt;strong&gt;they deserve one letter&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; alias l='ls -CF'
+&amp;gt; alias h='history'
+&amp;gt; alias c='clear'
+&amp;gt; alias e='exit'
+&amp;gt; alias u='sudo apt-get update &amp;amp;&amp;amp; sudo apt-get upgrade -y &amp;amp;&amp;amp; sudo apt-get autoclean'
+&amp;gt; alias j='jobs -l'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;and now you see how to use alias to &lt;strong&gt;execute multiple commands at the same alias: &amp;amp;&amp;amp;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;colors-for-files&quot;&gt;Colors for files&lt;/h4&gt;
+&lt;p&gt;Add some &lt;strong&gt;colors&lt;/strong&gt; to your terminal, and show files and folders variously:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; alias ls='ls --color=auto' #Adds color to your ls in all cases
+&amp;gt; alias la='ls -A'           #List all files and folders in columns (including hidden)
+&amp;gt; alias ll='ls -alFh'        #List all files and folders in rows (including hidden)
+&amp;gt; alias lr='ls -ltrh'        #List files and folders in rows by recent modified
+&amp;gt; alias l.='ls -d .*'        #List only hidden directories in columns
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;If you used alias to add flags to one command and maintained same name of the original command (as we did with &lt;em&gt;ls&lt;/em&gt; up here), don’t worry: if you need the &lt;strong&gt;original command&lt;/strong&gt; for some reason, you can always use it by &lt;strong&gt;starting with a backslash&lt;/strong&gt;, e.g. &lt;em&gt;\ls&lt;/em&gt; is the original non-colored &lt;em&gt;ls&lt;/em&gt;. Some more examples:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; alias dir='dir --color=auto'
+&amp;gt; alias egrep='egrep --color=auto'
+&amp;gt; alias grep='grep --color=auto'
+&amp;gt; alias fgrep='fgrep --color=auto'
+&amp;gt; alias df='df -h'               #Size of files in KB, MB,...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;quick-use---two-letters&quot;&gt;Quick use - two letters&lt;/h4&gt;
+&lt;p&gt;Some command lines are very useful and &lt;strong&gt;they deserve two or three letters&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; alias bc='bc -lqi'    #Calculator with libraries
+&amp;gt; alias py='python3'
+&amp;gt; alias ipy='ipython3'
+&amp;gt; alias gp='gnuplot'
+&amp;gt; alias rr='Rscript'
+&amp;gt; alias now='date +&quot;%d-%m-%Y %T&quot;' #This one is useful in some contexts of automated logs
+&amp;gt; alias mnt=&quot;mount | awk -F' ' '{ printf \&quot;%s\t%s\n\&quot;,\$1,\$3; }' | column -t | egrep ^/dev/ | sort&quot; #Show all mounted devices at /dev/...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;github-users-best-friends&quot;&gt;Github users’ best friends&lt;/h4&gt;
+&lt;p&gt;Alias make our lives of &lt;strong&gt;add, commit, pull and push&lt;/strong&gt; way faster… but be careful - don’t use generic commit messages if you work in a collective repository!&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; alias gs='git status'
+&amp;gt; alias gl='git pull'
+&amp;gt; alias gp='git push'
+&amp;gt; alias ga='git add .' # Add all modified files
+&amp;gt; alias gc='git commit -m' 
+&amp;gt; alias gb='git branch'
+&amp;gt; alias gco='git checkout'
+&amp;gt; alias gf='git status &amp;amp;&amp;amp; git add . &amp;amp;&amp;amp; git commit -m &quot;Updates&quot; &amp;amp;&amp;amp; git push' # Only do this if it's your private repository...
+&amp;gt; alias run_jekyll='bundle exec jekyll serve' # Useful if you have a website in jekyll
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;control-your-cpu-clocking&quot;&gt;Control your CPU clocking&lt;/h4&gt;
+&lt;p&gt;If you have installed &lt;em&gt;&lt;a href=&quot;http://manpages.ubuntu.com/manpages/bionic/man1/cpufreq-set.1.html&quot;&gt;cpufreq&lt;/a&gt;&lt;/em&gt; package, you can &lt;strong&gt;control your clocking&lt;/strong&gt; and get information with&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; alias highclock='sudo cpufreq-set -r -g performance &amp;amp;&amp;amp; cpufreq-info'
+&amp;gt; alias lowclock='sudo cpufreq-set -r -g powersave &amp;amp;&amp;amp; cpufreq-info'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;so before running a simulation run &lt;em&gt;highclock&lt;/em&gt;, and then return to the regular state by &lt;em&gt;lowclock&lt;/em&gt;. Using highclock nonstop might harm your hardware by overheating it and overwasting the battery, so keep those things in mind!&lt;/p&gt;
+
+&lt;h4 id=&quot;log-to-your-remote-machines&quot;&gt;Log to your remote machines&lt;/h4&gt;
+&lt;p&gt;You can use it to quickly save the address or access of servers and remote machines, you can use for instance&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; alias uni_server='ssh -X debian@186.217.XXX.XX'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;alias-that-help-clumsy-people&quot;&gt;Alias that help clumsy people&lt;/h4&gt;
+&lt;p&gt;Your common typos can become aliases: this way you save time from retyping command lines.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; alias pdw='pwd'
+&amp;gt; alias dc='cd' #If you need the actual calculator dc, use \dc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;make-your-own-bash-scripts&quot;&gt;Make your own bash scripts&lt;/h4&gt;
+&lt;p&gt;Sometimes I had matrices in a file and I wanted to transpose them quickly into a new file. So I opened a hidden folder &lt;em&gt;~/.scripts/&lt;/em&gt; in my home with a &lt;a href=&quot;https://stackoverflow.com/questions/1729824/an-efficient-way-to-transpose-a-file-in-bash&quot;&gt;algorithm&lt;/a&gt; in &lt;em&gt;awk&lt;/em&gt; to transpose files. Finally, I write an alias that accesses this ‘hidden file’ so that it becomes the terminal command &lt;em&gt;transpose&lt;/em&gt;…&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; alias transpose='awk -f ~/.scripts/transpose.awk'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;and you can do the same using &lt;em&gt;Bash scripts&lt;/em&gt;, &lt;em&gt;awk&lt;/em&gt;, &lt;em&gt;Python&lt;/em&gt;, &lt;em&gt;C&lt;/em&gt;, and so on, to your most recurrent needs.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Thank you for reading up to here and I hope you enjoyed this list of useful &lt;strong&gt;alias&lt;/strong&gt;! &lt;a href=&quot;https://twitter.com/vitorsudbrack&quot;&gt;Tweet me&lt;/a&gt; at &lt;em&gt;@vitorsudbrack&lt;/em&gt; if you have any &lt;strong&gt;new ideas to add to the list&lt;/strong&gt;, I’ll be happy to hear them from you and start using them too.&lt;/p&gt;</content><author><name>Vitor Sudbrack</name></author><summary type="html">What are Alias? Alias is shell command to create nicknames to abbreviate longer commands during a section on your Ubuntu terminal (and here I’m using Ubuntu 18, but most commands are simple enough to run in any other version). But because we know that our terminals always run the file ~/.bashrc of your home folder in the begging of every new session, you can write aliases on this file and have them forever!</summary></entry></feed>

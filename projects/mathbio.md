@@ -21,6 +21,7 @@ This work is a collaboration with professors **[Leonardo G. Brunnet](http://pcle
 
 {% include image.html url="/assets/docs/projects/mathbio/slidesDDNetworks.pdf" image="projects/mathbio/slides.jpg" text="Check my presentation with main results" %}
 
+
 ## Magnetoreception in Multicellular Magnetotactic Prokaryotes
 
 Soon... :)
