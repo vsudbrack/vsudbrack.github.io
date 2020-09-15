@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Creating <i>aliases</i> on Ubuntu"
-date:   2020-08-29 16:13:02 +0200
+date:   2020-09-15 00:00:00 +0000
 categories: page update
 ---
 
