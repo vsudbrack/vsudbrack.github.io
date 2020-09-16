@@ -2,7 +2,7 @@
 layout: post
 title:  "Creating <i>aliases</i> on Ubuntu"
 date:   2020-09-15
-categories: page update
+categories: linux development
 ---
 
 Trying to be more productive and to have an easier experience with Ubuntu? So, I guess you'll enjoy the *alias* command as much as I do! Check here **what they are**, **how they work** and a **few suggested aliases** to have on your computer.
