@@ -5,8 +5,10 @@ date:   2020-09-15
 categories: page update
 ---
 
-## What are Alias?
-**Alias** is shell command to create nicknames to abbreviate longer commands during a section on your Ubuntu terminal (and here I'm using *Ubuntu 18*, but most commands are simple enough to run in any other version). But because we know that our terminals always run the file *~/.bashrc* of your home folder in the begging of every new session, you can write *aliases* on this file and have them forever! 
+Trying to be more productive and to have an easier experience with Ubuntu? So, I guess you'll enjoy the *alias* command as much as I do! Check here **what they are**, **how they work** and a **few suggested aliases** to have on your computer.
+
+## What is an Alias?
+**Alias** is shell command to create nicknames to abbreviate longer commands during a section on your Ubuntu terminal (and here I'm using *Ubuntu 18*, but most commands are simple enough to run in any other version). But because we know that our terminals always run the file *~/.bashrc* of your home folder in the begging of every new session, you can write *aliases* on this file and have them forever! ~~(or until you use someone else's computer and feel totally lost)~~
 
 During any session, you can enter the command line
 ```
@@ -20,8 +22,8 @@ on your shell (double primes instead of single primes will work just as well).
 
 You can learn more about *aliases* on this [Wikipage](https://en.wikipedia.org/wiki/Alias_(command)). Here, I'll skip to the practice and share with you ~~(and future me as a backup)~~ the ones I use the most.
 
-## Which ones do I use the most?
-I'll list here some of my favorite **aliases** to have on your *~/.bashrc*. 
+## A list of recommanded alias
+I'll list here some of my favorite **aliases** to have on your *~/.bashrc*, you can simple copy and paste them into your own file. I tried to organize them in a meaningful way that makes it easy to understand and easy to come up with your own ideas of *aliases*. 
 
 #### Navigation
 Let's start **navigating quickly** through the terminal:
@@ -120,7 +122,7 @@ and you can do the same using *Bash scripts*, *awk*, *Python*, *C*, and so on, t
 
 ***
 
-Thank you for reading up to here and I hope you enjoyed this list of useful **alias**! [Tweet me](https://twitter.com/vitorsudbrack) at *@vitorsudbrack* if you have any **new ideas to add to the list**, I'll be happy to hear them from you and start using them too.
+Thank you for reading up to here and I hope you enjoyed this list of useful **alias**! [**Retweet** this post](https://twitter.com/vitorsudbrack/status/1305998416816807942?s=20), tweet or DM me at *[@vitorsudbrack](https://twitter.com/vitorsudbrack)* if you have any **new ideas to add to the list**, I'll be happy to hear them from you and start using them too.
 
 
 
