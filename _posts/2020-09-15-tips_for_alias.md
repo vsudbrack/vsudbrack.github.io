@@ -32,7 +32,11 @@ Let's start **navigating quickly** through the terminal:
 > alias ...='cd ../..'      #Two folders up
 > alias ....='cd ../../..'  #Three folders up
 ```
-and here you can also add 'cd ~/favorite_folders' (remember to use always absolute paths to folders). And remember you can always go to your *home folder* with a simple 'cd' (without any argument).
+and here you can also add 'cd ~/favorite_folders' (remember to use always absolute paths to folders). For exemple, to acess the folder where I mount my External HD, I just type *cdhd* and the alias makes the trick with
+```
+> alias cdhd='cd /media/vsud/MyHD'
+```
+Finally, remember you can always go to your *home folder* with a simple 'cd' (without any argument).
 
 #### Quick use - one letter
 Some command lines are so recurrent that **they deserve one letter**:
