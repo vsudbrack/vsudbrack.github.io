@@ -2,7 +2,7 @@
 
 markdown: kramdown
 permalink: none
-plugins:             [jekyll-sitemap, jekyll-feed,  jekyll-seo-tag]
+plugins:             [jekyll-sitemap, jekyll-feed,  jekyll-seo-tag, jemoji]
 
 port: 4000
 
@@ -12,6 +12,6 @@ sass:
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 
-title:		           "Vitor Sudbrack"
-description:	       "My personal homepage"
+title:		     "Vitor Sudbrack"
+description:	     "The personal homepage of Vitor Sudbrack"
 author:              "Vitor Sudbrack"
