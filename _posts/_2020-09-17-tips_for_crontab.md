@@ -5,10 +5,11 @@ date:   2020-09-17
 categories: page update
 ---
 
-Tired of repeating the same command once-in-a while? Looking forward to creating automated jobs? Then I think you'll enjoy this tutorial.
+Tired of repeating the same command once-in-a while? Looking forward to creating automated jobs? Then I think you'll enjoy this tutorial. I'll briefly introduce the *crontab* mechanism, how to add commands to it with some of my recommandations and finally an idea of internet scrapping you could make with *crontab*.
 
 ## What is *crontab*?
 
+**Crontab is a mechanism to schedule the execution of command lines with specific frequencies**. For instance, if you run a program everyday, you can add it to your crontab and the computer will run it automatically everyday. Sounds like magic to your ears, doesn't it? Yes, it will save you lots of work. 
 
 During any session, you can enter the command line
 ```
@@ -22,7 +23,9 @@ When **adding new commands** to your *crontab*, remember that this file cannot b
 ```
 > crontab -e
 ```
-on your shell. There, its own text editor opens and you will see the following syntax (so-called *Crontab Macros*):
+on your shell. To close your *crontab* you can type *CTRL+X*,*Y*,*Enter* to close and save, or *CTRL+X*,*N*,*Enter* to discard any possible changes you might havee done.
+
+There, its own text editor opens and you will see the following syntax (so-called *Crontab Macros*):
 
 ```
 @yearly    #Run once a year  (at 0a.m. of January 1st)
@@ -48,16 +51,34 @@ Keep in mind that running all jobs hourly (when they only need to run once a day
 
 Writing the output of the command to an output file can be done with closing bracket (>), but that will rewrite the output file every time (and so you only have the last output). If you would like to keep a record of output logs, then by using double closing bracket (>>) you will append the last output in the end of the file wit previous output. 
 
+Everyday, you can clear your cache that is celebrating birthday, ie. that is 1 year old. With this simples line in your *crontab*, you will remove all files within *~/.cache* whose last modification date is more than 365 days ago.  
+```
+@daily chronic find ~/.cache -depth -type f -mtime +365 -delete
+```
+This will avoid you saving things of websites you hardly visited the last year and have more space for the files that matter :+1:
+
 #### Run codes whenever you reboot your computer
 
-The @reboot is the one I use the most!
+The macro @reboot is the one I use the most! It is extremely helpful either if you have problems with screen resolution, your keyboard layout or even to mount my devices everytime you reboot your computer. 
 
 Problems with screen resolution
 
-Problems with keyboard layout
+Your keyboard configurations reset everytime your computer reboot? Then you can set the keyboard layout everytime you reboot your machine with
+```
+@reboot setxkbmap -layout br
+```
+where *br* is an example. 
 
+Whenever I reboot my computer, I need to mount my external HD to the folder *MyHD*. Instead of doing it manually, *crontab* does the trick with
+```
+@reboot sudo mount -t ext4 /dev/sda /media/vsud/MyHD
+```
 
-When commands require internet connection
+When commands require internet connection, you should be aware that the *@reboot* possibly runs even before the computer settles internet connection. One strategy is to run these commands after a 5-minute sleep in order to make sure that the computer had had time to have proper internet access, you can run
+```
+@reboot sleep 5m & sudo apt-get update
+```
+for instance.
 
 #### Automated roboots
 
