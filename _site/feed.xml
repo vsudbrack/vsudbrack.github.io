@@ -1,4 +1,113 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-09-26T12:52:05+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Vitor Sudbrack</title><subtitle>The personal homepage of Vitor Sudbrack</subtitle><author><name>Vitor Sudbrack</name></author><entry><title type="html">Creating aliases on Ubuntu</title><link href="http://localhost:4000/page/update/tips_for_alias.html" rel="alternate" type="text/html" title="Creating &lt;i&gt;aliases&lt;/i&gt; on Ubuntu" /><published>2020-09-15T00:00:00+02:00</published><updated>2020-09-15T00:00:00+02:00</updated><id>http://localhost:4000/page/update/tips_for_alias</id><content type="html" xml:base="http://localhost:4000/page/update/tips_for_alias.html">&lt;p&gt;Trying to be more productive and to have an easier experience with Ubuntu? So, I guess you’ll enjoy the &lt;em&gt;alias&lt;/em&gt; command as much as I do! Check here &lt;strong&gt;what they are&lt;/strong&gt;, &lt;strong&gt;how they work&lt;/strong&gt; and a &lt;strong&gt;few suggested aliases&lt;/strong&gt; to have on your computer.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-10-02T17:51:08+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Vitor Sudbrack</title><subtitle>The personal homepage of Vitor Sudbrack</subtitle><author><name>Vitor Sudbrack</name></author><entry><title type="html">Scheduling programs to run with crontab</title><link href="http://localhost:4000/page/update/tips_for_crontab.html" rel="alternate" type="text/html" title="Scheduling programs to run with &lt;i&gt;crontab&lt;/i&gt;" /><published>2020-10-02T00:00:00+02:00</published><updated>2020-10-02T00:00:00+02:00</updated><id>http://localhost:4000/page/update/tips_for_crontab</id><content type="html" xml:base="http://localhost:4000/page/update/tips_for_crontab.html">&lt;p&gt;Tired of repeating the same command every once-in-a while? Looking forward to creating automated jobs? Then, I think you’ll enjoy this tutorial.&lt;/p&gt;
+
+&lt;p&gt;I’ll briefly introduce the &lt;em&gt;crontab&lt;/em&gt; mechanism, how to add commands to it with some of my recommendations and finally an idea of internet scrapping you could make with &lt;em&gt;crontab&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-crontab&quot;&gt;What is &lt;em&gt;crontab&lt;/em&gt;?&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Crontab is a mechanism to schedule the execution of command lines with specific frequencies&lt;/strong&gt;. For instance, if you run a program everyday, you can add it to your crontab and the computer will run it automatically everyday (as long as the computer is on). Sounds like magic to your ears, doesn’t it? Yes, it will save you lots of work.&lt;/p&gt;
+
+&lt;p&gt;During any terminal session, you can enter the command line&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; crontab -l
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;and it will &lt;strong&gt;show you all scheduled commands&lt;/strong&gt; for your user (each user has different &lt;em&gt;crontab&lt;/em&gt;s).&lt;/p&gt;
+
+&lt;h4 id=&quot;how-to-edit-it&quot;&gt;How to edit it&lt;/h4&gt;
+
+&lt;p&gt;When &lt;strong&gt;adding new commands&lt;/strong&gt; to your &lt;em&gt;crontab&lt;/em&gt;, keep in mind that it is not an ordinary text file (like &lt;em&gt;~/.bashrc&lt;/em&gt;, and so on) and it cannot be edited by regular text editors (like Gedit, Emacs,…). To edit it, enter the crontab command with the flag ‘-e’ for editing,&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; crontab -e
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;on your shell. It will probably ask you for a text editor of your choice, and then you proceed from there as you write to regular files.  At this point, the text editor will open your &lt;em&gt;crontab&lt;/em&gt; and you will see the following syntax (so-called &lt;em&gt;Crontab Macros&lt;/em&gt;):&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@yearly    #Run once a year  (at 0a.m. of January 1st)
+@monthly   #Run once a month (at 0a.m. of the 1st day)
+@weekly	   #Run once a week  (at 0a.m. of Sunday)
+@daily     #Run once a day   (at 0a.m.)
+@hourly	   #Run once an hour at the beginning of the hour
+@reboot	   #Run at startup
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Therefore, you basically &lt;strong&gt;enter in every line a frequency with one Crontab Macro, and one command to be run.&lt;/strong&gt; The examples in the next section you’ll help you understand it, make sure you check them out before editing.&lt;/p&gt;
+
+&lt;p&gt;I should mention that &lt;strong&gt;there is a more generic syntax&lt;/strong&gt; than Macros, which allows you to run codes every minute, every 5 hours, every other day, etc. It is based on values for minute (m), hour (h), day of month (dom), month (mon) and day of week (dom). There are plenty of &lt;a href=&quot;https://code.tutsplus.com/tutorials/scheduling-tasks-with-cron-jobs--net-8800&quot;&gt;tutorials&lt;/a&gt; that focus on this syntax, so in this tutorial, we’ll skip these details and get to the practical examples with Macros.&lt;/p&gt;
+
+&lt;p&gt;Finally, after editing as much as you wish, remember when closing your &lt;em&gt;crontab&lt;/em&gt; you can either &lt;strong&gt;save your modifications&lt;/strong&gt; typing &lt;em&gt;CTRL+X&lt;/em&gt;,&lt;em&gt;Y&lt;/em&gt;,&lt;em&gt;Enter&lt;/em&gt; to close and save, or type &lt;em&gt;CTRL+X&lt;/em&gt;,&lt;em&gt;N&lt;/em&gt;,&lt;em&gt;Enter&lt;/em&gt; to discard any possible changes you might have done.&lt;/p&gt;
+
+&lt;p&gt;Also, if you want more about the theory and history of &lt;em&gt;crontab&lt;/em&gt;, check its &lt;a href=&quot;https://en.wikipedia.org/wiki/Cron&quot;&gt;Wikipage&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;some-examples-to-make-your-life-easier&quot;&gt;Some examples to make your life easier&lt;/h2&gt;
+&lt;p&gt;I’ll list here some of my favorite commands to have on your &lt;em&gt;crontab&lt;/em&gt;, you can simply write them in your crontab with the flag ‘-e’ (remember you cannot edit it from regular editors). I tried to organize them by frequency, and at the end the more complex examples.&lt;/p&gt;
+
+&lt;p&gt;Keep in mind that &lt;strong&gt;running all jobs hourly (when they only need to run once a day) is overkill for resources if it is not extremely necessary&lt;/strong&gt;, and might slow down other processes. That is why I start with daily frequencies, but examples are very interchangeable.&lt;/p&gt;
+
+&lt;p&gt;Before getting to business, a reminder: &lt;strong&gt;writing the output of a command to an output-file is highly recommended&lt;/strong&gt; and it can be done with a closing bracket (&amp;gt;), but that will rewrite the output file every time (and so you only have the last output). If you would like to keep a record of output logs, then by using two closing brackets (&amp;gt;&amp;gt;) you will append the last output in the end of the file with previous output.&lt;/p&gt;
+
+&lt;h4 id=&quot;run-codes-every-day&quot;&gt;Run codes every day&lt;/h4&gt;
+
+&lt;p&gt;Everyday you can &lt;strong&gt;clear your cache files that are celebrating birthday&lt;/strong&gt;, ie. that are 1-year old. With this simple line in your &lt;em&gt;crontab&lt;/em&gt;, you will remove all files within &lt;em&gt;~/.cache&lt;/em&gt; whose last modification date is more than 365 days ago.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@daily chronic find ~/.cache -depth -type f -mtime +365 -delete
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;This will avoid you saving things of websites you hardly visited the last year and have more space for the files that matter :+1:&lt;/p&gt;
+
+&lt;p&gt;You also can &lt;strong&gt;daily check for updates of your programs and your packages&lt;/strong&gt;, some routine of maintenance of your PC would be like&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;LOGFILE=&quot;$/.script/outputs/autoupdate_daily.log&quot;
+@daily sudo apt-get update 	     &amp;gt;&amp;gt; $LOGFILE
+@daily sudo apt-get upgrade -y       &amp;gt;&amp;gt; $LOGFILE
+@daily sudo apt-get autoremove -y    &amp;gt;&amp;gt; $LOGFILE
+@daily sudo apt-get autoclean -y     &amp;gt;&amp;gt; $LOGFILE
+@daily rm -rf ~/.local/share/Trash/* &amp;gt;&amp;gt; $LOGFILE
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;updating, upgrading, cleaning expired packages and the trash can&lt;/strong&gt; every day at midnight.&lt;/p&gt;
+
+&lt;h4 id=&quot;run-codes-whenever-you-reboot-your-computer&quot;&gt;Run codes whenever you reboot your computer&lt;/h4&gt;
+
+&lt;p&gt;The macro &lt;em&gt;@reboot&lt;/em&gt; is the one I use the most! It is extremely helpful either if you have problems with &lt;strong&gt;screen resolution&lt;/strong&gt;, your &lt;strong&gt;keyboard layout&lt;/strong&gt; or even to &lt;strong&gt;mount devices everytime you reboot your computer&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Once I had problems with screen resolution and I solved installing &lt;em&gt;xrandr&lt;/em&gt; and adding this line to my &lt;em&gt;crontab&lt;/em&gt;:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@reboot xrandr -s 800x600 -r 85 --output HDMI-0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Notice it might change depending on the output and ideal resolution to your device.&lt;/p&gt;
+
+&lt;p&gt;And it your keyboard configurations reset every time your computer reboot, then you can reset the keyboard layout everytime you reboot your machine with&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@reboot setxkbmap -layout br
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;where &lt;em&gt;br&lt;/em&gt; is an example.&lt;/p&gt;
+
+&lt;p&gt;And whenever I reboot my computer, I need to mount my HD to the folder &lt;em&gt;MyHD&lt;/em&gt;. Instead of doing it manually, &lt;em&gt;crontab&lt;/em&gt; does the trick with&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@reboot sudo mount -t ext4 /dev/sda /media/vsud/MyHD
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;When &lt;strong&gt;commands require internet connection&lt;/strong&gt;, you should be aware that the &lt;em&gt;@reboot&lt;/em&gt; possibly runs even before the computer settles internet connection. One strategy is to run these commands after a 5-minute sleep in order to make sure that the computer has had time to have proper internet access. For instance, you can run&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@reboot sleep 5m &amp;amp;&amp;amp; ping 8.8.8.8 -c 5
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;but of course this example doesn’t make anything special, even so I leave the example here because it is helpful to develop further commands that require the internet.&lt;/p&gt;
+
+&lt;h4 id=&quot;automated-robots&quot;&gt;Automated robots&lt;/h4&gt;
+
+&lt;p&gt;First, to &lt;strong&gt;automate one program&lt;/strong&gt; :robot:, you have to call it from the &lt;em&gt;crontab&lt;/em&gt; and not write it directly there. So in the &lt;em&gt;crontab&lt;/em&gt; there is no big deal, just use something like&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@hourly bash $/scripts/update_cases_covid19.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now, the &lt;strong&gt;tricks lay in the &lt;em&gt;.sh&lt;/em&gt; file&lt;/strong&gt; you are writing. For instance, when writing a script to be executed periodically, you should be careful to &lt;strong&gt;prevent job collision&lt;/strong&gt; - that is, if the program takes 2h to run and you run it hourly, we’ll be running the same code simultaneously, and that’s not what we usually want. 
+Therefore, you should make sure that there isn’t any other similar process still running before trying to start running it again. You can make this control with this following structure.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;RUNFILE=&quot;my_flag.run&quot;     #Come up with a generic name...
+if [ -f $RUNFILE ]; then  #If the program is still running
+    exit                  #simply exit. 
+fi
+touch $RUNFILE            #Otherwise, register that you're starting an execution.
+##################################
+# All commands you want to     ###
+# automatize go here in middle ###
+##################################
+rm $RUNFILE               #Once finished, remove this register. 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;One example is using &lt;em&gt;curl&lt;/em&gt; command to download a news webpage everyday. Several platforms such as Youtube and Spotify have free API in which you can also download data from these websites and keep a historical dataset on your computer, or even with Github commands to pull or push repositories.  Afterwards, you can process these downloaded datasets and search for keywords of your interest or check its time behaviours.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;I thank Professor &lt;strong&gt;Renato Coutinho&lt;/strong&gt; who taught me this nice trick using it to create robots to analyse COVID-19 data in Brazil.&lt;/p&gt;
+
+&lt;p&gt;I also thank you for reading up to here and I hope you found it useful for you! Tweet or DM me at &lt;em&gt;&lt;a href=&quot;https://twitter.com/vitorsudbrack&quot;&gt;@vitorsudbrack&lt;/a&gt;&lt;/em&gt; if you have any &lt;strong&gt;new ideas of exemples to add to the list&lt;/strong&gt;, it will be nice to hear them from you and I look forward to using them too.&lt;/p&gt;</content><author><name>Vitor Sudbrack</name></author><summary type="html">Tired of repeating the same command every once-in-a while? Looking forward to creating automated jobs? Then, I think you’ll enjoy this tutorial.</summary></entry><entry><title type="html">Creating aliases on Ubuntu</title><link href="http://localhost:4000/page/update/tips_for_alias.html" rel="alternate" type="text/html" title="Creating &lt;i&gt;aliases&lt;/i&gt; on Ubuntu" /><published>2020-09-15T00:00:00+02:00</published><updated>2020-09-15T00:00:00+02:00</updated><id>http://localhost:4000/page/update/tips_for_alias</id><content type="html" xml:base="http://localhost:4000/page/update/tips_for_alias.html">&lt;p&gt;Trying to be more productive and to have an easier experience with Ubuntu? So, I guess you’ll enjoy the &lt;em&gt;alias&lt;/em&gt; command as much as I do! Check here &lt;strong&gt;what they are&lt;/strong&gt;, &lt;strong&gt;how they work&lt;/strong&gt; and a &lt;strong&gt;few suggested aliases&lt;/strong&gt; to have on your computer.&lt;/p&gt;
 
 &lt;h2 id=&quot;what-is-an-alias&quot;&gt;What is an Alias?&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Alias&lt;/strong&gt; is shell command to create nicknames to abbreviate longer commands during a section on your Ubuntu terminal (and here I’m using &lt;em&gt;Ubuntu 18&lt;/em&gt;, but most commands are simple enough to run in any other version). But because we know that our terminals always run the file &lt;em&gt;~/.bashrc&lt;/em&gt; of your home folder in the begging of every new session, you can write &lt;em&gt;aliases&lt;/em&gt; on this file and have them forever! &lt;del&gt;(or until you use someone else’s computer and feel totally lost)&lt;/del&gt;&lt;/p&gt;
@@ -47,7 +156,12 @@
 &amp;gt; alias lr='ls -ltrh'        #List files and folders in rows by recent modified
 &amp;gt; alias l.='ls -d .*'        #List only hidden directories in columns
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;If you used alias to add flags to one command and maintained the same name of the original command (as we did with ‘ls’ up here), don’t worry: if you ever need the &lt;strong&gt;original command&lt;/strong&gt; for some reason, you can always use it by &lt;strong&gt;starting with a backslash&lt;/strong&gt;, e.g. ‘\ls’ is the original non-colored ‘ls’ command. Some other examples are:&lt;/p&gt;
+
+&lt;p&gt;This last example is very insightful to search for extensions you use the most, as in&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; alias lcodes=&quot;echo 'Python:';ls *.py;echo 'R:';ls *.R;echo 'Gnuplot:';ls *.gp&quot;  #List all .py, .R e .gp separately
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And if you used alias to add flags to one command and maintained the same name of the original command (as we did with ‘ls’ up here), don’t worry: if you ever need the &lt;strong&gt;original command&lt;/strong&gt; for some reason, you can always use it by &lt;strong&gt;starting with a backslash&lt;/strong&gt;, e.g. ‘\ls’ is the original non-colored ‘ls’ command. Some other examples are:&lt;/p&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; alias dir='dir --color=auto'
 &amp;gt; alias egrep='egrep --color=auto'
 &amp;gt; alias grep='grep --color=auto'
@@ -106,4 +220,6 @@
 
 &lt;hr /&gt;
 
-&lt;p&gt;Thank you for reading up to here and I hope you enjoyed this list of useful &lt;strong&gt;alias&lt;/strong&gt;! &lt;a href=&quot;https://twitter.com/vitorsudbrack/status/1305998416816807942?s=20&quot;&gt;&lt;strong&gt;Retweet&lt;/strong&gt; this post&lt;/a&gt;, tweet or DM me at &lt;em&gt;&lt;a href=&quot;https://twitter.com/vitorsudbrack&quot;&gt;@vitorsudbrack&lt;/a&gt;&lt;/em&gt; if you have any &lt;strong&gt;new ideas to add to the list&lt;/strong&gt;, I’ll be happy to hear them from you and start using them too.&lt;/p&gt;</content><author><name>Vitor Sudbrack</name></author><summary type="html">Trying to be more productive and to have an easier experience with Ubuntu? So, I guess you’ll enjoy the alias command as much as I do! Check here what they are, how they work and a few suggested aliases to have on your computer.</summary></entry></feed>
+&lt;p&gt;Thank you for reading up to here and I hope you enjoyed this list of useful &lt;strong&gt;alias&lt;/strong&gt;! &lt;a href=&quot;https://twitter.com/vitorsudbrack/status/1305998416816807942?s=20&quot;&gt;&lt;strong&gt;Retweet&lt;/strong&gt; this post&lt;/a&gt;, tweet or DM me at &lt;em&gt;&lt;a href=&quot;https://twitter.com/vitorsudbrack&quot;&gt;@vitorsudbrack&lt;/a&gt;&lt;/em&gt; if you have any &lt;strong&gt;new ideas to add to the list&lt;/strong&gt;, I’ll be happy to hear them from you and start using them too.&lt;/p&gt;
+
+&lt;p&gt;Last update on Oct, 2nd. with more examples.&lt;/p&gt;</content><author><name>Vitor Sudbrack</name></author><summary type="html">Trying to be more productive and to have an easier experience with Ubuntu? So, I guess you’ll enjoy the alias command as much as I do! Check here what they are, how they work and a few suggested aliases to have on your computer.</summary></entry></feed>

@@ -60,7 +60,13 @@ Add some **colors** to your terminal, and show files and folders variously:
 > alias lr='ls -ltrh'        #List files and folders in rows by recent modified
 > alias l.='ls -d .*'        #List only hidden directories in columns
 ```
-If you used alias to add flags to one command and maintained the same name of the original command (as we did with 'ls' up here), don't worry: if you ever need the **original command** for some reason, you can always use it by **starting with a backslash**, e.g. '\ls' is the original non-colored 'ls' command. Some other examples are:
+
+This last example is very insightful to search for extensions you use the most, as in
+```
+> alias lcodes="echo 'Python:';ls *.py;echo 'R:';ls *.R;echo 'Gnuplot:';ls *.gp"  #List all .py, .R e .gp separately
+```
+
+And if you used alias to add flags to one command and maintained the same name of the original command (as we did with 'ls' up here), don't worry: if you ever need the **original command** for some reason, you can always use it by **starting with a backslash**, e.g. '\ls' is the original non-colored 'ls' command. Some other examples are:
 ```
 > alias dir='dir --color=auto'
 > alias egrep='egrep --color=auto'
@@ -127,6 +133,8 @@ and you can do the same using *Bash scripts*, *awk*, *Python*, *C*, and so on, t
 ***
 
 Thank you for reading up to here and I hope you enjoyed this list of useful **alias**! [**Retweet** this post](https://twitter.com/vitorsudbrack/status/1305998416816807942?s=20), tweet or DM me at *[@vitorsudbrack](https://twitter.com/vitorsudbrack)* if you have any **new ideas to add to the list**, I'll be happy to hear them from you and start using them too.
+
+Last update on Oct, 2nd. with more examples.
 
 
 
