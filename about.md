@@ -15,18 +15,20 @@ My career ~~overdrinking coffee~~:coffee: in Physics started in 2014, but back t
 
 My regular work is done at IFT under the supervision of professors *Roberto A. Kraenkel* and *Renato M. Coutinho*. Together, we numerically study **population dynamics in highly fragmented landscapes**. We aim to understand the effects of fragmentation and habitat spatial features into species and ecological systems. You can read much more about it [here](/projects/frag.html). 
 
-During pandemic times :microbe:, we joined an [Observatory](https://covid19br.github.io) - a collection of scientists from very complementary backgrounds - aiming to **understand and analyze the data from COVID-19 in Brazil**. You can imagine what a hard task that is...:man_facepalming:	
+During pandemic times, we joined an [Observatory](https://covid19br.github.io) - a collection of scientists from very complementary backgrounds - aiming to **understand and analyze the data from COVID-19 in Brazil**. You can imagine what a hard task that is...:man_facepalming:	
 
 I have already researched at the *[Fluid Lab - IMPA](http://fluid.impa.br/Home)* with professor *Alexei Mailybaev* in Rio de Janeiro, RJ. There, we studied fully developed bidimensional turbulence in the case of *Kelvin-Helmholtz instability* :ocean:. And I worked as well at the *Laboratory for Cellular Structure (LabCel - UFRGS)*, both during my undergraduate years. Since then, I am working with mathematical biology, **uncracking the puzzles of life**! 
 
-Studying and researching allowed me knowing **many nice people, many interesting places and many awesome wonders** of this universe. I share for science the same feeling *Lise Meitner* described to physics in this quote below :star-struck:
+Studying and researching allowed me knowing **many nice people, many interesting places and many awesome wonders** of this universe. I share for science the same feeling *Lise Meitner* described to physics in this quote below 
 
 {% include quote.html author="Lise Meitner" text="I love physics with all my heart.
 It is a kind of personal love, as one has for a person to whom one is grateful for many things." %}
 
 #### My scientific interests
 
-I am mostly **interested** in (macroscopic) *mathematical biology*, for instance modeling **population dynamics, ecological and evolution processes, and complex systems**. Also, I enjoy some mathematical ~~monsters~~ puzzles such as nonlinear differential equations and graph theory. I love giving seminars and telling people about my research and other interesting things, specially for outreach purposes. Hence, invitations are always welcome!
+I am mostly **interested** in (macroscopic) *mathematical biology*, for instance modeling **population dynamics, ecological and evolution processes, and complex systems**. Also, I enjoy some mathematical ~~monsters~~ puzzles such as nonlinear differential equations and graph theory. 
+
+I love giving seminars and telling people about my research and other interesting things, specially for outreach purposes. Hence, invitations are always welcome!
 
 I like to think **I create universes on a computer screen...**, but 95% percent of the job is pogramming and looking at data on this same computer screen *hahah* :joy:
 
@@ -43,7 +45,7 @@ This is a personal portfolio theme created with Jekyll by [LeNPaul](https://gith
 
 *All opinions in this website are my own.*
 
-## My CV
+#### My *Curriculum Vitae*
 
 You can download my detailed *Curriculum Vitae* here:
 
