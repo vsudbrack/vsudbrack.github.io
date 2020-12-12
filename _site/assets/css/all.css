@@ -736,7 +736,7 @@ body {
   .site-container {
     width: 95vw; } }
 .page-content {
-  width: 650px;
+  width: 550px;
   margin: 30px; }
   .page-content h1 {
     line-height: 1.5;
@@ -784,7 +784,7 @@ body {
       left: 5%; } }
 
 .work-container {
-  max-width: 600px;
+  max-width: 650px;
   margin: 0px auto 30px;
   position: relative;
   display: block; }

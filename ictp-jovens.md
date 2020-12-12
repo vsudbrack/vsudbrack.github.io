@@ -1,12 +1,11 @@
 ---
-layout: page
-title: ICTP-SAIFR Jovens na Física
+layout: post
+title: ICTP-SAIFR Jovens na Física - Projeto Fragmentação de florestas
 permalink: /ictp-jovens/
 ---
 
-## ICTP-SAIFR Jovens na Física: fragmentação de florestas
 
-Olás, sejam bem-vindos e bem-vindas ao nosso projeto/oficina sobre **fragmentação de florestas**! Quero agradecer de coração vocês terem topado o desafio que vai ser essa semana - se preprem para bastante **conhecimento** e venham com o **ânimo** nas alturas e a mente aberta para **curiosidade**.
+Olás, sejam muito bem-vindos e bem-vindas ao nosso projeto/oficina sobre **fragmentação de florestas**! Quero agradecer de coração vocês terem topado o desafio que vai ser essa semana - se preprem para bastante **conhecimento** e venham com o **ânimo** nas alturas e a mente aberta para **curiosidade**.
 
 Primeiro gostaria de dizer que eu tô muito contente em ter essa experiência com vocês, e que eu espero que vocês gostem e aprendam bastante ao longo dessa semana. Nesse projeto eu procurei balancear entre os pilares que eu vejo trabalhando com física:
 * **Conhecimento:** O quanto a gente vai aprender fazendo isso juntos. Espero oferecer para vocês, através desse tema, duas ferramentas **fundamentais** nas ciências: **progoramação** e **estatística**. Ninguém faz física hoje em dia com papel e caneta... as contas são complicadas demais, as equações não tem solução analítica, então a gente usa o computador para resolver para gente. E estatística é importantíssima porque hoje em dia a gente tem uma quantidade de informação enoooooorme, e precisamos de uma ferramenta para *resumir* os dados em informações palatáveis. 
@@ -14,7 +13,7 @@ Primeiro gostaria de dizer que eu tô muito contente em ter essa experiência co
 * **Relevância:** Procurei esse tema porque tem uma grande relação e uma grande contextualização com um assunto super importante e valorizado atualmente que são as **mudanças antropocêntricas**, e especialmente que tem uma **visualização impactante** tanto em fotos reais das floresta fragmentadas, quanto das florestas que a gente vai criar. Isso ajuda na produção de uma apresentação e um reltório final legal por parte do grupo - usem isso a favor de vocês.
 * **Diversão:** Acima de tudo, a gente tem que se divertir! Trabalhar no física é uma eterna diversão, tem pontos altos e baixos, como qualquer profissão, ma em geral é muito divertido. E nesse ponto é a gente que faz a diversão, né? Então venham animados, mesmo que as coisas não saiam como o esperado (o que é super normal *heheh*)
 
-{% include image.html url="https://pt.wikipedia.org/wiki/Antropoceno" image="/projects/ictp-jovens/welcome_do_anthropocene_era.jpeg" text="Bem-vind@s à fabulosa Era do Antropoceno" color='white' %}
+{% include image.html url="https://pt.wikipedia.org/wiki/Antropoceno" image="/projects/ictp-jovens/welcome_do_anthropocene_era.jpeg" text="Bem-vind@s à fabulosa Era do Antropoceno" %}
 
 Então essa semana vocês vão ter um gostinho sobre **como um físico e uma física trabalham**. Para ajudar vocês nessa empreitada (em geral o caminho é mais pedroso *risos nervosos*), eu criei essa página que vai funcionar como uma "wiki" ou um diário do projeto... vou tentar **escrever e roterizar aqui tudo que vocês precisam saber e fazer**, e ao longo da semana nós **discutiremos o conteúdo e a prática juntos nas lives**. 
 
@@ -23,11 +22,11 @@ Quero que vocês se sintam muito a vontade dentro do nosso grupo, e, principalme
 
 ---
 
-## 0. Preâmbulo
+# Preâmbulo
 
 Vou escrever aqui algumas coisas que acredito que podem ser feitas **antes** do nosso primeiro encontro... algumas tarefas e leituras para gente se conhecer, vocês conhecerem o tópico e deixarem tudo pronto para a gente colocar a mão na massa!
 
-# 0.1 Me mandar um email de apresentação
+## Me mandar um email de apresentação
 
 Primeira tarefa de vocês é uma **escrevem um email de apresentação**! Para mim é muito importante entender mais quem vocês são para eu posso organizar nossas tarefas e nosso grupo de forma que seja mais legal para vocês :)
 
@@ -43,7 +42,7 @@ Prepara um par de parágrafos com as informações que achar mais importantes de
 
 O inverso também é importante, e **aqui no site vocês descobrem bastante sobre mim e sobre as coisas que eu trabalho e me interesso** - explorem-o. No nosso primeiro encontro a gente faz uma roda de apresentação também.
 
-# 0.2 Instalar o Rstudio e se familiarizar com o R
+## Instalar o Rstudio e se familiarizar com o R
 
 Você sabe o que é uma linguagem de programação? O porque é importante saber progrmar? Se você nunca teve contato com esse universo (e é um caminho sem volta, já digo haha), uma discussão interessante sobre o que é uma linguagem de programação, porque é legal a gente saber programar, quais as vantagens de usar o R e o RStudio que usaremos ao longa da semana, está nesse vídeo:
 {% include video.html src="https://www.youtube.com/embed/tfPsmDzS74c" %}
@@ -82,7 +81,7 @@ Pontos desse vídeo:
 
 ² Esses pontos ele passa voando no vídeo... fiquem tranquilos que a gente pode minuciar esses detalhes juntos.
 
-# 0.3 Instalar pacotes no R
+## Instalar pacotes no R
 
 Pacotes são conjuntos de funções que pesquisadores desenvolveram e disponibilizaram para outros pesquisadores e cientistas usarem. O lema da programação é "dividir para conquistar", isso significa que a gente pode quebrar problemas grande em problemas menores, e juntar a solução dos menores... então uma pessoa fez um pacote de funções para criar paisagens, outras para manipular e outra para calcular métricas de frgmentação - agora vocês vão juntar tudo isso para conquistar! 
 
@@ -107,10 +106,10 @@ Cada pacote tem sua **documentação**. A documentação de um pacote é onda vo
 <a href="https://r-spatialecology.github.io/landscapemetrics/"><button class="mybutton">Documentção do landscapemetrics</button></a>
 
 
-{% include image.html url="https://material.curso-r.com/rbase/#pedindo-ajuda" image="/projects/ictp-jovens/reading_documentation.jpg" text="Tentando coisas aleatórias ao invés de ler a documentção" %}
+{% include image.html url="https://material.curso-r.com/rbase/#pedindo-ajuda" image="/projects/ictp-jovens/reading_documentation.jpg" text="Tentando coisas aleatórias por horas ao invés de ler a documentação" %}
 
 
-# 0.4 Entender a visão geral do projeto
+## Entender a visão geral do projeto
 Neste projeto vocês farão um estudo sistemático sobre o efeito da granularidade (resolução espacial) sobre diferentes métricas de fragmentação de paisagens binárias (habitat ou não-habitat).
  
 Paisagens são representações de vegetação (florestas ou biomas) ou recursos (bióticos ou abióticos) no espaço e são o elemento central da ecologia de paisagens (landscape ecology), que procura entender os processos de mudança das paisagens e do seu efeito sobre populações e comunidades.
@@ -125,63 +124,63 @@ Ao final, os alunos que desejarem continuar serão convidados a produzir um rela
 
 ---
 
-## 1. Dia 1 - Paisagens artificiais 
+# Dia 1 - Paisagens artificiais 
 
 Apresentação do monitor, dos alunos, e do projeto. 
 
-# Teoria
+## Teoria
 
-##### O que são paisagens? E paisagens binárias?
+#### O que são paisagens? E paisagens binárias?
 
-##### Como representar paisagens no computador?
+#### Como representar paisagens no computador?
 
-##### O que são resolução e grão das paisagens?
+#### O que são resolução e grão das paisagens?
 
-##### Como gerar paisagens artificais no computador?
+#### Como gerar paisagens artificais no computador?
 
-##### Métodos de Modelos Neutros de Paisagens
+#### Métodos de Modelos Neutros de Paisagens
  
 
-# Tarefas do dia
+## Tarefas do dia
 
 Agora que a gente entendeu alguns exemplos (e espero que vocês tenham tentado reproduzir o que foi apresentado até aqui), vamos partir para colocar a mão na massa:
 
-##### Tarefa 1: Gerar paisagens com um método e compartilhar com os colegas
+#### Tarefa 1: Gerar paisagens com um método e compartilhar com os colegas
 
 Primeiro, cada um vai escolher um método (cuidado para não repetir) e então gerar **50 paisagens aleatórias 4096 por 4096** com o método escolhido, salvando a **imagem em jpeg** ao final com o nome *nomedométodo_num.jpeg*, para gente saber qual método se trata depois.
 
 Depois, vamos fazer o upload na **pasta compartilhada do Drive** com exemplos representativos (digamos três das 50, por exemplo) de uma **pouco fragmentada**, **intermediária**, e **muito fragmentada** - não suba todas as 50 imagens senão ninguém se acha na pasta depois *hahah*! Assim, vocês pode ver as características das paisagens dos métodos dos colegas. Essas também serão imagens legais para ilustrar os slides da apresentação final de vocês.
 
-##### Tarefa 2: Classificação visual das paisagens nos diferentes métodos
+#### Tarefa 2: Classificação visual das paisagens nos diferentes métodos
 
 A idéia aqui é a gente bolar uma tabela para comentar os **aspectos visuais** de cada paisagem, ou seja, as características de cada método. Quantos mais aspectos, mais rica é a nossa descrição!
 
 ---
 
-## 2. Dia 2 - Métricas de fragmentação
+# Dia 2 - Métricas de fragmentação
 
 Seminário sobre métricas de fragmentação: porque há tantas métricas e o que elas medem? Quais os grandes grupos de métricas de fragmentação? Como elas se relacionam? Vamos aprender a calcular dezenas de métricas de fragmentação em cima das paisagens geradas no dia anterior com a biblioteca landscapemetrics. Tema para casa: calcular métricas de fragmentação para diferentes paisagens geradas no dia anterior. 
 
 ---
 
-## 3. Dia 3 - Descrição e estudos estatísticos
+# Dia 3 - Descrição e estudos estatísticos
 
 Seminário sobre conceitos básicos de estatística: média, variância, histogramas, distribuição unimodal e bimodal, correlação linear e de ranking (a diferença entre correlação de Pearson e de Spearman), correlogramas. Vamos aprender a graficar as métricas de fragmentação em função da resolução e aprender a interpretar esse gráfico e encontrar alguns coeficientes relevantes para a análise. Vamos aprender a gerar e interpretar um correlograma. Tema para casa: graficar um histograma para cada métrica de fragmentação calculadas no dia anterior, plotar média e variância em função da granularidade, realizar um ajuste linear (os alunos se dividirão e cada um realizará esse tema para num método gerador diferente).
 
 ---
 
-## 4. Dia 4 - Revisão de literatura e planejamento
+# Dia 4 - Revisão de literatura e planejamento
 
 Seminário sobre a literatura já existente. Vamos revisar alguns trabalhos já publicados sobre esse tipo de análise. Vamos pensar nos pontos altos e baixos de cada trabalho, e como a nossa análise pode se diferenciar destes pontos. Quais resultados nossos serão inéditos e quais são conhecidos. Como entender os efeitos da granularidade das paisagens afeta o entendimento de como a fragmentação impacta a ecologia e os processos ecológicos. Ao grupo de alunos que desejar continuar o projeto para além da escola, vamos pensar em como podemos dividir os métodos e as coberturas de habitat entre eles a fim de que cada um explore um conjunto amostral diferente de milhares de paisagens geradas artificialmente. 
 
 ---
 
-## 5. Dia 5 - Dicas de escrita e apresentação científicas
+# Dia 5 - Dicas de escrita e apresentação científicas
 
 Os alunos apresentarão seus resultados de gráficos do tema do dia 3, lembrando que cada aluno apresenta um método diferente e portanto iremos coletivamente discutir as hipóteses de porque observamos cada efeito relatado. Em seguida teremos um momento para discutir a apresentação final do projeto, falando sobre escrita e apresentação científica: o que a apresentação deve conter? O que é e como se escrevem a introdução, metodologia, resultados, conclusões e perspectivas? Como citar outros trabalhos e colocar fonte das imagens? Vamos pensar sobre quais gráficos gerados pelos alunos queremos no nosso relatório final e qual a sequência de informações. 
 
 ---
 
-## Links, referências & conteúdo extra
+# Links, referências & conteúdo extra
 
 Vou escrever aqui uma série de links que podem ajudar vocês no processo de construção do conhecimento, aprofundamento das questões tangenciais que a gente vai tratar, e engrandecer a apresentação final de vocês (lembrando que ao longo do próprio texto já tem várias referências interessantes!).
