@@ -1,11 +1,14 @@
 ---
 layout: post
-title: ICTP-SAIFR Jovens na Física - Projeto Fragmentação de florestas
+title: ICTP-SAIFR Jovens na Física
 permalink: /ictp-jovens/
 ---
 
+## Projeto: Os números por trás da fragmentação de florestas
 
-Olás, sejam muito bem-vindos e bem-vindas ao nosso projeto/oficina sobre **fragmentação de florestas**! Quero agradecer de coração vocês terem topado o desafio que vai ser essa semana - se preprem para bastante **conhecimento** e venham com o **ânimo** nas alturas e a mente aberta para **curiosidade**.
+Olás, 
+
+sejam muito bem-vindos e bem-vindas ao nosso projeto/oficina sobre **fragmentação de florestas**! Quero agradecer de coração vocês terem topado o desafio que vai ser essa semana - se preprem para bastante **conhecimento** e venham com o **ânimo** nas alturas e a mente aberta para **curiosidade**.
 
 Primeiro gostaria de dizer que eu tô muito contente em ter essa experiência com vocês, e que eu espero que vocês gostem e aprendam bastante ao longo dessa semana. Nesse projeto eu procurei balancear entre os pilares que eu vejo trabalhando com física:
 * **Conhecimento:** O quanto a gente vai aprender fazendo isso juntos. Espero oferecer para vocês, através desse tema, duas ferramentas **fundamentais** nas ciências: **progoramação** e **estatística**. Ninguém faz física hoje em dia com papel e caneta... as contas são complicadas demais, as equações não tem solução analítica, então a gente usa o computador para resolver para gente. E estatística é importantíssima porque hoje em dia a gente tem uma quantidade de informação enoooooorme, e precisamos de uma ferramenta para *resumir* os dados em informações palatáveis. 
@@ -134,6 +137,13 @@ Apresentação do monitor, dos alunos, e do projeto.
 
 #### Como representar paisagens no computador?
 
+
+##### Desafio:
+Quantas paisagens binárias de tamanho 4096x4096 são possíveis?
+Dica: começe pensando quantas paisagens binárias 2x2 existem. Depois, 3x3... e NxN?
+Para contemplar o quão grande esse número é, compare com o [número de estrelas no universo](http://www.inpe.br/faq/index.php?pai=11#:~:text=Estima%2Dse%20que%20a%20nossa,de%2010%20sextilh%C3%B5es%20de%20estrelas.) e o [número de átomos no universo](https://pt.wikipedia.org/wiki/Universo_observ%C3%A1vel#:~:text=Conte%C3%BAdo%20em%20mat%C3%A9ria,-Representa%C3%A7%C3%A3o%20art%C3%ADstica%20do&text=Dois%20c%C3%A1lculos%20aproximados%20fornecem%20o,em%20torno%20de%201080.).
+Agora compare com o produto dos dois números. 
+
 #### O que são resolução e grão das paisagens?
 
 #### Como gerar paisagens artificais no computador?
@@ -155,6 +165,7 @@ Depois, vamos fazer o upload na **pasta compartilhada do Drive** com exemplos re
 
 A idéia aqui é a gente bolar uma tabela para comentar os **aspectos visuais** de cada paisagem, ou seja, as características de cada método. Quantos mais aspectos, mais rica é a nossa descrição!
 
+<a href="https://docs.google.com/spreadsheets/d/1l6l4BGrDH1_NhtgDmnfa9gKxV7QWTeaWf3iCbqgxFbU/edit?usp=sharing"><button class="mybutton">Tabela dos aspectos visuais das paisagens</button></a>
 ---
 
 # Dia 2 - Métricas de fragmentação
@@ -166,6 +177,46 @@ Seminário sobre métricas de fragmentação: porque há tantas métricas e o qu
 # Dia 3 - Descrição e estudos estatísticos
 
 Seminário sobre conceitos básicos de estatística: média, variância, histogramas, distribuição unimodal e bimodal, correlação linear e de ranking (a diferença entre correlação de Pearson e de Spearman), correlogramas. Vamos aprender a graficar as métricas de fragmentação em função da resolução e aprender a interpretar esse gráfico e encontrar alguns coeficientes relevantes para a análise. Vamos aprender a gerar e interpretar um correlograma. Tema para casa: graficar um histograma para cada métrica de fragmentação calculadas no dia anterior, plotar média e variância em função da granularidade, realizar um ajuste linear (os alunos se dividirão e cada um realizará esse tema para num método gerador diferente).
+
+#### Visualização de dados
+
+**histogramas**
+
+#### Estimadores de centralidade
+
+**Média (mean)**
+
+**Mediana (median)**
+
+**Moda**    **unimodal** ou **bimodal**
+
+#### Estimadores de dispersão
+
+**Variância (var)**
+
+**Desvio-padrão (sd)**
+
+**Quantil** 
+O "Quantil 50%" é a mediana!
+""Quantil 25%" se chama quartil. "Quantil 20%" se chama quintil. "Quantil 10%" se chama decil. E "Quantil 1%" se chama percentil. 
+
+**Intervalo interquartil (IIQ)**
+
+#### Estimadores de relação
+
+**Covariância**
+
+**Correlação de Pearson**
+
+**Corelação de Spearman**
+
+
+#### Ajuste de reta
+
+
+#### Ajuste de lei de potência
+
+
 
 ---
 
