@@ -27,7 +27,16 @@
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
   </script>
 
-
+  <!-- Math equations -->
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      processEscapes: true
+    }
+  });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
   <!-- Use Jekyll SEO plugin -->
   <!-- Begin Jekyll SEO tag v2.6.1 -->
@@ -127,16 +136,17 @@ is yet no theoretical description in the literature of <strong>bidimensional tur
 <p>This work was done under <strong><a href="http://alexei.impa.br/">Alexei Mailybaev</a></strong> supervision and in collaboration with <strong>Simon Thalabard</strong> at the <a href="http://fluid.impa.br/Home">Fluid Lab - IMPA</a>. It was funded by the federal government (CNPq).</p>
 
 <div class="image-container">
-  <a href="/assets/docs/projects/turb/TCC_slides.pdf" target="_blank">
+<a href="/assets/docs/projects/turb/TCC_slides.pdf" target="_blank">
     <img src="/assets/img//projects/turb/slides.jpg" alt="Avatar" class="image" />
     <div class="overlay">
-      <div class="text">
-        
-          Check my presentation about this project <i class="fa fa-arrow-right" aria-hidden="true"></i>
-        
+      <div class="text" style="color:">
+        Check my presentation about this project
+	 <i class="fa fa-arrow-right" aria-hidden="true" style="color:"></i>
       </div>
     </div>
-  </a>
+
+</a>
+
 </div>
 
 </div>

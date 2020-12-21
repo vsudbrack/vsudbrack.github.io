@@ -27,7 +27,16 @@
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
   </script>
 
-
+  <!-- Math equations -->
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      processEscapes: true
+    }
+  });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
   <!-- Use Jekyll SEO plugin -->
   <!-- Begin Jekyll SEO tag v2.6.1 -->
@@ -92,16 +101,17 @@
 <p>In 2020, I was invitedd to give a seminar about it on <em>EcoEncontros</em> at IB-USP. We can check the slides and the link for the video with the lecture below.</p>
 
 <div class="image-container">
-  <a href="/assets/docs/projects/frag/FragWars.pdf" target="_blank">
+<a href="/assets/docs/projects/frag/FragWars.pdf" target="_blank">
     <img src="/assets/img/projects/frag/fragwars.png" alt="Avatar" class="image" />
     <div class="overlay">
-      <div class="text">
-        
-          Check the slides of this presentation <i class="fa fa-arrow-right" aria-hidden="true"></i>
-        
+      <div class="text" style="color:">
+        Check the slides of this presentation
+	 <i class="fa fa-arrow-right" aria-hidden="true" style="color:"></i>
       </div>
     </div>
-  </a>
+
+</a>
+
 </div>
 
 <p>In our project, we use numerical methods to simulate <strong>Reaction-Diffusion Equations (FKPP Equations) in artificial landscapes</strong> generated with different structural distributions while keeping the total amount of habitat constant. This guarantees we are observing phenomena caused by <em>fragmentation per se</em>. We discuss the net effects of fragmentation into the steady total population. In order to do that correctly, we established the correlation between fragmentation metrics with fixed amount of habitat, to ensure that conclusions are not biased by interdependencies of metrics (see a further discussion in the next section).</p>

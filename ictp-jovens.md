@@ -4,234 +4,235 @@ title: ICTP-SAIFR Jovens na Física
 permalink: /ictp-jovens/
 ---
 
-## Projeto: Os números por trás da fragmentação de florestas
+## Estourando a bolha: como informação se espalha na sociedade
+
 
 Olás, 
 
-sejam muito bem-vindos e bem-vindas ao nosso projeto/oficina sobre **fragmentação de florestas**! Quero agradecer de coração vocês terem topado o desafio que vai ser essa semana - se preprem para bastante **conhecimento** e venham com o **ânimo** nas alturas e a mente aberta para **curiosidade**.
+sejam muito bem-vindos e bem-vindas ao nosso projeto/oficina sobre **dinâmica de opinião**, sociofísica e sistemas complexos! 
 
-Primeiro gostaria de dizer que eu tô muito contente em ter essa experiência com vocês, e que eu espero que vocês gostem e aprendam bastante ao longo dessa semana. Nesse projeto eu procurei balancear entre os pilares que eu vejo trabalhando com física:
-* **Conhecimento:** O quanto a gente vai aprender fazendo isso juntos. Espero oferecer para vocês, através desse tema, duas ferramentas **fundamentais** nas ciências: **progoramação** e **estatística**. Ninguém faz física hoje em dia com papel e caneta... as contas são complicadas demais, as equações não tem solução analítica, então a gente usa o computador para resolver para gente. E estatística é importantíssima porque hoje em dia a gente tem uma quantidade de informação enoooooorme, e precisamos de uma ferramenta para *resumir* os dados em informações palatáveis. 
-* **Utilidade:** O quanto o nosso trabalho vai ser útil para outros cientistas que pesquisam sobre fragmentação de florestas e, portanto, podem se beneficiar do nosso trabalho. Nossa proposta de um trabalho **original** é que vocês possam ter a chance de ter uma publicação, que é super bem vista no currículo de vocês para concorrer a bolsas de estudo, bolsas de pesquisa, etc.
-* **Relevância:** Procurei esse tema porque tem uma grande relação e uma grande contextualização com um assunto super importante e valorizado atualmente que são as **mudanças antropocêntricas**, e especialmente que tem uma **visualização impactante** tanto em fotos reais das floresta fragmentadas, quanto das florestas que a gente vai criar. Isso ajuda na produção de uma apresentação e um reltório final legal por parte do grupo - usem isso a favor de vocês.
-* **Diversão:** Acima de tudo, a gente tem que se divertir! Trabalhar no física é uma eterna diversão, tem pontos altos e baixos, como qualquer profissão, ma em geral é muito divertido. E nesse ponto é a gente que faz a diversão, né? Então venham animados, mesmo que as coisas não saiam como o esperado (o que é super normal *heheh*)
-
-{% include image.html url="https://pt.wikipedia.org/wiki/Antropoceno" image="/projects/ictp-jovens/welcome_do_anthropocene_era.jpeg" text="Bem-vind@s à fabulosa Era do Antropoceno" %}
+Quero agradecer de coração vocês terem topado o desafio que vai ser essa semana - se preparem para bastante **conhecimento** e venham com o **ânimo** nas alturas e a mente aberta para **curiosidade**.Acima de tudo, a gente tá aqui para se divertir! Trabalhar na física é uma eterna diversão - tem pontos altos e baixos, como qualquer profissão, mas em geral é muito divertido. E nesse ponto é a gente que faz a diversão, né? Então venham animados, mesmo que as coisas não saiam como o esperado (o que é super normal *heheh*).
 
 Então essa semana vocês vão ter um gostinho sobre **como um físico e uma física trabalham**. Para ajudar vocês nessa empreitada (em geral o caminho é mais pedroso *risos nervosos*), eu criei essa página que vai funcionar como uma "wiki" ou um diário do projeto... vou tentar **escrever e roterizar aqui tudo que vocês precisam saber e fazer**, e ao longo da semana nós **discutiremos o conteúdo e a prática juntos nas lives**. 
 
-Quero que vocês se sintam muito a vontade dentro do nosso grupo, e, principalmente, sempre que vocês quiserem perguntar algo, solicitar algo, comentar algo,..., **eu estou sempre a postos para ouví-los, não hesitem**! Os melhores jeitos são via email **[vitorsudbrack@gmail.com](mailto:vitorsudbrack@gmail.com)** ou **Whatsapp +34 (641) 17 81 88** (meio estranho porque o número é da Espanha hehe).
+Quero que vocês se sintam muito a vontade dentro do nosso grupo, e, principalmente, sempre que vocês quiserem perguntar algo, solicitar algo, comentar algo,..., **eu estou sempre a postos para ouví-los, não hesitem**! Os melhores jeitos são via meu email pessoal:
+<a href="mailto:vitorsudbrack@gmail.com"><button class="mybutton">vitorsudbrack@gmail.com</button></a>
 
+ou a plataforma que usarmos: Slack, Discord, Whatsapp...
+
+A dinâmica da oficina tá previsita em **5 encontros** pela tarde, mas eu estou disponível para conversarmos a qualquer momento. As primeiras duas oficinas, acredito que serão mais expositivas, pois preciso introduzir vocês a linguagem de programação R e o conteúdo que trabalharemos. Depois que vocês pegarem o fio da meada, tenho certeza que vocês mesmos virão com idéias e melhorias ao nosso modelo. 
 
 ---
 
-# Preâmbulo
+# Preâmbulo e aquecimento
 
-Vou escrever aqui algumas coisas que acredito que podem ser feitas **antes** do nosso primeiro encontro... algumas tarefas e leituras para gente se conhecer, vocês conhecerem o tópico e deixarem tudo pronto para a gente colocar a mão na massa!
+Primeiro dia é o aquecimento... algumas tarefas e leituras para gente se conhecer, vocês conhecerem o tópico, baixarem os programas e pacotes, e programarem. Enfim, aqui vamos deixar as coisas prontas para gente colocar a mão na massa!
 
-## Me mandar um email de apresentação
+## Instalar o R e o Rstudio
 
-Primeira tarefa de vocês é uma **escrevem um email de apresentação**! Para mim é muito importante entender mais quem vocês são para eu posso organizar nossas tarefas e nosso grupo de forma que seja mais legal para vocês :)
+Você sabe o que é uma linguagem de programação? O porque é importante saber programar? Se você nunca teve contato com esse universo, já aviso: e é um caminho sem volta!
 
-Além das coisas básicas, como onde mora e estuda, quais os seus interesses em física, em ecologia, em matemática, em informática, pontos que se considera forte e que pode melhorar, experiências de trabalhar em grupo,..., lembrem também de mencionar:
-* porque você escolheu essa ofina e qual sua expectativa no trabalho;
-* seu nível de leitura em inglês (muito material tá em inglês, vamos organizar para todos tenham acesso e entendam);
-* sistema operacional do computador de vocês;
-* o quanto vocês conhecem de computador e se você já programou alguma vez na vida ou fez algo de robótica;
-* se já teve aulas de estatística nas disciplinas de matemática;
-* o email que vocês usam no **GoogleDrive** - teremos uma pasta compartilhada!
+{% include image.html image="/projects/ictp-jovens/vicio_de_programar.jpeg" text="Eu, às 3 da manhã, implorando para eu mesmo parar de programar e dormir" %}
 
-Prepara um par de parágrafos com as informações que achar mais importantes de destacar e manda pro meu email, **[vitorsudbrack@gmail.com](mailto:vitorsudbrack@gmail.com)**.
-
-O inverso também é importante, e **aqui no site vocês descobrem bastante sobre mim e sobre as coisas que eu trabalho e me interesso** - explorem-o. No nosso primeiro encontro a gente faz uma roda de apresentação também.
-
-## Instalar o Rstudio e se familiarizar com o R
-
-Você sabe o que é uma linguagem de programação? O porque é importante saber progrmar? Se você nunca teve contato com esse universo (e é um caminho sem volta, já digo haha), uma discussão interessante sobre o que é uma linguagem de programação, porque é legal a gente saber programar, quais as vantagens de usar o R e o RStudio que usaremos ao longa da semana, está nesse vídeo:
+Uma discussão interessante sobre o que é uma linguagem de programação, porque é legal a gente saber programar, quais as vantagens de usar o R e o RStudio que usaremos ao longo da semana, está nesse vídeo:
 {% include video.html src="https://www.youtube.com/embed/tfPsmDzS74c" %}
-Minha prosposta em ensinar programação para vocês é ser apenas um começo. Quando vocês souberam encaixar mais funções e algoritmos, o que vocês poderão fazer é limitado apenas pela imaginação. Existem várias técnica muito famosas hoje em dia, uma que ele menciona no vídeo é o *Machine Learning*, que significa ensinar o computador a excutar uma tarefa ou tomar uma decisão, por exemplo. A genete vi passar longe disso, vamos ficar no básico da programação, mas vamos tentar solidificar os conhecimentos para que o caminho até técnicas mais sofisticadas (que estão em todas as ciências) seja o mais brando possível. (Aliás, esse site aqui é feito em R também :) )
 
-Antes de mais nada a gente tem que instalar tanto a **linguagem de programação R** que vamos usar, quanto **RStudio** que é uma interfácie gráfica para facilitar o uso da linguagem. Isso não tem mistério, é só seguir todos os passos que estõ bem desmiuçados nesse vídeo:
+Minha prosposta em ensinar programação para vocês é ser apenas um começo. Quando vocês souberam encaixar mais funções e algoritmos, o que vocês poderão fazer é limitado apenas pela imaginação. A gente costuma brincar que a pergunta não é *se* dá para programar algo, mas sim *como* se programa algo.
+
+{% include image.html image="/projects/ictp-jovens/programming_is_easy.jpeg" text="Alguém: programar é fácil<br>Eu: cai fora!" %}
+
+Existem várias técnica muito famosas hoje em dia, uma que ele menciona no vídeo de cima é o *Machine Learning*, que significa ensinar o computador a excutar uma tarefa ou tomar uma decisão, por exemplo. A gente vi passar longe disso, vamos ficar no básico da programação, mas vamos tentar solidificar os conhecimentos para que o caminho até técnicas mais sofisticadas (que estão em **todas** as ciências) seja o mais brando possível. E o R é uma linguagem com um esforço-benefício excelente. Aliás, esse site aqui é feito em R também. 
+
+Antes de mais nada a gente tem que instalar tanto a **linguagem de programação R** que vamos usar, quanto **RStudio** que é uma interfácie gráfica para facilitar o uso da linguagem. Para isso não tem mistério, é só seguir todos os passos que estõ bem desmiuçados nesse vídeo:
 {% include video.html src="https://www.youtube.com/embed/PWMqxKWHlz4" %}
 
-Agora vamos nos familiarizar com o R e o RStudio. Assistam esse vídeo aqui de baixo (a partir de 3min20s - antes disse ele mostra o download que vocês já fizeram no outro vídeo mais detalhado...) e **reproduzam** as coisas que ele vai mostrando... então é realmente abrir o RStudio do lado e digitar o que ele mostra, conferir o que o programa retorna, explorar coisas parecidas, etc...
+Agora que temos os programas, vamos nos familiarizar com o R e o RStudio. Aprender as nossas primeiras ferramentas. Assistam esse vídeo aqui de baixo (a partir de 3min20s - antes disse ele mostra o download que vocês já fizeram no outro vídeo mais detalhado...) e **reproduzam** as coisas que ele vai mostrando... então é realmente abrir o RStudio do lado e digitar o que ele mostra, conferir o que o programa retorna, explorar coisas parecidas, etc...
 {% include video.html src="https://www.youtube.com/embed/4j_rtffftzQ?start=200" %}
 
-Ele também vai guiar vocês por todo o RStudio, as várias janelas e as várias abas. A gente vai trabalhar com a forma de arquivos (RScript que ele mostra em 5min28s), pois assim a gente vai salvando nosso processo (é como se fosse um caderno) e rodando as linhas com *CTRL+Enter*.
+Ele também vai guiar vocês por todo o RStudio, as várias janelas e as várias abas. A gente vai trabalhar com a forma de arquivos (RScript que ele mostra em 5min28s), pois assim a gente vai salvando nosso processo (é como se fosse um caderno) e excecutando as linhas com *CTRL+Enter*.
 
-Pontos fundamentais desse vídeo: 
+Pontos fundamentais da programação que estão nesse vídeo: 
 * operações matemáticas (+,-,*,/,^(potência),<(maior),==(igual),...)
 * atribuir valores à variáveis
 * função print
 * função paste
 * criar uma lista com as funções c(...) e seq()
-* chamar funções sobre essa lista (mean, sum, max...)¹
+* chamar funções sobre essa lista (mean, sum, max...)
 * plotar gráficos com plot()
 * gerar números aleatórios com runif()
 
-¹ Não se preocupem com o significado do valor que elas retornam a gente vai ver mais para frente juntos...
-
-Agora vamos para um outro vídeo, onde partirmos de 6min. Nesse segundo, ele não usa o RStudio, ele usa outra ferramenta. Porém vocês sabem usar o RStudio do vídeo anterior :blink: Basta digitar no RScript de vocês a linha de comando e apertar *CTRL+Enter* para rodar no terminal...
+Agora vamos para um outro vídeo, de onde partirmos de 6min. Nesse segundo, ele não usa o RStudio, ele usa outra ferramenta. Porém vocês sabem usar o RStudio do vídeo anterior :blink: Basta digitar no RScript de vocês a linha de comando e apertar *CTRL+Enter* para rodar no terminal...
 
 {% include video.html src="https://www.youtube.com/embed/pdRoIDQJ_x4?start=369" %}
 
-Pontos desse vídeo: 
+Pontos importantes desse vídeo: 
 * atribuir uma "string" (um nome!)
 * criar um data.frame
 * acessar as colunas ($) e linhas ([...]) de um data.frame
 * testar uma condição com if(condição){execute}²
 * fazer um loop com for(i in lista){execute}²
 
-² Esses pontos ele passa voando no vídeo... fiquem tranquilos que a gente pode minuciar esses detalhes juntos.
+² Esses pontos ele passa voando no vídeo... fiquem tranquilos que a gente pode minuciar esses detalhes juntos. Mas é mais ou menos assim:
+{% include image.html image="/projects/ictp-jovens/loop_for.jpeg" text="for(i in seq(0, 5) {...}" %}
 
-## Instalar pacotes no R
+É provável que vocês se sintam sobrecarregados de tanta informação! Aprender a programar é um processo longo, na faculdade é quase um semestre, e vocês estão aprendendo o básico em um dia. Então perguntem, pratiquem, mas não se assustem. Aos poucos vocês vão naturalizando esse conhecimento também. 
 
-Pacotes são conjuntos de funções que pesquisadores desenvolveram e disponibilizaram para outros pesquisadores e cientistas usarem. O lema da programação é "dividir para conquistar", isso significa que a gente pode quebrar problemas grande em problemas menores, e juntar a solução dos menores... então uma pessoa fez um pacote de funções para criar paisagens, outras para manipular e outra para calcular métricas de frgmentação - agora vocês vão juntar tudo isso para conquistar! 
+## Instalar o pacote *igraph* no R
 
-Agora a gente vai instalar os pacotes que usaremos para gerar nossas paisagens artificais, manipular nossas paisagens e calcular nossas métricas de fragmentação. Execute cada uma dessas linhas no terminal do RStudio de vocês (normal demorar um pouquinho para instalar tudo):
+Pacotes são conjuntos de funções que pesquisadores desenvolveram e disponibilizaram para outros pesquisadores e cientistas usarem. O lema da programação é **dividir para conquistar**, isso significa que a gente pode quebrar problemas grandes em problemas menores, e juntar a solução dos menores... 
 
+Agora a gente vai instalar o pacote que usaremos para trabalhar e visualizar com **grafos**. Execute essa linha no terminal do RStudio de vocês (normal demorar um pouquinho para instalar tudo):
 ```
-install.packages('NLMR', dependencies = TRUE)
-install.packages('landscapetools', dependencies = TRUE)
-install.packages('landscapemetrics', dependencies = TRUE)
-install.packages('raster', dependencies = T)
-install.packages('rgdal', dependencies = T)
+install.packages('igraph', dependencies = TRUE)
+```
+Nós colocamos esse argumento da função chamado 'dependencies' como verdadeiro, pois assim ele instala todos os pacotes que esses pacotes precisam para executar juntos (sim, pacotes usam pacotes... dividir para conquistar!). Antes de usar as funções de um pacote, a gente precisa carregar ele com a função *library()*, digite
+```
+library(igraph)
 ```
 
-Nós colocamos esse argumento da função chamado 'dependencies' como verdadeiro, pois assim ele instala todos os pacotes que esses pacotes precisam para executar juntos (sim, pacotes usam pacotes... dividir para conquistar!). 
+Por fim, cada pacote tem sua **documentação**. A documentação de um pacote é onda você encontra toda a informação sobre as funções que o pacote tem, e o que elas fazem. Vou deixar aqui as documentações desses pacotes que usaremos para vocês consultarem ao longo da semana.
 
-Cada pacote tem sua **documentação**. A documentação de um pacote é onda você encontra toda a informação sobre as funções que o pacote tem, e o que elas fazem. Vou deixar aqui as documentações desses pacotes que usaremos para vocês consultarem ao longo da semana.
+<a href="https://igraph.org/r/"><button class="mybutton">Documentação do <i>igraph</i></button></a>
 
-<a href="https://github.com/ropensci/NLMR"><button class="mybutton">Documentação do NLMR</button></a>
-
-<a href="https://github.com/ropensci/landscapetools"><button class="mybutton">Documentação do landscapetools</button></a>
-
-<a href="https://r-spatialecology.github.io/landscapemetrics/"><button class="mybutton">Documentção do landscapemetrics</button></a>
-
+Mas em geral a gente é cabela dura e fica tentando rodar coisas até que uma vai (ou a gente cansa haha).
 
 {% include image.html url="https://material.curso-r.com/rbase/#pedindo-ajuda" image="/projects/ictp-jovens/reading_documentation.jpg" text="Tentando coisas aleatórias por horas ao invés de ler a documentação" %}
 
+Não precisa ler a documentação agora, mas saibam que ela está lá e se surgir alguma dúvida vocês podem buscar exemplos e funções lá. 
+
+## Me mandar um email de apresentação
+
+Outra tarefa impotantíssima de vocês será **escrever um email de apresentação**! Para mim é muito importante entender mais quem vocês são para eu posso organizar nossas tarefas e nosso grupo de forma que seja mais legal para vocês :)
+
+Além das coisas básicas, como onde mora e estuda, quais os seus interesses em física, em matemática, em informática, pontos que se considera forte e que pode melhorar, experiências de trabalhar em grupo,..., lembrem também de mencionar:
+* sistema operacional do computador de vocês;
+* o quanto vocês conhecem de computador e se você já programou alguma vez na vida ou fez algo de robótica;
+* o email que vocês usam no **GoogleDrive** - provavelmente teremos uma pasta compartilhada!
+
+Prepara um par de parágrafos com as informações que achar mais importantes de destacar e manda pro meu email, **[vitorsudbrack@gmail.com](mailto:vitorsudbrack@gmail.com)**. Menciona também se você tem interesse em fazer iniciação científica e em quais tópicos, tanto eu quanto muito dos meus colegas podem te ajudar para além da escola.
+
+O inverso também é importante, e **aqui no site vocês descobrem bastante sobre mim e sobre as coisas que eu trabalho e me interesso** - explorem-o. No nosso primeiro encontro a gente faz uma roda de apresentação também.
 
 ## Entender a visão geral do projeto
-Neste projeto vocês farão um estudo sistemático sobre o efeito da granularidade (resolução espacial) sobre diferentes métricas de fragmentação de paisagens binárias (habitat ou não-habitat).
- 
-Paisagens são representações de vegetação (florestas ou biomas) ou recursos (bióticos ou abióticos) no espaço e são o elemento central da ecologia de paisagens (landscape ecology), que procura entender os processos de mudança das paisagens e do seu efeito sobre populações e comunidades.
+Com o avanço de novas tecnologias de comunicação, o **perfil de contatos e a troca de informação** entre pessoas tem sido fortemente alterado: forte presença de contatos não-locais e a ascensão de "influencers" são duas grandes características das dinâmicas sociais do momento presente. A troca de informações entre indivíduos, fundamental para qualquer sociedade, é extremamente facilitada em redes sociais, como Facebook ou Twitter. 
+**Mas como isso muda a forma que a gente concorda? Você sente que vivemos numa sociedade mais polarizada? Se sim, será que a física pode ajudar a explorar quais fenômenos estão por trás dessa polarização de opiniões?**
 
-Para esse estudo, as paisagens serão geradas artificialmente considerando-se os oito métodos geradores de paisagens mais comuns na literatura e controlando a quantidade de habitat em cada paisagem.
- 
-A proposta é que ao final os alunos geram um relatório sobre as propriedades estatísticas de cada métrica em um grupo de paisagens (definidos pelo método, quantidade de habitat e granularidade). Ao final, busca-se responder quais métricas de fragmentação são mais sensíveis à mudanças na granularidade e em qual direção (e se essa direção é uniforme nos diferentes métodos), quais métodos geradores criam as maiores correlações entre métricas (ou grupos de métricas), e se essas correlações são uniformes no gradiente de habitat. 
+A principal ideia da oficina é fazer a gente pensar sobre **modelagem matemática** da sociedade. Veremos que fenômenos complexos surgem na população em modelos que tem mecanismos baseados nas dinâmicas de troca de informação dos indivíduos - são os chamados **padrões emergentes**. 
 
-Em termos de conhecimentos práticos, os alunos estarão expostos a uma ampla introdução de estatística descritiva e trato de banco de dados, além de uma introdução leve à linguagem R e como armazenar dados no computador. As implicações da importância de saber a estatística de métricas de fragmentação para entender os efeitos do desmatamento e uso agropecuário de terras serão exemplificadas. 
-
-Ao final, os alunos que desejarem continuar serão convidados a produzir um relatório que será convertido pelo monitor em um artigo científico a ser publicado em uma revista internacional de ecologia de paisagens, com a autoria dos alunos.
+Vamos construir um **diagrama de fases** para esquematizar quando observamos uma sociedade de opiniões aleatórias e quanto as ações individuais formam uma **sociedade parcimônica**. Para tanto, a gente vai usar conceitos da **teoria de grafos e redes** e da **ciência da complexidade**, que são duas ciências irmãs e importantíssimas dentro da física e das demais áreas.  
 
 ---
 
-# Dia 1 - Paisagens artificiais 
+# Dia 2 - Redes de contato 
 
-Apresentação do monitor, dos alunos, e do projeto. 
+Apresentação ao tópico de redes e grafos. Discussão sobre as características de redes de contato "antigas" e as recentes. Como modelar os influencers, os contatos não-locais e o aumento da conectividade? Como representar uma rede no computador e introdução ao pacote igraph do R. 
 
 ## Teoria
 
-#### O que são paisagens? E paisagens binárias?
-
-#### Como representar paisagens no computador?
+#### O que são grafos e redes?
 
 
-##### Desafio:
-Quantas paisagens binárias de tamanho 4096x4096 são possíveis?
-Dica: começe pensando quantas paisagens binárias 2x2 existem. Depois, 3x3... e NxN?
+Para saber como a teoria dos grafos começou com o Leonard Euler, assita esse vídeo do **[canal Numberphile](https://www.youtube.com/channel/UCoxcjq-8xIDTYp3uz647V5A)** (um dos canais mais legais do Youtube caso vocês não conheçam...).
+{% include video.html src="https://www.youtube.com/embed/W18FDEA1jRQ" %}
+
+#### Como representar grafos no computador?
+
+
+**Pergunta:**
+Quantos grafos sem peso e adirecionais de 100 vértices são possíveis?
+*Dica:* começe pensando quantos existem com 3 vértices, desenhe eles se preciso for. Depois, 4... e N?
 Para contemplar o quão grande esse número é, compare com o [número de estrelas no universo](http://www.inpe.br/faq/index.php?pai=11#:~:text=Estima%2Dse%20que%20a%20nossa,de%2010%20sextilh%C3%B5es%20de%20estrelas.) e o [número de átomos no universo](https://pt.wikipedia.org/wiki/Universo_observ%C3%A1vel#:~:text=Conte%C3%BAdo%20em%20mat%C3%A9ria,-Representa%C3%A7%C3%A3o%20art%C3%ADstica%20do&text=Dois%20c%C3%A1lculos%20aproximados%20fornecem%20o,em%20torno%20de%201080.).
-Agora compare com o produto dos dois números. 
+E se fosse um grafo direcional?
 
-#### O que são resolução e grão das paisagens?
+## Sociedades
 
-#### Como gerar paisagens artificais no computador?
+#### Os vizinhos 
 
-#### Métodos de Modelos Neutros de Paisagens
- 
+#### O rico fica mais rico
 
-## Tarefas do dia
+Hoje em dia, com o avanço das redes sociais, quem são as pessoas que você segue? Os algoritmos dessas redes vivem sugerindo nomes para você seguir. Concorda que quanto mais seguidores uma pessoa tem, maior a probabilidade desses algoritmos sugerirem essa pessoa? 
 
-Agora que a gente entendeu alguns exemplos (e espero que vocês tenham tentado reproduzir o que foi apresentado até aqui), vamos partir para colocar a mão na massa:
+Esse fenômeno é chamado **adesão preferencial**, isso significa que quanto mais vizinhos vocês tem, maior a probabilidade de você receber novos vizinhos. Esse mecanismo ficou muito famoso pela frase *the rich get richer* - o rico fica mais rico - uma vez que quanto mais dinheiro você tem, mais fácil é ganhar dinheiro (e por isso a gente tem que lutar por programas de distribuição de renda e combate a desigualdade, porque naturalmente ela só aumenta...). 
 
-#### Tarefa 1: Gerar paisagens com um método e compartilhar com os colegas
+Matematicamente, a probabilidade de receber uma nova ligação $P_i$ deve ser proporcional ao grau do vertex $k_i$:
 
-Primeiro, cada um vai escolher um método (cuidado para não repetir) e então gerar **50 paisagens aleatórias 4096 por 4096** com o método escolhido, salvando a **imagem em jpeg** ao final com o nome *nomedométodo_num.jpeg*, para gente saber qual método se trata depois.
+$$P_i \propto k_i^\alpha$$
 
-Depois, vamos fazer o upload na **pasta compartilhada do Drive** com exemplos representativos (digamos três das 50, por exemplo) de uma **pouco fragmentada**, **intermediária**, e **muito fragmentada** - não suba todas as 50 imagens senão ninguém se acha na pasta depois *hahah*! Assim, vocês pode ver as características das paisagens dos métodos dos colegas. Essas também serão imagens legais para ilustrar os slides da apresentação final de vocês.
+Ou seja, quando $\alpha$ vale 1, então um vertex com o dobro de ligações tem o dobro de probabilidade de receber uma nova ligação. Se $\alpha$ valesse 2, então teria 4x maior probabilidade de receber uma ligação. Se $\alpha$ for 0, então todos os novos tem a mesma probabilidade de receber uma ligação (rede aleatória). Portanto, variando $\alpha$ entre 0 e 2, temos uma **rede uniforme** até uma **rede extremamente desigual**, monopolizada por poucos vértices. 
 
-#### Tarefa 2: Classificação visual das paisagens nos diferentes métodos
+Um dos primeiros trabalhos a propor esse mecanismo para explicar a estrutura de várias redes reais, foi o trabalho liderado pelo Barabasi e Albert, por isso esse modelo de rede é chamado de  *[Barabási-Albert model](https://pt.wikipedia.org/wiki/Barab%C3%A1si%E2%80%93Albert_model)*. No paper original de 1999 abaixo, eles mostram esse mecanismo por trás da rede de citação de autores (e.g. quanto mais citações um cientista tem, mais provável que um artigo cite ele), rede WWW e redes elétricas.
 
-A idéia aqui é a gente bolar uma tabela para comentar os **aspectos visuais** de cada paisagem, ou seja, as características de cada método. Quantos mais aspectos, mais rica é a nossa descrição!
+{% include cite.html title="Emergence of scaling in random networks" author="Barábasi, A.L. & Albert, R." journal="Science" year="1999" url="https://doi.org/10.1126/science.286.5439.509" %}
 
-<a href="https://docs.google.com/spreadsheets/d/1l6l4BGrDH1_NhtgDmnfa9gKxV7QWTeaWf3iCbqgxFbU/edit?usp=sharing"><button class="mybutton">Tabela dos aspectos visuais das paisagens</button></a>
----
+Alias, toda a **[homepage do Barabasi](https://barabasi.com/)** é muito legal - e ele tem uns livros incríveis sobre redes.
 
-# Dia 2 - Métricas de fragmentação
+```
+sample_pa(n, power = 1, m = NULL, directed = TRUE)
+```
 
-Seminário sobre métricas de fragmentação: porque há tantas métricas e o que elas medem? Quais os grandes grupos de métricas de fragmentação? Como elas se relacionam? Vamos aprender a calcular dezenas de métricas de fragmentação em cima das paisagens geradas no dia anterior com a biblioteca landscapemetrics. Tema para casa: calcular métricas de fragmentação para diferentes paisagens geradas no dia anterior. 
-
----
-
-# Dia 3 - Descrição e estudos estatísticos
-
-Seminário sobre conceitos básicos de estatística: média, variância, histogramas, distribuição unimodal e bimodal, correlação linear e de ranking (a diferença entre correlação de Pearson e de Spearman), correlogramas. Vamos aprender a graficar as métricas de fragmentação em função da resolução e aprender a interpretar esse gráfico e encontrar alguns coeficientes relevantes para a análise. Vamos aprender a gerar e interpretar um correlograma. Tema para casa: graficar um histograma para cada métrica de fragmentação calculadas no dia anterior, plotar média e variância em função da granularidade, realizar um ajuste linear (os alunos se dividirão e cada um realizará esse tema para num método gerador diferente).
-
-#### Visualização de dados
-
-**histogramas**
-
-#### Estimadores de centralidade
-
-**Média (mean)**
-
-**Mediana (median)**
-
-**Moda**    **unimodal** ou **bimodal**
-
-#### Estimadores de dispersão
-
-**Variância (var)**
-
-**Desvio-padrão (sd)**
-
-**Quantil** 
-O "Quantil 50%" é a mediana!
-""Quantil 25%" se chama quartil. "Quantil 20%" se chama quintil. "Quantil 10%" se chama decil. E "Quantil 1%" se chama percentil. 
-
-**Intervalo interquartil (IIQ)**
-
-#### Estimadores de relação
-
-**Covariância**
-
-**Correlação de Pearson**
-
-**Corelação de Spearman**
-
-
-#### Ajuste de reta
-
-
-#### Ajuste de lei de potência
-
+Para saber mais sobre porque 20% das pessoas mais seguidas nas redes sociais tem 80% das interações, curtam esse vídeo do **[VSauce](https://www.youtube.com/channel/UC6nSFpj9HTCZ5t-N3Rm3-HA)** sobre o Princípio de Pareto.
+{% include video.html src="https://www.youtube.com/embed/fCn8zs912OE" %}
 
 
 ---
 
-# Dia 4 - Revisão de literatura e planejamento
+# Dia 3 - Dinâmica da opinião
 
-Seminário sobre a literatura já existente. Vamos revisar alguns trabalhos já publicados sobre esse tipo de análise. Vamos pensar nos pontos altos e baixos de cada trabalho, e como a nossa análise pode se diferenciar destes pontos. Quais resultados nossos serão inéditos e quais são conhecidos. Como entender os efeitos da granularidade das paisagens afeta o entendimento de como a fragmentação impacta a ecologia e os processos ecológicos. Ao grupo de alunos que desejar continuar o projeto para além da escola, vamos pensar em como podemos dividir os métodos e as coberturas de habitat entre eles a fim de que cada um explore um conjunto amostral diferente de milhares de paisagens geradas artificialmente. 
+
+Vamos trabalhar com opiniões binárias: sim ou não, favorável ou contrário, mais ou menos, bolacha ou biscoito, feijão por cima do arroz ou arroz por cima do feijão. Para simplificar, vamos denominar 0 e 1. 
+
+#### Diagramas de fase
+
+É necessário ter um **parâmetro de ordem**.
+
+
+Existem dois grandes grupos de transições de fases - as de primeira e de segunda ordem. Transições de primeira ordem são descontínuas, um salto, em função do parametro do modelo. O valor do parâmetro que ocorre essa troca de fase é dito **valor crítico** do parâmetro para a transição, geralmente representado por um $^*$. No outro grande grupo o sistema vai continuamente de uma fase para outra, porém a derivada da curva não é contínua. O ponto em que a derivada não é contínua é denominado valor crítico.
+
+{% include image.html image="/projects/ictp-jovens/transicao.png" text="As duas grandes classes de transição de fase" %}
+
+**Pergunta:**
+* Para quais parâmetros do sistema a rede de contatos atinge consenso?
+* Como o aumento da 'teimosia' e do número médio de contatos na rede influencia o estado de consenso?
+* Qual o valor de teimosia crítico e de densidade crítica de contatos?
+* É uma transição de primeiro ou de segunda ordem? Lembra-se do *limite termodinâmico*.
+* Caso haja consenso eventualmente, quanto tempo é necessário para rede atingir consenso?
+---
+
+# Dia 4 - Mundo real, problemas reais
+
+Os alunos serão convidados a pensar sobre a introdução de novos fatores na rede de informações: 
+
+*peso nas conexões,
+*espectro de opiniões,
+*efeito de 'unfriend',
+*duas opiniões correlacionadas,
+*uma 'opinião externa',
+*modularidade na rede,
+*influência assimétrica,
+*efeito das massas,
+*opinião duradoura,
+
+A partir da discussão os alunos devem escolher qual desses ingredientes eles acreditam ser(em) o(s) mais fundamental(is) em nossas interações para adicionar ao modelo básico trabalho. Coletamos propostas de como adicionar o efeito desejado na rede e/ou na dinâmica, e repetiremos as análises anteriores sobre o estado estacionário ser consenso ou polarização: como o efeito escolhido altera as fases do modelo básico? 
+
 
 ---
 
-# Dia 5 - Dicas de escrita e apresentação científicas
+# Dia 5 - Universalidade
 
-Os alunos apresentarão seus resultados de gráficos do tema do dia 3, lembrando que cada aluno apresenta um método diferente e portanto iremos coletivamente discutir as hipóteses de porque observamos cada efeito relatado. Em seguida teremos um momento para discutir a apresentação final do projeto, falando sobre escrita e apresentação científica: o que a apresentação deve conter? O que é e como se escrevem a introdução, metodologia, resultados, conclusões e perspectivas? Como citar outros trabalhos e colocar fonte das imagens? Vamos pensar sobre quais gráficos gerados pelos alunos queremos no nosso relatório final e qual a sequência de informações. 
+Discussão da implementação dos efeitos escolhidos pelos alunos. A proposta agora é perceber que, através do uso de matemática e de redes complexas, é possível unificar problemas em um único framework. Discutir como poderíamos interpretar nossos resultados em termos de campo magnético spin, ao invés de opiniões. Como interpretação em termos de evolução, onde a opinião é vista como um fenótipo/traço da população e o processo de polarização é visto como especiação. A ideia desse dia é os alunos explorarem a generalidade dos resultados que eles encontraram nos últimos quatro dias e pensar na "equivalência matemática" dos diversos processos. Conceito fundamental do dia: sistemas complexos, como dinâmica individual gera padrões coletivos. 
+
+
+Preparem uma apresentção bem legal amanhã - dormir é para os fracos, os legais viram a noite programando! 
+
+{% include image.html image="/projects/ictp-jovens/postergar.jpeg" text="Prazo do trabalho: 5:30<br>Eu enviando o trabalho às 5:29" %}
 
 ---
 
 # Links, referências & conteúdo extra
 
 Vou escrever aqui uma série de links que podem ajudar vocês no processo de construção do conhecimento, aprofundamento das questões tangenciais que a gente vai tratar, e engrandecer a apresentação final de vocês (lembrando que ao longo do próprio texto já tem várias referências interessantes!).
+
+* **Livro** *[Linked: How Everything Is Connected to Everything Else and What It Means for Business, Science, and Everyday Life](https://www.amazon.com.br/Linked-Everything-Connected-Business-Everyday-ebook/dp/B06XC9JM6Y/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=linked&qid=1608582248&sr=8-1)* do Barábasi. 
+* **Livro** *[Bursts: The Hidden Patterns Behind Everything We Do, from Your E-mail to Bloody Crusades](https://www.amazon.com.br/Bursts-Patterns-Everything-mail-Crusades-ebook/dp/B003NX7NBU/ref=pd_sbs_4?pd_rd_w=uENqo&pf_rd_p=dba274c4-9919-41b0-a2f8-76fb24466c03&pf_rd_r=9HBR8Q6VQAQ0RWCVZ40G&pd_rd_r=531ff5b1-82b5-49a8-b122-d0a36f17b533&pd_rd_wg=CJIR7&pd_rd_i=B003NX7NBU&psc=1)* do Barábasi.
+* **Livro** *[Six Degrees: The Science of a Connected Age](https://www.amazon.com.br/Six-Degrees-Science-Connected-English-ebook/dp/B00256Z3B8/ref=pd_sbs_3?pd_rd_w=uENqo&pf_rd_p=dba274c4-9919-41b0-a2f8-76fb24466c03&pf_rd_r=9HBR8Q6VQAQ0RWCVZ40G&pd_rd_r=531ff5b1-82b5-49a8-b122-d0a36f17b533&pd_rd_wg=CJIR7&pd_rd_i=B00256Z3B8&psc=1)* do DJ Watts.
+* Absolutamente qualquer livro do **Leonard Mlodinow**, em especial [O andar do bêbado: Como acaso determina nossas vidas](https://www.amazon.com.br/andar-b%C3%AAbado-acaso-determina-nossas-ebook/dp/B008FPZPRA/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=36CFNKA9C4AJX&dchild=1&keywords=o+andar+do+bebado&qid=1608582438&s=digital-text&sprefix=o+andar+do+%2Cdigital-text%2C325&sr=1-1). 

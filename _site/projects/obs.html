@@ -27,7 +27,16 @@
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
   </script>
 
-
+  <!-- Math equations -->
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      processEscapes: true
+    }
+  });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
   <!-- Use Jekyll SEO plugin -->
   <!-- Begin Jekyll SEO tag v2.6.1 -->
@@ -77,16 +86,17 @@
 <p>This project is fully volunteering and there is no financial interest.</p>
 
 <div class="image-container">
-  <a href="https://covid19br.github.io/" target="_blank">
+<a href="https://covid19br.github.io/" target="_blank">
     <img src="/assets/img/projects/obs/cover.jpg" alt="Avatar" class="image" />
     <div class="overlay">
-      <div class="text">
-        
-          Checkout our website! <i class="fa fa-arrow-right" aria-hidden="true"></i>
-        
+      <div class="text" style="color:">
+        Checkout our website!
+	 <i class="fa fa-arrow-right" aria-hidden="true" style="color:"></i>
       </div>
     </div>
-  </a>
+
+</a>
+
 </div>
 
 <h2 id="how-can-mathematical-concepts-help-us-to-understand-this-pandemic-crisis">How can mathematical concepts help us to understand this pandemic crisis?</h2>

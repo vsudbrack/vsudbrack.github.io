@@ -1,31 +1,16 @@
-{% if include.color %}
+{{ color | default: black }}
+
 <div class="image-container">
-  <a href="{{ include.url }}" target="_blank">
+{% if include.url %}<a href="{{ include.url }}" target="_blank">{% endif %}
     <img src="{{ site.github.url }}/assets/img/{{ include.image }}" alt="Avatar" class="image">
     <div class="overlay">
       <div class="text" style="color:{{include.color}}">
-        {% if include.text %}
-          {{ include.text }} <i class="fa fa-arrow-right" aria-hidden="true" style="color:{{include.color}}"></i>
-        {% else %}
-          No legend <i class="fa fa-arrow-right" aria-hidden="true"></i>
-        {% endif %}
+        {% if include.text %}{{ include.text }}{% endif %}
+	{% if include.url %} <i class="fa fa-arrow-right" aria-hidden="true" style="color:{{include.color}}"></i>{% endif %}
       </div>
     </div>
-  </a>
+
+{% if include.url %}</a>{% endif %}
+
 </div>
-{% else %}
-<div class="image-container">
-  <a href="{{ include.url }}" target="_blank">
-    <img src="{{ site.github.url }}/assets/img/{{ include.image }}" alt="Avatar" class="image">
-    <div class="overlay">
-      <div class="text">
-        {% if include.text %}
-          {{ include.text }} <i class="fa fa-arrow-right" aria-hidden="true"></i>
-        {% else %}
-          No legend <i class="fa fa-arrow-right" aria-hidden="true"></i>
-        {% endif %}
-      </div>
-    </div>
-  </a>
-</div>
-{% endif %}
+
