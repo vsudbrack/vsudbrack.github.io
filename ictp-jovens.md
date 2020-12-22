@@ -73,7 +73,7 @@ Pontos importantes desse vídeo:
 * fazer um loop com for(i in lista){execute}²
 
 ² Esses pontos ele passa voando no vídeo... fiquem tranquilos que a gente pode minuciar esses detalhes juntos. Mas é mais ou menos assim:
-{% include image.html image="/projects/ictp-jovens/loop_for.jpeg" text="for(i in seq(0, 5) {...}" %}
+{% include image.html image="/projects/ictp-jovens/loop_for.jpeg" text="for(i in seq(0, 5)) {...}" %}
 
 É provável que vocês se sintam sobrecarregados de tanta informação! Aprender a programar é um processo longo, na faculdade é quase um semestre, e vocês estão aprendendo o básico em um dia. Então perguntem, pratiquem, mas não se assustem. Aos poucos vocês vão naturalizando esse conhecimento também. 
 
@@ -196,21 +196,28 @@ Existem dois grandes grupos de transições de fases - as de primeira e de segun
 * Qual o valor de teimosia crítico e de densidade crítica de contatos?
 * É uma transição de primeiro ou de segunda ordem? Lembra-se do *limite termodinâmico*.
 * Caso haja consenso eventualmente, quanto tempo é necessário para rede atingir consenso?
+
 ---
 
-# Dia 4 - Mundo real, problemas reais
+# Mundo real, problemas reais
 
-Os alunos serão convidados a pensar sobre a introdução de novos fatores na rede de informações: 
+Hoje é dia de adicionar problemáticas no nosso modelo a fim de deixá-lo mais parecido com a realidade, e os padrões que observamos nele mais parecidos com os padrões que a gente comentou que observa na sociedade.
 
-*peso nas conexões,
-*espectro de opiniões,
-*efeito de 'unfriend',
-*duas opiniões correlacionadas,
-*uma 'opinião externa',
-*modularidade na rede,
-*influência assimétrica,
-*efeito das massas,
-*opinião duradoura,
+Aqui é importante lembrar que **todo modelo é uma aproximação**, não existe um modelo que seja perfeito ou que não possa ser melhorado. Tem uma frase famosa de um estatístico que diz
+
+{% include quote.html text="Essencialmente, todos os modelos estão errados, mas alguns são úteis." author="George Box"%}
+
+A própria palavra **modelo** já carrega um tom de idealização e de simplificação. 
+
+No nosso modelo, podemos pensar sobre a introdução de alguns dos novos fatores abaixo: 
+
+*peso nas conexões: a gente não troca informação com a mesma intensidade com todo mundo;
+*espectro de opiniões: as opiniões não precisam ser binárias, tem pessoas com opiniões fortes, outros mais cautelosos;
+*efeito de 'unfriend': não trocar informação com amigos que tem uma opinião contrária a sua;
+*uma 'força externa' em direção à uma das opiniões, como a mídia, pode fazer as transções 0->1 e 1->0 assimétricas;
+*influência assimétrica, você consome informação muito mais que você informa;
+*efeito das massas, as pessoas 'maria-vai-com-as-outras' que seguem a opinião da maioria;
+*opinião duradoura, uma pessoa que acaba de trocar de opinião é mais provável que a troque também, enquanto uma pessoa que mantém sua opinião há longos tempos tem uma menor probabilidade de trocar de opinião. 
 
 A partir da discussão os alunos devem escolher qual desses ingredientes eles acreditam ser(em) o(s) mais fundamental(is) em nossas interações para adicionar ao modelo básico trabalho. Coletamos propostas de como adicionar o efeito desejado na rede e/ou na dinâmica, e repetiremos as análises anteriores sobre o estado estacionário ser consenso ou polarização: como o efeito escolhido altera as fases do modelo básico? 
 
