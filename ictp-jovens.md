@@ -211,15 +211,18 @@ A própria palavra **modelo** já carrega um tom de idealização e de simplific
 
 No nosso modelo, podemos pensar sobre a introdução de alguns dos novos fatores abaixo: 
 
-*peso nas conexões: a gente não troca informação com a mesma intensidade com todo mundo;
-*espectro de opiniões: as opiniões não precisam ser binárias, tem pessoas com opiniões fortes, outros mais cautelosos;
-*efeito de 'unfriend': não trocar informação com amigos que tem uma opinião contrária a sua;
-*uma 'força externa' em direção à uma das opiniões, como a mídia, pode fazer as transções 0->1 e 1->0 assimétricas;
-*influência assimétrica, você consome informação muito mais que você informa;
-*efeito das massas, as pessoas 'maria-vai-com-as-outras' que seguem a opinião da maioria;
-*opinião duradoura, uma pessoa que acaba de trocar de opinião é mais provável que a troque também, enquanto uma pessoa que mantém sua opinião há longos tempos tem uma menor probabilidade de trocar de opinião. 
+* **Peso nas conexões** pois a gente não troca informação com a mesma intensidade com todo mundo;
+* **Espectro de opiniões**, i.e. as opiniões não precisam ser binárias, tem pessoas com opiniões fortes, outros mais cautelosos;
+* **Efeito de 'unfriend'**: não trocar informação com amigos que tenham uma opinião contrária a sua - ou até mesmo substituir amigos de opinião contrária por pessoas com opinião semelhante;
+* **Fatores externos** em direção à uma das opiniões, como por exemplo a mídia, podem fazer as transções $0\to 1$ e $1\to 0$ não necessariamente equiprováveis;
+* **Influência assimétrica**, ou seja, você consome muito mais informação do que você informa, portanto as relações de troca de informação não são necessariamente simétricas;
+* **Efeito das massas**, e.g. as pessoas 'maria-vai-com-as-outras' que seguem a opinião da maioria;
+* **Efeito de opinião duradoura**, i.e. uma pessoa que acaba de trocar de opinião é mais provável que a troque também, enquanto uma pessoa que mantém sua opinião há longos tempos tem uma menor probabilidade de trocar de opinião. 
 
-A partir da discussão os alunos devem escolher qual desses ingredientes eles acreditam ser(em) o(s) mais fundamental(is) em nossas interações para adicionar ao modelo básico trabalho. Coletamos propostas de como adicionar o efeito desejado na rede e/ou na dinâmica, e repetiremos as análises anteriores sobre o estado estacionário ser consenso ou polarização: como o efeito escolhido altera as fases do modelo básico? 
+# Perguntas
+* Qual desses ingredientes eles acreditam ser(em) o(s) mais fundamental(is) em nossas interações para adicionar ao modelo básico trabalho?
+* Repita as análises anteriores sobre o estado estacionário: como o efeito escolhido altera as fases do modelo básico? 
+* Há o surgimento de novas fases que não observamos antes?
 
 
 ---
