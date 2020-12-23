@@ -5,7 +5,7 @@ subtitle: como informação se espalha na sociedade
 permalink: /ictp-jovens
 ---
 
-Olá, Jovens na Física, 
+Olá Jovens na Física, 
 
 sejam muito bem-vindos e bem-vindas ao nosso projeto/oficina no **[ICTP-SAIFR Jovens na Física 2021](http://outreach.ictp-saifr.org/escolaverao/)**, onde vamos explorar conceitos em **dinâmica de opinião**, **sociofísica** e **sistemas complexos**! 
 
@@ -125,15 +125,13 @@ Vamos construir um **diagrama de fases** para esquematizar quando observamos uma
 
 Apresentação ao tópico de redes e grafos. Discussão sobre as características de redes de contato "antigas" e as recentes. Como modelar os influencers, os contatos não-locais e o aumento da conectividade? Como representar uma rede no computador e introdução ao pacote igraph do R. 
 
-## Teoria
-
-#### O que são grafos e redes?
+## O que são grafos e redes?
 
 
 Para saber como a teoria dos grafos começou com o Leonard Euler, assita esse vídeo do **[canal Numberphile](https://www.youtube.com/channel/UCoxcjq-8xIDTYp3uz647V5A)** (um dos canais mais legais do Youtube caso vocês não conheçam...).
 {% include video.html src="https://www.youtube.com/embed/W18FDEA1jRQ" %}
 
-#### Como representar grafos no computador?
+## Como representar grafos no computador?
 
 
 **Pergunta:**
@@ -178,9 +176,13 @@ Para saber mais sobre porque 20% das pessoas mais seguidas nas redes sociais tem
 # Dinâmica da opinião
 
 
-Vamos trabalhar com opiniões binárias: sim ou não, favorável ou contrário, mais ou menos, bolacha ou biscoito, feijão por cima do arroz ou arroz por cima do feijão. Para simplificar, vamos denominar 0 e 1. 
+A primeira grande simplificação que vamos fazer é trabalhar com opiniões binárias: sim ou não, favorável ou contrário, mais ou menos, bolacha ou biscoito, feijão por cima do arroz ou arroz por cima do feijão. Para simplificar, vamos denominar 0 e 1. 
 
-#### Diagramas de fase
+## Troca de opinião
+
+Agora que temos uma rede de contatos, vamos colocar uma dinâmica de troca de opinião. Para isso, precisamos de um **algoritmo** de troca de opinião, isto é, uma rotina que avança o sistema no tempo. 
+
+## Diagramas de fase
 
 É necessário ter um **parâmetro de ordem**.
 
