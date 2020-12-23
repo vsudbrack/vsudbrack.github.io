@@ -4,10 +4,10 @@ title: About
 permalink: /about/
 ---
 
-![Hello](../assets/img/projects/about/myperfil.jpg){:style="float: right;margin-right: -25px;margin-left: 10px;margin-top: 7px;max-width: 40%;border: 4px solid #c99065;border-radius: 28px "}
+![Hello](../assets/img/projects/about/myperfil.jpg){:style="float: right;margin-right: -25px;margin-left: 25px;margin-top: 7px; margin-bottom: 17px;max-width: 40%;border: 4px solid #c99065;border-radius: 28px "}
 
 
-# Hello,
+## Hello,
 
 **I'm Vítor Sudbrack**, Brazilian scientist, pursuing a Physics Master program at the *Institute of Theoretical Physics (IFT - Unesp)* in São Paulo - SP, Brazil; and currently working at the *Institute for Cross-Disciplinary Physics and Complex Systems (IFISC - UiB)* Palma de Mallorca, Spain, to get a *sandwich degree*. :brazil: :es:
 
@@ -24,7 +24,7 @@ Studying and researching allowed me knowing **many nice people, many interesting
 {% include quote.html author="Lise Meitner" text="I love physics with all my heart.
 It is a kind of personal love, as one has for a person to whom one is grateful for many things." %}
 
-#### My scientific interests
+# My scientific interests
 
 I am mostly **interested** in (macroscopic) *mathematical biology*, for instance modeling **population dynamics, ecological and evolution processes, and complex systems**. Also, I enjoy some mathematical ~~monsters~~ puzzles such as nonlinear differential equations and graph theory. 
 
@@ -39,16 +39,9 @@ I like to think **I create universes on a computer screen...**, but 95% percent 
 {% include image.html url="/assets/docs/projects/mathbio/slidesDDNetworks.pdf" image="projects/mathbio/slides.jpg" text="Fluid - IMPA (2019)" %}
 {% include image.html url="/assets/docs/projects/mathbio/slidesDDNetworks.pdf" image="projects/mathbio/slides.jpg" text="IF - UFRGS (2014)" %} -->
 
-#### About this homepage
+# About this homepage
 
 This is a personal portfolio theme created with Jekyll by [LeNPaul](https://github.com/LeNPaul). You can [check out the demo](https://lenpaul.github.io/portfolio-jekyll-theme/) to see his work. All images in this website are marked with "reuse for non-commercial purposes" CC-licenses. Additional codings are my own (*I really have fun doing these things...*).
 
-*All opinions in this website are my own.*
-
-#### My *Curriculum Vitae*
-
-You can download my detailed *Curriculum Vitae* here:
-
-<a href="../assets/docs/projects/about/cv.pdf"><button class="mybutton">Download my CV here</button></a>
-
+:exclamation: *All opinions in this website are my own*.
 
