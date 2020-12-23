@@ -3,12 +3,27 @@ layout: default
 ---
 
 <section>
+
   <div class="work-container">
+
+{% if page.subtitle %}
+    <h1 class="project-title" style="margin-bottom:0px">{{ page.title }}</h1>
+    <h2 class="project-title" style="margin-top:0px">{{ page.subtitle }}</h2>
+{% else %}
     <h1 class="project-title">{{ page.title }}</h1>
+{% endif %}
+
     <div class="project-load">{{ content }}</div>
   </div>
-  {% if site.data.settings.disqus.comments %}
-    {% include disqus.html %}
-  {% endif %}
+
 </section>
+
+<script src="/assets/js/toc.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#toc').toc({ noBackToTopLinks: 'false' });
+});
+</script>
+
 

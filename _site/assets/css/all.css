@@ -863,8 +863,8 @@ body {
   left: 20%; }
   @media screen and (max-width: 667px) {
     .quote-container {
-      width: 100%;
-      left: 0%; } }
+      width: 90%;
+      left: 5%; } }
 
 .quote {
   background-color: #e5eaee;
@@ -935,3 +935,34 @@ blockquote {
   .rwd-table th, .rwd-table td:before {
     color: #c99065;
     text-align: left; }
+
+#markdown-toc {
+  position: relative;
+  width: 50%;
+  margin-bottom: 20px;
+  left: 20%;
+  padding: 15px 15px 15px 40px;
+  border: 0px solid #c99065;
+  display: block;
+  background-color: #e5eaee;
+  border-radius: 18px;
+  color: #424242; }
+  @media screen and (max-width: 667px) {
+    #markdown-toc {
+      width: 80%;
+      left: 5%; } }
+  #markdown-toc ul {
+    list-style: decimal; }
+  #markdown-toc a:link {
+    color: #424242; }
+  #markdown-toc a:visited {
+    color: #424242; }
+  #markdown-toc a:hover {
+    color: #c99065; }
+  #markdown-toc a:active {
+    color: #424242; }
+  #markdown-toc::before {
+    content: "Jump to ...";
+    font-weight: bold;
+    color: #c99065;
+    font-size: 20px; }

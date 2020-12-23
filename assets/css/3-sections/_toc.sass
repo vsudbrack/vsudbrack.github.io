@@ -1,0 +1,30 @@
+#markdown-toc
+  position: relative
+  width: 50%
+  margin-bottom: 20px 
+  left: 20%
+  @media screen and (max-width: 667px) 
+    width: 80%
+    left: 5%
+  ul
+    list-style: decimal
+  padding: 15px 15px 15px 40px
+  border: 0px solid #c99065
+  display: block
+  background-color: #e5eaee
+  border-radius: 18px
+  color: #424242
+  a
+    &:link
+      color: #424242
+    &:visited
+      color: #424242
+    &:hover
+      color: #c99065
+    &:active
+      color: #424242
+  &::before
+    content: "Jump to ..."
+    font-weight: bold
+    color: #c99065
+    font-size: 20px

@@ -1,30 +1,28 @@
 ---
 layout: post
-title: ICTP-SAIFR Jovens na Física
-permalink: /ictp-jovens/
+title: "Estourando a bolha:"
+subtitle: como informação se espalha na sociedade
+permalink: /ictp-jovens
 ---
 
-## Estourando a bolha: como informação se espalha na sociedade
+Olá, Jovens na Física, 
 
-
-Olás, 
-
-sejam muito bem-vindos e bem-vindas ao nosso projeto/oficina sobre **dinâmica de opinião**, sociofísica e sistemas complexos! 
+sejam muito bem-vindos e bem-vindas ao nosso projeto/oficina no **[ICTP-SAIFR Jovens na Física 2021](http://outreach.ictp-saifr.org/escolaverao/)**, onde vamos explorar conceitos em **dinâmica de opinião**, **sociofísica** e **sistemas complexos**! 
 
 Quero agradecer de coração vocês terem topado o desafio que vai ser essa semana - se preparem para bastante **conhecimento** e venham com o **ânimo** nas alturas e a mente aberta para **curiosidade**.Acima de tudo, a gente tá aqui para se divertir! Trabalhar na física é uma eterna diversão - tem pontos altos e baixos, como qualquer profissão, mas em geral é muito divertido. E nesse ponto é a gente que faz a diversão, né? Então venham animados, mesmo que as coisas não saiam como o esperado (o que é super normal *heheh*).
 
 Então essa semana vocês vão ter um gostinho sobre **como um físico e uma física trabalham**. Para ajudar vocês nessa empreitada (em geral o caminho é mais pedroso *risos nervosos*), eu criei essa página que vai funcionar como uma "wiki" ou um diário do projeto... vou tentar **escrever e roterizar aqui tudo que vocês precisam saber e fazer**, e ao longo da semana nós **discutiremos o conteúdo e a prática juntos nas lives**. 
 
-Quero que vocês se sintam muito a vontade dentro do nosso grupo, e, principalmente, sempre que vocês quiserem perguntar algo, solicitar algo, comentar algo,..., **eu estou sempre a postos para ouví-los, não hesitem**! Os melhores jeitos são via meu email pessoal:
-<a href="mailto:vitorsudbrack@gmail.com"><button class="mybutton">vitorsudbrack@gmail.com</button></a>
+Quero que vocês se sintam muito a vontade dentro do nosso grupo, e, principalmente, sempre que vocês quiserem perguntar algo, solicitar algo, comentar algo,..., **eu estou sempre a postos para ouví-los, não hesitem**! Os melhores jeitos são via meu email pessoal - **[vitorsudbrack@gmail.com](mailto:vitorsudbrack@gmail.com)** - ou a plataforma que usarmos: Slack, Discord, Whatsapp...
 
-ou a plataforma que usarmos: Slack, Discord, Whatsapp...
+A dinâmica da oficina tá previsita em **5 encontros** pela tarde, mas eu estou disponível para conversarmos a qualquer momento. As primeiras duas oficinas, acredito que serão mais expositivas, pois preciso introduzir vocês a linguagem de programação R e o conteúdo que trabalharemos. Depois que vocês pegarem o fio da meada, tenho certeza que vocês mesmos virão com idéias e melhorias ao nosso modelo. E para ajudar vocês a navegar por essa página, aqui está um sumário do conteúdo.
 
-A dinâmica da oficina tá previsita em **5 encontros** pela tarde, mas eu estou disponível para conversarmos a qualquer momento. As primeiras duas oficinas, acredito que serão mais expositivas, pois preciso introduzir vocês a linguagem de programação R e o conteúdo que trabalharemos. Depois que vocês pegarem o fio da meada, tenho certeza que vocês mesmos virão com idéias e melhorias ao nosso modelo. 
+* Table of contents
+{:toc}
 
 ---
 
-# Preâmbulo e aquecimento
+# Preâmbulo
 
 Primeiro dia é o aquecimento... algumas tarefas e leituras para gente se conhecer, vocês conhecerem o tópico, baixarem os programas e pacotes, e programarem. Enfim, aqui vamos deixar as coisas prontas para gente colocar a mão na massa!
 
@@ -123,7 +121,7 @@ Vamos construir um **diagrama de fases** para esquematizar quando observamos uma
 
 ---
 
-# Dia 2 - Redes de contato 
+# Redes de contato 
 
 Apresentação ao tópico de redes e grafos. Discussão sobre as características de redes de contato "antigas" e as recentes. Como modelar os influencers, os contatos não-locais e o aumento da conectividade? Como representar uma rede no computador e introdução ao pacote igraph do R. 
 
@@ -146,7 +144,8 @@ E se fosse um grafo direcional?
 
 ## Sociedades
 
-#### Os vizinhos 
+#### Meus vizinhos e o pequeno-mundo
+
 
 #### O rico fica mais rico
 
@@ -176,7 +175,7 @@ Para saber mais sobre porque 20% das pessoas mais seguidas nas redes sociais tem
 
 ---
 
-# Dia 3 - Dinâmica da opinião
+# Dinâmica da opinião
 
 
 Vamos trabalhar com opiniões binárias: sim ou não, favorável ou contrário, mais ou menos, bolacha ou biscoito, feijão por cima do arroz ou arroz por cima do feijão. Para simplificar, vamos denominar 0 e 1. 
@@ -190,7 +189,7 @@ Existem dois grandes grupos de transições de fases - as de primeira e de segun
 
 {% include image.html image="/projects/ictp-jovens/transicao.png" text="As duas grandes classes de transição de fase" %}
 
-**Pergunta:**
+**Perguntas:**
 * Para quais parâmetros do sistema a rede de contatos atinge consenso?
 * Como o aumento da 'teimosia' e do número médio de contatos na rede influencia o estado de consenso?
 * Qual o valor de teimosia crítico e de densidade crítica de contatos?
@@ -219,22 +218,29 @@ No nosso modelo, podemos pensar sobre a introdução de alguns dos novos fatores
 * **Efeito das massas**, e.g. as pessoas 'maria-vai-com-as-outras' que seguem a opinião da maioria;
 * **Efeito de opinião duradoura**, i.e. uma pessoa que acaba de trocar de opinião é mais provável que a troque também, enquanto uma pessoa que mantém sua opinião há longos tempos tem uma menor probabilidade de trocar de opinião. 
 
-# Perguntas
+**Perguntas:**
 * Qual desses ingredientes eles acreditam ser(em) o(s) mais fundamental(is) em nossas interações para adicionar ao modelo básico trabalho?
-* Repita as análises anteriores sobre o estado estacionário: como o efeito escolhido altera as fases do modelo básico? 
+* Implemente um dos efeitos que considera fundamental e repita as análises anteriores sobre o estado estacionário: como o efeito escolhido altera as fases do modelo básico? 
 * Há o surgimento de novas fases que não observamos antes?
 
 
 ---
 
-# Dia 5 - Universalidade
+# Universalidade
 
 Discussão da implementação dos efeitos escolhidos pelos alunos. A proposta agora é perceber que, através do uso de matemática e de redes complexas, é possível unificar problemas em um único framework. Discutir como poderíamos interpretar nossos resultados em termos de campo magnético spin, ao invés de opiniões. Como interpretação em termos de evolução, onde a opinião é vista como um fenótipo/traço da população e o processo de polarização é visto como especiação. A ideia desse dia é os alunos explorarem a generalidade dos resultados que eles encontraram nos últimos quatro dias e pensar na "equivalência matemática" dos diversos processos. Conceito fundamental do dia: sistemas complexos, como dinâmica individual gera padrões coletivos. 
 
 
-Preparem uma apresentção bem legal amanhã - dormir é para os fracos, os legais viram a noite programando! 
+Preparem uma apresentção bem legal amanhã - dormir é para os fracos, os legais viram a noite programando (*hahah*)! 
 
-{% include image.html image="/projects/ictp-jovens/postergar.jpeg" text="Prazo do trabalho: 5:30<br>Eu enviando o trabalho às 5:29" %}
+Vou deixar aqui algumas **dicas** para guiar vocês na contrução da apresentação de amanhã, mas não hesitem em me mandar quaisquer dúvidas:
+* A apresentação é para ser **em torno de 20 minutos**, isso sigfinica que são necessários **em torno de 15 slides**. Um truque interessante é colocar slides 'escondidos' no final para ajudar vocês nas respostas caso alguém pergunte sobre algo que não estava na apresentação. 
+* Tenham em mente que uma apresentação de projeto científico tem uma **estrutura** de introdução (justificativa + problema), métodos, resultados, discussão, conclusão, agradecimentos (em especial lembrem-se de agradecer aos organizadores da escola) e um último slide de referências. 
+* Lembrem-se de colocar **os créditos e fontes** ao usar citações ou imagens de outros autores. 
+* Sejam **criativos e bem-humorados**... cada apresentador tem seu estilo, mas não pensem que uma apresentação científica é necessariamente vinculada à uma apresentação séria e rígida. 
+* Ensaiem antes - *quem sabe faz ao vivo* em geral não é uma boa idéia.
+
+{% include image.html image="/projects/ictp-jovens/postergar.jpeg" text="Prazo do trabalho: 00:00<br>Eu enviando o trabalho às 23:59" %}
 
 ---
 
