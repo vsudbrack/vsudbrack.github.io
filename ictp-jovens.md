@@ -142,7 +142,30 @@ E se fosse um grafo direcional?
 
 ## Sociedades
 
-#### Meus vizinhos e o pequeno-mundo
+#### Meus vizinhos e o *pequeno mundo*
+
+Uma sociedade totalmente rústica seria permitir a comunicação entre vizinhos.
+
+Para gerar um anel, use a seguinte função da biblioteca *igraph*:
+```
+anel = make_ring(n) ## Gerando um anel de tamanho n
+```
+onde $n$ é o número de vértices no anel. Para plotar um anel, use o *layout* circular
+```
+plot(anel, vertex.size=9, layout=layout_in_circle(anel))
+```
+onde *anel* é o nome da variável que você salvou o grafo anelar. 
+
+Para adicionar ou ligações entre dois vértices, use os operadores de some e substação junto com a função *edge* que diz que o objeto sendo adicionado ou subtraído é uma ligação. Por exemplo,
+```
+anel = anel + edge(25,40) #Adiciona uma ligação entre o nó 25 e 40
+anel = anel - edge(1,2)   #Remove a ligação entre o nó 1 e 2
+```
+e assim você pode adicionar não-localidades. 
+
+Uma **rede *pequeno mundo*** tem muito contatos locais, entre vizinhos, junto com alguns poucos **contatos aleatórios não-locais**. Ela é dita *[pequeno mundo](https://pt.wikipedia.org/wiki/Redes_de_pequeno_mundo) (small world network)*, pois ela representa uma rede de contato em que a distância entre duas pessoas é pequena devido aos 'atalhos' dos contatos não lineares.
+
+{% include image.html image="/projects/ictp-jovens/grafos_1.png" text="Grafo anelar e rede <i>pequeno mundo</i>" %}
 
 
 #### O rico fica mais rico
@@ -163,24 +186,35 @@ Um dos primeiros trabalhos a propor esse mecanismo para explicar a estrutura de 
 
 Alias, toda a **[homepage do Barabasi](https://barabasi.com/)** é muito legal - e ele tem uns livros incríveis sobre redes.
 
+Para gerar redes com adesão preferencial, utlize o seguinte comando do pacote *igraph*:
 ```
 sample_pa(n, power = 1, m = NULL, directed = TRUE)
 ```
+onde $n$ é o tamanho da rede (número de vértices), $power$ é o expoente $\alpha$ da adesão preferencial ($0$ é uma rede aleatória, $1$ é adesão preferencial linear,...), $m$ é o número de ligações que cada nó é adicionado na rede (o produto $nm$ é o número de ligações na rede), e $directed$ é TRUE para grafos direcionados e FALSE para grafos sem deireção. 
 
-Para saber mais sobre porque 20% das pessoas mais seguidas nas redes sociais tem 80% das interações, curtam esse vídeo do **[VSauce](https://www.youtube.com/channel/UC6nSFpj9HTCZ5t-N3Rm3-HA)** sobre o Princípio de Pareto.
-{% include video.html src="https://www.youtube.com/embed/fCn8zs912OE" %}
 
+{% include image.html image="/projects/ictp-jovens/grafos_2.png" text="Grafos com adesão preferencial" %}
 
 ---
 
 # Dinâmica da opinião
 
 
-A primeira grande simplificação que vamos fazer é trabalhar com opiniões binárias: sim ou não, favorável ou contrário, mais ou menos, bolacha ou biscoito, feijão por cima do arroz ou arroz por cima do feijão. Para simplificar, vamos denominar 0 e 1. 
+A primeira grande simplificação que vamos fazer é trabalhar com opiniões binárias: sim ou não, favorável ou contrário, mais ou menos, bolacha ou biscoito, feijão por cima do arroz ou arroz por cima do feijão. 
+
+{% include image.html image="/projects/ictp-jovens/opiniao_binaria.jpeg" text="Exemplos de opiniões binárias" %}
+
+Para abstrair, vamos representar as opiniões como $0$ e $1$. 
 
 ## Troca de opinião
 
-Agora que temos uma rede de contatos, vamos colocar uma dinâmica de troca de opinião. Para isso, precisamos de um **algoritmo** de troca de opinião, isto é, uma rotina que avança o sistema no tempo. 
+Agora que temos uma rede de contatos, vamos colocar uma dinâmica de troca de opinião. Para isso, precisamos de um **algoritmo** de troca de opinião, isto é, uma rotina/receita que avança o sistema no tempo. Por exemplo, para cada passo de tempo:
+
+* Escolha um vertex aleatório na rede.
+* Entra um vizinho aleatório desse vertex.
+* Se ambos compartilham a mesma opinião, nada acontece. Se as opiniões são conflitantes, então com probabilidade $\tau$ o vertex central copia a opinião de seu vizinho. 
+
+**Pergunta:** Quando o primeiro vertex escolhido copia a opinião de um vizinho, a ordem é chamada de *pull*. Se, ao contrário, o vizinho copia a opinião do primeiro vertex escolhido, então a ordem é de *push*. Existe diferença entre o resultado via *pull* ou *push*?
 
 ## Diagramas de fase
 
@@ -254,3 +288,5 @@ Vou escrever aqui uma série de links que podem ajudar vocês no processo de con
 * **Livro** *[Bursts: The Hidden Patterns Behind Everything We Do, from Your E-mail to Bloody Crusades](https://www.amazon.com.br/Bursts-Patterns-Everything-mail-Crusades-ebook/dp/B003NX7NBU/ref=pd_sbs_4?pd_rd_w=uENqo&pf_rd_p=dba274c4-9919-41b0-a2f8-76fb24466c03&pf_rd_r=9HBR8Q6VQAQ0RWCVZ40G&pd_rd_r=531ff5b1-82b5-49a8-b122-d0a36f17b533&pd_rd_wg=CJIR7&pd_rd_i=B003NX7NBU&psc=1)* do Barábasi.
 * **Livro** *[Six Degrees: The Science of a Connected Age](https://www.amazon.com.br/Six-Degrees-Science-Connected-English-ebook/dp/B00256Z3B8/ref=pd_sbs_3?pd_rd_w=uENqo&pf_rd_p=dba274c4-9919-41b0-a2f8-76fb24466c03&pf_rd_r=9HBR8Q6VQAQ0RWCVZ40G&pd_rd_r=531ff5b1-82b5-49a8-b122-d0a36f17b533&pd_rd_wg=CJIR7&pd_rd_i=B00256Z3B8&psc=1)* do DJ Watts.
 * Absolutamente qualquer livro do **Leonard Mlodinow**, em especial [O andar do bêbado: Como acaso determina nossas vidas](https://www.amazon.com.br/andar-b%C3%AAbado-acaso-determina-nossas-ebook/dp/B008FPZPRA/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=36CFNKA9C4AJX&dchild=1&keywords=o+andar+do+bebado&qid=1608582438&s=digital-text&sprefix=o+andar+do+%2Cdigital-text%2C325&sr=1-1). 
+
+{% include image.html image="/projects/ictp-jovens/leitura_ferias.jpg" text="Eu lendo Leonard Mlodinow nas férias =)" %}

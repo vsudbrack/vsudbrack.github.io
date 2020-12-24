@@ -109,7 +109,7 @@
       <li><a href="#o-que-são-grafos-e-redes" id="markdown-toc-o-que-são-grafos-e-redes">O que são grafos e redes?</a></li>
       <li><a href="#como-representar-grafos-no-computador" id="markdown-toc-como-representar-grafos-no-computador">Como representar grafos no computador?</a></li>
       <li><a href="#sociedades" id="markdown-toc-sociedades">Sociedades</a>        <ul>
-          <li><a href="#meus-vizinhos-e-o-pequeno-mundo" id="markdown-toc-meus-vizinhos-e-o-pequeno-mundo">Meus vizinhos e o pequeno-mundo</a></li>
+          <li><a href="#meus-vizinhos-e-o-pequeno-mundo" id="markdown-toc-meus-vizinhos-e-o-pequeno-mundo">Meus vizinhos e o <em>pequeno mundo</em></a></li>
           <li><a href="#o-rico-fica-mais-rico" id="markdown-toc-o-rico-fica-mais-rico">O rico fica mais rico</a></li>
         </ul>
       </li>
@@ -318,7 +318,39 @@ E se fosse um grafo direcional?</p>
 
 <h2 id="sociedades">Sociedades</h2>
 
-<h4 id="meus-vizinhos-e-o-pequeno-mundo">Meus vizinhos e o pequeno-mundo</h4>
+<h4 id="meus-vizinhos-e-o-pequeno-mundo">Meus vizinhos e o <em>pequeno mundo</em></h4>
+
+<p>Uma sociedade totalmente rústica seria permitir a comunicação entre vizinhos.</p>
+
+<p>Para gerar um anel, use a seguinte função da biblioteca <em>igraph</em>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>anel = make_ring(n) ## Gerando um anel de tamanho n
+</code></pre></div></div>
+<p>onde $n$ é o número de vértices no anel. Para plotar um anel, use o <em>layout</em> circular</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>plot(anel, vertex.size=9, layout=layout_in_circle(anel))
+</code></pre></div></div>
+<p>onde <em>anel</em> é o nome da variável que você salvou o grafo anelar.</p>
+
+<p>Para adicionar ou ligações entre dois vértices, use os operadores de some e substação junto com a função <em>edge</em> que diz que o objeto sendo adicionado ou subtraído é uma ligação. Por exemplo,</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>anel = anel + edge(25,40) #Adiciona uma ligação entre o nó 25 e 40
+anel = anel - edge(1,2)   #Remove a ligação entre o nó 1 e 2
+</code></pre></div></div>
+<p>e assim você pode adicionar não-localidades.</p>
+
+<p>Uma <strong>rede <em>pequeno mundo</em></strong> tem muito contatos locais, entre vizinhos, junto com alguns poucos <strong>contatos aleatórios não-locais</strong>. Ela é dita <em><a href="https://pt.wikipedia.org/wiki/Redes_de_pequeno_mundo">pequeno mundo</a> (small world network)</em>, pois ela representa uma rede de contato em que a distância entre duas pessoas é pequena devido aos ‘atalhos’ dos contatos não lineares.</p>
+
+<div class="image-container">
+
+    <img src="/assets/img//projects/ictp-jovens/grafos_1.png" alt="Avatar" class="image" />
+    <div class="overlay">
+      <div class="text" style="color:">
+        Grafo anelar e rede <i>pequeno mundo</i>
+	
+      </div>
+    </div>
+
+
+
+</div>
 
 <h4 id="o-rico-fica-mais-rico">O rico fica mais rico</h4>
 
@@ -349,13 +381,22 @@ E se fosse um grafo direcional?</p>
 
 <p>Alias, toda a <strong><a href="https://barabasi.com/">homepage do Barabasi</a></strong> é muito legal - e ele tem uns livros incríveis sobre redes.</p>
 
+<p>Para gerar redes com adesão preferencial, utlize o seguinte comando do pacote <em>igraph</em>:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sample_pa(n, power = 1, m = NULL, directed = TRUE)
 </code></pre></div></div>
+<p>onde $n$ é o tamanho da rede (número de vértices), $power$ é o expoente $\alpha$ da adesão preferencial ($0$ é uma rede aleatória, $1$ é adesão preferencial linear,…), $m$ é o número de ligações que cada nó é adicionado na rede (o produto $nm$ é o número de ligações na rede), e $directed$ é TRUE para grafos direcionados e FALSE para grafos sem deireção.</p>
 
-<p>Para saber mais sobre porque 20% das pessoas mais seguidas nas redes sociais tem 80% das interações, curtam esse vídeo do <strong><a href="https://www.youtube.com/channel/UC6nSFpj9HTCZ5t-N3Rm3-HA">VSauce</a></strong> sobre o Princípio de Pareto.</p>
-<div class="videoWrapper">
-  
-	<iframe src="https://www.youtube.com/embed/fCn8zs912OE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<div class="image-container">
+
+    <img src="/assets/img//projects/ictp-jovens/grafos_2.png" alt="Avatar" class="image" />
+    <div class="overlay">
+      <div class="text" style="color:">
+        Grafos com adesão preferencial
+	
+      </div>
+    </div>
+
+
 
 </div>
 
@@ -363,11 +404,35 @@ E se fosse um grafo direcional?</p>
 
 <h1 id="dinâmica-da-opinião">Dinâmica da opinião</h1>
 
-<p>A primeira grande simplificação que vamos fazer é trabalhar com opiniões binárias: sim ou não, favorável ou contrário, mais ou menos, bolacha ou biscoito, feijão por cima do arroz ou arroz por cima do feijão. Para simplificar, vamos denominar 0 e 1.</p>
+<p>A primeira grande simplificação que vamos fazer é trabalhar com opiniões binárias: sim ou não, favorável ou contrário, mais ou menos, bolacha ou biscoito, feijão por cima do arroz ou arroz por cima do feijão.</p>
+
+<div class="image-container">
+
+    <img src="/assets/img//projects/ictp-jovens/opiniao_binaria.jpeg" alt="Avatar" class="image" />
+    <div class="overlay">
+      <div class="text" style="color:">
+        Exemplos de opiniões binárias
+	
+      </div>
+    </div>
+
+
+
+</div>
+
+<p>Para abstrair, vamos representar as opiniões como $0$ e $1$.</p>
 
 <h2 id="troca-de-opinião">Troca de opinião</h2>
 
-<p>Agora que temos uma rede de contatos, vamos colocar uma dinâmica de troca de opinião. Para isso, precisamos de um <strong>algoritmo</strong> de troca de opinião, isto é, uma rotina que avança o sistema no tempo.</p>
+<p>Agora que temos uma rede de contatos, vamos colocar uma dinâmica de troca de opinião. Para isso, precisamos de um <strong>algoritmo</strong> de troca de opinião, isto é, uma rotina/receita que avança o sistema no tempo. Por exemplo, para cada passo de tempo:</p>
+
+<ul>
+  <li>Escolha um vertex aleatório na rede.</li>
+  <li>Entra um vizinho aleatório desse vertex.</li>
+  <li>Se ambos compartilham a mesma opinião, nada acontece. Se as opiniões são conflitantes, então com probabilidade $\tau$ o vertex central copia a opinião de seu vizinho.</li>
+</ul>
+
+<p><strong>Pergunta:</strong> Quando o primeiro vertex escolhido copia a opinião de um vizinho, a ordem é chamada de <em>pull</em>. Se, ao contrário, o vizinho copia a opinião do primeiro vertex escolhido, então a ordem é de <em>push</em>. Existe diferença entre o resultado via <em>pull</em> ou <em>push</em>?</p>
 
 <h2 id="diagramas-de-fase">Diagramas de fase</h2>
 
@@ -483,6 +548,21 @@ E se fosse um grafo direcional?</p>
   <li><strong>Livro</strong> <em><a href="https://www.amazon.com.br/Six-Degrees-Science-Connected-English-ebook/dp/B00256Z3B8/ref=pd_sbs_3?pd_rd_w=uENqo&amp;pf_rd_p=dba274c4-9919-41b0-a2f8-76fb24466c03&amp;pf_rd_r=9HBR8Q6VQAQ0RWCVZ40G&amp;pd_rd_r=531ff5b1-82b5-49a8-b122-d0a36f17b533&amp;pd_rd_wg=CJIR7&amp;pd_rd_i=B00256Z3B8&amp;psc=1">Six Degrees: The Science of a Connected Age</a></em> do DJ Watts.</li>
   <li>Absolutamente qualquer livro do <strong>Leonard Mlodinow</strong>, em especial <a href="https://www.amazon.com.br/andar-b%C3%AAbado-acaso-determina-nossas-ebook/dp/B008FPZPRA/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=36CFNKA9C4AJX&amp;dchild=1&amp;keywords=o+andar+do+bebado&amp;qid=1608582438&amp;s=digital-text&amp;sprefix=o+andar+do+%2Cdigital-text%2C325&amp;sr=1-1">O andar do bêbado: Como acaso determina nossas vidas</a>.</li>
 </ul>
+
+<div class="image-container">
+
+    <img src="/assets/img//projects/ictp-jovens/leitura_ferias.jpg" alt="Avatar" class="image" />
+    <div class="overlay">
+      <div class="text" style="color:">
+        Eu lendo Leonard Mlodinow nas férias =)
+	
+      </div>
+    </div>
+
+
+
+</div>
+
 </div>
   </div>
 
