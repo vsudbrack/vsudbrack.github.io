@@ -11,11 +11,11 @@ Trying to be more productive and to have an easier experience with Ubuntu? So, I
 **Alias** is shell command to create nicknames to abbreviate longer commands during a section on your Ubuntu terminal (and here I'm using *Ubuntu 18*, but most commands are simple enough to run in any other version). But because we know that our terminals always run the file *~/.bashrc* of your home folder in the begging of every new session, you can write *aliases* on this file and have them forever! ~~(or until you use someone else's computer and feel totally lost)~~
 
 During any session, you can enter the command line
-```
+```sh
 > alias
 ```
 and it will **show you all valid _aliases_** in your current session. To **add a new alias** to your session (or to your *~/.bashrc*), enter
-```
+```sh
 > alias Shortname='Long Command Line'
 ```
 on your shell (double primes instead of single primes will work just as well).
@@ -27,20 +27,20 @@ I'll list here some of my favorite **aliases** to have on your *~/.bashrc*, you 
 
 #### Navigation
 Let's start **navigating quickly** through the terminal:
-```
+```sh
 > alias ..='cd ..'          #One folder up
 > alias ...='cd ../..'      #Two folders up
 > alias ....='cd ../../..'  #Three folders up
 ```
 and here you can also add 'cd ~/favorite_folders' (remember to use always absolute paths to folders). For exemple, to acess the folder where I mount my External HD, I just type *cdhd* and the alias makes the trick with
-```
+```sh
 > alias cdhd='cd /media/vsud/MyHD'
 ```
 Finally, remember you can always go to your *home folder* with a simple 'cd' (without any argument).
 
 #### Quick use - one letter
 Some command lines are so recurrent that **they deserve one letter**:
-```
+```sh
 > alias l='ls -CF'
 > alias h='history'
 > alias c='clear'
@@ -53,7 +53,7 @@ and now you see how to use alias to **execute multiple commands at the same alia
 
 #### Colors for files
 Add some **colors** to your terminal, and show files and folders variously:
-```
+```sh
 > alias ls='ls --color=auto' #Adds color to your ls in all cases
 > alias la='ls -A'           #List all files and folders in columns (including hidden)
 > alias ll='ls -alFh'        #List all files and folders in rows (including hidden)
@@ -62,12 +62,12 @@ Add some **colors** to your terminal, and show files and folders variously:
 ```
 
 This last example is very insightful to search for extensions you use the most, as in
-```
+```sh
 > alias lcodes="echo 'Python:';ls *.py;echo 'R:';ls *.R;echo 'Gnuplot:';ls *.gp"  #List all .py, .R e .gp separately
 ```
 
 And if you used alias to add flags to one command and maintained the same name of the original command (as we did with 'ls' up here), don't worry: if you ever need the **original command** for some reason, you can always use it by **starting with a backslash**, e.g. '\ls' is the original non-colored 'ls' command. Some other examples are:
-```
+```sh
 > alias dir='dir --color=auto'
 > alias egrep='egrep --color=auto'
 > alias grep='grep --color=auto'
@@ -78,7 +78,7 @@ And if you used alias to add flags to one command and maintained the same name o
 
 #### Quick use - two letters
 Some command lines are very useful and **they deserve two or three letters**:
-```
+```sh
 > alias py='python3'
 > alias ipy='ipython3'
 > alias gp='gnuplot'
@@ -89,7 +89,7 @@ Some command lines are very useful and **they deserve two or three letters**:
 
 #### Github users' best friends
 Aliases make our lives of **add, commit, pull and push** way faster... but be careful - don't use generic commit messages if you work in a collective repository!
-```
+```sh
 > alias gs='git status'
 > alias gl='git pull'
 > alias gp='git push'
@@ -103,7 +103,7 @@ Aliases make our lives of **add, commit, pull and push** way faster... but be ca
 
 #### Control your CPU clocking
 If you have installed *[cpufreq](http://manpages.ubuntu.com/manpages/bionic/man1/cpufreq-set.1.html)* package, you can **control your clocking** and get information with
-```
+```sh
 > alias highclock='sudo cpufreq-set -r -g performance && cpufreq-info'
 > alias lowclock='sudo cpufreq-set -r -g powersave && cpufreq-info'
 ```
@@ -111,21 +111,21 @@ so before running a simulation run *highclock*, and then return to the regular s
 
 #### Log to your remote machines
 You can use it to quickly save the addresses or accesses of servers and remote machines, you can use for instance
-``` 
+```sh
 > alias uni_server='ssh -X debian@186.217.XXX.XX'
 ```
 
 #### Aliases that help clumsy people
 Your common typos can become your helpful aliases: this way you save time from retyping command lines. Some examples:
 
-``` 
+```sh
 > alias pdw='pwd'
 > alias dc='cd' #If you ever need the actual calculator dc, use \dc
 ```
 
 #### Make your own bash scripts 
 Sometimes I had matrices in a file and I wanted to transpose them quickly into a new file. So, I opened a hidden folder *~/.scripts/* in my home folder with an [algorithm](https://stackoverflow.com/questions/1729824/an-efficient-way-to-transpose-a-file-in-bash) in *awk* to transpose files. Finally, I wrote an alias that accesses this 'hidden file’ so that it becomes the simple terminal line *transpose*...
-```
+```sh
 > alias transpose='awk -f ~/.scripts/transpose.awk'
 ```
 and you can do the same using *Bash scripts*, *awk*, *Python*, *C*, and so on, to your most recurrent needs. 

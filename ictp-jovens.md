@@ -9,13 +9,13 @@ Olá Jovens na Física,
 
 sejam muito bem-vindos e bem-vindas ao nosso projeto/oficina no **[ICTP-SAIFR Jovens na Física 2021](http://outreach.ictp-saifr.org/escolaverao/)**, onde vamos explorar conceitos em **dinâmica de opinião**, **sociofísica** e **sistemas complexos**! 
 
-Quero agradecer de coração vocês terem topado o desafio que vai ser essa semana - se preparem para bastante **conhecimento** e venham com o **ânimo** nas alturas e a mente aberta para **curiosidade**.Acima de tudo, a gente tá aqui para se divertir! Trabalhar na física é uma eterna diversão - tem pontos altos e baixos, como qualquer profissão, mas em geral é muito divertido. E nesse ponto é a gente que faz a diversão, né? Então venham animados, mesmo que as coisas não saiam como o esperado (o que é super normal *heheh*).
+Quero agradecer de coração vocês terem topado o desafio que vai ser essa semana - se preparem para bastante **conhecimento** e venham com o **ânimo** nas alturas e a mente aberta para **curiosidade**. Acima de tudo, a gente tá aqui para se divertir! Trabalhar na física é uma eterna diversão - tem pontos altos e baixos, como qualquer profissão, mas em geral é muito divertido. E nesse ponto é a gente que faz a diversão, né? Então venham animados, mesmo que as coisas não saiam como o esperado (o que é super normal *heheh*).
 
-Então essa semana vocês vão ter um gostinho sobre **como um físico e uma física trabalham**. Para ajudar vocês nessa empreitada (em geral o caminho é mais pedroso *risos nervosos*), eu criei essa página que vai funcionar como uma "wiki" ou um diário do projeto... vou tentar **escrever e roterizar aqui tudo que vocês precisam saber e fazer**, e ao longo da semana nós **discutiremos o conteúdo e a prática juntos nas lives**. 
+Então essa semana vocês vão ter um gostinho sobre **como um físico e uma física trabalham**. Para ajudar vocês nessa empreitada (em geral o caminho é mais pedroso *risos nervosos*), eu criei essa página que vai funcionar como uma "wiki" ou um diário do projeto... vou tentar **escrever e roteirizar aqui tudo que vocês precisam saber e fazer**, e ao longo da semana nós **discutiremos o conteúdo e a prática juntos nas lives**. 
 
 Quero que vocês se sintam muito a vontade dentro do nosso grupo, e, principalmente, sempre que vocês quiserem perguntar algo, solicitar algo, comentar algo,..., **eu estou sempre a postos para ouví-los, não hesitem**! Os melhores jeitos são via meu email pessoal - **[vitorsudbrack@gmail.com](mailto:vitorsudbrack@gmail.com)** - ou a plataforma que usarmos: Slack, Discord, Whatsapp...
 
-A dinâmica da oficina tá previsita em **5 encontros** pela tarde, mas eu estou disponível para conversarmos a qualquer momento. As primeiras duas oficinas, acredito que serão mais expositivas, pois preciso introduzir vocês a linguagem de programação R e o conteúdo que trabalharemos. Depois que vocês pegarem o fio da meada, tenho certeza que vocês mesmos virão com idéias e melhorias ao nosso modelo. E para ajudar vocês a navegar por essa página, aqui está um sumário do conteúdo.
+A dinâmica da oficina tá prevista em **5 encontros** pela tarde, mas eu estou disponível para conversarmos a qualquer momento. As primeiras duas oficinas, acredito que serão mais expositivas, pois preciso introduzir vocês a linguagem de programação R e o conteúdo que trabalharemos. Depois que vocês pegarem o fio da meada, tenho certeza que vocês mesmos virão com idéias e melhorias ao nosso modelo. E para ajudar vocês a navegar por essa página, aqui está um sumário do conteúdo.
 
 * Table of contents
 {:toc}
@@ -35,19 +35,19 @@ Você sabe o que é uma linguagem de programação? O porque é importante saber
 Uma discussão interessante sobre o que é uma linguagem de programação, porque é legal a gente saber programar, quais as vantagens de usar o R e o RStudio que usaremos ao longo da semana, está nesse vídeo:
 {% include video.html src="https://www.youtube.com/embed/tfPsmDzS74c" %}
 
-Minha prosposta em ensinar programação para vocês é ser apenas um começo. Quando vocês souberam encaixar mais funções e algoritmos, o que vocês poderão fazer é limitado apenas pela imaginação. A gente costuma brincar que a pergunta não é *se* dá para programar algo, mas sim *como* se programa algo.
+Minha proposta em ensinar programação para vocês é ser apenas um começo. Quando vocês souberam encaixar mais funções e algoritmos, o que vocês poderão fazer é limitado apenas pela imaginação. A gente costuma brincar que a pergunta não é *se* dá para programar algo, mas sim *como* se programa algo.
 
 {% include image.html image="/projects/ictp-jovens/programming_is_easy.jpeg" text="Alguém: programar é fácil<br>Eu: cai fora!" %}
 
-Existem várias técnica muito famosas hoje em dia, uma que ele menciona no vídeo de cima é o *Machine Learning*, que significa ensinar o computador a excutar uma tarefa ou tomar uma decisão, por exemplo. A gente vi passar longe disso, vamos ficar no básico da programação, mas vamos tentar solidificar os conhecimentos para que o caminho até técnicas mais sofisticadas (que estão em **todas** as ciências) seja o mais brando possível. E o R é uma linguagem com um esforço-benefício excelente. Aliás, esse site aqui é feito em R também. 
+Existem várias técnica muito famosas hoje em dia, uma que ele menciona no vídeo de cima é o *Machine Learning*, que significa ensinar o computador a executar uma tarefa ou tomar uma decisão, por exemplo. A gente vi passar longe disso, vamos ficar no básico da programação, mas vamos tentar solidificar os conhecimentos para que o caminho até técnicas mais sofisticadas (que estão em **todas** as ciências) seja o mais brando possível. E o R é uma linguagem com um esforço-benefício excelente. Aliás, esse site aqui é feito em R também. 
 
-Antes de mais nada a gente tem que instalar tanto a **linguagem de programação R** que vamos usar, quanto **RStudio** que é uma interfácie gráfica para facilitar o uso da linguagem. Para isso não tem mistério, é só seguir todos os passos que estõ bem desmiuçados nesse vídeo:
+Antes de mais nada a gente tem que instalar tanto a **linguagem de programação R** que vamos usar, quanto **RStudio** que é uma interface gráfica para facilitar o uso da linguagem. Para isso não tem mistério, é só seguir todos os passos que estõ bem desmiuçados nesse vídeo:
 {% include video.html src="https://www.youtube.com/embed/PWMqxKWHlz4" %}
 
 Agora que temos os programas, vamos nos familiarizar com o R e o RStudio. Aprender as nossas primeiras ferramentas. Assistam esse vídeo aqui de baixo (a partir de 3min20s - antes disse ele mostra o download que vocês já fizeram no outro vídeo mais detalhado...) e **reproduzam** as coisas que ele vai mostrando... então é realmente abrir o RStudio do lado e digitar o que ele mostra, conferir o que o programa retorna, explorar coisas parecidas, etc...
 {% include video.html src="https://www.youtube.com/embed/4j_rtffftzQ?start=200" %}
 
-Ele também vai guiar vocês por todo o RStudio, as várias janelas e as várias abas. A gente vai trabalhar com a forma de arquivos (RScript que ele mostra em 5min28s), pois assim a gente vai salvando nosso processo (é como se fosse um caderno) e excecutando as linhas com *CTRL+Enter*.
+Ele também vai guiar vocês por todo o RStudio, as várias janelas e as várias abas. A gente vai trabalhar com a forma de arquivos (RScript que ele mostra em 5min28s), pois assim a gente vai salvando nosso processo (é como se fosse um caderno) e executando as linhas com *CTRL+Enter*.
 
 Pontos fundamentais da programação que estão nesse vídeo: 
 * operações matemáticas (+,-,*,/,^(potência),<(maior),==(igual),...)
@@ -80,11 +80,11 @@ Pontos importantes desse vídeo:
 Pacotes são conjuntos de funções que pesquisadores desenvolveram e disponibilizaram para outros pesquisadores e cientistas usarem. O lema da programação é **dividir para conquistar**, isso significa que a gente pode quebrar problemas grandes em problemas menores, e juntar a solução dos menores... 
 
 Agora a gente vai instalar o pacote que usaremos para trabalhar e visualizar com **grafos**. Execute essa linha no terminal do RStudio de vocês (normal demorar um pouquinho para instalar tudo):
-```
+```r
 install.packages('igraph', dependencies = TRUE)
 ```
 Nós colocamos esse argumento da função chamado 'dependencies' como verdadeiro, pois assim ele instala todos os pacotes que esses pacotes precisam para executar juntos (sim, pacotes usam pacotes... dividir para conquistar!). Antes de usar as funções de um pacote, a gente precisa carregar ele com a função *library()*, digite
-```
+```r
 library(igraph)
 ```
 
@@ -100,7 +100,7 @@ Não precisa ler a documentação agora, mas saibam que ela está lá e se surgi
 
 ## Me mandar um email de apresentação
 
-Outra tarefa impotantíssima de vocês será **escrever um email de apresentação**! Para mim é muito importante entender mais quem vocês são para eu posso organizar nossas tarefas e nosso grupo de forma que seja mais legal para vocês :)
+Outra tarefa importantíssima de vocês será **escrever um email de apresentação**! Para mim é muito importante entender mais quem vocês são para eu posso organizar nossas tarefas e nosso grupo de forma que seja mais legal para vocês :)
 
 Além das coisas básicas, como onde mora e estuda, quais os seus interesses em física, em matemática, em informática, pontos que se considera forte e que pode melhorar, experiências de trabalhar em grupo,..., lembrem também de mencionar:
 * sistema operacional do computador de vocês e a informação que tive sobre ele - mémoria RAM, se é notebook ou desktop, processador,...;
@@ -138,15 +138,15 @@ Eles podem ser pensados matematicamente como dois conjuntos: um conjunto de **v�
 
 #### História 
 
-Para saber como a teoria dos grafos começou com o Leonard Euler, assita esse vídeo do **[canal Numberphile](https://www.youtube.com/channel/UCoxcjq-8xIDTYp3uz647V5A)** (um dos canais mais legais do Youtube caso vocês não conheçam...).
+Para saber como a teoria dos grafos começou, com um dos mais geniais matemáticos e físicos que já pisou na Terra, o Leonard Euler, assista esse vídeo do **[canal Numberphile](https://www.youtube.com/channel/UCoxcjq-8xIDTYp3uz647V5A)** (um dos canais mais legais do Youtube caso vocês não conheçam...).
 {% include video.html src="https://www.youtube.com/embed/W18FDEA1jRQ" %}
 
 
-##### Rede aleatória
+#### Rede aleatória
 
 A **rede aleatória é uma rede sem nenhuma estrutura**. 
 Para gerar uma rede aleatória com 25 vértices e 20% de ligações distribuídas aleatoriamente pelos vértices, use
-```
+```r
 random = sample_gnp(25, 0.2)
 ```
 
@@ -155,81 +155,81 @@ random = sample_gnp(25, 0.2)
 #### Vértices
 
 Vértices possuem um **grau**. 
-```
+```r
 degree(rede)
 ```
 
 Uma geodésica entre dois vértices é o menor caminho que liga eles.
-```
+```r
 all_shortest_paths(rede, from = 17, to = 24) # Geodésica(s) entre 17 e 24
 ```
 Uma **centralidade** ou **betweenness**.
 A centralidade de um vértice é proporcional ao número de geodésicas (caminhos mais curtos) que passam por esse vértice conectando dois vértices quaisquer da rede.
-```
+```r
 betweenness(rede)
 ```
 A **proximidade** mede quantas ligações são necessárias para acessar todos os outros vértices a partir de um determinado vértice.
-```
+```r
 closeness(rede)
 ```
 
 #### Ligações
 
 A **densidade de ligações** é a fração 
-```
+```r
 edge_density(rede)
 ```
 
 Um **triângulo** é um ciclo de três vértices, $a\to b\to c\to a$
-```
+```r
 triangles(rede) # Fornece uma lista de trios
 count_triangles(rede) # Fornece o número de triângulos que cada vértice participa
 ```
 
 Um **clique** é um conjunto de nós completamente ligados
-```
+```r
 cliques(rede, min=3) # Retorna todos os cliques com 3 ou mais vértices
 largest_cliques(rede) # Retorna o maior clique da rede
 ```
 O oposto de um clique é um **conjunto de vértices independentes (IVS)**, 
-```
+```r
 largest_ivs(rede) # O maior IVS
-independence.number(a) # Tamanho do maior IVS
+independence.number(rede) # Tamanho do maior IVS
 ```
 
 #### Rede
 
 Distribuição de **grau**.
-```
+```r
 plot(0:max(degree(rede)),degree_distribution(rede), type = 'h', lwd=3, col ="blue", xlab="Grau", ylab="Frequência", main="Distribuição de grau") # Em escala linear
 plot(0:max(degree(rede)), degree_distribution(rede), type = 'l', lwd=3, col ="red", xlab="Grau", ylab="Frequência", main="Distribuição de grau", log = "xy") # Em escala log
 ```
 
 Um grafo tem uma **distância média** entre vértices, que nos diz o quão fácil é caminhar pelo vértices em média, ligando-os por suas geodésicas, e também tem um **diâmetro** que é o tamanho da maior geodésica:
-```
+```r
 mean_distance(rede)
 diameter(rede)
 ```
 
 A **transitividade** (ou *coeficiente de clustering*) mede a probabilidade que dois vértices vizinhos de um terceiro vértice sejam vizinhos entre si. Ela esta relacionada com o número de triângulos da rede.
-```
+```r
 transitivity(rede) # A transitividade média da rede
 transitivity(aa, type='local') # A transitividade de cada vértice
 ```
 
 A **assortatividade** da rede
-```
+```r
 assortativity_degree(rede)
 ```
-quando a assortatividade é negativa, significa que vértices de grau alto estão ligados com vértices de grau baixo (graus anticorrelacionados). Quando a assortatividade é positiva, significa que vértices de grau alto estão ligados aos vértices de grau alto (graus correlacionados). Assortatividades próximas de zero significam ausência dessa estrutura. 
+quando a assortatividade é negativa, significa que vértices de grau alto estão ligados com vértices de grau baixo (graus anti-correlacionados). Quando a assortatividade é positiva, significa que vértices de grau alto estão ligados aos vértices de grau alto (graus correlacionados). Assortatividades próximas de zero significam ausência dessa estrutura. 
 Para ver o grau médio dos vizinhos de cada grau ($knn$) e a média do grau médio dos vizinhos entre os vértices de grau k ($knnk$), use
-```
+```r
 knn(rede)
 plot(unlist(knn(a)[2]), xlab="Grau", ylab="Grau médio dos vizinhos", main="Assortatividade", col = "darkgreen", pch=16) # Plot de assortatividade
 ```
 
-Muitas redes consistem em módulos densamente conectados entre si, mas escassamente conectados a outros módulos. Essa é a **modularidade** da rede, e tentar encontrar essas *subredes*, chamadas de módulos, dentro da rede principal, é uma tarefa árdua, existem vários métodos. Um deles é o seguinte,
-```
+Muitas redes consistem em módulos densamente conectados entre si, mas escassamente conectados a outros módulos. Essa é a **modularidade** da rede, e tentar encontrar essas *sub-redes*, também chamadas de módulos, dentro da rede principal, é uma tarefa árdua, existem vários métodos. Um deles é o seguinte,
+```r
 ceb = cluster_edge_betweenness(rede) # Classifica em módulos pela conectância entre vértices
 dendPlot(ceb)   # Visualizar o dendrograma de módulos
 plot(ceb, rede) # Visualizar os módulos na rede
@@ -256,19 +256,19 @@ A gente conheceu as redes aleatórias, aquelas que não tem nenhum estrutura. Ma
 Uma sociedade totalmente rústica seria permitir a comunicação entre vizinhos.
 
 Para gerar um anel, use a seguinte função da biblioteca *igraph*:
-```
+```r
 anel = make_ring(n) ## Gerando um anel de tamanho n
 ```
 onde $n$ é o número de vértices no anel. Para plotar um anel, use o *layout* circular
-```
+```r
 plot(anel, vertex.size=9, layout=layout_in_circle(anel))
 ```
 onde *anel* é o nome da variável que você salvou o grafo anelar. 
 
 #### O *pequeno mundo*
 
-Para adicionar ou ligações entre dois vértices, use os operadores de some e substação junto com a função *edge* que diz que o objeto sendo adicionado ou subtraído é uma ligação. Por exemplo,
-```
+Para adicionar ou ligações entre dois vértices, use os operadores de some e subtração junto com a função *edge* que diz que o objeto sendo adicionado ou subtraído é uma ligação. Por exemplo,
+```r
 anel = anel + edge(25,40) #Adiciona uma ligação entre o nó 25 e 40
 anel = anel - edge(1,2)   #Remove a ligação entre o nó 1 e 2
 ```
@@ -277,8 +277,8 @@ e assim você pode adicionar não-localidades.
 Uma **rede *pequeno mundo*** tem muito contatos locais, entre vizinhos, junto com alguns poucos **contatos aleatórios não-locais**. Ela é dita *[pequeno mundo](https://pt.wikipedia.org/wiki/Redes_de_pequeno_mundo) (small world network)*, pois ela representa uma rede de contato em que a distância entre duas pessoas é pequena devido aos 'atalhos' dos contatos não lineares.
 
 Para gerar uma rede pequeno mundo
-```
-sample_smallworld(1, 25, 1, 0.05) # Um anel com 5% das ligações aleatoriezadas
+```r
+sample_smallworld(1, 25, 1, 0.05) # Um anel com 5% das ligações aleatórias
 ```
 
 {% include image.html image="/projects/ictp-jovens/grafos_1.png" text="Grafo anelar e rede <i>pequeno mundo</i>" %}
@@ -286,7 +286,7 @@ sample_smallworld(1, 25, 1, 0.05) # Um anel com 5% das ligações aleatoriezadas
 #### O látice
 
 Uma generalização do anel é o chamado **látice**. É um exemplo de **grafos regular**, ou seja, todos os vértices (ou quase todos excluindo a borda) são idênticos em termos de ligação. Para fazer látices, use:
-```
+```r
 lat = make_lattice(c(5,5), dim = 2)
 lat_torus = make_lattice(c(5,5), dim = 2, circular = T)
 ```
@@ -294,10 +294,10 @@ lat_torus = make_lattice(c(5,5), dim = 2, circular = T)
 {% include image.html image="/projects/ictp-jovens/grafos_lats.png" text="Grafos regulares (látices)" %}
 
 Para fazer uma pequeno mundo em cima de um látice bidimensional 5 por 5, use
-```
+```r
 sample_smallworld(2, 5, 1, 0.05)
 ```
-para aleatoriezar 5% das ligações regulares.
+para randomizar 5% das ligações regulares.
 
 #### E a adesão preferencial: *o rico fica mais rico*
 
@@ -309,7 +309,7 @@ Matematicamente, a probabilidade de receber uma nova ligação $P_i$ deve ser pr
 
 $$P_i \propto k_i^\alpha$$
 
-Ou seja, quando $\alpha$ vale 1, então um vertex com o dobro de ligações tem o dobro de probabilidade de receber uma nova ligação. Se $\alpha$ valesse 2, então teria 4x maior probabilidade de receber uma ligação. Se $\alpha$ for 0, então todos os novos tem a mesma probabilidade de receber uma ligação (rede aleatória). Portanto, variando $\alpha$ entre 0 e 2, temos uma **rede uniforme** até uma **rede extremamente desigual**, monopolizada por poucos vértices. 
+Ou seja, quando $\alpha$ vale 1, então um vertex com o dobro de ligações tem o dobro de probabilidade de receber uma nova ligação. Se $\alpha$ valesse 2, então teria 4x maior probabilidade de receber uma ligação. Se $\alpha$ for 0, então todos os vértices têm a mesma probabilidade de receber uma ligação, e eles diferem apenas pelo 'tempo' em que foram adicionados na rede ($\alpha=0$ é chamada **rede exponencial**). Portanto, quanto maior o $\alpha$, mais **desigual e heterogênia** a rede se torna, sendo monopolizada por poucos vértices. 
 
 Um dos primeiros trabalhos a propor esse mecanismo para explicar a estrutura de várias redes reais, foi o trabalho liderado pelo Barabasi e Albert, por isso esse modelo de rede é chamado de  *[Barabási-Albert model](https://pt.wikipedia.org/wiki/Barab%C3%A1si%E2%80%93Albert_model)*. No paper original de 1999 abaixo, eles mostram esse mecanismo por trás da rede de citação de autores (e.g. quanto mais citações um cientista tem, mais provável que um artigo cite ele), rede WWW e redes elétricas.
 
@@ -318,7 +318,7 @@ Um dos primeiros trabalhos a propor esse mecanismo para explicar a estrutura de 
 Alias, toda a **[homepage do Barabasi](https://barabasi.com/)** é muito legal - e ele tem uns livros incríveis sobre redes.
 
 Para gerar redes com adesão preferencial, utlize o seguinte comando do pacote *igraph*:
-```
+```r
 sample_pa(n, power = 1, m = NULL, directed = TRUE)
 ```
 onde $n$ é o tamanho da rede (número de vértices), $power$ é o expoente $\alpha$ da adesão preferencial ($0$ é uma rede aleatória, $1$ é adesão preferencial linear,...), $m$ é o número de ligações que cada nó é adicionado na rede (o produto $nm$ é o número de ligações na rede), e $directed$ é TRUE para grafos direcionados e FALSE para grafos sem deireção. 

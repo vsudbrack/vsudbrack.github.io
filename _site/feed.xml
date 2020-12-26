@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-26T20:48:21+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Vitor Sudbrack</title><subtitle>The personal homepage of Vitor Sudbrack</subtitle><author><name>Vitor Sudbrack</name></author><entry><title type="html">A colorful terminal for scientists</title><link href="http://localhost:4000/page/update/coloring_terminal.html" rel="alternate" type="text/html" title="A colorful terminal for scientists" /><published>2020-11-10T00:00:00+01:00</published><updated>2020-11-10T00:00:00+01:00</updated><id>http://localhost:4000/page/update/coloring_terminal</id><content type="html" xml:base="http://localhost:4000/page/update/coloring_terminal.html">&lt;p&gt;Make your experience navigating in your files through the terminal nicer coloring your different types of files (folders, datasets, codes, …) with this simple tutorial.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-26T23:03:03+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Vitor Sudbrack</title><subtitle>The personal homepage of Vitor Sudbrack</subtitle><author><name>Vitor Sudbrack</name></author><entry><title type="html">A colorful terminal for scientists</title><link href="http://localhost:4000/page/update/coloring_terminal.html" rel="alternate" type="text/html" title="A colorful terminal for scientists" /><published>2020-11-10T00:00:00+01:00</published><updated>2020-11-10T00:00:00+01:00</updated><id>http://localhost:4000/page/update/coloring_terminal</id><content type="html" xml:base="http://localhost:4000/page/update/coloring_terminal.html">&lt;p&gt;Make your experience navigating in your files through the terminal nicer coloring your different types of files (folders, datasets, codes, …) with this simple tutorial.&lt;/p&gt;
 
 &lt;p&gt;Here you can see, for instance, blue background for folders, green background for code files and pink background for data files - easy to spot each of them:&lt;/p&gt;
 
@@ -17,32 +17,32 @@
 &lt;p&gt;So if you open the original file &lt;em&gt;~/.dircolors&lt;/em&gt;, from &lt;a href=&quot;https://github.com/arcticicestudio/nord-dircolors/blob/develop/src/dir_colors&quot;&gt;nord-dircolors&lt;/a&gt; or whatever base you’ll prefer to work on, you’ll see extensions of files and numbers. I’ll briefly explain the meaning of each number that belongs to the triple you see separated by a semicolon:&lt;/p&gt;
 
 &lt;p&gt;The first number is for formatting the text:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;00     to restore default color
-01     for bold text
-04     for underlined text
-05     for flashing text
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;00     &lt;span class=&quot;c&quot;&gt;#to restore default color&lt;/span&gt;
+01     &lt;span class=&quot;c&quot;&gt;#for bold text&lt;/span&gt;
+04     &lt;span class=&quot;c&quot;&gt;#for underlined text&lt;/span&gt;
+05     &lt;span class=&quot;c&quot;&gt;#for flashing text&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;The second stands for choosing the letter-color of the text:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;30     for black letters
-31     for red letters
-32     for green letters
-33     for yellow (or brown) letters
-34     for blue letters
-35     for purple letters
-36     for cyan letters
-37     for white (or gray) letters
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;30     &lt;span class=&quot;c&quot;&gt;#for black letters&lt;/span&gt;
+31     &lt;span class=&quot;c&quot;&gt;#for red letters&lt;/span&gt;
+32     &lt;span class=&quot;c&quot;&gt;#for green letters&lt;/span&gt;
+33     &lt;span class=&quot;c&quot;&gt;#for yellow (or brown) letters&lt;/span&gt;
+34     &lt;span class=&quot;c&quot;&gt;#for blue letters&lt;/span&gt;
+35     &lt;span class=&quot;c&quot;&gt;#for purple letters&lt;/span&gt;
+36     &lt;span class=&quot;c&quot;&gt;#for cyan letters&lt;/span&gt;
+37     &lt;span class=&quot;c&quot;&gt;#for white (or gray) letters&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Finally, the last one indicates the background-color of the text:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;40     for black background
-41     for red background
-42     for green background
-43     for yellow (or brown) background
-44     for blue background
-45     for pink (or purple) background
-46     for cyan background
-47     for white (or gray) background
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;40     &lt;span class=&quot;c&quot;&gt;#for black background&lt;/span&gt;
+41     &lt;span class=&quot;c&quot;&gt;#for red background&lt;/span&gt;
+42     &lt;span class=&quot;c&quot;&gt;#for green background&lt;/span&gt;
+43     &lt;span class=&quot;c&quot;&gt;#for yellow (or brown) background&lt;/span&gt;
+44     &lt;span class=&quot;c&quot;&gt;#for blue background&lt;/span&gt;
+45     &lt;span class=&quot;c&quot;&gt;#for pink (or purple) background&lt;/span&gt;
+46     &lt;span class=&quot;c&quot;&gt;#for cyan background&lt;/span&gt;
+47     &lt;span class=&quot;c&quot;&gt;#for white (or gray) background&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;But notice that they are all different, so actually the order doesn’t matter here (01;30;40 would be the same as 40;01;30). I’ll keep the order just to be easier to read our alterations. The “actual” colors depend on the palette of colors of your terminal (and you can alter it opening a terminal, and &lt;em&gt;Edit&amp;gt;Preferences&amp;gt;Profile&amp;gt;Colors&lt;/em&gt;). In the picture I showed before, I’m using ‘system theme’ of Ubuntu 18.04 and the palette &lt;strong&gt;Solarized&lt;/strong&gt;. (Another hint since you opened this tab is changing the &lt;strong&gt;cursor shape&lt;/strong&gt; from &lt;em&gt;box&lt;/em&gt; to &lt;em&gt;underline&lt;/em&gt;).&lt;/p&gt;
@@ -50,53 +50,53 @@
 &lt;h2 id=&quot;editing-the-colors&quot;&gt;Editing the colors&lt;/h2&gt;
 
 &lt;p&gt;In your &lt;em&gt;~/.bashrc&lt;/em&gt;, you have to add a couple of lines to tell the terminal to search for a file called &lt;em&gt;~/.dircolors&lt;/em&gt;, and if existent, to use it as your default coloring. If it doesn’t have this block of text, add it there:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors &amp;amp;&amp;amp; eval &quot;$(dircolors -b ~/.dircolors)&quot; || eval &quot;$(dircolors -b)&quot;
-    alias ls='ls --color=auto'
-    alias dir='dir --color=auto'
-    alias vdir='vdir --color=auto'
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-x&lt;/span&gt; /usr/bin/dircolors &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then
+    &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;test&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; ~/.dircolors &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;eval&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;dircolors&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; ~/.dircolors&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;eval&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;dircolors&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;alias ls&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'ls --color=auto'&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;alias dir&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'dir --color=auto'&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;alias vdir&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'vdir --color=auto'&lt;/span&gt;
 
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
-fi
+    &lt;span class=&quot;nb&quot;&gt;alias grep&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'grep --color=auto'&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;fgrep&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'fgrep --color=auto'&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;egrep&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'egrep --color=auto'&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;fi&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Here, we wrote in our &lt;em&gt;~/.bashrc&lt;/em&gt; some &lt;strong&gt;aliases&lt;/strong&gt; so that the commands actually use the colors… if you don’t know what they do, maybe you’ll enjoy this older post &lt;strong&gt;&lt;a href=&quot;/page/update/tips_for_alias.html&quot;&gt;Creating &lt;em&gt;aliases&lt;/em&gt; on Ubuntu&lt;/a&gt;&lt;/strong&gt;, there I listed several other examples.&lt;/p&gt;
 
 &lt;p&gt;In your &lt;em&gt;~/.dircolors&lt;/em&gt; file (the one you download from &lt;a href=&quot;https://github.com/arcticicestudio/nord-dircolors/blob/develop/src/dir_colors&quot;&gt;nord-dircolors&lt;/a&gt; or other source), first change your folders to bold white-letters in blue-background, altering the line that starts with DIR to&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;DIR 01;37;44
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;DIR 01&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;37&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;44
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Then, add at the bottom of the file the extension of your codes (and here are listed my most used extensions, feel free to add yours!) to bold white-letter with green-background, for instance:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#+--- Codes ---+
-.py 01;37;42
-.R 01;37;42
-.Rmd 01;37;42
-.gp 01;37;42
-.md 01;37;42
-.m 01;37;42
-.c 01;37;42
-.cpp 01;37;42
-.html 01;37;42
-.sh 01;37;42
-.awk 01;37;42
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#+--- Codes ---+&lt;/span&gt;
+.py 01&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;37&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;42
+.R 01&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;37&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;42
+.Rmd 01&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;37&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;42
+.gp 01&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;37&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;42
+.md 01&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;37&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;42
+.m 01&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;37&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;42
+.c 01&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;37&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;42
+.cpp 01&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;37&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;42
+.html 01&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;37&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;42
+.sh 01&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;37&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;42
+.awk 01&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;37&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;42
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;And, after that, add your datasets and sheets extensions to bold white-letter in red-background:&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#+--- Datasets and sheets ---+
-.txt 01;37;45
-.dat 01;37;45
-.foo 01;37;45
-.csv 01;37;45
-.npy 01;37;45
-.npz 01;37;45
-.xls 01;37;45
-.xlsx 01;37;45
-.odt 01;37;45
-.ott 01;37;45
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#+--- Datasets and sheets ---+&lt;/span&gt;
+.txt 01&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;37&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;45
+.dat 01&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;37&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;45
+.foo 01&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;37&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;45
+.csv 01&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;37&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;45
+.npy 01&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;37&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;45
+.npz 01&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;37&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;45
+.xls 01&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;37&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;45
+.xlsx 01&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;37&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;45
+.odt 01&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;37&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;45
+.ott 01&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;37&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;45
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Probably by now you got the idea of how to add extensions to this list in a colorful way! Be creative to what serves you best :smile:&lt;/p&gt;
@@ -114,23 +114,23 @@ fi
 &lt;p&gt;&lt;strong&gt;Crontab is a mechanism to schedule the execution of command lines with specific frequencies&lt;/strong&gt;. For instance, if you run a program everyday, you can add it to your crontab and the computer will run it automatically everyday (as long as the computer is on). Sounds like magic to your ears, doesn’t it? Yes, it will save you lots of work.&lt;/p&gt;
 
 &lt;p&gt;During any terminal session, you can enter the command line&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; crontab -l
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; crontab &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;and it will &lt;strong&gt;show you all scheduled commands&lt;/strong&gt; for your user (each user has different &lt;em&gt;crontab&lt;/em&gt;s).&lt;/p&gt;
 
 &lt;h4 id=&quot;how-to-edit-it&quot;&gt;How to edit it&lt;/h4&gt;
 
 &lt;p&gt;When &lt;strong&gt;adding new commands&lt;/strong&gt; to your &lt;em&gt;crontab&lt;/em&gt;, keep in mind that it is not an ordinary text file (like &lt;em&gt;~/.bashrc&lt;/em&gt;, and so on) and it cannot be edited by regular text editors (like Gedit, Emacs,…). To edit it, enter the crontab command with the flag ‘-e’ for editing,&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; crontab -e
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; crontab &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;on your shell. It will probably ask you for a text editor of your choice, and then you proceed from there as you write to regular files.  At this point, the text editor will open your &lt;em&gt;crontab&lt;/em&gt; and you will see the following syntax (so-called &lt;em&gt;Crontab Macros&lt;/em&gt;):&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@yearly    #Run once a year  (at 0a.m. of January 1st)
-@monthly   #Run once a month (at 0a.m. of the 1st day)
-@weekly	   #Run once a week  (at 0a.m. of Sunday)
-@daily     #Run once a day   (at 0a.m.)
-@hourly	   #Run once an hour at the beginning of the hour
-@reboot	   #Run at startup
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@yearly    &lt;span class=&quot;c&quot;&gt;#Run once a year  (at 0a.m. of January 1st)&lt;/span&gt;
+@monthly   &lt;span class=&quot;c&quot;&gt;#Run once a month (at 0a.m. of the 1st day)&lt;/span&gt;
+@weekly	   &lt;span class=&quot;c&quot;&gt;#Run once a week  (at 0a.m. of Sunday)&lt;/span&gt;
+@daily     &lt;span class=&quot;c&quot;&gt;#Run once a day   (at 0a.m.)&lt;/span&gt;
+@hourly	   &lt;span class=&quot;c&quot;&gt;#Run once an hour at the beginning of the hour&lt;/span&gt;
+@reboot	   &lt;span class=&quot;c&quot;&gt;#Run at startup&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;Therefore, you basically &lt;strong&gt;enter in every line a frequency with one Crontab Macro, and one command to be run.&lt;/strong&gt; The examples in the next section you’ll help you understand it, make sure you check them out before editing.&lt;/p&gt;
 
@@ -150,17 +150,17 @@ fi
 &lt;h4 id=&quot;run-codes-every-day&quot;&gt;Run codes every day&lt;/h4&gt;
 
 &lt;p&gt;Everyday you can &lt;strong&gt;clear your cache files that are celebrating birthday&lt;/strong&gt;, ie. that are 1-year old. With this simple line in your &lt;em&gt;crontab&lt;/em&gt;, you will remove all files within &lt;em&gt;~/.cache&lt;/em&gt; whose last modification date is more than 365 days ago.&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@daily chronic find ~/.cache -depth -type f -mtime +365 -delete
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@daily chronic find ~/.cache &lt;span class=&quot;nt&quot;&gt;-depth&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-type&lt;/span&gt; f &lt;span class=&quot;nt&quot;&gt;-mtime&lt;/span&gt; +365 &lt;span class=&quot;nt&quot;&gt;-delete&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;This will avoid you saving things of websites you hardly visited the last year and have more space for the files that matter :+1:&lt;/p&gt;
 
 &lt;p&gt;You also can &lt;strong&gt;daily check for updates of your programs and your packages&lt;/strong&gt;, some routine of maintenance of your PC would be like&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;LOGFILE=&quot;$/.script/outputs/autoupdate_daily.log&quot;
-@daily sudo apt-get update 	     &amp;gt;&amp;gt; $LOGFILE
-@daily sudo apt-get upgrade -y       &amp;gt;&amp;gt; $LOGFILE
-@daily sudo apt-get autoremove -y    &amp;gt;&amp;gt; $LOGFILE
-@daily sudo apt-get autoclean -y     &amp;gt;&amp;gt; $LOGFILE
-@daily rm -rf ~/.local/share/Trash/* &amp;gt;&amp;gt; $LOGFILE
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;LOGFILE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$/&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;.script/outputs/autoupdate_daily.log&quot;&lt;/span&gt;
+@daily &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get update 	     &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$LOGFILE&lt;/span&gt;
+@daily &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get upgrade &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;       &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$LOGFILE&lt;/span&gt;
+@daily &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get autoremove &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;    &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$LOGFILE&lt;/span&gt;
+@daily &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get autoclean &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;     &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$LOGFILE&lt;/span&gt;
+@daily &lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-rf&lt;/span&gt; ~/.local/share/Trash/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$LOGFILE&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;updating, upgrading, cleaning expired packages and the trash can&lt;/strong&gt; every day at midnight.&lt;/p&gt;
 
@@ -169,43 +169,43 @@ fi
 &lt;p&gt;The macro &lt;em&gt;@reboot&lt;/em&gt; is the one I use the most! It is extremely helpful either if you have problems with &lt;strong&gt;screen resolution&lt;/strong&gt;, your &lt;strong&gt;keyboard layout&lt;/strong&gt; or even to &lt;strong&gt;mount devices everytime you reboot your computer&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;Once I had problems with screen resolution and I solved installing &lt;em&gt;xrandr&lt;/em&gt; and adding this line to my &lt;em&gt;crontab&lt;/em&gt;:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@reboot xrandr -s 800x600 -r 85 --output HDMI-0
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@reboot xrandr &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; 800x600 &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; 85 &lt;span class=&quot;nt&quot;&gt;--output&lt;/span&gt; HDMI-0
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;Notice it might change depending on the output and ideal resolution to your device.&lt;/p&gt;
 
 &lt;p&gt;And it your keyboard configurations reset every time your computer reboot, then you can reset the keyboard layout everytime you reboot your machine with&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@reboot setxkbmap -layout br
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@reboot setxkbmap &lt;span class=&quot;nt&quot;&gt;-layout&lt;/span&gt; br
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;where &lt;em&gt;br&lt;/em&gt; is an example.&lt;/p&gt;
 
 &lt;p&gt;And whenever I reboot my computer, I need to mount my HD to the folder &lt;em&gt;MyHD&lt;/em&gt;. Instead of doing it manually, &lt;em&gt;crontab&lt;/em&gt; does the trick with&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@reboot sudo mount -t ext4 /dev/sda /media/vsud/MyHD
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@reboot &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;mount &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; ext4 /dev/sda /media/vsud/MyHD
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;When &lt;strong&gt;commands require internet connection&lt;/strong&gt;, you should be aware that the &lt;em&gt;@reboot&lt;/em&gt; possibly runs even before the computer settles internet connection. One strategy is to run these commands after a 5-minute sleep in order to make sure that the computer has had time to have proper internet access. For instance, you can run&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@reboot sleep 5m &amp;amp;&amp;amp; ping 8.8.8.8 -c 5
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@reboot &lt;span class=&quot;nb&quot;&gt;sleep &lt;/span&gt;5m &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; ping 8.8.8.8 &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; 5
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;but of course this example doesn’t make anything special, even so I leave the example here because it is helpful to develop further commands that require the internet.&lt;/p&gt;
 
 &lt;h4 id=&quot;automated-robots&quot;&gt;Automated robots&lt;/h4&gt;
 
 &lt;p&gt;First, to &lt;strong&gt;automate one program&lt;/strong&gt; :robot:, you have to call it from the &lt;em&gt;crontab&lt;/em&gt; and not write it directly there. So in the &lt;em&gt;crontab&lt;/em&gt; there is no big deal, just use something like&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@hourly bash $/scripts/update_cases_covid19.sh
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@hourly bash &lt;span class=&quot;nv&quot;&gt;$/&lt;/span&gt;scripts/update_cases_covid19.sh
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Now, the &lt;strong&gt;tricks lay in the &lt;em&gt;.sh&lt;/em&gt; file&lt;/strong&gt; you are writing. For instance, when writing a script to be executed periodically, you should be careful to &lt;strong&gt;prevent job collision&lt;/strong&gt; - that is, if the program takes 2h to run and you run it hourly, we’ll be running the same code simultaneously, and that’s not what we usually want. 
 Therefore, you should make sure that there isn’t any other similar process still running before trying to start running it again. You can make this control with this following structure.&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;RUNFILE=&quot;my_flag.run&quot;     #Come up with a generic name...
-if [ -f $RUNFILE ]; then  #If the program is still running
-    exit                  #simply exit. 
-fi
-touch $RUNFILE            #Otherwise, register that you're starting an execution.
-##################################
-# All commands you want to     ###
-# automatize go here in middle ###
-##################################
-rm $RUNFILE               #Once finished, remove this register. 
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;RUNFILE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;my_flag.run&quot;&lt;/span&gt;     &lt;span class=&quot;c&quot;&gt;#Come up with a generic name...&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$RUNFILE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;#If the program is still running&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;exit&lt;/span&gt;                  &lt;span class=&quot;c&quot;&gt;#simply exit. &lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;fi
+&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;touch&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$RUNFILE&lt;/span&gt;            &lt;span class=&quot;c&quot;&gt;#Otherwise, register that you're starting an execution.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;##################################&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# All commands you want to     ###&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# automatize go here in middle ###&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;##################################&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$RUNFILE&lt;/span&gt;               &lt;span class=&quot;c&quot;&gt;#Once finished, remove this register. &lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;One example is using &lt;em&gt;curl&lt;/em&gt; command to download a news webpage everyday. Several platforms such as Youtube and Spotify have free API in which you can also download data from these websites and keep a historical dataset on your computer, or even with Github commands to pull or push repositories.  Afterwards, you can process these downloaded datasets and search for keywords of your interest or check its time behaviours.&lt;/p&gt;
@@ -220,10 +220,10 @@ rm $RUNFILE               #Once finished, remove this register.
 &lt;p&gt;&lt;strong&gt;Alias&lt;/strong&gt; is shell command to create nicknames to abbreviate longer commands during a section on your Ubuntu terminal (and here I’m using &lt;em&gt;Ubuntu 18&lt;/em&gt;, but most commands are simple enough to run in any other version). But because we know that our terminals always run the file &lt;em&gt;~/.bashrc&lt;/em&gt; of your home folder in the begging of every new session, you can write &lt;em&gt;aliases&lt;/em&gt; on this file and have them forever! &lt;del&gt;(or until you use someone else’s computer and feel totally lost)&lt;/del&gt;&lt;/p&gt;
 
 &lt;p&gt;During any session, you can enter the command line&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; alias
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;and it will &lt;strong&gt;show you all valid &lt;em&gt;aliases&lt;/em&gt;&lt;/strong&gt; in your current session. To &lt;strong&gt;add a new alias&lt;/strong&gt; to your session (or to your &lt;em&gt;~/.bashrc&lt;/em&gt;), enter&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; alias Shortname='Long Command Line'
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Shortname&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Long Command Line'&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;on your shell (double primes instead of single primes will work just as well).&lt;/p&gt;
 
@@ -234,94 +234,94 @@ rm $RUNFILE               #Once finished, remove this register.
 
 &lt;h4 id=&quot;navigation&quot;&gt;Navigation&lt;/h4&gt;
 &lt;p&gt;Let’s start &lt;strong&gt;navigating quickly&lt;/strong&gt; through the terminal:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; alias ..='cd ..'          #One folder up
-&amp;gt; alias ...='cd ../..'      #Two folders up
-&amp;gt; alias ....='cd ../../..'  #Three folders up
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias&lt;/span&gt; ..&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'cd ..'&lt;/span&gt;          &lt;span class=&quot;c&quot;&gt;#One folder up&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias&lt;/span&gt; ...&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'cd ../..'&lt;/span&gt;      &lt;span class=&quot;c&quot;&gt;#Two folders up&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias&lt;/span&gt; ....&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'cd ../../..'&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;#Three folders up&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;and here you can also add ‘cd ~/favorite_folders’ (remember to use always absolute paths to folders). For exemple, to acess the folder where I mount my External HD, I just type &lt;em&gt;cdhd&lt;/em&gt; and the alias makes the trick with&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; alias cdhd='cd /media/vsud/MyHD'
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;cdhd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'cd /media/vsud/MyHD'&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;Finally, remember you can always go to your &lt;em&gt;home folder&lt;/em&gt; with a simple ‘cd’ (without any argument).&lt;/p&gt;
 
 &lt;h4 id=&quot;quick-use---one-letter&quot;&gt;Quick use - one letter&lt;/h4&gt;
 &lt;p&gt;Some command lines are so recurrent that &lt;strong&gt;they deserve one letter&lt;/strong&gt;:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; alias l='ls -CF'
-&amp;gt; alias h='history'
-&amp;gt; alias c='clear'
-&amp;gt; alias e='exit'
-&amp;gt; alias u='sudo apt-get update &amp;amp;&amp;amp; sudo apt-get upgrade -y &amp;amp;&amp;amp; sudo apt-get autoclean'
-&amp;gt; alias j='jobs -l'
-&amp;gt; alias o='xdg-open' #Opens files with default application
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'ls -CF'&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'history'&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'clear'&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'exit'&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;u&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'sudo apt-get update &amp;amp;&amp;amp; sudo apt-get upgrade -y &amp;amp;&amp;amp; sudo apt-get autoclean'&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'jobs -l'&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'xdg-open'&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#Opens files with default application&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;and now you see how to use alias to &lt;strong&gt;execute multiple commands at the same alias: &amp;amp;&amp;amp;&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;h4 id=&quot;colors-for-files&quot;&gt;Colors for files&lt;/h4&gt;
 &lt;p&gt;Add some &lt;strong&gt;colors&lt;/strong&gt; to your terminal, and show files and folders variously:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; alias ls='ls --color=auto' #Adds color to your ls in all cases
-&amp;gt; alias la='ls -A'           #List all files and folders in columns (including hidden)
-&amp;gt; alias ll='ls -alFh'        #List all files and folders in rows (including hidden)
-&amp;gt; alias lr='ls -ltrh'        #List files and folders in rows by recent modified
-&amp;gt; alias l.='ls -d .*'        #List only hidden directories in columns
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias ls&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'ls --color=auto'&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#Adds color to your ls in all cases&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;la&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'ls -A'&lt;/span&gt;           &lt;span class=&quot;c&quot;&gt;#List all files and folders in columns (including hidden)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ll&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'ls -alFh'&lt;/span&gt;        &lt;span class=&quot;c&quot;&gt;#List all files and folders in rows (including hidden)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;lr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'ls -ltrh'&lt;/span&gt;        &lt;span class=&quot;c&quot;&gt;#List files and folders in rows by recent modified&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;l.&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'ls -d .*'&lt;/span&gt;        &lt;span class=&quot;c&quot;&gt;#List only hidden directories in columns&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;This last example is very insightful to search for extensions you use the most, as in&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; alias lcodes=&quot;echo 'Python:';ls *.py;echo 'R:';ls *.R;echo 'Gnuplot:';ls *.gp&quot;  #List all .py, .R e .gp separately
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;lcodes&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;echo 'Python:';ls *.py;echo 'R:';ls *.R;echo 'Gnuplot:';ls *.gp&quot;&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;#List all .py, .R e .gp separately&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;And if you used alias to add flags to one command and maintained the same name of the original command (as we did with ‘ls’ up here), don’t worry: if you ever need the &lt;strong&gt;original command&lt;/strong&gt; for some reason, you can always use it by &lt;strong&gt;starting with a backslash&lt;/strong&gt;, e.g. ‘\ls’ is the original non-colored ‘ls’ command. Some other examples are:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; alias dir='dir --color=auto'
-&amp;gt; alias egrep='egrep --color=auto'
-&amp;gt; alias grep='grep --color=auto'
-&amp;gt; alias fgrep='fgrep --color=auto'
-&amp;gt; alias df='df -h'               #Size of files in KB, MB,...
-&amp;gt; alias bc='bc -lqi'             #Calculator with libraries
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias dir&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'dir --color=auto'&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;egrep&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'egrep --color=auto'&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias grep&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'grep --color=auto'&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;fgrep&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'fgrep --color=auto'&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias df&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'df -h'&lt;/span&gt;               &lt;span class=&quot;c&quot;&gt;#Size of files in KB, MB,...&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;bc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'bc -lqi'&lt;/span&gt;             &lt;span class=&quot;c&quot;&gt;#Calculator with libraries&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h4 id=&quot;quick-use---two-letters&quot;&gt;Quick use - two letters&lt;/h4&gt;
 &lt;p&gt;Some command lines are very useful and &lt;strong&gt;they deserve two or three letters&lt;/strong&gt;:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; alias py='python3'
-&amp;gt; alias ipy='ipython3'
-&amp;gt; alias gp='gnuplot'
-&amp;gt; alias rr='Rscript'
-&amp;gt; alias now='date +&quot;%d-%m-%Y %T&quot;' #This one is useful in some contexts of automated logs
-&amp;gt; alias mnt=&quot;mount | awk -F' ' '{ printf \&quot;%s\t%s\n\&quot;,\$1,\$3; }' | column -t | egrep ^/dev/ | sort&quot; #Show all mounted devices at /dev/...
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;py&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'python3'&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ipy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'ipython3'&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;gp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'gnuplot'&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;rr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Rscript'&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'date +&quot;%d-%m-%Y %T&quot;'&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#This one is useful in some contexts of automated logs&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;mnt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;mount | awk -F' ' '{ printf &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;%s&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\t&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;%s&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n\&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\$&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;1,&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\$&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;3; }' | column -t | egrep ^/dev/ | sort&quot;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#Show all mounted devices at /dev/...&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h4 id=&quot;github-users-best-friends&quot;&gt;Github users’ best friends&lt;/h4&gt;
 &lt;p&gt;Aliases make our lives of &lt;strong&gt;add, commit, pull and push&lt;/strong&gt; way faster… but be careful - don’t use generic commit messages if you work in a collective repository!&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; alias gs='git status'
-&amp;gt; alias gl='git pull'
-&amp;gt; alias gp='git push'
-&amp;gt; alias ga='git add .' # Add all modified files
-&amp;gt; alias gc='git commit -m' 
-&amp;gt; alias gb='git branch'
-&amp;gt; alias gco='git checkout'
-&amp;gt; alias gf='git status &amp;amp;&amp;amp; git add . &amp;amp;&amp;amp; git commit -m &quot;Updates&quot; &amp;amp;&amp;amp; git push' # Only do this if it's your private repository...
-&amp;gt; alias run_jekyll='bundle exec jekyll serve' # Useful if you have a website in jekyll
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;gs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'git status'&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;gl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'git pull'&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;gp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'git push'&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ga&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'git add .'&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# Add all modified files&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;gc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'git commit -m'&lt;/span&gt; 
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;gb&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'git branch'&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;gco&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'git checkout'&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;gf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'git status &amp;amp;&amp;amp; git add . &amp;amp;&amp;amp; git commit -m &quot;Updates&quot; &amp;amp;&amp;amp; git push'&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# Only do this if it's your private repository...&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;run_jekyll&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'bundle exec jekyll serve'&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# Useful if you have a website in jekyll&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h4 id=&quot;control-your-cpu-clocking&quot;&gt;Control your CPU clocking&lt;/h4&gt;
 &lt;p&gt;If you have installed &lt;em&gt;&lt;a href=&quot;http://manpages.ubuntu.com/manpages/bionic/man1/cpufreq-set.1.html&quot;&gt;cpufreq&lt;/a&gt;&lt;/em&gt; package, you can &lt;strong&gt;control your clocking&lt;/strong&gt; and get information with&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; alias highclock='sudo cpufreq-set -r -g performance &amp;amp;&amp;amp; cpufreq-info'
-&amp;gt; alias lowclock='sudo cpufreq-set -r -g powersave &amp;amp;&amp;amp; cpufreq-info'
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;highclock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'sudo cpufreq-set -r -g performance &amp;amp;&amp;amp; cpufreq-info'&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;lowclock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'sudo cpufreq-set -r -g powersave &amp;amp;&amp;amp; cpufreq-info'&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;so before running a simulation run &lt;em&gt;highclock&lt;/em&gt;, and then return to the regular state by &lt;em&gt;lowclock&lt;/em&gt;. Using highclock nonstop might harm your hardware by overheating it and overwasting the battery, so keep those things in mind!&lt;/p&gt;
 
 &lt;h4 id=&quot;log-to-your-remote-machines&quot;&gt;Log to your remote machines&lt;/h4&gt;
 &lt;p&gt;You can use it to quickly save the addresses or accesses of servers and remote machines, you can use for instance&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; alias uni_server='ssh -X debian@186.217.XXX.XX'
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;uni_server&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'ssh -X debian@186.217.XXX.XX'&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h4 id=&quot;aliases-that-help-clumsy-people&quot;&gt;Aliases that help clumsy people&lt;/h4&gt;
 &lt;p&gt;Your common typos can become your helpful aliases: this way you save time from retyping command lines. Some examples:&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; alias pdw='pwd'
-&amp;gt; alias dc='cd' #If you ever need the actual calculator dc, use \dc
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;pdw&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'pwd'&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;dc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'cd'&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#If you ever need the actual calculator dc, use \dc&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h4 id=&quot;make-your-own-bash-scripts&quot;&gt;Make your own bash scripts&lt;/h4&gt;
 &lt;p&gt;Sometimes I had matrices in a file and I wanted to transpose them quickly into a new file. So, I opened a hidden folder &lt;em&gt;~/.scripts/&lt;/em&gt; in my home folder with an &lt;a href=&quot;https://stackoverflow.com/questions/1729824/an-efficient-way-to-transpose-a-file-in-bash&quot;&gt;algorithm&lt;/a&gt; in &lt;em&gt;awk&lt;/em&gt; to transpose files. Finally, I wrote an alias that accesses this ‘hidden file’ so that it becomes the simple terminal line &lt;em&gt;transpose&lt;/em&gt;…&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; alias transpose='awk -f ~/.scripts/transpose.awk'
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;transpose&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'awk -f ~/.scripts/transpose.awk'&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;and you can do the same using &lt;em&gt;Bash scripts&lt;/em&gt;, &lt;em&gt;awk&lt;/em&gt;, &lt;em&gt;Python&lt;/em&gt;, &lt;em&gt;C&lt;/em&gt;, and so on, to your most recurrent needs.&lt;/p&gt;
 

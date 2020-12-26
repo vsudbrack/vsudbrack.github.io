@@ -14,7 +14,7 @@ I'll briefly introduce the *crontab* mechanism, how to add commands to it with s
 **Crontab is a mechanism to schedule the execution of command lines with specific frequencies**. For instance, if you run a program everyday, you can add it to your crontab and the computer will run it automatically everyday (as long as the computer is on). Sounds like magic to your ears, doesn't it? Yes, it will save you lots of work. 
 
 During any terminal session, you can enter the command line
-```
+```sh
 > crontab -l
 ```
 and it will **show you all scheduled commands** for your user (each user has different *crontab*s). 
@@ -22,12 +22,12 @@ and it will **show you all scheduled commands** for your user (each user has dif
 #### How to edit it
 
 When **adding new commands** to your *crontab*, keep in mind that it is not an ordinary text file (like *~/.bashrc*, and so on) and it cannot be edited by regular text editors (like Gedit, Emacs,...). To edit it, enter the crontab command with the flag '-e' for editing,
-```
+```sh
 > crontab -e
 ```
 on your shell. It will probably ask you for a text editor of your choice, and then you proceed from there as you write to regular files.  At this point, the text editor will open your *crontab* and you will see the following syntax (so-called *Crontab Macros*):
 
-```
+```sh
 @yearly    #Run once a year  (at 0a.m. of January 1st)
 @monthly   #Run once a month (at 0a.m. of the 1st day)
 @weekly	   #Run once a week  (at 0a.m. of Sunday)
@@ -53,13 +53,13 @@ Before getting to business, a reminder: **writing the output of a command to an 
 #### Run codes every day
 
 Everyday you can **clear your cache files that are celebrating birthday**, ie. that are 1-year old. With this simple line in your *crontab*, you will remove all files within *~/.cache* whose last modification date is more than 365 days ago.
-```
+```sh
 @daily chronic find ~/.cache -depth -type f -mtime +365 -delete
 ```
 This will avoid you saving things of websites you hardly visited the last year and have more space for the files that matter :+1:
 
 You also can **daily check for updates of your programs and your packages**, some routine of maintenance of your PC would be like
-```
+```sh
 LOGFILE="$/.script/outputs/autoupdate_daily.log"
 @daily sudo apt-get update 	     >> $LOGFILE
 @daily sudo apt-get upgrade -y       >> $LOGFILE
@@ -74,24 +74,24 @@ LOGFILE="$/.script/outputs/autoupdate_daily.log"
 The macro *@reboot* is the one I use the most! It is extremely helpful either if you have problems with **screen resolution**, your **keyboard layout** or even to **mount devices everytime you reboot your computer**. 
 
 Once I had problems with screen resolution and I solved installing *xrandr* and adding this line to my *crontab*:
-```
+```sh
 @reboot xrandr -s 800x600 -r 85 --output HDMI-0
 ```
 Notice it might change depending on the output and ideal resolution to your device. 
 
 And it your keyboard configurations reset every time your computer reboot, then you can reset the keyboard layout everytime you reboot your machine with
-```
+```sh
 @reboot setxkbmap -layout br
 ```
 where *br* is an example. 
 
 And whenever I reboot my computer, I need to mount my HD to the folder *MyHD*. Instead of doing it manually, *crontab* does the trick with
-```
+```sh
 @reboot sudo mount -t ext4 /dev/sda /media/vsud/MyHD
 ```
 
 When **commands require internet connection**, you should be aware that the *@reboot* possibly runs even before the computer settles internet connection. One strategy is to run these commands after a 5-minute sleep in order to make sure that the computer has had time to have proper internet access. For instance, you can run
-```
+```sh
 @reboot sleep 5m && ping 8.8.8.8 -c 5
 ```
 but of course this example doesn't make anything special, even so I leave the example here because it is helpful to develop further commands that require the internet. 
@@ -99,14 +99,14 @@ but of course this example doesn't make anything special, even so I leave the ex
 #### Automated robots
 
 First, to **automate one program** :robot:, you have to call it from the *crontab* and not write it directly there. So in the *crontab* there is no big deal, just use something like
-```
+```sh
 @hourly bash $/scripts/update_cases_covid19.sh
 ```
 
 Now, the **tricks lay in the *.sh* file** you are writing. For instance, when writing a script to be executed periodically, you should be careful to **prevent job collision** - that is, if the program takes 2h to run and you run it hourly, we'll be running the same code simultaneously, and that's not what we usually want. 
 Therefore, you should make sure that there isn't any other similar process still running before trying to start running it again. You can make this control with this following structure.
 
-```
+```sh
 RUNFILE="my_flag.run"     #Come up with a generic name...
 if [ -f $RUNFILE ]; then  #If the program is still running
     exit                  #simply exit. 

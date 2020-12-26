@@ -97,23 +97,23 @@
 <p><strong>Crontab is a mechanism to schedule the execution of command lines with specific frequencies</strong>. For instance, if you run a program everyday, you can add it to your crontab and the computer will run it automatically everyday (as long as the computer is on). Sounds like magic to your ears, doesn’t it? Yes, it will save you lots of work.</p>
 
 <p>During any terminal session, you can enter the command line</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; crontab -l
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> crontab <span class="nt">-l</span>
 </code></pre></div></div>
 <p>and it will <strong>show you all scheduled commands</strong> for your user (each user has different <em>crontab</em>s).</p>
 
 <h4 id="how-to-edit-it">How to edit it</h4>
 
 <p>When <strong>adding new commands</strong> to your <em>crontab</em>, keep in mind that it is not an ordinary text file (like <em>~/.bashrc</em>, and so on) and it cannot be edited by regular text editors (like Gedit, Emacs,…). To edit it, enter the crontab command with the flag ‘-e’ for editing,</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; crontab -e
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> crontab <span class="nt">-e</span>
 </code></pre></div></div>
 <p>on your shell. It will probably ask you for a text editor of your choice, and then you proceed from there as you write to regular files.  At this point, the text editor will open your <em>crontab</em> and you will see the following syntax (so-called <em>Crontab Macros</em>):</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@yearly    #Run once a year  (at 0a.m. of January 1st)
-@monthly   #Run once a month (at 0a.m. of the 1st day)
-@weekly	   #Run once a week  (at 0a.m. of Sunday)
-@daily     #Run once a day   (at 0a.m.)
-@hourly	   #Run once an hour at the beginning of the hour
-@reboot	   #Run at startup
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@yearly    <span class="c">#Run once a year  (at 0a.m. of January 1st)</span>
+@monthly   <span class="c">#Run once a month (at 0a.m. of the 1st day)</span>
+@weekly	   <span class="c">#Run once a week  (at 0a.m. of Sunday)</span>
+@daily     <span class="c">#Run once a day   (at 0a.m.)</span>
+@hourly	   <span class="c">#Run once an hour at the beginning of the hour</span>
+@reboot	   <span class="c">#Run at startup</span>
 </code></pre></div></div>
 <p>Therefore, you basically <strong>enter in every line a frequency with one Crontab Macro, and one command to be run.</strong> The examples in the next section you’ll help you understand it, make sure you check them out before editing.</p>
 
@@ -133,17 +133,17 @@
 <h4 id="run-codes-every-day">Run codes every day</h4>
 
 <p>Everyday you can <strong>clear your cache files that are celebrating birthday</strong>, ie. that are 1-year old. With this simple line in your <em>crontab</em>, you will remove all files within <em>~/.cache</em> whose last modification date is more than 365 days ago.</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@daily chronic find ~/.cache -depth -type f -mtime +365 -delete
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@daily chronic find ~/.cache <span class="nt">-depth</span> <span class="nt">-type</span> f <span class="nt">-mtime</span> +365 <span class="nt">-delete</span>
 </code></pre></div></div>
 <p>This will avoid you saving things of websites you hardly visited the last year and have more space for the files that matter <img class="emoji" title=":+1:" alt=":+1:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png" height="20" width="20"></p>
 
 <p>You also can <strong>daily check for updates of your programs and your packages</strong>, some routine of maintenance of your PC would be like</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>LOGFILE="$/.script/outputs/autoupdate_daily.log"
-@daily sudo apt-get update 	     &gt;&gt; $LOGFILE
-@daily sudo apt-get upgrade -y       &gt;&gt; $LOGFILE
-@daily sudo apt-get autoremove -y    &gt;&gt; $LOGFILE
-@daily sudo apt-get autoclean -y     &gt;&gt; $LOGFILE
-@daily rm -rf ~/.local/share/Trash/* &gt;&gt; $LOGFILE
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">LOGFILE</span><span class="o">=</span><span class="s2">"</span><span class="nv">$/</span><span class="s2">.script/outputs/autoupdate_daily.log"</span>
+@daily <span class="nb">sudo </span>apt-get update 	     <span class="o">&gt;&gt;</span> <span class="nv">$LOGFILE</span>
+@daily <span class="nb">sudo </span>apt-get upgrade <span class="nt">-y</span>       <span class="o">&gt;&gt;</span> <span class="nv">$LOGFILE</span>
+@daily <span class="nb">sudo </span>apt-get autoremove <span class="nt">-y</span>    <span class="o">&gt;&gt;</span> <span class="nv">$LOGFILE</span>
+@daily <span class="nb">sudo </span>apt-get autoclean <span class="nt">-y</span>     <span class="o">&gt;&gt;</span> <span class="nv">$LOGFILE</span>
+@daily <span class="nb">rm</span> <span class="nt">-rf</span> ~/.local/share/Trash/<span class="k">*</span> <span class="o">&gt;&gt;</span> <span class="nv">$LOGFILE</span>
 </code></pre></div></div>
 <p><strong>updating, upgrading, cleaning expired packages and the trash can</strong> every day at midnight.</p>
 
@@ -152,43 +152,43 @@
 <p>The macro <em>@reboot</em> is the one I use the most! It is extremely helpful either if you have problems with <strong>screen resolution</strong>, your <strong>keyboard layout</strong> or even to <strong>mount devices everytime you reboot your computer</strong>.</p>
 
 <p>Once I had problems with screen resolution and I solved installing <em>xrandr</em> and adding this line to my <em>crontab</em>:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@reboot xrandr -s 800x600 -r 85 --output HDMI-0
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@reboot xrandr <span class="nt">-s</span> 800x600 <span class="nt">-r</span> 85 <span class="nt">--output</span> HDMI-0
 </code></pre></div></div>
 <p>Notice it might change depending on the output and ideal resolution to your device.</p>
 
 <p>And it your keyboard configurations reset every time your computer reboot, then you can reset the keyboard layout everytime you reboot your machine with</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@reboot setxkbmap -layout br
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@reboot setxkbmap <span class="nt">-layout</span> br
 </code></pre></div></div>
 <p>where <em>br</em> is an example.</p>
 
 <p>And whenever I reboot my computer, I need to mount my HD to the folder <em>MyHD</em>. Instead of doing it manually, <em>crontab</em> does the trick with</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@reboot sudo mount -t ext4 /dev/sda /media/vsud/MyHD
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@reboot <span class="nb">sudo </span>mount <span class="nt">-t</span> ext4 /dev/sda /media/vsud/MyHD
 </code></pre></div></div>
 
 <p>When <strong>commands require internet connection</strong>, you should be aware that the <em>@reboot</em> possibly runs even before the computer settles internet connection. One strategy is to run these commands after a 5-minute sleep in order to make sure that the computer has had time to have proper internet access. For instance, you can run</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@reboot sleep 5m &amp;&amp; ping 8.8.8.8 -c 5
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@reboot <span class="nb">sleep </span>5m <span class="o">&amp;&amp;</span> ping 8.8.8.8 <span class="nt">-c</span> 5
 </code></pre></div></div>
 <p>but of course this example doesn’t make anything special, even so I leave the example here because it is helpful to develop further commands that require the internet.</p>
 
 <h4 id="automated-robots">Automated robots</h4>
 
 <p>First, to <strong>automate one program</strong> <img class="emoji" title=":robot:" alt=":robot:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f916.png" height="20" width="20">, you have to call it from the <em>crontab</em> and not write it directly there. So in the <em>crontab</em> there is no big deal, just use something like</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@hourly bash $/scripts/update_cases_covid19.sh
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@hourly bash <span class="nv">$/</span>scripts/update_cases_covid19.sh
 </code></pre></div></div>
 
 <p>Now, the <strong>tricks lay in the <em>.sh</em> file</strong> you are writing. For instance, when writing a script to be executed periodically, you should be careful to <strong>prevent job collision</strong> - that is, if the program takes 2h to run and you run it hourly, we’ll be running the same code simultaneously, and that’s not what we usually want. 
 Therefore, you should make sure that there isn’t any other similar process still running before trying to start running it again. You can make this control with this following structure.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>RUNFILE="my_flag.run"     #Come up with a generic name...
-if [ -f $RUNFILE ]; then  #If the program is still running
-    exit                  #simply exit. 
-fi
-touch $RUNFILE            #Otherwise, register that you're starting an execution.
-##################################
-# All commands you want to     ###
-# automatize go here in middle ###
-##################################
-rm $RUNFILE               #Once finished, remove this register. 
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">RUNFILE</span><span class="o">=</span><span class="s2">"my_flag.run"</span>     <span class="c">#Come up with a generic name...</span>
+<span class="k">if</span> <span class="o">[</span> <span class="nt">-f</span> <span class="nv">$RUNFILE</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>  <span class="c">#If the program is still running</span>
+    <span class="nb">exit</span>                  <span class="c">#simply exit. </span>
+<span class="k">fi
+</span><span class="nb">touch</span> <span class="nv">$RUNFILE</span>            <span class="c">#Otherwise, register that you're starting an execution.</span>
+<span class="c">##################################</span>
+<span class="c"># All commands you want to     ###</span>
+<span class="c"># automatize go here in middle ###</span>
+<span class="c">##################################</span>
+<span class="nb">rm</span> <span class="nv">$RUNFILE</span>               <span class="c">#Once finished, remove this register. </span>
 </code></pre></div></div>
 
 <p>One example is using <em>curl</em> command to download a news webpage everyday. Several platforms such as Youtube and Spotify have free API in which you can also download data from these websites and keep a historical dataset on your computer, or even with Github commands to pull or push repositories.  Afterwards, you can process these downloaded datasets and search for keywords of your interest or check its time behaviours.</p>
