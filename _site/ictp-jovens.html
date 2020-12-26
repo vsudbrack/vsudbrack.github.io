@@ -106,11 +106,24 @@
     </ul>
   </li>
   <li><a href="#redes-de-contato" id="markdown-toc-redes-de-contato">Redes de contato</a>    <ul>
-      <li><a href="#o-que-são-grafos-e-redes" id="markdown-toc-o-que-são-grafos-e-redes">O que são grafos e redes?</a></li>
-      <li><a href="#como-representar-grafos-no-computador" id="markdown-toc-como-representar-grafos-no-computador">Como representar grafos no computador?</a></li>
+      <li><a href="#introdução-aos-grafos-e-redes" id="markdown-toc-introdução-aos-grafos-e-redes">Introdução aos grafos e redes</a>        <ul>
+          <li><a href="#história" id="markdown-toc-história">História</a>            <ul>
+              <li><a href="#rede-aleatória" id="markdown-toc-rede-aleatória">Rede aleatória</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#principais-propriedades-matemáticas" id="markdown-toc-principais-propriedades-matemáticas">Principais propriedades matemáticas</a>        <ul>
+          <li><a href="#vértices" id="markdown-toc-vértices">Vértices</a></li>
+          <li><a href="#ligações" id="markdown-toc-ligações">Ligações</a></li>
+          <li><a href="#rede" id="markdown-toc-rede">Rede</a></li>
+        </ul>
+      </li>
       <li><a href="#sociedades" id="markdown-toc-sociedades">Sociedades</a>        <ul>
-          <li><a href="#meus-vizinhos-e-o-pequeno-mundo" id="markdown-toc-meus-vizinhos-e-o-pequeno-mundo">Meus vizinhos e o <em>pequeno mundo</em></a></li>
-          <li><a href="#o-rico-fica-mais-rico" id="markdown-toc-o-rico-fica-mais-rico">O rico fica mais rico</a></li>
+          <li><a href="#o-anel" id="markdown-toc-o-anel">O anel</a></li>
+          <li><a href="#o-pequeno-mundo" id="markdown-toc-o-pequeno-mundo">O <em>pequeno mundo</em></a></li>
+          <li><a href="#o-látice" id="markdown-toc-o-látice">O látice</a></li>
+          <li><a href="#e-a-adesão-preferencial-o-rico-fica-mais-rico" id="markdown-toc-e-a-adesão-preferencial-o-rico-fica-mais-rico">E a adesão preferencial: <em>o rico fica mais rico</em></a></li>
         </ul>
       </li>
     </ul>
@@ -250,7 +263,7 @@
 
 <p>Por fim, cada pacote tem sua <strong>documentação</strong>. A documentação de um pacote é onda você encontra toda a informação sobre as funções que o pacote tem, e o que elas fazem. Vou deixar aqui as documentações desses pacotes que usaremos para vocês consultarem ao longo da semana.</p>
 
-<p><a href="https://igraph.org/r/"><button class="mybutton">Documentação do <i>igraph</i></button></a></p>
+<p><a href="https://igraph.org/r/doc/"><button class="mybutton">Documentação do <i>igraph</i></button></a></p>
 
 <p>Mas em geral a gente é cabela dura e fica tentando rodar coisas até que uma vai (ou a gente cansa haha).</p>
 
@@ -276,7 +289,7 @@
 
 <p>Além das coisas básicas, como onde mora e estuda, quais os seus interesses em física, em matemática, em informática, pontos que se considera forte e que pode melhorar, experiências de trabalhar em grupo,…, lembrem também de mencionar:</p>
 <ul>
-  <li>sistema operacional do computador de vocês;</li>
+  <li>sistema operacional do computador de vocês e a informação que tive sobre ele - mémoria RAM, se é notebook ou desktop, processador,…;</li>
   <li>o quanto vocês conhecem de computador e se você já programou alguma vez na vida ou fez algo de robótica;</li>
   <li>o email que vocês usam no <strong>GoogleDrive</strong> - provavelmente teremos uma pasta compartilhada!</li>
 </ul>
@@ -297,9 +310,19 @@
 
 <h1 id="redes-de-contato">Redes de contato</h1>
 
-<p>Apresentação ao tópico de redes e grafos. Discussão sobre as características de redes de contato “antigas” e as recentes. Como modelar os influencers, os contatos não-locais e o aumento da conectividade? Como representar uma rede no computador e introdução ao pacote igraph do R.</p>
+<p>Apresentação ao tópico de redes e grafos. Como representar uma rede no computador e introdução ao pacote igraph do R.</p>
 
-<h2 id="o-que-são-grafos-e-redes">O que são grafos e redes?</h2>
+<h2 id="introdução-aos-grafos-e-redes">Introdução aos grafos e redes</h2>
+
+<p>Vocês provavelmente sabem o que é um <strong>polígono</strong> e que polígonos vivem em planos, de duas dimensões. Podemos pensar em generalizar os polígonos e pensar em <strong>poliédros</strong>, em três dimensões. <strong>Grafos</strong> são uma generalização e abstração dos poliédros, e vivem em um número arbitrário de dimensões.</p>
+
+<p>Eles podem ser pensados matematicamente como dois conjuntos: um conjunto de <strong>vértices</strong> que são os pontos, e um conjunto de <strong>ligações</strong> que são as uniões entre dois pontos.</p>
+
+<p><strong>Matriz de adjacência</strong></p>
+
+<p><strong>Lista de nodos</strong></p>
+
+<h4 id="história">História</h4>
 
 <p>Para saber como a teoria dos grafos começou com o Leonard Euler, assita esse vídeo do <strong><a href="https://www.youtube.com/channel/UCoxcjq-8xIDTYp3uz647V5A">canal Numberphile</a></strong> (um dos canais mais legais do Youtube caso vocês não conheçam…).</p>
 <div class="videoWrapper">
@@ -308,17 +331,100 @@
 
 </div>
 
-<h2 id="como-representar-grafos-no-computador">Como representar grafos no computador?</h2>
+<h5 id="rede-aleatória">Rede aleatória</h5>
 
-<p><strong>Pergunta:</strong>
-Quantos grafos sem peso e adirecionais de 100 vértices são possíveis?
+<p>A <strong>rede aleatória é uma rede sem nenhuma estrutura</strong>. 
+Para gerar uma rede aleatória com 25 vértices e 20% de ligações distribuídas aleatoriamente pelos vértices, use</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>random = sample_gnp(25, 0.2)
+</code></pre></div></div>
+
+<h2 id="principais-propriedades-matemáticas">Principais propriedades matemáticas</h2>
+
+<h4 id="vértices">Vértices</h4>
+
+<p>Vértices possuem um <strong>grau</strong>.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>degree(rede)
+</code></pre></div></div>
+
+<p>Uma geodésica entre dois vértices é o menor caminho que liga eles.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>all_shortest_paths(rede, from = 17, to = 24) # Geodésica(s) entre 17 e 24
+</code></pre></div></div>
+<p>Uma <strong>centralidade</strong> ou <strong>betweenness</strong>.
+A centralidade de um vértice é proporcional ao número de geodésicas (caminhos mais curtos) que passam por esse vértice conectando dois vértices quaisquer da rede.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>betweenness(rede)
+</code></pre></div></div>
+<p>A <strong>proximidade</strong> mede quantas ligações são necessárias para acessar todos os outros vértices a partir de um determinado vértice.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>closeness(rede)
+</code></pre></div></div>
+
+<h4 id="ligações">Ligações</h4>
+
+<p>A <strong>densidade de ligações</strong> é a fração</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>edge_density(rede)
+</code></pre></div></div>
+
+<p>Um <strong>triângulo</strong> é um ciclo de três vértices, $a\to b\to c\to a$</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>triangles(rede) # Fornece uma lista de trios
+count_triangles(rede) # Fornece o número de triângulos que cada vértice participa
+</code></pre></div></div>
+
+<p>Um <strong>clique</strong> é um conjunto de nós completamente ligados</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cliques(rede, min=3) # Retorna todos os cliques com 3 ou mais vértices
+largest_cliques(rede) # Retorna o maior clique da rede
+</code></pre></div></div>
+<p>O oposto de um clique é um <strong>conjunto de vértices independentes (IVS)</strong>,</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>largest_ivs(rede) # O maior IVS
+independence.number(a) # Tamanho do maior IVS
+</code></pre></div></div>
+
+<h4 id="rede">Rede</h4>
+
+<p>Distribuição de <strong>grau</strong>.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>plot(0:max(degree(rede)),degree_distribution(rede), type = 'h', lwd=3, col ="blue", xlab="Grau", ylab="Frequência", main="Distribuição de grau") # Em escala linear
+plot(0:max(degree(rede)), degree_distribution(rede), type = 'l', lwd=3, col ="red", xlab="Grau", ylab="Frequência", main="Distribuição de grau", log = "xy") # Em escala log
+</code></pre></div></div>
+
+<p>Um grafo tem uma <strong>distância média</strong> entre vértices, que nos diz o quão fácil é caminhar pelo vértices em média, ligando-os por suas geodésicas, e também tem um <strong>diâmetro</strong> que é o tamanho da maior geodésica:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mean_distance(rede)
+diameter(rede)
+</code></pre></div></div>
+
+<p>A <strong>transitividade</strong> (ou <em>coeficiente de clustering</em>) mede a probabilidade que dois vértices vizinhos de um terceiro vértice sejam vizinhos entre si. Ela esta relacionada com o número de triângulos da rede.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>transitivity(rede) # A transitividade média da rede
+transitivity(aa, type='local') # A transitividade de cada vértice
+</code></pre></div></div>
+
+<p>A <strong>assortatividade</strong> da rede</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>assortativity_degree(rede)
+</code></pre></div></div>
+<p>quando a assortatividade é negativa, significa que vértices de grau alto estão ligados com vértices de grau baixo (graus anticorrelacionados). Quando a assortatividade é positiva, significa que vértices de grau alto estão ligados aos vértices de grau alto (graus correlacionados). Assortatividades próximas de zero significam ausência dessa estrutura. 
+Para ver o grau médio dos vizinhos de cada grau ($knn$) e a média do grau médio dos vizinhos entre os vértices de grau k ($knnk$), use</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>knn(rede)
+plot(unlist(knn(a)[2]), xlab="Grau", ylab="Grau médio dos vizinhos", main="Assortatividade", col = "darkgreen", pch=16) # Plot de assortatividade
+</code></pre></div></div>
+
+<p>Muitas redes consistem em módulos densamente conectados entre si, mas escassamente conectados a outros módulos. Essa é a <strong>modularidade</strong> da rede, e tentar encontrar essas <em>subredes</em>, chamadas de módulos, dentro da rede principal, é uma tarefa árdua, existem vários métodos. Um deles é o seguinte,</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ceb = cluster_edge_betweenness(rede) # Classifica em módulos pela conectância entre vértices
+dendPlot(ceb)   # Visualizar o dendrograma de módulos
+plot(ceb, rede) # Visualizar os módulos na rede
+</code></pre></div></div>
+
+<p><strong>Perguntas:</strong>
+a) Quantos grafos sem peso e adirecionais de 100 vértices são possíveis?
 <em>Dica:</em> começe pensando quantos existem com 3 vértices, desenhe eles se preciso for. Depois, 4… e N?
-Para contemplar o quão grande esse número é, compare com o <a href="http://www.inpe.br/faq/index.php?pai=11#:~:text=Estima%2Dse%20que%20a%20nossa,de%2010%20sextilh%C3%B5es%20de%20estrelas.">número de estrelas no universo</a> e o <a href="https://pt.wikipedia.org/wiki/Universo_observ%C3%A1vel#:~:text=Conte%C3%BAdo%20em%20mat%C3%A9ria,-Representa%C3%A7%C3%A3o%20art%C3%ADstica%20do&amp;text=Dois%20c%C3%A1lculos%20aproximados%20fornecem%20o,em%20torno%20de%201080.">número de átomos no universo</a>.
-E se fosse um grafo direcional?</p>
+Para contemplar o quão grande esse número é, compare com o <a href="http://www.inpe.br/faq/index.php?pai=11#:~:text=Estima%2Dse%20que%20a%20nossa,de%2010%20sextilh%C3%B5es%20de%20estrelas.">número de estrelas no universo</a> e o <a href="https://pt.wikipedia.org/wiki/Universo_observ%C3%A1vel#:~:text=Conte%C3%BAdo%20em%20mat%C3%A9ria,-Representa%C3%A7%C3%A3o%20art%C3%ADstica%20do&amp;text=Dois%20c%C3%A1lculos%20aproximados%20fornecem%20o,em%20torno%20de%201080.">número de átomos no universo</a>. E se fosse um grafo direcional?</p>
+
+<p>b) Entre uma relação matemática entre o número total de ligações, o tamanho da rede e o grau médio da rede.</p>
+
+<p>c) Acho uma relação matemática entre o número total de triângulos, o tamanho da rede e a transitividade da rede.</p>
+
+<p>d) Qual a probabilidade que uma rede aleatória (Tamanho N e % de ligação p) tenha um clique de tamanho n? Depende do tamanho da rede?</p>
 
 <h2 id="sociedades">Sociedades</h2>
 
-<h4 id="meus-vizinhos-e-o-pequeno-mundo">Meus vizinhos e o <em>pequeno mundo</em></h4>
+<p>A gente conheceu as redes aleatórias, aquelas que não tem nenhum estrutura. Mas a gente sabe que a nossa sociedade é fortemente estruturada e nada aleatória. Vou apresentar aqui alguns dos métodos para gerar redes estruturadas.</p>
+
+<h4 id="o-anel">O anel</h4>
 
 <p>Uma sociedade totalmente rústica seria permitir a comunicação entre vizinhos.</p>
 
@@ -330,6 +436,8 @@ E se fosse um grafo direcional?</p>
 </code></pre></div></div>
 <p>onde <em>anel</em> é o nome da variável que você salvou o grafo anelar.</p>
 
+<h4 id="o-pequeno-mundo">O <em>pequeno mundo</em></h4>
+
 <p>Para adicionar ou ligações entre dois vértices, use os operadores de some e substação junto com a função <em>edge</em> que diz que o objeto sendo adicionado ou subtraído é uma ligação. Por exemplo,</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>anel = anel + edge(25,40) #Adiciona uma ligação entre o nó 25 e 40
 anel = anel - edge(1,2)   #Remove a ligação entre o nó 1 e 2
@@ -337,6 +445,10 @@ anel = anel - edge(1,2)   #Remove a ligação entre o nó 1 e 2
 <p>e assim você pode adicionar não-localidades.</p>
 
 <p>Uma <strong>rede <em>pequeno mundo</em></strong> tem muito contatos locais, entre vizinhos, junto com alguns poucos <strong>contatos aleatórios não-locais</strong>. Ela é dita <em><a href="https://pt.wikipedia.org/wiki/Redes_de_pequeno_mundo">pequeno mundo</a> (small world network)</em>, pois ela representa uma rede de contato em que a distância entre duas pessoas é pequena devido aos ‘atalhos’ dos contatos não lineares.</p>
+
+<p>Para gerar uma rede pequeno mundo</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sample_smallworld(1, 25, 1, 0.05) # Um anel com 5% das ligações aleatoriezadas
+</code></pre></div></div>
 
 <div class="image-container">
 
@@ -352,7 +464,33 @@ anel = anel - edge(1,2)   #Remove a ligação entre o nó 1 e 2
 
 </div>
 
-<h4 id="o-rico-fica-mais-rico">O rico fica mais rico</h4>
+<h4 id="o-látice">O látice</h4>
+
+<p>Uma generalização do anel é o chamado <strong>látice</strong>. É um exemplo de <strong>grafos regular</strong>, ou seja, todos os vértices (ou quase todos excluindo a borda) são idênticos em termos de ligação. Para fazer látices, use:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lat = make_lattice(c(5,5), dim = 2)
+lat_torus = make_lattice(c(5,5), dim = 2, circular = T)
+</code></pre></div></div>
+
+<div class="image-container">
+
+    <img src="/assets/img//projects/ictp-jovens/grafos_lats.png" alt="Avatar" class="image" />
+    <div class="overlay">
+      <div class="text" style="color:">
+        Grafos regulares (látices)
+	
+      </div>
+    </div>
+
+
+
+</div>
+
+<p>Para fazer uma pequeno mundo em cima de um látice bidimensional 5 por 5, use</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sample_smallworld(2, 5, 1, 0.05)
+</code></pre></div></div>
+<p>para aleatoriezar 5% das ligações regulares.</p>
+
+<h4 id="e-a-adesão-preferencial-o-rico-fica-mais-rico">E a adesão preferencial: <em>o rico fica mais rico</em></h4>
 
 <p>Hoje em dia, com o avanço das redes sociais, quem são as pessoas que você segue? Os algoritmos dessas redes vivem sugerindo nomes para você seguir. Concorda que quanto mais seguidores uma pessoa tem, maior a probabilidade desses algoritmos sugerirem essa pessoa?</p>
 
@@ -399,6 +537,14 @@ anel = anel - edge(1,2)   #Remove a ligação entre o nó 1 e 2
 
 
 </div>
+
+<p><strong>Perguntas:</strong></p>
+
+<p>a) Como vocês associariam as características de redes sociais e de contato antigas e as recentes com as propriedades das redes apresentadas?</p>
+
+<p>b) Quais seriam as propriedades matemáticas de vértices que representariam os <em>influencers</em>?</p>
+
+<p>c) Quais propriedades dos grafos vocês esperam que sejam maiores ou menores em cada um desses modelos de grafos?</p>
 
 <hr />
 

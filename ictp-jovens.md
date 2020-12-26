@@ -90,7 +90,7 @@ library(igraph)
 
 Por fim, cada pacote tem sua **documentação**. A documentação de um pacote é onda você encontra toda a informação sobre as funções que o pacote tem, e o que elas fazem. Vou deixar aqui as documentações desses pacotes que usaremos para vocês consultarem ao longo da semana.
 
-<a href="https://igraph.org/r/"><button class="mybutton">Documentação do <i>igraph</i></button></a>
+<a href="https://igraph.org/r/doc/"><button class="mybutton">Documentação do <i>igraph</i></button></a>
 
 Mas em geral a gente é cabela dura e fica tentando rodar coisas até que uma vai (ou a gente cansa haha).
 
@@ -103,7 +103,7 @@ Não precisa ler a documentação agora, mas saibam que ela está lá e se surgi
 Outra tarefa impotantíssima de vocês será **escrever um email de apresentação**! Para mim é muito importante entender mais quem vocês são para eu posso organizar nossas tarefas e nosso grupo de forma que seja mais legal para vocês :)
 
 Além das coisas básicas, como onde mora e estuda, quais os seus interesses em física, em matemática, em informática, pontos que se considera forte e que pode melhorar, experiências de trabalhar em grupo,..., lembrem também de mencionar:
-* sistema operacional do computador de vocês;
+* sistema operacional do computador de vocês e a informação que tive sobre ele - mémoria RAM, se é notebook ou desktop, processador,...;
 * o quanto vocês conhecem de computador e se você já programou alguma vez na vida ou fez algo de robótica;
 * o email que vocês usam no **GoogleDrive** - provavelmente teremos uma pasta compartilhada!
 
@@ -123,26 +123,135 @@ Vamos construir um **diagrama de fases** para esquematizar quando observamos uma
 
 # Redes de contato 
 
-Apresentação ao tópico de redes e grafos. Discussão sobre as características de redes de contato "antigas" e as recentes. Como modelar os influencers, os contatos não-locais e o aumento da conectividade? Como representar uma rede no computador e introdução ao pacote igraph do R. 
+Apresentação ao tópico de redes e grafos. Como representar uma rede no computador e introdução ao pacote igraph do R. 
 
-## O que são grafos e redes?
+## Introdução aos grafos e redes
 
+Vocês provavelmente sabem o que é um **polígono** e que polígonos vivem em planos, de duas dimensões. Podemos pensar em generalizar os polígonos e pensar em **poliédros**, em três dimensões. **Grafos** são uma generalização e abstração dos poliédros, e vivem em um número arbitrário de dimensões. 
+
+Eles podem ser pensados matematicamente como dois conjuntos: um conjunto de **vértices** que são os pontos, e um conjunto de **ligações** que são as uniões entre dois pontos. 
+
+
+**Matriz de adjacência**
+
+**Lista de nodos**
+
+#### História 
 
 Para saber como a teoria dos grafos começou com o Leonard Euler, assita esse vídeo do **[canal Numberphile](https://www.youtube.com/channel/UCoxcjq-8xIDTYp3uz647V5A)** (um dos canais mais legais do Youtube caso vocês não conheçam...).
 {% include video.html src="https://www.youtube.com/embed/W18FDEA1jRQ" %}
 
-## Como representar grafos no computador?
+
+##### Rede aleatória
+
+A **rede aleatória é uma rede sem nenhuma estrutura**. 
+Para gerar uma rede aleatória com 25 vértices e 20% de ligações distribuídas aleatoriamente pelos vértices, use
+```
+random = sample_gnp(25, 0.2)
+```
+
+## Principais propriedades matemáticas
+
+#### Vértices
+
+Vértices possuem um **grau**. 
+```
+degree(rede)
+```
+
+Uma geodésica entre dois vértices é o menor caminho que liga eles.
+```
+all_shortest_paths(rede, from = 17, to = 24) # Geodésica(s) entre 17 e 24
+```
+Uma **centralidade** ou **betweenness**.
+A centralidade de um vértice é proporcional ao número de geodésicas (caminhos mais curtos) que passam por esse vértice conectando dois vértices quaisquer da rede.
+```
+betweenness(rede)
+```
+A **proximidade** mede quantas ligações são necessárias para acessar todos os outros vértices a partir de um determinado vértice.
+```
+closeness(rede)
+```
+
+#### Ligações
+
+A **densidade de ligações** é a fração 
+```
+edge_density(rede)
+```
+
+Um **triângulo** é um ciclo de três vértices, $a\to b\to c\to a$
+```
+triangles(rede) # Fornece uma lista de trios
+count_triangles(rede) # Fornece o número de triângulos que cada vértice participa
+```
+
+Um **clique** é um conjunto de nós completamente ligados
+```
+cliques(rede, min=3) # Retorna todos os cliques com 3 ou mais vértices
+largest_cliques(rede) # Retorna o maior clique da rede
+```
+O oposto de um clique é um **conjunto de vértices independentes (IVS)**, 
+```
+largest_ivs(rede) # O maior IVS
+independence.number(a) # Tamanho do maior IVS
+```
+
+#### Rede
+
+Distribuição de **grau**.
+```
+plot(0:max(degree(rede)),degree_distribution(rede), type = 'h', lwd=3, col ="blue", xlab="Grau", ylab="Frequência", main="Distribuição de grau") # Em escala linear
+plot(0:max(degree(rede)), degree_distribution(rede), type = 'l', lwd=3, col ="red", xlab="Grau", ylab="Frequência", main="Distribuição de grau", log = "xy") # Em escala log
+```
+
+Um grafo tem uma **distância média** entre vértices, que nos diz o quão fácil é caminhar pelo vértices em média, ligando-os por suas geodésicas, e também tem um **diâmetro** que é o tamanho da maior geodésica:
+```
+mean_distance(rede)
+diameter(rede)
+```
+
+A **transitividade** (ou *coeficiente de clustering*) mede a probabilidade que dois vértices vizinhos de um terceiro vértice sejam vizinhos entre si. Ela esta relacionada com o número de triângulos da rede.
+```
+transitivity(rede) # A transitividade média da rede
+transitivity(aa, type='local') # A transitividade de cada vértice
+```
+
+A **assortatividade** da rede
+```
+assortativity_degree(rede)
+```
+quando a assortatividade é negativa, significa que vértices de grau alto estão ligados com vértices de grau baixo (graus anticorrelacionados). Quando a assortatividade é positiva, significa que vértices de grau alto estão ligados aos vértices de grau alto (graus correlacionados). Assortatividades próximas de zero significam ausência dessa estrutura. 
+Para ver o grau médio dos vizinhos de cada grau ($knn$) e a média do grau médio dos vizinhos entre os vértices de grau k ($knnk$), use
+```
+knn(rede)
+plot(unlist(knn(a)[2]), xlab="Grau", ylab="Grau médio dos vizinhos", main="Assortatividade", col = "darkgreen", pch=16) # Plot de assortatividade
+```
+
+Muitas redes consistem em módulos densamente conectados entre si, mas escassamente conectados a outros módulos. Essa é a **modularidade** da rede, e tentar encontrar essas *subredes*, chamadas de módulos, dentro da rede principal, é uma tarefa árdua, existem vários métodos. Um deles é o seguinte,
+```
+ceb = cluster_edge_betweenness(rede) # Classifica em módulos pela conectância entre vértices
+dendPlot(ceb)   # Visualizar o dendrograma de módulos
+plot(ceb, rede) # Visualizar os módulos na rede
+```
 
 
-**Pergunta:**
-Quantos grafos sem peso e adirecionais de 100 vértices são possíveis?
+**Perguntas:**
+a) Quantos grafos sem peso e adirecionais de 100 vértices são possíveis?
 *Dica:* começe pensando quantos existem com 3 vértices, desenhe eles se preciso for. Depois, 4... e N?
-Para contemplar o quão grande esse número é, compare com o [número de estrelas no universo](http://www.inpe.br/faq/index.php?pai=11#:~:text=Estima%2Dse%20que%20a%20nossa,de%2010%20sextilh%C3%B5es%20de%20estrelas.) e o [número de átomos no universo](https://pt.wikipedia.org/wiki/Universo_observ%C3%A1vel#:~:text=Conte%C3%BAdo%20em%20mat%C3%A9ria,-Representa%C3%A7%C3%A3o%20art%C3%ADstica%20do&text=Dois%20c%C3%A1lculos%20aproximados%20fornecem%20o,em%20torno%20de%201080.).
-E se fosse um grafo direcional?
+Para contemplar o quão grande esse número é, compare com o [número de estrelas no universo](http://www.inpe.br/faq/index.php?pai=11#:~:text=Estima%2Dse%20que%20a%20nossa,de%2010%20sextilh%C3%B5es%20de%20estrelas.) e o [número de átomos no universo](https://pt.wikipedia.org/wiki/Universo_observ%C3%A1vel#:~:text=Conte%C3%BAdo%20em%20mat%C3%A9ria,-Representa%C3%A7%C3%A3o%20art%C3%ADstica%20do&text=Dois%20c%C3%A1lculos%20aproximados%20fornecem%20o,em%20torno%20de%201080.). E se fosse um grafo direcional?
+
+b) Entre uma relação matemática entre o número total de ligações, o tamanho da rede e o grau médio da rede.
+
+c) Acho uma relação matemática entre o número total de triângulos, o tamanho da rede e a transitividade da rede.
+
+d) Qual a probabilidade que uma rede aleatória (Tamanho N e % de ligação p) tenha um clique de tamanho n? Depende do tamanho da rede?
 
 ## Sociedades
 
-#### Meus vizinhos e o *pequeno mundo*
+A gente conheceu as redes aleatórias, aquelas que não tem nenhum estrutura. Mas a gente sabe que a nossa sociedade é fortemente estruturada e nada aleatória. Vou apresentar aqui alguns dos métodos para gerar redes estruturadas. 
+
+#### O anel
 
 Uma sociedade totalmente rústica seria permitir a comunicação entre vizinhos.
 
@@ -156,6 +265,8 @@ plot(anel, vertex.size=9, layout=layout_in_circle(anel))
 ```
 onde *anel* é o nome da variável que você salvou o grafo anelar. 
 
+#### O *pequeno mundo*
+
 Para adicionar ou ligações entre dois vértices, use os operadores de some e substação junto com a função *edge* que diz que o objeto sendo adicionado ou subtraído é uma ligação. Por exemplo,
 ```
 anel = anel + edge(25,40) #Adiciona uma ligação entre o nó 25 e 40
@@ -165,10 +276,30 @@ e assim você pode adicionar não-localidades.
 
 Uma **rede *pequeno mundo*** tem muito contatos locais, entre vizinhos, junto com alguns poucos **contatos aleatórios não-locais**. Ela é dita *[pequeno mundo](https://pt.wikipedia.org/wiki/Redes_de_pequeno_mundo) (small world network)*, pois ela representa uma rede de contato em que a distância entre duas pessoas é pequena devido aos 'atalhos' dos contatos não lineares.
 
+Para gerar uma rede pequeno mundo
+```
+sample_smallworld(1, 25, 1, 0.05) # Um anel com 5% das ligações aleatoriezadas
+```
+
 {% include image.html image="/projects/ictp-jovens/grafos_1.png" text="Grafo anelar e rede <i>pequeno mundo</i>" %}
 
+#### O látice
 
-#### O rico fica mais rico
+Uma generalização do anel é o chamado **látice**. É um exemplo de **grafos regular**, ou seja, todos os vértices (ou quase todos excluindo a borda) são idênticos em termos de ligação. Para fazer látices, use:
+```
+lat = make_lattice(c(5,5), dim = 2)
+lat_torus = make_lattice(c(5,5), dim = 2, circular = T)
+```
+
+{% include image.html image="/projects/ictp-jovens/grafos_lats.png" text="Grafos regulares (látices)" %}
+
+Para fazer uma pequeno mundo em cima de um látice bidimensional 5 por 5, use
+```
+sample_smallworld(2, 5, 1, 0.05)
+```
+para aleatoriezar 5% das ligações regulares.
+
+#### E a adesão preferencial: *o rico fica mais rico*
 
 Hoje em dia, com o avanço das redes sociais, quem são as pessoas que você segue? Os algoritmos dessas redes vivem sugerindo nomes para você seguir. Concorda que quanto mais seguidores uma pessoa tem, maior a probabilidade desses algoritmos sugerirem essa pessoa? 
 
@@ -194,6 +325,14 @@ onde $n$ é o tamanho da rede (número de vértices), $power$ é o expoente $\al
 
 
 {% include image.html image="/projects/ictp-jovens/grafos_2.png" text="Grafos com adesão preferencial" %}
+
+**Perguntas:**
+
+a) Como vocês associariam as características de redes sociais e de contato antigas e as recentes com as propriedades das redes apresentadas?
+
+b) Quais seriam as propriedades matemáticas de vértices que representariam os *influencers*?
+
+c) Quais propriedades dos grafos vocês esperam que sejam maiores ou menores em cada um desses modelos de grafos?
 
 ---
 
