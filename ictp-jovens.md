@@ -131,6 +131,7 @@ Vocês provavelmente sabem o que é um **polígono** e que polígonos vivem em p
 
 Eles podem ser pensados matematicamente como dois conjuntos: um conjunto de **vértices** que são os pontos, e um conjunto de **ligações** que são as uniões entre dois pontos. 
 
+Alguns sites, por exemplo [MovieGalaxies](https://moviegalaxies.com/), fazem redes sociais a partir de **personagens de filmes**. Existem alguns artigos analisando as *character networks*, redes de personagens - por exemplo com [Senhor dos Anéis](https://arxiv.org/abs/1606.02610) e [Harry Potter e Crepúsculo](https://arxiv.org/abs/1608.00646).  
 
 **Matriz de adjacência**
 
@@ -154,44 +155,54 @@ random = sample_gnp(25, 0.2)
 
 #### Vértices
 
-Vértices possuem um **grau**. 
+A propriedade mais importante que vértices possuem é o seu **grau**, que nada mais é do que o número de vizinhos (ligações) que um vértice tem. Para obter o grau de cada vértice, use: 
 ```r
 degree(rede)
+mean(degree(rede)) # Grau médio da rede
+sd(degree(rede)) # Desvio-padrão da distribuição de graus
+max(degree(rede)) # Maior grau da rede
 ```
 
-Uma geodésica entre dois vértices é o menor caminho que liga eles.
+Uma geodésica entre dois vértices é o menor caminho que liga esses vértices percorrendo ligações da rede. Para acessar a(s) geodésica(s) entre dois vértices quaisquer, use a seguinte função:
 ```r
 all_shortest_paths(rede, from = 17, to = 24) # Geodésica(s) entre 17 e 24
 ```
-Uma **centralidade** ou **betweenness**.
-A centralidade de um vértice é proporcional ao número de geodésicas (caminhos mais curtos) que passam por esse vértice conectando dois vértices quaisquer da rede.
+Encontrar essas geodésicas de maneira eficiente é um dos maiores desafios da computação e tem muitas e muitas aplicações. Toda vez que você pede no *GoogleMaps* a rota mais curta entre dois pontos, ele está achando a geodésica entre esses dois pontos na rede que existe por trás do mapa. Um dos algoritmos mais famosos e incríveis da computação faz justamente isso, é o chamado [Algoritmo de Dijkstra](https://pt.wikipedia.org/wiki/Algoritmo_de_Dijkstra). 
+
+Uma noção importante que aparece com as geodésicas é a **centralidade** ou **betweenness** de cada vértice. A centralidade de um vértice é proporcional ao número de geodésicas que passam por esse vértice conectando dois vértices quaisquer da rede. Para conseguir a centralidade de cada vértice, execute:
 ```r
-betweenness(rede)
+betweenness(rede) # Retorna a centralidade de cada vértice
 ```
-A **proximidade** mede quantas ligações são necessárias para acessar todos os outros vértices a partir de um determinado vértice.
+
+Vértices de alta centralidade são fundamentais para a "união" da rede e transmissão de informação por ela. 
+
+Existem outras métricas além da *betweenness* para medir centralidade. Outro exemplo é a **proximidade** de cada nó, que é uma medida de quantas ligações são necessárias para acessar todos os outros vértices a partir de um determinado vértice. Para obtê-la:
 ```r
-closeness(rede)
+closeness(rede) # Retorna a proximidade de cada vértice
 ```
+Vértices com proximidade alta estão 'afastados' da rede - a informação precisa percorrer uma distância maior para chegar nesses vértices. 
 
 #### Ligações
 
-A **densidade de ligações** é a fração 
+A **densidade de ligações** é a razão entre o número de ligações existentes sobre o número de possíveis ligações na rede, e é calculada por 
 ```r
 edge_density(rede)
 ```
+Densidades de ligações próximas de 1 significam que todo vértice é vizinho de todo outro vértice. Esse é um dos parâmetros fundamentais das redes, pois ele dá uma grandeza adimensional entre o número de ligações em relação ao número de vértices. Geralmente denominamos os grafos com baixa e alta densidade de vértices como **grafos esparso e denso**, respectivamente. 
 
-Um **triângulo** é um ciclo de três vértices, $a\to b\to c\to a$
+As ligações podem formar estruturas. A mais importante é o **triângulo**, um ciclo de três vértices $a\to b\to c\to a$, você consegue uma lista dos triângulos, assim como o número de tiângulos por vértice com
 ```r
 triangles(rede) # Fornece uma lista de trios
 count_triangles(rede) # Fornece o número de triângulos que cada vértice participa
 ```
-
-Um **clique** é um conjunto de nós completamente ligados
+O triângulo é a noção mais básica depois da ligação. Uma generalização do triângulo, que são três vértices completamente conectados é o **clique-N**, que é um conjunto de N vértices completamente ligados entre si. Você os obtém com
 ```r
-cliques(rede, min=3) # Retorna todos os cliques com 3 ou mais vértices
+cliques(rede, min=4) # Retorna todos os cliques com 4 ou mais vértices
 largest_cliques(rede) # Retorna o maior clique da rede
+clique.number(rede) # Retorna o tamanho do maior clique da rede
 ```
-O oposto de um clique é um **conjunto de vértices independentes (IVS)**, 
+Assim, os triângulos seriam os *clique-3*. 
+E o oposto de um clique é um **conjunto de vértices independentes (IVS)**, isso é, um conjunto de vértices que não tem nenhuma ligação entre eles, eles não se comunicam. O maior IVS é obtido com 
 ```r
 largest_ivs(rede) # O maior IVS
 independence.number(rede) # Tamanho do maior IVS

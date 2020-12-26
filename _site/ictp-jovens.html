@@ -316,6 +316,8 @@
 
 <p>Eles podem ser pensados matematicamente como dois conjuntos: um conjunto de <strong>vértices</strong> que são os pontos, e um conjunto de <strong>ligações</strong> que são as uniões entre dois pontos.</p>
 
+<p>Alguns sites, por exemplo <a href="https://moviegalaxies.com/">MovieGalaxies</a>, fazem redes sociais a partir de <strong>personagens de filmes</strong>. Existem alguns artigos analisando as <em>character networks</em>, redes de personagens - por exemplo com <a href="https://arxiv.org/abs/1606.02610">Senhor dos Anéis</a> e <a href="https://arxiv.org/abs/1608.00646">Harry Potter e Crepúsculo</a>.</p>
+
 <p><strong>Matriz de adjacência</strong></p>
 
 <p><strong>Lista de nodos</strong></p>
@@ -340,37 +342,47 @@ Para gerar uma rede aleatória com 25 vértices e 20% de ligações distribuída
 
 <h4 id="vértices">Vértices</h4>
 
-<p>Vértices possuem um <strong>grau</strong>.</p>
+<p>A propriedade mais importante que vértices possuem é o seu <strong>grau</strong>, que nada mais é do que o número de vizinhos (ligações) que um vértice tem. Para obter o grau de cada vértice, use:</p>
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">degree</span><span class="p">(</span><span class="n">rede</span><span class="p">)</span><span class="w">
+</span><span class="n">mean</span><span class="p">(</span><span class="n">degree</span><span class="p">(</span><span class="n">rede</span><span class="p">))</span><span class="w"> </span><span class="c1"># Grau médio da rede</span><span class="w">
+</span><span class="n">sd</span><span class="p">(</span><span class="n">degree</span><span class="p">(</span><span class="n">rede</span><span class="p">))</span><span class="w"> </span><span class="c1"># Desvio-padrão da distribuição de graus</span><span class="w">
+</span><span class="nf">max</span><span class="p">(</span><span class="n">degree</span><span class="p">(</span><span class="n">rede</span><span class="p">))</span><span class="w"> </span><span class="c1"># Maior grau da rede</span><span class="w">
 </span></code></pre></div></div>
 
-<p>Uma geodésica entre dois vértices é o menor caminho que liga eles.</p>
+<p>Uma geodésica entre dois vértices é o menor caminho que liga esses vértices percorrendo ligações da rede. Para acessar a(s) geodésica(s) entre dois vértices quaisquer, use a seguinte função:</p>
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">all_shortest_paths</span><span class="p">(</span><span class="n">rede</span><span class="p">,</span><span class="w"> </span><span class="n">from</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">17</span><span class="p">,</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">24</span><span class="p">)</span><span class="w"> </span><span class="c1"># Geodésica(s) entre 17 e 24</span><span class="w">
 </span></code></pre></div></div>
-<p>Uma <strong>centralidade</strong> ou <strong>betweenness</strong>.
-A centralidade de um vértice é proporcional ao número de geodésicas (caminhos mais curtos) que passam por esse vértice conectando dois vértices quaisquer da rede.</p>
-<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">betweenness</span><span class="p">(</span><span class="n">rede</span><span class="p">)</span><span class="w">
+<p>Encontrar essas geodésicas de maneira eficiente é um dos maiores desafios da computação e tem muitas e muitas aplicações. Toda vez que você pede no <em>GoogleMaps</em> a rota mais curta entre dois pontos, ele está achando a geodésica entre esses dois pontos na rede que existe por trás do mapa. Um dos algoritmos mais famosos e incríveis da computação faz justamente isso, é o chamado <a href="https://pt.wikipedia.org/wiki/Algoritmo_de_Dijkstra">Algoritmo de Dijkstra</a>.</p>
+
+<p>Uma noção importante que aparece com as geodésicas é a <strong>centralidade</strong> ou <strong>betweenness</strong> de cada vértice. A centralidade de um vértice é proporcional ao número de geodésicas que passam por esse vértice conectando dois vértices quaisquer da rede. Para conseguir a centralidade de cada vértice, execute:</p>
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">betweenness</span><span class="p">(</span><span class="n">rede</span><span class="p">)</span><span class="w"> </span><span class="c1"># Retorna a centralidade de cada vértice</span><span class="w">
 </span></code></pre></div></div>
-<p>A <strong>proximidade</strong> mede quantas ligações são necessárias para acessar todos os outros vértices a partir de um determinado vértice.</p>
-<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">closeness</span><span class="p">(</span><span class="n">rede</span><span class="p">)</span><span class="w">
+
+<p>Vértices de alta centralidade são fundamentais para a “união” da rede e transmissão de informação por ela.</p>
+
+<p>Existem outras métricas além da <em>betweenness</em> para medir centralidade. Outro exemplo é a <strong>proximidade</strong> de cada nó, que é uma medida de quantas ligações são necessárias para acessar todos os outros vértices a partir de um determinado vértice. Para obtê-la:</p>
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">closeness</span><span class="p">(</span><span class="n">rede</span><span class="p">)</span><span class="w"> </span><span class="c1"># Retorna a proximidade de cada vértice</span><span class="w">
 </span></code></pre></div></div>
+<p>Vértices com proximidade alta estão ‘afastados’ da rede - a informação precisa percorrer uma distância maior para chegar nesses vértices.</p>
 
 <h4 id="ligações">Ligações</h4>
 
-<p>A <strong>densidade de ligações</strong> é a fração</p>
+<p>A <strong>densidade de ligações</strong> é a razão entre o número de ligações existentes sobre o número de possíveis ligações na rede, e é calculada por</p>
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">edge_density</span><span class="p">(</span><span class="n">rede</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
+<p>Densidades de ligações próximas de 1 significam que todo vértice é vizinho de todo outro vértice. Esse é um dos parâmetros fundamentais das redes, pois ele dá uma grandeza adimensional entre o número de ligações em relação ao número de vértices. Geralmente denominamos os grafos com baixa e alta densidade de vértices como <strong>grafos esparso e denso</strong>, respectivamente.</p>
 
-<p>Um <strong>triângulo</strong> é um ciclo de três vértices, $a\to b\to c\to a$</p>
+<p>As ligações podem formar estruturas. A mais importante é o <strong>triângulo</strong>, um ciclo de três vértices $a\to b\to c\to a$, você consegue uma lista dos triângulos, assim como o número de tiângulos por vértice com</p>
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">triangles</span><span class="p">(</span><span class="n">rede</span><span class="p">)</span><span class="w"> </span><span class="c1"># Fornece uma lista de trios</span><span class="w">
 </span><span class="n">count_triangles</span><span class="p">(</span><span class="n">rede</span><span class="p">)</span><span class="w"> </span><span class="c1"># Fornece o número de triângulos que cada vértice participa</span><span class="w">
 </span></code></pre></div></div>
-
-<p>Um <strong>clique</strong> é um conjunto de nós completamente ligados</p>
-<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cliques</span><span class="p">(</span><span class="n">rede</span><span class="p">,</span><span class="w"> </span><span class="n">min</span><span class="o">=</span><span class="m">3</span><span class="p">)</span><span class="w"> </span><span class="c1"># Retorna todos os cliques com 3 ou mais vértices</span><span class="w">
+<p>O triângulo é a noção mais básica depois da ligação. Uma generalização do triângulo, que são três vértices completamente conectados é o <strong>clique-N</strong>, que é um conjunto de N vértices completamente ligados entre si. Você os obtém com</p>
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cliques</span><span class="p">(</span><span class="n">rede</span><span class="p">,</span><span class="w"> </span><span class="n">min</span><span class="o">=</span><span class="m">4</span><span class="p">)</span><span class="w"> </span><span class="c1"># Retorna todos os cliques com 4 ou mais vértices</span><span class="w">
 </span><span class="n">largest_cliques</span><span class="p">(</span><span class="n">rede</span><span class="p">)</span><span class="w"> </span><span class="c1"># Retorna o maior clique da rede</span><span class="w">
+</span><span class="n">clique.number</span><span class="p">(</span><span class="n">rede</span><span class="p">)</span><span class="w"> </span><span class="c1"># Retorna o tamanho do maior clique da rede</span><span class="w">
 </span></code></pre></div></div>
-<p>O oposto de um clique é um <strong>conjunto de vértices independentes (IVS)</strong>,</p>
+<p>Assim, os triângulos seriam os <em>clique-3</em>. 
+E o oposto de um clique é um <strong>conjunto de vértices independentes (IVS)</strong>, isso é, um conjunto de vértices que não tem nenhuma ligação entre eles, eles não se comunicam. O maior IVS é obtido com</p>
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">largest_ivs</span><span class="p">(</span><span class="n">rede</span><span class="p">)</span><span class="w"> </span><span class="c1"># O maior IVS</span><span class="w">
 </span><span class="n">independence.number</span><span class="p">(</span><span class="n">rede</span><span class="p">)</span><span class="w"> </span><span class="c1"># Tamanho do maior IVS</span><span class="w">
 </span></code></pre></div></div>
