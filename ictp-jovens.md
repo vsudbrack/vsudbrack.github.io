@@ -145,6 +145,9 @@ A **Lista de Adjacência** associa a cada vértice do grafo uma lista de todos o
 
 Nesse exemplo fica claro que a matriz de adjacência, apesar de ser mais organizada e estruturada que a lista, ela ocupa muito mais memória no computador. A verdade é que armazenar um grafo no computador de forma a minimizar o custo com memória e tempo de acessibilidade é uma tarefa extremamente difícil e, no mundo real, combinam-se várias técnicas diferentes para se ter um armazenamento ótimo. 
 
+{% include colapse.html title="Pergunta"
+text="<b>Quantos grafos sem peso e não-direcionais de 100 vértices são possíveis?</b><br>Para contemplar o quão grande esse número é, compare com o <a href='http://www.inpe.br/faq/index.php?pai=11#:~:text=Estima%2Dse%20que%20a%20nossa,de%2010%20sextilh%C3%B5es%20de%20estrelas'>número de estrelas no universo</a> e o <a href='https://pt.wikipedia.org/wiki/Universo_observ%C3%A1vel#:~:text=Conte%C3%BAdo%20em%20mat%C3%A9ria,-Representa%C3%A7%C3%A3o%20art%C3%ADstica%20do&text=Dois%20c%C3%A1lculos%20aproximados%20fornecem%20o,em%20torno%20de%201080'>número de átomos no universo</a>.<br><b>E se fosse um grafo direcional?</b><br>Na sua opinião, essas respostas justificam porque é necessário usar ferramentas estatísticas para trabalhar com grafos?" %}
+
 #### História 
 
 Para saber como a teoria dos grafos começou com um dos mais geniais matemáticos e físicos que já pisou na Terra, o Leonard Euler, assista esse vídeo do **[canal Numberphile](https://www.youtube.com/channel/UCoxcjq-8xIDTYp3uz647V5A)** (um dos canais mais legais do Youtube caso vocês não conheçam...) sobre as **Sete pontes de Königsberg**, legendadas em inglês. A página da [Wikipédia](https://pt.wikipedia.org/wiki/Sete_pontes_de_K%C3%B6nigsberg) traz também a história das pontes em português e fotos dela. 
@@ -214,6 +217,10 @@ largest_cliques(rede) # Retorna o maior clique da rede
 clique.number(rede) # Retorna o tamanho do maior clique da rede
 ```
 Assim, os triângulos seriam os *clique-3*. 
+
+{% include colapse.html title="Pergunta"
+text="<b>Qual a probabilidade que uma rede aleatória com densidade de ligação $p$ tenha um clique de tamanho $n$? Depende do tamanho da rede? </b>" %}
+
 E o oposto de um clique é um **conjunto de vértices independentes (IVS)**, isso é, um conjunto de vértices que não tem nenhuma ligação entre eles, eles não se comunicam. O maior IVS é obtido com 
 ```r
 largest_ivs(rede) # O maior IVS
@@ -235,6 +242,10 @@ sd(degree(rede))  # Desvio-padrão da distribuição de graus
 max(degree(rede)) # Maior grau da rede
 ```
 
+{% include colapse.html title="Lema do aperto de mão"
+text="<b>Derive uma relação matemática entre o número total de ligações ($L$), o tamanho da rede ($N$) e o grau médio da rede ($\bar{k}$).</b><br>Depois que você a derivar, confira a resposta com o chamado <a href='https://pt.wikipedia.org/wiki/Lema_do_aperto_de_m%C3%A3o'>Lema do aperto de mão</a>." %}
+
+
 Um grafo tem uma **distância média** entre vértices, que nos diz o quão fácil é caminhar pelo vértices em média, ligando-os por suas geodésicas, e também tem um **diâmetro** que é o tamanho da maior geodésica:
 ```r
 mean_distance(rede)
@@ -246,6 +257,9 @@ A **transitividade** (ou *coeficiente de clustering*) mede a probabilidade que d
 transitivity(rede) # A transitividade média da rede
 transitivity(rede, type='local') # A transitividade de cada vértice
 ```
+
+{% include colapse.html title="Pergunta"
+text="<b>Qual a relação matemática entre o número total de triângulos ($T$), o tamanho da rede ($N$) e a transitividade da rede ($C_T$)?</b>" %}
 
 A **assortatividade** da rede é uma medida da correlação entre o grau de vértices vizinhos, e por ser uma correlação assume valores no intervalo $[-1,1]$. Você pode calcular ela com a seguinte função
 ```r
@@ -266,16 +280,6 @@ plot(ceb, rede) # Visualizar os módulos na rede
 ```
 Um exemplo de modularidade poderia ser a rede de músicas do *Spotify*. Duas músicas dessa rede são ligadas se elas aparecem simultaneamente na mesma *playlist* de pelo menos 5000 ouvintes diferentes. Quais seriam as modularidades dessa rede? Teria o módulo de rock, o módulo de pop, o módulo de música clássica, samba, e por aí vai... Claro que pode ser que várias pessoas coloquem 'Despacito' numa playlist com um sertanejo sofrência tipo 'S de Saudade', mas isso é muito inferior ao número de playlists em que a primeira aparece com outros reggaetons e a segunda com outros sertanejos.
 
-**Perguntas:**
-a) Quantos grafos sem peso e adirecionais de 100 vértices são possíveis?
-*Dica:* começe pensando quantos existem com 3 vértices, desenhe eles se preciso for. Depois, 4... e N?
-Para contemplar o quão grande esse número é, compare com o [número de estrelas no universo](http://www.inpe.br/faq/index.php?pai=11#:~:text=Estima%2Dse%20que%20a%20nossa,de%2010%20sextilh%C3%B5es%20de%20estrelas.) e o [número de átomos no universo](https://pt.wikipedia.org/wiki/Universo_observ%C3%A1vel#:~:text=Conte%C3%BAdo%20em%20mat%C3%A9ria,-Representa%C3%A7%C3%A3o%20art%C3%ADstica%20do&text=Dois%20c%C3%A1lculos%20aproximados%20fornecem%20o,em%20torno%20de%201080.). E se fosse um grafo direcional?
-
-b) Entre uma relação matemática entre o número total de ligações, o tamanho da rede e o grau médio da rede. (Depois que você a derivar, confira a resposta chamada de **[Lema do aperto de mão](https://pt.wikipedia.org/wiki/Lema_do_aperto_de_m%C3%A3o)**.)
-
-c) Acho uma relação matemática entre o número total de triângulos, o tamanho da rede e a transitividade da rede.
-
-d) Qual a probabilidade que uma rede aleatória (Tamanho N e % de ligação p) tenha um clique de tamanho n? Depende do tamanho da rede?
 
 ## Sociedades
 

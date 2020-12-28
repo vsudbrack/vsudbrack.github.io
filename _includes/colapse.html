@@ -1,0 +1,27 @@
+{{ title | default: Question }}
+{{ anstitle | default: Answer }}
+
+{% if include.open %}
+<details open>
+{% else %}
+<details>
+{% endif %}
+<summary>
+	<para>{{ include.title }}</para>
+</summary>
+
+{{ include.text }}
+
+	{% if include.ans %}
+	<details>
+	<summary>
+		<para>{{ include.anstitle }}</para>
+	</summary>
+
+	{{ include.ans }}
+
+	</details>
+	{% endif %}
+
+</details>
+

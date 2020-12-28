@@ -783,11 +783,37 @@ body {
   font-size: 20px;
   font-weight: bold;
   color: #c99065;
-  border: 0px solid #c99065; }
+  border: 1px solid #ccc;
+  cursor: pointer; }
   @media screen and (max-width: 667px) {
     .mybutton {
       width: 90%;
       left: 5%; } }
+
+/* Details and Summary */
+summary {
+  cursor: pointer;
+  background-color: #e5eaee;
+  margin: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #c99065; }
+
+details {
+  position: relative;
+  width: 80%;
+  background-color: #e5eaee;
+  padding: 5px 30px 5px 30px;
+  margin: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 9px;
+  border: 1px solid #ccc;
+  text-align: justify;
+  color: #424242; }
+  @media screen and (max-width: 667px) {
+    details {
+      width: 100%; } }
 
 .work-container {
   max-width: 650px;
@@ -803,7 +829,10 @@ body {
   .work-container img {
     max-width: 100%; }
   .work-container a:hover img {
-    opacity: 0.5; }
+    opacity: 0.5;
+    outline: none !important; }
+  .work-container a:active, .work-container a:focus {
+    outline: none !important; }
   .work-container .work-return {
     cursor: pointer;
     font-size: 24px;
@@ -830,6 +859,13 @@ body {
   z-index: 10;
   transform: translateY(30%);
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; }
+  #scroll-to-top a:hover img {
+    opacity: 0.5;
+    outline: none !important;
+    border: none !important; }
+  #scroll-to-top a:active, #scroll-to-top a:focus {
+    outline: none !important;
+    border: none !important; }
 
 .blog-container {
   padding-top: 10px;
@@ -966,10 +1002,10 @@ blockquote {
   margin-bottom: 20px;
   left: 20%;
   padding: 15px 15px 15px 40px;
-  border: 0px solid #c99065;
+  border: 1px solid #ccc;
   display: block;
   background-color: #e5eaee;
-  border-radius: 18px;
+  border-radius: 9px;
   color: #424242; }
   @media screen and (max-width: 667px) {
     #markdown-toc {
@@ -986,7 +1022,7 @@ blockquote {
   #markdown-toc a:active {
     color: #424242; }
   #markdown-toc::before {
-    content: "Jump to ...";
+    content: "Jump to...";
     font-weight: bold;
     color: #c99065;
     font-size: 20px; }

@@ -15,6 +15,9 @@
   a
     &:hover img
       opacity: 0.5
+      outline: none !important
+    &:active, &:focus
+      outline: none !important
   .work-return
     cursor: pointer
     font:
@@ -41,3 +44,11 @@
   z-index: 10
   transform: translateY(30%)
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out
+  a
+    &:hover img
+      opacity: 0.5
+      outline: none !important
+      border: none !important
+    &:active, &:focus
+      outline: none !important
+      border: none !important
