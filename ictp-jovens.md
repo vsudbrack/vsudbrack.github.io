@@ -131,12 +131,19 @@ Vocês provavelmente sabem o que é um **polígono** e que polígonos vivem em p
 
 Eles podem ser pensados matematicamente como dois conjuntos: um conjunto de **vértices** que são os pontos, e um conjunto de **ligações** que são as uniões entre dois pontos. 
 
+Grafos podem ser **direcionados** ou **não-direcionados**
+
+Também podem ser **binários** ou **não-binários**
+
 Para mais detalhes técnicos, sempre tem a página da [Wikipédia](https://pt.wikipedia.org/wiki/Teoria_dos_grafos). Aqui a gente vai partir para um *hands-on*, colocar a mão na massa!
 
 
-**Matriz de adjacência**
+**Matriz de adjacência** e **Lista de ligações**
+Estruturas do tipo lista incluem a lista de adjacência que associa a cada vértice do grafo uma lista de todos os outros vértices com os quais ele tem uma aresta e a lista de incidência, que armazena para cada vértice uma lista de objetos que representam as arestas incidentes a esse vértice[8][9].
 
-**Lista de nodos**
+Estruturas do tipo matriz incluem a matriz de incidência, uma matriz de 0's e 1's com suas linhas representando vértices e suas colunas as arestas e a matriz de adjacência onde ambas linhas e colunas possuem vértices. Em ambos casos um 1 indica dois objetos adjacentes e 0 indica dois objetos não adjacentes.
+
+
 
 #### História 
 
@@ -264,7 +271,7 @@ a) Quantos grafos sem peso e adirecionais de 100 vértices são possíveis?
 *Dica:* começe pensando quantos existem com 3 vértices, desenhe eles se preciso for. Depois, 4... e N?
 Para contemplar o quão grande esse número é, compare com o [número de estrelas no universo](http://www.inpe.br/faq/index.php?pai=11#:~:text=Estima%2Dse%20que%20a%20nossa,de%2010%20sextilh%C3%B5es%20de%20estrelas.) e o [número de átomos no universo](https://pt.wikipedia.org/wiki/Universo_observ%C3%A1vel#:~:text=Conte%C3%BAdo%20em%20mat%C3%A9ria,-Representa%C3%A7%C3%A3o%20art%C3%ADstica%20do&text=Dois%20c%C3%A1lculos%20aproximados%20fornecem%20o,em%20torno%20de%201080.). E se fosse um grafo direcional?
 
-b) Entre uma relação matemática entre o número total de ligações, o tamanho da rede e o grau médio da rede.
+b) Entre uma relação matemática entre o número total de ligações, o tamanho da rede e o grau médio da rede. (Depois que você a derivar, confira a resposta chamada de **[Lema do aperto de mão](https://pt.wikipedia.org/wiki/Lema_do_aperto_de_m%C3%A3o)**.)
 
 c) Acho uma relação matemática entre o número total de triângulos, o tamanho da rede e a transitividade da rede.
 
