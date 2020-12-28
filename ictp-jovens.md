@@ -131,7 +131,8 @@ Vocês provavelmente sabem o que é um **polígono** e que polígonos vivem em p
 
 Eles podem ser pensados matematicamente como dois conjuntos: um conjunto de **vértices** que são os pontos, e um conjunto de **ligações** que são as uniões entre dois pontos. 
 
-Alguns sites, por exemplo [MovieGalaxies](https://moviegalaxies.com/), fazem redes sociais a partir de **personagens de filmes**. Existem alguns artigos analisando as *character networks*, redes de personagens - por exemplo com [Senhor dos Anéis](https://arxiv.org/abs/1606.02610) e [Harry Potter e Crepúsculo](https://arxiv.org/abs/1608.00646).  
+Para mais detalhes técnicos, sempre tem a página da [Wikipédia](https://pt.wikipedia.org/wiki/Teoria_dos_grafos). Aqui a gente vai partir para um *hands-on*, colocar a mão na massa!
+
 
 **Matriz de adjacência**
 
@@ -139,7 +140,7 @@ Alguns sites, por exemplo [MovieGalaxies](https://moviegalaxies.com/), fazem red
 
 #### História 
 
-Para saber como a teoria dos grafos começou, com um dos mais geniais matemáticos e físicos que já pisou na Terra, o Leonard Euler, assista esse vídeo do **[canal Numberphile](https://www.youtube.com/channel/UCoxcjq-8xIDTYp3uz647V5A)** (um dos canais mais legais do Youtube caso vocês não conheçam...).
+Para saber como a teoria dos grafos começou com um dos mais geniais matemáticos e físicos que já pisou na Terra, o Leonard Euler, assista esse vídeo do **[canal Numberphile](https://www.youtube.com/channel/UCoxcjq-8xIDTYp3uz647V5A)** (um dos canais mais legais do Youtube caso vocês não conheçam...) sobre as **Sete pontes de Königsberg**, legendadas em inglês. A página da [Wikipédia](https://pt.wikipedia.org/wiki/Sete_pontes_de_K%C3%B6nigsberg) traz também a história das pontes em português e fotos dela. 
 {% include video.html src="https://www.youtube.com/embed/W18FDEA1jRQ" %}
 
 
@@ -347,6 +348,8 @@ onde $n$ é o tamanho da rede (número de vértices), $power$ é o expoente $\al
 
 
 {% include image.html image="/projects/ictp-jovens/grafos_2.png" text="Grafos com adesão preferencial" %}
+
+E por curiosidade, há também alguns sites, por exemplo [MovieGalaxies](https://moviegalaxies.com/), que fazem redes sociais a partir de **personagens de filmes**. Existem alguns artigos analisando as *character networks*, redes de personagens - por exemplo com [Senhor dos Anéis](https://arxiv.org/abs/1606.02610) e [Harry Potter e Crepúsculo](https://arxiv.org/abs/1608.00646).  
 
 **Perguntas:**
 
