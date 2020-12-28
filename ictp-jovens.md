@@ -138,12 +138,12 @@ Também podem ser **binários** ou **não-binários**
 Para mais detalhes técnicos, sempre tem a página da [Wikipédia](https://pt.wikipedia.org/wiki/Teoria_dos_grafos). Aqui a gente vai partir para um *hands-on*, colocar a mão na massa!
 
 
-**Matriz de adjacência** e **Lista de ligações**
-Estruturas do tipo lista incluem a lista de adjacência que associa a cada vértice do grafo uma lista de todos os outros vértices com os quais ele tem uma aresta e a lista de incidência, que armazena para cada vértice uma lista de objetos que representam as arestas incidentes a esse vértice[8][9].
+Existem duas formas principais de armazenar uma rede no computador: a matriz e a lista de adjacências. Lembrando que *adjacência* é só uma palavra chique para *vizinhança*. 
+A **Lista de Adjacência** associa a cada vértice do grafo uma lista de todos os outros vértices com os quais ele se conecta - ela pode ser vista como uma lista de listas. Enquanto que a **Matriz de Adjacência** tem uma estrutura de matriz binária (seus elementos são 0's e 1's) com suas linhas e colunas representando cada um dos vértices da rede e os seus elementos assumem valores 1 indicando que os vértices da linha e coluna estão ligados e 0 caso contrário.
 
-Estruturas do tipo matriz incluem a matriz de incidência, uma matriz de 0's e 1's com suas linhas representando vértices e suas colunas as arestas e a matriz de adjacência onde ambas linhas e colunas possuem vértices. Em ambos casos um 1 indica dois objetos adjacentes e 0 indica dois objetos não adjacentes.
+{% include image.html image="/projects/ictp-jovens/representacao.png" text="Lista e matriz de adjacência para um grafo de 5 vértices" %}
 
-
+Nesse exemplo fica claro que a matriz de adjacência, apesar de ser mais organizada e estruturada que a lista, ela ocupa muito mais memória no computador. A verdade é que armazenar um grafo no computador de forma a minimizar o custo com memória e tempo de acessibilidade é uma tarefa extremamente difícil e, no mundo real, combinam-se várias técnicas diferentes para se ter um armazenamento ótimo. 
 
 #### História 
 

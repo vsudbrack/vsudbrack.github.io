@@ -126,7 +126,8 @@
       </li>
     </ul>
   </li>
-  <li><a href="#dinâmica-da-opinião" id="markdown-toc-dinâmica-da-opinião">Dinâmica da opinião</a>    <ul>
+  <li><a href="#da-estrutura-para-dinâmica" id="markdown-toc-da-estrutura-para-dinâmica">Da estrutura para dinâmica</a>    <ul>
+      <li><a href="#modelando-opinião" id="markdown-toc-modelando-opinião">Modelando Opinião</a></li>
       <li><a href="#troca-de-opinião" id="markdown-toc-troca-de-opinião">Troca de opinião</a></li>
       <li><a href="#diagramas-de-fase" id="markdown-toc-diagramas-de-fase">Diagramas de fase</a></li>
     </ul>
@@ -316,15 +317,34 @@
 
 <p>Eles podem ser pensados matematicamente como dois conjuntos: um conjunto de <strong>vértices</strong> que são os pontos, e um conjunto de <strong>ligações</strong> que são as uniões entre dois pontos.</p>
 
-<p>Alguns sites, por exemplo <a href="https://moviegalaxies.com/">MovieGalaxies</a>, fazem redes sociais a partir de <strong>personagens de filmes</strong>. Existem alguns artigos analisando as <em>character networks</em>, redes de personagens - por exemplo com <a href="https://arxiv.org/abs/1606.02610">Senhor dos Anéis</a> e <a href="https://arxiv.org/abs/1608.00646">Harry Potter e Crepúsculo</a>.</p>
+<p>Grafos podem ser <strong>direcionados</strong> ou <strong>não-direcionados</strong></p>
 
-<p><strong>Matriz de adjacência</strong></p>
+<p>Também podem ser <strong>binários</strong> ou <strong>não-binários</strong></p>
 
-<p><strong>Lista de nodos</strong></p>
+<p>Para mais detalhes técnicos, sempre tem a página da <a href="https://pt.wikipedia.org/wiki/Teoria_dos_grafos">Wikipédia</a>. Aqui a gente vai partir para um <em>hands-on</em>, colocar a mão na massa!</p>
+
+<p>Existem duas formas principais de armazenar uma rede no computador: a matriz e a lista de adjacências. Lembrando que <em>adjacência</em> é só uma palavra chique para <em>vizinhança</em>. 
+A <strong>Lista de Adjacência</strong> associa a cada vértice do grafo uma lista de todos os outros vértices com os quais ele se conecta - ela pode ser vista como uma lista de listas. Enquanto que a <strong>Matriz de Adjacência</strong> tem uma estrutura de matriz binária (seus elementos são 0’s e 1’s) com suas linhas e colunas representando cada um dos vértices da rede e os seus elementos assumem valores 1 indicando que os vértices da linha e coluna estão ligados e 0 caso contrário.</p>
+
+<div class="image-container">
+
+    <img src="/assets/img//projects/ictp-jovens/representacao.png" alt="Avatar" class="image" />
+    <div class="overlay">
+      <div class="text" style="color:">
+        Lista e matriz de adjacência para um grafo de 5 vértices
+	
+      </div>
+    </div>
+
+
+
+</div>
+
+<p>Nesse exemplo fica claro que a matriz de adjacência, apesar de ser mais organizada e estruturada que a lista, ela ocupa muito mais memória no computador. A verdade é que armazenar um grafo no computador de forma a minimizar o custo com memória e tempo de acessibilidade é uma tarefa extremamente difícil e, no mundo real, combinam-se várias técnicas diferentes para se ter um armazenamento ótimo.</p>
 
 <h4 id="história">História</h4>
 
-<p>Para saber como a teoria dos grafos começou, com um dos mais geniais matemáticos e físicos que já pisou na Terra, o Leonard Euler, assista esse vídeo do <strong><a href="https://www.youtube.com/channel/UCoxcjq-8xIDTYp3uz647V5A">canal Numberphile</a></strong> (um dos canais mais legais do Youtube caso vocês não conheçam…).</p>
+<p>Para saber como a teoria dos grafos começou com um dos mais geniais matemáticos e físicos que já pisou na Terra, o Leonard Euler, assista esse vídeo do <strong><a href="https://www.youtube.com/channel/UCoxcjq-8xIDTYp3uz647V5A">canal Numberphile</a></strong> (um dos canais mais legais do Youtube caso vocês não conheçam…) sobre as <strong>Sete pontes de Königsberg</strong>, legendadas em inglês. A página da <a href="https://pt.wikipedia.org/wiki/Sete_pontes_de_K%C3%B6nigsberg">Wikipédia</a> traz também a história das pontes em português e fotos dela.</p>
 <div class="videoWrapper">
   
 	<iframe src="https://www.youtube.com/embed/W18FDEA1jRQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
@@ -342,11 +362,9 @@ Para gerar uma rede aleatória com 25 vértices e 20% de ligações distribuída
 
 <h4 id="vértices">Vértices</h4>
 
-<p>A propriedade mais importante que vértices possuem é o seu <strong>grau</strong>, que nada mais é do que o número de vizinhos (ligações) que um vértice tem. Para obter o grau de cada vértice, use:</p>
-<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">degree</span><span class="p">(</span><span class="n">rede</span><span class="p">)</span><span class="w">
-</span><span class="n">mean</span><span class="p">(</span><span class="n">degree</span><span class="p">(</span><span class="n">rede</span><span class="p">))</span><span class="w"> </span><span class="c1"># Grau médio da rede</span><span class="w">
-</span><span class="n">sd</span><span class="p">(</span><span class="n">degree</span><span class="p">(</span><span class="n">rede</span><span class="p">))</span><span class="w"> </span><span class="c1"># Desvio-padrão da distribuição de graus</span><span class="w">
-</span><span class="nf">max</span><span class="p">(</span><span class="n">degree</span><span class="p">(</span><span class="n">rede</span><span class="p">))</span><span class="w"> </span><span class="c1"># Maior grau da rede</span><span class="w">
+<p>A propriedade mais importante que vértices possuem é o seu <strong>grau</strong>, que nada mais é do que o número de vizinhos (ligações) que um vértice tem. Para obter os vizinhos e o grau de cada vértice, use (<em>lembre-se de trocar ‘rede’ pelo nome da variável que você deu para a rede</em>):</p>
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">neighbors</span><span class="p">(</span><span class="n">rede</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">)</span><span class="w"> </span><span class="c1"># Lista todos of vizinhos do vértice 1</span><span class="w">
+</span><span class="n">degree</span><span class="p">(</span><span class="n">rede</span><span class="p">)</span><span class="w"> </span><span class="c1"># Lista o grau de todos os vértices da rede</span><span class="w">
 </span></code></pre></div></div>
 
 <p>Uma geodésica entre dois vértices é o menor caminho que liga esses vértices percorrendo ligações da rede. Para acessar a(s) geodésica(s) entre dois vértices quaisquer, use a seguinte função:</p>
@@ -364,6 +382,11 @@ Para gerar uma rede aleatória com 25 vértices e 20% de ligações distribuída
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">closeness</span><span class="p">(</span><span class="n">rede</span><span class="p">)</span><span class="w"> </span><span class="c1"># Retorna a proximidade de cada vértice</span><span class="w">
 </span></code></pre></div></div>
 <p>Vértices com proximidade alta estão ‘afastados’ da rede - a informação precisa percorrer uma distância maior para chegar nesses vértices.</p>
+
+<p>Já a <strong>matriz de co-citação</strong> é uma matriz quadrado com o mesmo tamanho da rede, e fornece informação sobre o número de ligações compartilhados por quaisquer dois vértices da rede. É uma medida de <em>semelhança</em> entre dois vértices diferentes.</p>
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cocitation</span><span class="p">(</span><span class="n">rede</span><span class="p">)[</span><span class="m">1</span><span class="p">,</span><span class="m">3</span><span class="p">]</span><span class="w"> </span><span class="c1"># Número de vértices que 1 e 3 compartilham</span><span class="w">
+</span></code></pre></div></div>
+<p>Esse nome vem do contexto de redes bibliográficas - dois artigos são conectados se eles se citam. Esse conceito é bem importante em algoritmos de recomendação de conteúdo para usuário. Imagina a rede de filmes da Netflix e dois filmes são conectados se mais de $70%$ dos usuário que assistiram ambos os filmes, favoritaram ambos. Agora um outro usuário que terminou de ver um filme do catálogo, e agora precisa de uma recomendação do próximo filme para assistir: basta achar o filme com maior índice de co-citação com o filmes que esse usuário favoritou. Claro que isso pode (e deve!) ser bem mais complexo, com múltiplos critérios para sugestão…</p>
 
 <h4 id="ligações">Ligações</h4>
 
@@ -389,9 +412,15 @@ E o oposto de um clique é um <strong>conjunto de vértices independentes (IVS)<
 
 <h4 id="rede">Rede</h4>
 
-<p>Distribuição de <strong>grau</strong>.</p>
-<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plot</span><span class="p">(</span><span class="m">0</span><span class="o">:</span><span class="nf">max</span><span class="p">(</span><span class="n">degree</span><span class="p">(</span><span class="n">rede</span><span class="p">)),</span><span class="n">degree_distribution</span><span class="p">(</span><span class="n">rede</span><span class="p">),</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'h'</span><span class="p">,</span><span class="w"> </span><span class="n">lwd</span><span class="o">=</span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="s2">"blue"</span><span class="p">,</span><span class="w"> </span><span class="n">xlab</span><span class="o">=</span><span class="s2">"Grau"</span><span class="p">,</span><span class="w"> </span><span class="n">ylab</span><span class="o">=</span><span class="s2">"Frequência"</span><span class="p">,</span><span class="w"> </span><span class="n">main</span><span class="o">=</span><span class="s2">"Distribuição de grau"</span><span class="p">)</span><span class="w"> </span><span class="c1"># Em escala linear</span><span class="w">
+<p>A <strong>Distribuição de grau</strong> é um histograma que mostra a fração de vértices que contém cada grau.</p>
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plot</span><span class="p">(</span><span class="m">0</span><span class="o">:</span><span class="nf">max</span><span class="p">(</span><span class="n">degree</span><span class="p">(</span><span class="n">rede</span><span class="p">)),</span><span class="w"> </span><span class="n">degree_distribution</span><span class="p">(</span><span class="n">rede</span><span class="p">),</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'h'</span><span class="p">,</span><span class="w"> </span><span class="n">lwd</span><span class="o">=</span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="s2">"blue"</span><span class="p">,</span><span class="w"> </span><span class="n">xlab</span><span class="o">=</span><span class="s2">"Grau"</span><span class="p">,</span><span class="w"> </span><span class="n">ylab</span><span class="o">=</span><span class="s2">"Frequência"</span><span class="p">,</span><span class="w"> </span><span class="n">main</span><span class="o">=</span><span class="s2">"Distribuição de grau"</span><span class="p">)</span><span class="w"> </span><span class="c1"># Em escala linear</span><span class="w">
 </span><span class="n">plot</span><span class="p">(</span><span class="m">0</span><span class="o">:</span><span class="nf">max</span><span class="p">(</span><span class="n">degree</span><span class="p">(</span><span class="n">rede</span><span class="p">)),</span><span class="w"> </span><span class="n">degree_distribution</span><span class="p">(</span><span class="n">rede</span><span class="p">),</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'l'</span><span class="p">,</span><span class="w"> </span><span class="n">lwd</span><span class="o">=</span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="s2">"red"</span><span class="p">,</span><span class="w"> </span><span class="n">xlab</span><span class="o">=</span><span class="s2">"Grau"</span><span class="p">,</span><span class="w"> </span><span class="n">ylab</span><span class="o">=</span><span class="s2">"Frequência"</span><span class="p">,</span><span class="w"> </span><span class="n">main</span><span class="o">=</span><span class="s2">"Distribuição de grau"</span><span class="p">,</span><span class="w"> </span><span class="n">log</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"xy"</span><span class="p">)</span><span class="w"> </span><span class="c1"># Em escala log</span><span class="w">
+</span></code></pre></div></div>
+
+<p>E também é possível fazer um pouco de estatística em cima da distribuição de grau:</p>
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mean</span><span class="p">(</span><span class="n">degree</span><span class="p">(</span><span class="n">rede</span><span class="p">))</span><span class="c1"># Grau médio da rede</span><span class="w">
+</span><span class="n">sd</span><span class="p">(</span><span class="n">degree</span><span class="p">(</span><span class="n">rede</span><span class="p">))</span><span class="w">  </span><span class="c1"># Desvio-padrão da distribuição de graus</span><span class="w">
+</span><span class="nf">max</span><span class="p">(</span><span class="n">degree</span><span class="p">(</span><span class="n">rede</span><span class="p">))</span><span class="w"> </span><span class="c1"># Maior grau da rede</span><span class="w">
 </span></code></pre></div></div>
 
 <p>Um grafo tem uma <strong>distância média</strong> entre vértices, que nos diz o quão fácil é caminhar pelo vértices em média, ligando-os por suas geodésicas, e também tem um <strong>diâmetro</strong> que é o tamanho da maior geodésica:</p>
@@ -401,13 +430,13 @@ E o oposto de um clique é um <strong>conjunto de vértices independentes (IVS)<
 
 <p>A <strong>transitividade</strong> (ou <em>coeficiente de clustering</em>) mede a probabilidade que dois vértices vizinhos de um terceiro vértice sejam vizinhos entre si. Ela esta relacionada com o número de triângulos da rede.</p>
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">transitivity</span><span class="p">(</span><span class="n">rede</span><span class="p">)</span><span class="w"> </span><span class="c1"># A transitividade média da rede</span><span class="w">
-</span><span class="n">transitivity</span><span class="p">(</span><span class="n">aa</span><span class="p">,</span><span class="w"> </span><span class="n">type</span><span class="o">=</span><span class="s1">'local'</span><span class="p">)</span><span class="w"> </span><span class="c1"># A transitividade de cada vértice</span><span class="w">
+</span><span class="n">transitivity</span><span class="p">(</span><span class="n">rede</span><span class="p">,</span><span class="w"> </span><span class="n">type</span><span class="o">=</span><span class="s1">'local'</span><span class="p">)</span><span class="w"> </span><span class="c1"># A transitividade de cada vértice</span><span class="w">
 </span></code></pre></div></div>
 
-<p>A <strong>assortatividade</strong> da rede</p>
+<p>A <strong>assortatividade</strong> da rede é uma medida da correlação entre o grau de vértices vizinhos, e por ser uma correlação assume valores no intervalo $[-1,1]$. Você pode calcular ela com a seguinte função</p>
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">assortativity_degree</span><span class="p">(</span><span class="n">rede</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
-<p>quando a assortatividade é negativa, significa que vértices de grau alto estão ligados com vértices de grau baixo (graus anti-correlacionados). Quando a assortatividade é positiva, significa que vértices de grau alto estão ligados aos vértices de grau alto (graus correlacionados). Assortatividades próximas de zero significam ausência dessa estrutura. 
+<p>Basicamente, quando a assortatividade é negativa, significa que vértices de grau alto estão ligados com vértices de grau baixo (graus anti-correlacionados). Quando a assortatividade é positiva, significa que vértices de grau alto estão ligados aos vértices de grau alto (graus correlacionados). Assortatividades próximas de zero significam ausência dessa estrutura. 
 Para ver o grau médio dos vizinhos de cada grau ($knn$) e a média do grau médio dos vizinhos entre os vértices de grau k ($knnk$), use</p>
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">knn</span><span class="p">(</span><span class="n">rede</span><span class="p">)</span><span class="w">
 </span><span class="n">plot</span><span class="p">(</span><span class="n">unlist</span><span class="p">(</span><span class="n">knn</span><span class="p">(</span><span class="n">a</span><span class="p">)[</span><span class="m">2</span><span class="p">]),</span><span class="w"> </span><span class="n">xlab</span><span class="o">=</span><span class="s2">"Grau"</span><span class="p">,</span><span class="w"> </span><span class="n">ylab</span><span class="o">=</span><span class="s2">"Grau médio dos vizinhos"</span><span class="p">,</span><span class="w"> </span><span class="n">main</span><span class="o">=</span><span class="s2">"Assortatividade"</span><span class="p">,</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"darkgreen"</span><span class="p">,</span><span class="w"> </span><span class="n">pch</span><span class="o">=</span><span class="m">16</span><span class="p">)</span><span class="w"> </span><span class="c1"># Plot de assortatividade</span><span class="w">
@@ -418,13 +447,14 @@ Para ver o grau médio dos vizinhos de cada grau ($knn$) e a média do grau méd
 </span><span class="n">dendPlot</span><span class="p">(</span><span class="n">ceb</span><span class="p">)</span><span class="w">   </span><span class="c1"># Visualizar o dendrograma de módulos</span><span class="w">
 </span><span class="n">plot</span><span class="p">(</span><span class="n">ceb</span><span class="p">,</span><span class="w"> </span><span class="n">rede</span><span class="p">)</span><span class="w"> </span><span class="c1"># Visualizar os módulos na rede</span><span class="w">
 </span></code></pre></div></div>
+<p>Um exemplo de modularidade poderia ser a rede de músicas do <em>Spotify</em>. Duas músicas dessa rede são ligadas se elas aparecem simultaneamente na mesma <em>playlist</em> de pelo menos 5000 ouvintes diferentes. Quais seriam as modularidades dessa rede? Teria o módulo de rock, o módulo de pop, o módulo de música clássica, samba, e por aí vai… Claro que pode ser que várias pessoas coloquem ‘Despacito’ numa playlist com um sertanejo sofrência tipo ‘S de Saudade’, mas isso é muito inferior ao número de playlists em que a primeira aparece com outros reggaetons e a segunda com outros sertanejos.</p>
 
 <p><strong>Perguntas:</strong>
 a) Quantos grafos sem peso e adirecionais de 100 vértices são possíveis?
 <em>Dica:</em> começe pensando quantos existem com 3 vértices, desenhe eles se preciso for. Depois, 4… e N?
 Para contemplar o quão grande esse número é, compare com o <a href="http://www.inpe.br/faq/index.php?pai=11#:~:text=Estima%2Dse%20que%20a%20nossa,de%2010%20sextilh%C3%B5es%20de%20estrelas.">número de estrelas no universo</a> e o <a href="https://pt.wikipedia.org/wiki/Universo_observ%C3%A1vel#:~:text=Conte%C3%BAdo%20em%20mat%C3%A9ria,-Representa%C3%A7%C3%A3o%20art%C3%ADstica%20do&amp;text=Dois%20c%C3%A1lculos%20aproximados%20fornecem%20o,em%20torno%20de%201080.">número de átomos no universo</a>. E se fosse um grafo direcional?</p>
 
-<p>b) Entre uma relação matemática entre o número total de ligações, o tamanho da rede e o grau médio da rede.</p>
+<p>b) Entre uma relação matemática entre o número total de ligações, o tamanho da rede e o grau médio da rede. (Depois que você a derivar, confira a resposta chamada de <strong><a href="https://pt.wikipedia.org/wiki/Lema_do_aperto_de_m%C3%A3o">Lema do aperto de mão</a></strong>.)</p>
 
 <p>c) Acho uma relação matemática entre o número total de triângulos, o tamanho da rede e a transitividade da rede.</p>
 
@@ -548,6 +578,8 @@ Para contemplar o quão grande esse número é, compare com o <a href="http://ww
 
 </div>
 
+<p>E por curiosidade, há também alguns sites, por exemplo <a href="https://moviegalaxies.com/">MovieGalaxies</a>, que fazem redes sociais a partir de <strong>personagens de filmes</strong>. Existem alguns artigos analisando as <em>character networks</em>, redes de personagens - por exemplo com <a href="https://arxiv.org/abs/1606.02610">Senhor dos Anéis</a> e <a href="https://arxiv.org/abs/1608.00646">Harry Potter e Crepúsculo</a>.</p>
+
 <p><strong>Perguntas:</strong></p>
 
 <p>a) Como vocês associariam as características de redes sociais e de contato antigas e as recentes com as propriedades das redes apresentadas?</p>
@@ -558,7 +590,11 @@ Para contemplar o quão grande esse número é, compare com o <a href="http://ww
 
 <hr />
 
-<h1 id="dinâmica-da-opinião">Dinâmica da opinião</h1>
+<h1 id="da-estrutura-para-dinâmica">Da estrutura para dinâmica</h1>
+
+<p>As redes sociais que discutimos nos fornecem informação sobre a estrutura da rede, isto é, as características das interações fixas no tempo. Agora queremos adicionar uma <strong>dinâmica</strong> para completar o nosso modelo de troca de informações e opiniões, essa é a parte que dita a <strong>evolução temporal</strong> o modelo, dita o que acontece a medida que o tempo passa.</p>
+
+<h2 id="modelando-opinião">Modelando Opinião</h2>
 
 <p>A primeira grande simplificação que vamos fazer é trabalhar com opiniões binárias: sim ou não, favorável ou contrário, mais ou menos, bolacha ou biscoito, feijão por cima do arroz ou arroz por cima do feijão.</p>
 
@@ -567,7 +603,7 @@ Para contemplar o quão grande esse número é, compare com o <a href="http://ww
     <img src="/assets/img//projects/ictp-jovens/opiniao_binaria.jpeg" alt="Avatar" class="image" />
     <div class="overlay">
       <div class="text" style="color:">
-        Exemplos de opiniões binárias
+        Exemplos de opiniões binárias polarizadas (esq.) e misturada (dir.)
 	
       </div>
     </div>
@@ -610,7 +646,10 @@ Para contemplar o quão grande esse número é, compare com o <a href="http://ww
 
 </div>
 
-<p><strong>Perguntas:</strong></p>
+<p>Vale ressaltar que essas descontinuidades acontecem apenas no <strong>limite termodinâmico</strong>, que é quando o número de vértices é infinito. Sabemos que no computador a gente não chega nem perto desse número, então precisamos de outras técnicas para averiguar o tipo de transição com um número finito de vértices. A mais comum é o <em>scaling</em> (escalonamento - mas não o de matriz!), em que a gente aumenta a ordem de grandeza do número de vértices e verifica a tendência das curvas, e assim extrapolamos para um número infinito de vértices. Muitos físicos e matemáticos trabalham para estudar essas transições do ponto de vista analítico, usando teoremas e limites que possam indicar a convergência para uma transição de fase, porém nós nos restringiremos aos métodos computacionais.</p>
+
+<p><strong>Perguntas:</strong>
+Vamos fixar as redes em 1024 vértices e 2048 ligações.</p>
 <ul>
   <li>Para quais parâmetros do sistema a rede de contatos atinge consenso?</li>
   <li>Como o aumento da ‘teimosia’ e do número médio de contatos na rede influencia o estado de consenso?</li>
