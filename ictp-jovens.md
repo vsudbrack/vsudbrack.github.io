@@ -180,6 +180,12 @@ closeness(rede) # Retorna a proximidade de cada vértice
 ```
 Vértices com proximidade alta estão 'afastados' da rede - a informação precisa percorrer uma distância maior para chegar nesses vértices. 
 
+Já a **matriz de co-citação** é uma matriz quadrado com o mesmo tamanho da rede, e fornece informação sobre o número de ligações compartilhados por quaisquer dois vértices da rede. É uma medida de *semelhança* entre dois vértices diferentes. 
+```r
+cocitation(rede)[1,3] # Número de vértices que 1 e 3 compartilham
+```
+Esse nome vem do contexto de redes bibliográficas - dois artigos são conectados se eles se citam. Esse conceito é bem importante em algoritmos de recomendação de conteúdo para usuário. Imagina a rede de filmes da Netflix e dois filmes são conectados se mais de $70%$ dos usuário que assistiram ambos os filmes, favoritaram ambos. Agora um outro usuário que terminou de ver um filme do catálogo, e agora precisa de uma recomendação do próximo filme para assistir: basta achar o filme com maior índice de co-citação com o filmes que esse usuário favoritou. Claro que isso pode (e deve!) ser bem mais complexo, com múltiplos critérios para sugestão... 
+
 #### Ligações
 
 A **densidade de ligações** é a razão entre o número de ligações existentes sobre o número de possíveis ligações na rede, e é calculada por 
@@ -208,7 +214,7 @@ independence.number(rede) # Tamanho do maior IVS
 
 #### Rede
 
-Distribuição de **grau**.
+A **Distribuição de grau** é um histograma que mostra a fração de vértices que contém cada grau. 
 ```r
 plot(0:max(degree(rede)), degree_distribution(rede), type = 'h', lwd=3, col ="blue", xlab="Grau", ylab="Frequência", main="Distribuição de grau") # Em escala linear
 plot(0:max(degree(rede)), degree_distribution(rede), type = 'l', lwd=3, col ="red", xlab="Grau", ylab="Frequência", main="Distribuição de grau", log = "xy") # Em escala log
@@ -230,14 +236,14 @@ diameter(rede)
 A **transitividade** (ou *coeficiente de clustering*) mede a probabilidade que dois vértices vizinhos de um terceiro vértice sejam vizinhos entre si. Ela esta relacionada com o número de triângulos da rede.
 ```r
 transitivity(rede) # A transitividade média da rede
-transitivity(aa, type='local') # A transitividade de cada vértice
+transitivity(rede, type='local') # A transitividade de cada vértice
 ```
 
-A **assortatividade** da rede
+A **assortatividade** da rede é uma medida da correlação entre o grau de vértices vizinhos, e por ser uma correlação assume valores no intervalo $[-1,1]$. Você pode calcular ela com a seguinte função
 ```r
 assortativity_degree(rede)
 ```
-quando a assortatividade é negativa, significa que vértices de grau alto estão ligados com vértices de grau baixo (graus anti-correlacionados). Quando a assortatividade é positiva, significa que vértices de grau alto estão ligados aos vértices de grau alto (graus correlacionados). Assortatividades próximas de zero significam ausência dessa estrutura. 
+Basicamente, quando a assortatividade é negativa, significa que vértices de grau alto estão ligados com vértices de grau baixo (graus anti-correlacionados). Quando a assortatividade é positiva, significa que vértices de grau alto estão ligados aos vértices de grau alto (graus correlacionados). Assortatividades próximas de zero significam ausência dessa estrutura. 
 Para ver o grau médio dos vizinhos de cada grau ($knn$) e a média do grau médio dos vizinhos entre os vértices de grau k ($knnk$), use
 ```r
 knn(rede)
@@ -250,7 +256,7 @@ ceb = cluster_edge_betweenness(rede) # Classifica em módulos pela conectância 
 dendPlot(ceb)   # Visualizar o dendrograma de módulos
 plot(ceb, rede) # Visualizar os módulos na rede
 ```
-
+Um exemplo de modularidade poderia ser a rede de músicas do *Spotify*. Duas músicas dessa rede são ligadas se elas aparecem simultaneamente na mesma *playlist* de pelo menos 5000 ouvintes diferentes. Quais seriam as modularidades dessa rede? Teria o módulo de rock, o módulo de pop, o módulo de música clássica, samba, e por aí vai... Claro que pode ser que várias pessoas coloquem 'Despacito' numa playlist com um sertanejo sofrência tipo 'S de Saudade', mas isso é muito inferior ao número de playlists em que a primeira aparece com outros reggaetons e a segunda com outros sertanejos.
 
 **Perguntas:**
 a) Quantos grafos sem peso e adirecionais de 100 vértices são possíveis?
