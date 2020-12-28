@@ -155,12 +155,10 @@ random = sample_gnp(25, 0.2)
 
 #### Vértices
 
-A propriedade mais importante que vértices possuem é o seu **grau**, que nada mais é do que o número de vizinhos (ligações) que um vértice tem. Para obter o grau de cada vértice, use: 
+A propriedade mais importante que vértices possuem é o seu **grau**, que nada mais é do que o número de vizinhos (ligações) que um vértice tem. Para obter os vizinhos e o grau de cada vértice, use (*lembre-se de trocar 'rede' pelo nome da variável que você deu para a rede*): 
 ```r
-degree(rede)
-mean(degree(rede)) # Grau médio da rede
-sd(degree(rede)) # Desvio-padrão da distribuição de graus
-max(degree(rede)) # Maior grau da rede
+neighbors(rede, 1) # Lista todos of vizinhos do vértice 1
+degree(rede) # Lista o grau de todos os vértices da rede
 ```
 
 Uma geodésica entre dois vértices é o menor caminho que liga esses vértices percorrendo ligações da rede. Para acessar a(s) geodésica(s) entre dois vértices quaisquer, use a seguinte função:
@@ -212,8 +210,15 @@ independence.number(rede) # Tamanho do maior IVS
 
 Distribuição de **grau**.
 ```r
-plot(0:max(degree(rede)),degree_distribution(rede), type = 'h', lwd=3, col ="blue", xlab="Grau", ylab="Frequência", main="Distribuição de grau") # Em escala linear
+plot(0:max(degree(rede)), degree_distribution(rede), type = 'h', lwd=3, col ="blue", xlab="Grau", ylab="Frequência", main="Distribuição de grau") # Em escala linear
 plot(0:max(degree(rede)), degree_distribution(rede), type = 'l', lwd=3, col ="red", xlab="Grau", ylab="Frequência", main="Distribuição de grau", log = "xy") # Em escala log
+```
+
+E também é possível fazer um pouco de estatística em cima da distribuição de grau:
+```r
+mean(degree(rede))# Grau médio da rede
+sd(degree(rede))  # Desvio-padrão da distribuição de graus
+max(degree(rede)) # Maior grau da rede
 ```
 
 Um grafo tem uma **distância média** entre vértices, que nos diz o quão fácil é caminhar pelo vértices em média, ligando-os por suas geodésicas, e também tem um **diâmetro** que é o tamanho da maior geodésica:
@@ -347,12 +352,15 @@ c) Quais propriedades dos grafos vocês esperam que sejam maiores ou menores em 
 
 ---
 
-# Dinâmica da opinião
+# Da estrutura para dinâmica
 
+As redes sociais que discutimos nos fornecem informação sobre a estrutura da rede, isto é, as características das interações fixas no tempo. Agora queremos adicionar uma **dinâmica** para completar o nosso modelo de troca de informações e opiniões, essa é a parte que dita a **evolução temporal** o modelo, dita o que acontece a medida que o tempo passa. 
+
+## Modelando Opinião 
 
 A primeira grande simplificação que vamos fazer é trabalhar com opiniões binárias: sim ou não, favorável ou contrário, mais ou menos, bolacha ou biscoito, feijão por cima do arroz ou arroz por cima do feijão. 
 
-{% include image.html image="/projects/ictp-jovens/opiniao_binaria.jpeg" text="Exemplos de opiniões binárias" %}
+{% include image.html image="/projects/ictp-jovens/opiniao_binaria.jpeg" text="Exemplos de opiniões binárias polarizadas (esq.) e misturada (dir.)" %}
 
 Para abstrair, vamos representar as opiniões como $0$ e $1$. 
 
@@ -375,7 +383,10 @@ Existem dois grandes grupos de transições de fases - as de primeira e de segun
 
 {% include image.html image="/projects/ictp-jovens/transicao.png" text="As duas grandes classes de transição de fase" %}
 
+Vale ressaltar que essas descontinuidades acontecem apenas no **limite termodinâmico**, que é quando o número de vértices é infinito. Sabemos que no computador a gente não chega nem perto desse número, então precisamos de outras técnicas para averiguar o tipo de transição com um número finito de vértices. A mais comum é o *scaling* (escalonamento - mas não o de matriz!), em que a gente aumenta a ordem de grandeza do número de vértices e verifica a tendência das curvas, e assim extrapolamos para um número infinito de vértices. Muitos físicos e matemáticos trabalham para estudar essas transições do ponto de vista analítico, usando teoremas e limites que possam indicar a convergência para uma transição de fase, porém nós nos restringiremos aos métodos computacionais.
+
 **Perguntas:**
+Vamos fixar as redes em 1024 vértices e 2048 ligações. 
 * Para quais parâmetros do sistema a rede de contatos atinge consenso?
 * Como o aumento da 'teimosia' e do número médio de contatos na rede influencia o estado de consenso?
 * Qual o valor de teimosia crítico e de densidade crítica de contatos?
