@@ -91,7 +91,19 @@
 
 <p>Here you can see, for instance, blue background for folders, green background for code files and pink background for data files - easy to spot each of them:</p>
 
-<p><img src="../../assets/img/blog/exemple_dircolors.png" alt="Example of colorful terminal" style="max-width: 90%;border: 2px solid #FFFFFF;border-radius: 28px"></p>
+<div class="image-container">
+
+    <img src="/assets/img/blog/exemple_dircolors.png" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text" style="color:">
+        Example of colorful terminal
+	
+      </div>
+    </div>
+
+
+
+</div>
 
 <h2 id="making-your-experience-nicer">Making your experience nicer</h2>
 
@@ -198,13 +210,17 @@
 </div>
   </div>
 
+<button id="scroll-to-top"><svg viewbox="0 0 24 24"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"></path></svg></button>
+
 </section>
+
+
 
 <script src="/assets/js/toc.js"></script>
 
 <script type="text/javascript">
 $(document).ready(function() {
-    $('#toc').toc({ noBackToTopLinks: 'false' });
+    $('#toc').toc({});
 });
 </script>
 

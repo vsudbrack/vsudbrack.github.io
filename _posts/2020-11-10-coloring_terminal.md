@@ -9,7 +9,7 @@ Make your experience navigating in your files through the terminal nicer colorin
 
 Here you can see, for instance, blue background for folders, green background for code files and pink background for data files - easy to spot each of them:
 
-![Example of colorful terminal](../../assets/img/blog/exemple_dircolors.png){:style="max-width: 90%;border: 2px solid #FFFFFF;border-radius: 28px"}
+{% include image.html image="blog/exemple_dircolors.png" text="Example of colorful terminal" %}
 
 ## Making your experience nicer
 

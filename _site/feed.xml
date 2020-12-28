@@ -1,8 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-28T14:48:35+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Vitor Sudbrack</title><subtitle>The personal homepage of Vitor Sudbrack</subtitle><author><name>Vitor Sudbrack</name></author><entry><title type="html">A colorful terminal for scientists</title><link href="http://localhost:4000/page/update/coloring_terminal.html" rel="alternate" type="text/html" title="A colorful terminal for scientists" /><published>2020-11-10T00:00:00+01:00</published><updated>2020-11-10T00:00:00+01:00</updated><id>http://localhost:4000/page/update/coloring_terminal</id><content type="html" xml:base="http://localhost:4000/page/update/coloring_terminal.html">&lt;p&gt;Make your experience navigating in your files through the terminal nicer coloring your different types of files (folders, datasets, codes, …) with this simple tutorial.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-28T21:52:38+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Vitor Sudbrack</title><subtitle>The personal homepage of Vitor Sudbrack</subtitle><author><name>Vitor Sudbrack</name></author><entry><title type="html">A colorful terminal for scientists</title><link href="http://localhost:4000/page/update/coloring_terminal.html" rel="alternate" type="text/html" title="A colorful terminal for scientists" /><published>2020-11-10T00:00:00+01:00</published><updated>2020-11-10T00:00:00+01:00</updated><id>http://localhost:4000/page/update/coloring_terminal</id><content type="html" xml:base="http://localhost:4000/page/update/coloring_terminal.html">&lt;p&gt;Make your experience navigating in your files through the terminal nicer coloring your different types of files (folders, datasets, codes, …) with this simple tutorial.&lt;/p&gt;
 
 &lt;p&gt;Here you can see, for instance, blue background for folders, green background for code files and pink background for data files - easy to spot each of them:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;../../assets/img/blog/exemple_dircolors.png&quot; alt=&quot;Example of colorful terminal&quot; style=&quot;max-width: 90%;border: 2px solid #FFFFFF;border-radius: 28px&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;image-container&quot;&gt;
+
+    &lt;img src=&quot;/assets/img/blog/exemple_dircolors.png&quot; alt=&quot;Avatar&quot; class=&quot;image&quot; /&gt;
+    &lt;div class=&quot;overlay&quot;&gt;
+      &lt;div class=&quot;text&quot; style=&quot;color:&quot;&gt;
+        Example of colorful terminal
+	
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+
+
+&lt;/div&gt;
 
 &lt;h2 id=&quot;making-your-experience-nicer&quot;&gt;Making your experience nicer&lt;/h2&gt;
 
