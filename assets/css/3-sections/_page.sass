@@ -14,7 +14,8 @@
 
 @media (max-width: 768px)
   .page-content
-    width: 80vw
+    width: 100%
+    margin: 5px
 
 /* Video */
 
@@ -38,8 +39,8 @@
   width: 40%
   left: 30%
   @media screen and (max-width: 667px) 
-    width: 90%
-    left: 5%
+    width: 80%
+    left: 10%
   padding: 10px 10px 10px 10px
   background-color: #e5eaee 
   margin: 10px
@@ -52,6 +53,7 @@
   cursor: pointer
 
 /* Details and Summary */
+
 summary 
   cursor: pointer
   background-color: #e5eaee 
@@ -59,12 +61,11 @@ summary
   font-size: 20px 
   font-weight: bold
   color: #c99065
+  width: 75%
 
 details
   position: relative
-  width: 80%
-  @media screen and (max-width: 667px) 
-    width: 100%
+  width: 75%
   background-color: #e5eaee 
   padding: 5px 30px 5px 30px
   margin: 15px
@@ -74,4 +75,7 @@ details
   border: 1px solid #ccc
   text-align: justify
   color: #424242
+  @media screen and (max-width: 667px) 
+    width: 85%
+    margin: auto
 

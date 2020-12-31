@@ -133,7 +133,13 @@
     </ul>
   </li>
   <li><a href="#mundo-real-problemas-reais" id="markdown-toc-mundo-real-problemas-reais">Mundo real, problemas reais</a></li>
-  <li><a href="#universalidade" id="markdown-toc-universalidade">Universalidade</a></li>
+  <li><a href="#universalidade" id="markdown-toc-universalidade">Universalidade</a>    <ul>
+      <li><a href="#problemas-multi-escala" id="markdown-toc-problemas-multi-escala">Problemas multi-escala</a></li>
+      <li><a href="#quando-o-todo-é-maior-que-a-soma-das-partes" id="markdown-toc-quando-o-todo-é-maior-que-a-soma-das-partes">Quando o todo é maior que a soma das partes</a></li>
+      <li><a href="#as-lentes-matemáticas" id="markdown-toc-as-lentes-matemáticas">As lentes matemáticas</a></li>
+    </ul>
+  </li>
+  <li><a href="#apresentação" id="markdown-toc-apresentação">Apresentação</a></li>
   <li><a href="#links-referências--conteúdo-extra" id="markdown-toc-links-referências--conteúdo-extra">Links, referências &amp; conteúdo extra</a></li>
 </ul>
 
@@ -370,6 +376,32 @@ Para gerar uma rede aleatória com 25 vértices e 20% de ligações distribuída
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">random</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sample_gnp</span><span class="p">(</span><span class="m">25</span><span class="p">,</span><span class="w"> </span><span class="m">0.2</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
 
+<div class="image-container">
+
+    <img src="/assets/img//projects/ictp-jovens/grafos_0.png" alt="Avatar" class="image" />
+    <div class="overlay">
+      <div class="text" style="color:">
+        Redes aleatórias de 25 vértices com quantidades de ligações diferentes
+	
+      </div>
+    </div>
+
+
+
+</div>
+
+<details>
+
+<summary>
+	<para>Pergunta</para>
+</summary>
+
+Note que na rede aleatória esparsa do exemplo acima, existe um vértices isolado (o 16). <b>Qual a probabilidade que uma rede aleatória com $N$ vértices e densidade de ligações $p$ tenha um vértice isolado?</b> Calcule a probabilidade para uma rede de 25 vértices e $p=0.2$ como no exemplo.
+
+	
+
+</details>
+
 <h2 id="principais-propriedades-matemáticas">Principais propriedades matemáticas</h2>
 
 <h4 id="vértices">Vértices</h4>
@@ -378,6 +410,18 @@ Para gerar uma rede aleatória com 25 vértices e 20% de ligações distribuída
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">neighbors</span><span class="p">(</span><span class="n">rede</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">)</span><span class="w"> </span><span class="c1"># Lista todos of vizinhos do vértice 1</span><span class="w">
 </span><span class="n">degree</span><span class="p">(</span><span class="n">rede</span><span class="p">)</span><span class="w"> </span><span class="c1"># Lista o grau de todos os vértices da rede</span><span class="w">
 </span></code></pre></div></div>
+
+<details>
+
+<summary>
+	<para>Pergunta</para>
+</summary>
+
+<b>Qual a probabilidade que uma rede aleatória com $N$ vértices e densidade de ligações $p$ tenha um vértice de grau $k$?</b> Essa resposta bate com a resposta que você deu anteriormente para o vértice isolado ($k=0$)?
+
+	
+
+</details>
 
 <p>Uma geodésica entre dois vértices é o menor caminho que liga esses vértices percorrendo ligações da rede. Para acessar a(s) geodésica(s) entre dois vértices quaisquer, use a seguinte função:</p>
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">all_shortest_paths</span><span class="p">(</span><span class="n">rede</span><span class="p">,</span><span class="w"> </span><span class="n">from</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">17</span><span class="p">,</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">24</span><span class="p">)</span><span class="w"> </span><span class="c1"># Geodésica(s) entre 17 e 24</span><span class="w">
@@ -400,12 +444,36 @@ Para gerar uma rede aleatória com 25 vértices e 20% de ligações distribuída
 </span></code></pre></div></div>
 <p>Esse nome vem do contexto de redes bibliográficas - dois artigos são conectados se eles se citam. Esse conceito é bem importante em algoritmos de recomendação de conteúdo para usuário. Imagina a rede de filmes da Netflix e dois filmes são conectados se mais de $70%$ dos usuário que assistiram ambos os filmes, favoritaram ambos. Agora um outro usuário que terminou de ver um filme do catálogo, e agora precisa de uma recomendação do próximo filme para assistir: basta achar o filme com maior índice de co-citação com o filmes que esse usuário favoritou. Claro que isso pode (e deve!) ser bem mais complexo, com múltiplos critérios para sugestão…</p>
 
+<details>
+
+<summary>
+	<para>Pergunta</para>
+</summary>
+
+<b>Qual a probabilidade que uma rede aleatória com $N$ vértices e densidade de ligações $p$ tenha dois vértices iguais?</b> Esses dois vértices precisam compartilhar todas as mesmas ligações e o índice de co-citação entre eles seria máximo.
+
+	
+
+</details>
+
 <h4 id="ligações">Ligações</h4>
 
-<p>A <strong>densidade de ligações</strong> é a razão entre o número de ligações existentes sobre o número de possíveis ligações na rede, e é calculada por</p>
+<p>A <strong>densidade de ligações</strong> ($l$) é a razão entre o número de ligações existentes sobre o número de possíveis ligações na rede $l=\frac{2L}{N(N-1)}$, e é calculada por</p>
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">edge_density</span><span class="p">(</span><span class="n">rede</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
 <p>Densidades de ligações próximas de 1 significam que todo vértice é vizinho de todo outro vértice. Esse é um dos parâmetros fundamentais das redes, pois ele dá uma grandeza adimensional entre o número de ligações em relação ao número de vértices. Geralmente denominamos os grafos com baixa e alta densidade de vértices como <strong>grafos esparso e denso</strong>, respectivamente.</p>
+
+<details>
+
+<summary>
+	<para>Pergunta</para>
+</summary>
+
+Anteriormente usamos o $p$ como a própria densidade de ligações ($l$). De fato, numa rede aleatória infinita, a densidade de ligações é justamente o $p$ (a probabilidade de que cada ligação ocorra). Agora, <b>qual a probabilidade que uma rede aleatória finita, de $N$ vértices, tenha a densidade de ligações $l$ igual à $p$ (probabilidade de que cada ligação aconteça)?</b> Você consegue entender a diferença entre esses dois conceitos? Essa diferença importantíssima é a base da <i>estatística de verossimilhança</i>.
+
+	
+
+</details>
 
 <p>As ligações podem formar estruturas. A mais importante é o <strong>triângulo</strong>, um ciclo de três vértices $a\to b\to c\to a$, você consegue uma lista dos triângulos, assim como o número de tiângulos por vértice com</p>
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">triangles</span><span class="p">(</span><span class="n">rede</span><span class="p">)</span><span class="w"> </span><span class="c1"># Fornece uma lista de trios</span><span class="w">
@@ -438,8 +506,11 @@ Para gerar uma rede aleatória com 25 vértices e 20% de ligações distribuída
 <h4 id="rede">Rede</h4>
 
 <p>A <strong>Distribuição de grau</strong> é um histograma que mostra a fração de vértices que contém cada grau.</p>
-<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plot</span><span class="p">(</span><span class="m">0</span><span class="o">:</span><span class="nf">max</span><span class="p">(</span><span class="n">degree</span><span class="p">(</span><span class="n">rede</span><span class="p">)),</span><span class="w"> </span><span class="n">degree_distribution</span><span class="p">(</span><span class="n">rede</span><span class="p">),</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'h'</span><span class="p">,</span><span class="w"> </span><span class="n">lwd</span><span class="o">=</span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="s2">"blue"</span><span class="p">,</span><span class="w"> </span><span class="n">xlab</span><span class="o">=</span><span class="s2">"Grau"</span><span class="p">,</span><span class="w"> </span><span class="n">ylab</span><span class="o">=</span><span class="s2">"Frequência"</span><span class="p">,</span><span class="w"> </span><span class="n">main</span><span class="o">=</span><span class="s2">"Distribuição de grau"</span><span class="p">)</span><span class="w"> </span><span class="c1"># Em escala linear</span><span class="w">
-</span><span class="n">plot</span><span class="p">(</span><span class="m">0</span><span class="o">:</span><span class="nf">max</span><span class="p">(</span><span class="n">degree</span><span class="p">(</span><span class="n">rede</span><span class="p">)),</span><span class="w"> </span><span class="n">degree_distribution</span><span class="p">(</span><span class="n">rede</span><span class="p">),</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'l'</span><span class="p">,</span><span class="w"> </span><span class="n">lwd</span><span class="o">=</span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="s2">"red"</span><span class="p">,</span><span class="w"> </span><span class="n">xlab</span><span class="o">=</span><span class="s2">"Grau"</span><span class="p">,</span><span class="w"> </span><span class="n">ylab</span><span class="o">=</span><span class="s2">"Frequência"</span><span class="p">,</span><span class="w"> </span><span class="n">main</span><span class="o">=</span><span class="s2">"Distribuição de grau"</span><span class="p">,</span><span class="w"> </span><span class="n">log</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"xy"</span><span class="p">)</span><span class="w"> </span><span class="c1"># Em escala log</span><span class="w">
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plot</span><span class="p">(</span><span class="m">0</span><span class="o">:</span><span class="nf">max</span><span class="p">(</span><span class="n">degree</span><span class="p">(</span><span class="n">rede</span><span class="p">)),</span><span class="w"> </span><span class="n">degree_distribution</span><span class="p">(</span><span class="n">rede</span><span class="p">),</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'h'</span><span class="p">,</span><span class="w"> </span><span class="n">lwd</span><span class="o">=</span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="s2">"blue"</span><span class="p">,</span><span class="w"> 
+    </span><span class="n">xlab</span><span class="o">=</span><span class="s2">"Grau"</span><span class="p">,</span><span class="w"> </span><span class="n">ylab</span><span class="o">=</span><span class="s2">"Frequência"</span><span class="p">,</span><span class="w"> </span><span class="n">main</span><span class="o">=</span><span class="s2">"Distribuição de grau"</span><span class="p">)</span><span class="w"> </span><span class="c1"># Em escala linear</span><span class="w">
+</span><span class="n">plot</span><span class="p">(</span><span class="m">0</span><span class="o">:</span><span class="nf">max</span><span class="p">(</span><span class="n">degree</span><span class="p">(</span><span class="n">rede</span><span class="p">)),</span><span class="w"> </span><span class="n">degree_distribution</span><span class="p">(</span><span class="n">rede</span><span class="p">),</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'l'</span><span class="p">,</span><span class="w"> </span><span class="n">lwd</span><span class="o">=</span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="s2">"red"</span><span class="p">,</span><span class="w"> 
+    </span><span class="n">xlab</span><span class="o">=</span><span class="s2">"Grau (log)"</span><span class="p">,</span><span class="w"> </span><span class="n">ylab</span><span class="o">=</span><span class="s2">"Frequência (log)"</span><span class="p">,</span><span class="w"> </span><span class="n">main</span><span class="o">=</span><span class="s2">"Distribuição de grau"</span><span class="p">,</span><span class="w">
+    </span><span class="n">log</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"xy"</span><span class="p">)</span><span class="w"> </span><span class="c1"># Em escala log-log</span><span class="w">
 </span></code></pre></div></div>
 
 <p>E também é possível fazer um pouco de estatística em cima da distribuição de grau:</p>
@@ -495,8 +566,23 @@ Para ver o grau médio dos vizinhos de cada grau ($knn$) e a média do grau méd
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ceb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cluster_edge_betweenness</span><span class="p">(</span><span class="n">rede</span><span class="p">)</span><span class="w"> </span><span class="c1"># Classifica em módulos pela conectância entre vértices</span><span class="w">
 </span><span class="n">dendPlot</span><span class="p">(</span><span class="n">ceb</span><span class="p">)</span><span class="w">   </span><span class="c1"># Visualizar o dendrograma de módulos</span><span class="w">
 </span><span class="n">plot</span><span class="p">(</span><span class="n">ceb</span><span class="p">,</span><span class="w"> </span><span class="n">rede</span><span class="p">)</span><span class="w"> </span><span class="c1"># Visualizar os módulos na rede</span><span class="w">
+</span><span class="n">modularity</span><span class="p">(</span><span class="n">ceb</span><span class="p">)</span><span class="w"> </span><span class="c1"># Medida da razão de ligações dentro e entre módulos</span><span class="w">
 </span></code></pre></div></div>
 <p>Um exemplo de modularidade poderia ser a rede de músicas do <em>Spotify</em>. Duas músicas dessa rede são ligadas se elas aparecem simultaneamente na mesma <em>playlist</em> de pelo menos 5000 ouvintes diferentes. Quais seriam as modularidades dessa rede? Teria o módulo de rock, o módulo de pop, o módulo de música clássica, samba, e por aí vai… Claro que pode ser que várias pessoas coloquem ‘Despacito’ numa playlist com um sertanejo sofrência tipo ‘S de Saudade’, mas isso é muito inferior ao número de playlists em que a primeira aparece com outros reggaetons e a segunda com outros sertanejos.</p>
+
+<div class="image-container">
+
+    <img src="/assets/img//projects/ictp-jovens/clusters.png" alt="Avatar" class="image" />
+    <div class="overlay">
+      <div class="text" style="color:">
+        Exemplo de um grafo de modularidade alta, média e baixa
+	
+      </div>
+    </div>
+
+
+
+</div>
 
 <h2 id="sociedades">Sociedades</h2>
 
@@ -650,7 +736,7 @@ Para ver o grau médio dos vizinhos de cada grau ($knn$) e a média do grau méd
 
 </div>
 
-<p>Para abstrair, vamos representar as opiniões como $0$ e $1$.</p>
+<p>Para abstrair, vamos representar as opiniões como $-1$ e $1$.</p>
 
 <h2 id="troca-de-opinião">Troca de opinião</h2>
 
@@ -725,7 +811,7 @@ Vamos fixar as redes em 1024 vértices e 2048 ligações.</p>
   <li><strong>Peso nas conexões</strong> pois a gente não troca informação com a mesma intensidade com todo mundo;</li>
   <li><strong>Espectro de opiniões</strong>, i.e. as opiniões não precisam ser binárias, tem pessoas com opiniões fortes, outros mais cautelosos;</li>
   <li><strong>Efeito de ‘unfriend’</strong>: não trocar informação com amigos que tenham uma opinião contrária a sua - ou até mesmo substituir amigos de opinião contrária por pessoas com opinião semelhante;</li>
-  <li><strong>Fatores externos</strong> em direção à uma das opiniões, como por exemplo a mídia, podem fazer as transções $0\to 1$ e $1\to 0$ não necessariamente equiprováveis;</li>
+  <li><strong>Fatores externos</strong> em direção à uma das opiniões, como por exemplo a mídia, podem fazer as transções $-1\to 1$ e $1\to -1$ não necessariamente equiprováveis;</li>
   <li><strong>Influência assimétrica</strong>, ou seja, você consome muito mais informação do que você informa, portanto as relações de troca de informação não são necessariamente simétricas;</li>
   <li><strong>Efeito das massas</strong>, e.g. as pessoas ‘maria-vai-com-as-outras’ que seguem a opinião da maioria;</li>
   <li><strong>Efeito de opinião duradoura</strong>, i.e. uma pessoa que acaba de trocar de opinião é mais provável que a troque também, enquanto uma pessoa que mantém sua opinião há longos tempos tem uma menor probabilidade de trocar de opinião.</li>
@@ -742,13 +828,79 @@ Vamos fixar as redes em 1024 vértices e 2048 ligações.</p>
 
 <h1 id="universalidade">Universalidade</h1>
 
-<p>Discussão da implementação dos efeitos escolhidos pelos alunos. A proposta agora é perceber que, através do uso de matemática e de redes complexas, é possível unificar problemas em um único framework. Discutir como poderíamos interpretar nossos resultados em termos de campo magnético spin, ao invés de opiniões. Como interpretação em termos de evolução, onde a opinião é vista como um fenótipo/traço da população e o processo de polarização é visto como especiação. A ideia desse dia é os alunos explorarem a generalidade dos resultados que eles encontraram nos últimos quatro dias e pensar na “equivalência matemática” dos diversos processos. Conceito fundamental do dia: sistemas complexos, como dinâmica individual gera padrões coletivos.</p>
+<p>A proposta agora é perceber que, através do uso de matemática e de redes complexas, é possível unificar problemas em um único framework.</p>
+
+<h2 id="problemas-multi-escala">Problemas multi-escala</h2>
+
+<p>Se a gente parar para pensar em quais são os principais desafios da física
+do século XXI, o que vocês responderiam? Muito provável que mencionem coisas das grandes escalas astronômicas, como matéria escura, 
+energia escura, buracos negros, ondas gravitacionais, instantes primordiais, expansão do universo,…, ou também algo das pequenas escalas atômicas, como o modelo padrão, novas partículas, mecanismos de Higgs, supercordas, supercondutores, femto- e nanotecnologia,…</p>
+
+<p>Mas vocês já pararam para refletir onde mora o desafio em entender os processos e mecanismos que moram em escalas espacais no meio disso tudo?
+Justamente o fato de morarem em <strong>escalas espacais intermediárias e comunicantes</strong> fazem com que os sistemas ligados à biologia sejam muito desafiadores para físicos e matemáticos. A gente diz que essas escalas são comunicantes quando o micro influencia o macro e o macro influecia o micro, através dos chamados <strong>feedback loops</strong>.</p>
+
+<p>Um vírus, centenas de vezes menor que uma célula, é capaz de derrubar o PIB de um país de milhões de pessoas, enquanto que o investimento de grande países em uma vacina para impedir a transmissão do vírus nas menores escalas. Ou ainda a mutação de uma base nitrogenada no núcleo de uma célula durante a sua reprodução é capaz de alterar um traço de um indivíduo formado por bilhões de células, alterando a forma como a sociedade o incluí e alterando a sua reprodução na macro-escala.</p>
+
+<p>Assim como no quadro multi-escalas do Van Gogh abaixo, existem processos interessantes em várias escalas espaciais e todas elas interagem, formam padrões, colaboram ou competem tornando seus efeitos desafiadores de serem estudados.</p>
+
+<div class="image-container">
+
+    <img src="/assets/img//projects/ictp-jovens/multiescala.png" alt="Avatar" class="image" />
+    <div class="overlay">
+      <div class="text" style="color:">
+        Um quadro multi-escala do VanGogh
+	
+      </div>
+    </div>
+
+
+
+</div>
+
+<h2 id="quando-o-todo-é-maior-que-a-soma-das-partes">Quando o todo é maior que a soma das partes</h2>
+
+<p>Essa grande classe de problemas multi-escalas são chamados <strong>Sistemas Complexos</strong>. São sistemas em que o <strong>o todo é maior que a soma de suas partes.</strong> Uma frase muito famosa em sistemas complexos é que o dividir um cavalo ao meio, você não tem dois pequenos cavalos.</p>
+
+<p>A ideia desse dia é os alunos explorarem a generalidade dos resultados que eles encontraram nos últimos quatro dias e pensar na “equivalência matemática” dos diversos processos. Conceito fundamental do dia: sistemas complexos, como dinâmica individual gera padrões coletivos.</p>
+
+<p>Em geral na física a gente sempre supõe a superposição das coisas. Superposição de estados, superposição de partículas, superposição de efeitos,… e isso nos levas as várias <strong>equações lineares</strong> que temos e que representam essa visão de física <em>reducionista</em>. Porém os sistemas complexos são o extremo oposto da superposição, eles são <em>intrinscicamente</em> não-lineares.</p>
+
+<h2 id="as-lentes-matemáticas">As lentes matemáticas</h2>
+
+<p>E por que criar modelos matemáticos para descrever o mundo?</p>
+<ul>
+  <li>Entender mecanismos 
+e padrões</li>
+  <li>Propor novos conceitos</li>
+  <li>Conectar processos e testar hipóteses</li>
+  <li>Prever <em>um</em> futuro</li>
+</ul>
+
+<p>Discutir como poderíamos interpretar nossos resultados em termos de campo magnético spin, ao invés de opiniões. Como interpretação em termos de evolução, onde a opinião é vista como um fenótipo/traço da população e o processo de polarização é visto como especiação.</p>
+
+<div class="image-container">
+
+    <img src="/assets/img//projects/ictp-jovens/modelagem.png" alt="Avatar" class="image" />
+    <div class="overlay">
+      <div class="text" style="color:">
+        Modelos matemáticos permitem criar novas relações entre informação
+	
+      </div>
+    </div>
+
+
+
+</div>
+
+<hr />
+
+<h1 id="apresentação">Apresentação</h1>
 
 <p>Preparem uma apresentção bem legal amanhã - dormir é para os fracos, os legais viram a noite programando (<em>hahah</em>)!</p>
 
 <p>Vou deixar aqui algumas <strong>dicas</strong> para guiar vocês na contrução da apresentação de amanhã, mas não hesitem em me mandar quaisquer dúvidas:</p>
 <ul>
-  <li>A apresentação é para ser <strong>em torno de 20 minutos</strong>, isso sigfinica que são necessários <strong>em torno de 15 slides</strong>. Um truque interessante é colocar slides ‘escondidos’ no final para ajudar vocês nas respostas caso alguém pergunte sobre algo que não estava na apresentação.</li>
+  <li>A apresentação é para ser <strong>em torno de 20 minutos</strong>, isso sigfinica que são necessários <strong>em torno de 15 slides</strong>. Um truque interessante é colocar slides ‘escondidos’ no final para ajudar vocês nas respostas caso alguém pergunte detalhes sobre algo que não estava na apresentação.</li>
   <li>Tenham em mente que uma apresentação de projeto científico tem uma <strong>estrutura</strong> de introdução (justificativa + problema), métodos, resultados, discussão, conclusão, agradecimentos (em especial lembrem-se de agradecer aos organizadores da escola) e um último slide de referências.</li>
   <li>Lembrem-se de colocar <strong>os créditos e fontes</strong> ao usar citações ou imagens de outros autores.</li>
   <li>Sejam <strong>criativos e bem-humorados</strong>… cada apresentador tem seu estilo, mas não pensem que uma apresentação científica é necessariamente vinculada à uma apresentação séria e rígida.</li>

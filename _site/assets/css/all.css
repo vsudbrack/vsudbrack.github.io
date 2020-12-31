@@ -740,7 +740,8 @@ body {
 
 @media (max-width: 768px) {
   .site-container {
-    width: 95vw; } }
+    width: 90%;
+    margin: auto; } }
 .page-content {
   width: 550px;
   margin: 30px; }
@@ -755,7 +756,8 @@ body {
 
 @media (max-width: 768px) {
   .page-content {
-    width: 80vw; } }
+    width: 100%;
+    margin: 5px; } }
 /* Video */
 .videoWrapper {
   position: relative;
@@ -787,8 +789,8 @@ body {
   cursor: pointer; }
   @media screen and (max-width: 667px) {
     .mybutton {
-      width: 90%;
-      left: 5%; } }
+      width: 80%;
+      left: 10%; } }
 
 /* Details and Summary */
 summary {
@@ -797,11 +799,12 @@ summary {
   margin: 5px;
   font-size: 20px;
   font-weight: bold;
-  color: #c99065; }
+  color: #c99065;
+  width: 75%; }
 
 details {
   position: relative;
-  width: 80%;
+  width: 75%;
   background-color: #e5eaee;
   padding: 5px 30px 5px 30px;
   margin: 15px;
@@ -813,7 +816,8 @@ details {
   color: #424242; }
   @media screen and (max-width: 667px) {
     details {
-      width: 100%; } }
+      width: 85%;
+      margin: auto; } }
 
 .work-container {
   max-width: 650px;
@@ -851,7 +855,7 @@ details {
   height: 50px;
   fill: #c99065;
   border-radius: 100%;
-  border: none;
+  border: 1px solid #ccc;
   font-size: 40px;
   bottom: 10%;
   right: 5%;
@@ -923,12 +927,12 @@ details {
   left: 20%; }
   @media screen and (max-width: 667px) {
     .quote-container {
-      width: 90%;
+      width: 75%;
       left: 5%; } }
 
 .quote {
   background-color: #e5eaee;
-  border: 0px solid #c99065;
+  border: 1px solid #ccc;
   border-radius: 18px;
   color: #424242;
   padding-top: 20px;
@@ -998,9 +1002,9 @@ blockquote {
 
 #markdown-toc {
   position: relative;
-  width: 50%;
+  width: 80%;
   margin-bottom: 20px;
-  left: 20%;
+  left: 5%;
   padding: 15px 15px 15px 40px;
   border: 1px solid #ccc;
   display: block;

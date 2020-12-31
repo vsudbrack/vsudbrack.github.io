@@ -162,6 +162,11 @@ Para gerar uma rede aleatória com 25 vértices e 20% de ligações distribuída
 random = sample_gnp(25, 0.2)
 ```
 
+{% include image.html image="/projects/ictp-jovens/grafos_0.png" text="Redes aleatórias de 25 vértices com quantidades de ligações diferentes" %}
+
+{% include colapse.html title="Pergunta"
+text="Note que na rede aleatória esparsa do exemplo acima, existe um vértices isolado (o 16). <b>Qual a probabilidade que uma rede aleatória com $N$ vértices e densidade de ligações $p$ tenha um vértice isolado?</b> Calcule a probabilidade para uma rede de 25 vértices e $p=0.2$ como no exemplo." %}
+
 ## Principais propriedades matemáticas
 
 #### Vértices
@@ -171,6 +176,10 @@ A propriedade mais importante que vértices possuem é o seu **grau**, que nada 
 neighbors(rede, 1) # Lista todos of vizinhos do vértice 1
 degree(rede) # Lista o grau de todos os vértices da rede
 ```
+
+{% include colapse.html title="Pergunta"
+text="<b>Qual a probabilidade que uma rede aleatória com $N$ vértices e densidade de ligações $p$ tenha um vértice de grau $k$?</b> Essa resposta bate com a resposta que você deu anteriormente para o vértice isolado ($k=0$)?" %}
+
 
 Uma geodésica entre dois vértices é o menor caminho que liga esses vértices percorrendo ligações da rede. Para acessar a(s) geodésica(s) entre dois vértices quaisquer, use a seguinte função:
 ```r
@@ -197,13 +206,20 @@ cocitation(rede)[1,3] # Número de vértices que 1 e 3 compartilham
 ```
 Esse nome vem do contexto de redes bibliográficas - dois artigos são conectados se eles se citam. Esse conceito é bem importante em algoritmos de recomendação de conteúdo para usuário. Imagina a rede de filmes da Netflix e dois filmes são conectados se mais de $70%$ dos usuário que assistiram ambos os filmes, favoritaram ambos. Agora um outro usuário que terminou de ver um filme do catálogo, e agora precisa de uma recomendação do próximo filme para assistir: basta achar o filme com maior índice de co-citação com o filmes que esse usuário favoritou. Claro que isso pode (e deve!) ser bem mais complexo, com múltiplos critérios para sugestão... 
 
+{% include colapse.html title="Pergunta"
+text="<b>Qual a probabilidade que uma rede aleatória com $N$ vértices e densidade de ligações $p$ tenha dois vértices iguais?</b> Esses dois vértices precisam compartilhar todas as mesmas ligações e o índice de co-citação entre eles seria máximo." %}
+
 #### Ligações
 
-A **densidade de ligações** é a razão entre o número de ligações existentes sobre o número de possíveis ligações na rede, e é calculada por 
+A **densidade de ligações** ($l$) é a razão entre o número de ligações existentes sobre o número de possíveis ligações na rede $l=\frac{2L}{N(N-1)}$, e é calculada por 
 ```r
 edge_density(rede)
 ```
-Densidades de ligações próximas de 1 significam que todo vértice é vizinho de todo outro vértice. Esse é um dos parâmetros fundamentais das redes, pois ele dá uma grandeza adimensional entre o número de ligações em relação ao número de vértices. Geralmente denominamos os grafos com baixa e alta densidade de vértices como **grafos esparso e denso**, respectivamente. 
+Densidades de ligações próximas de 1 significam que todo vértice é vizinho de todo outro vértice. Esse é um dos parâmetros fundamentais das redes, pois ele dá uma grandeza adimensional entre o número de ligações em relação ao número de vértices. Geralmente denominamos os grafos com baixa e alta densidade de vértices como **grafos esparso e denso**, respectivamente.
+
+{% include colapse.html title="Pergunta"
+text="Anteriormente usamos o $p$ como a própria densidade de ligações ($l$). De fato, numa rede aleatória infinita, a densidade de ligações é justamente o $p$ (a probabilidade de que cada ligação ocorra). Agora, <b>qual a probabilidade que uma rede aleatória finita, de $N$ vértices, tenha a densidade de ligações $l$ igual à $p$ (probabilidade de que cada ligação aconteça)?</b> Você consegue entender a diferença entre esses dois conceitos? Essa diferença importantíssima é a base da <i>estatística de verossimilhança</i>." %}
+
 
 As ligações podem formar estruturas. A mais importante é o **triângulo**, um ciclo de três vértices $a\to b\to c\to a$, você consegue uma lista dos triângulos, assim como o número de tiângulos por vértice com
 ```r
@@ -231,8 +247,11 @@ independence.number(rede) # Tamanho do maior IVS
 
 A **Distribuição de grau** é um histograma que mostra a fração de vértices que contém cada grau. 
 ```r
-plot(0:max(degree(rede)), degree_distribution(rede), type = 'h', lwd=3, col ="blue", xlab="Grau", ylab="Frequência", main="Distribuição de grau") # Em escala linear
-plot(0:max(degree(rede)), degree_distribution(rede), type = 'l', lwd=3, col ="red", xlab="Grau", ylab="Frequência", main="Distribuição de grau", log = "xy") # Em escala log
+plot(0:max(degree(rede)), degree_distribution(rede), type = 'h', lwd=3, col ="blue", 
+    xlab="Grau", ylab="Frequência", main="Distribuição de grau") # Em escala linear
+plot(0:max(degree(rede)), degree_distribution(rede), type = 'l', lwd=3, col ="red", 
+    xlab="Grau (log)", ylab="Frequência (log)", main="Distribuição de grau",
+    log = "xy") # Em escala log-log
 ```
 
 E também é possível fazer um pouco de estatística em cima da distribuição de grau:
@@ -277,9 +296,11 @@ Muitas redes consistem em módulos densamente conectados entre si, mas escassame
 ceb = cluster_edge_betweenness(rede) # Classifica em módulos pela conectância entre vértices
 dendPlot(ceb)   # Visualizar o dendrograma de módulos
 plot(ceb, rede) # Visualizar os módulos na rede
+modularity(ceb) # Medida da razão de ligações dentro e entre módulos
 ```
 Um exemplo de modularidade poderia ser a rede de músicas do *Spotify*. Duas músicas dessa rede são ligadas se elas aparecem simultaneamente na mesma *playlist* de pelo menos 5000 ouvintes diferentes. Quais seriam as modularidades dessa rede? Teria o módulo de rock, o módulo de pop, o módulo de música clássica, samba, e por aí vai... Claro que pode ser que várias pessoas coloquem 'Despacito' numa playlist com um sertanejo sofrência tipo 'S de Saudade', mas isso é muito inferior ao número de playlists em que a primeira aparece com outros reggaetons e a segunda com outros sertanejos.
 
+{% include image.html image="/projects/ictp-jovens/clusters.png" text="Exemplo de um grafo de modularidade alta, média e baixa" %}
 
 ## Sociedades
 
@@ -382,7 +403,7 @@ A primeira grande simplificação que vamos fazer é trabalhar com opiniões bin
 
 {% include image.html image="/projects/ictp-jovens/opiniao_binaria.jpeg" text="Exemplos de opiniões binárias polarizadas (esq.) e misturada (dir.)" %}
 
-Para abstrair, vamos representar as opiniões como $0$ e $1$. 
+Para abstrair, vamos representar as opiniões como $-1$ e $1$. 
 
 ## Troca de opinião
 
@@ -430,7 +451,7 @@ No nosso modelo, podemos pensar sobre a introdução de alguns dos novos fatores
 * **Peso nas conexões** pois a gente não troca informação com a mesma intensidade com todo mundo;
 * **Espectro de opiniões**, i.e. as opiniões não precisam ser binárias, tem pessoas com opiniões fortes, outros mais cautelosos;
 * **Efeito de 'unfriend'**: não trocar informação com amigos que tenham uma opinião contrária a sua - ou até mesmo substituir amigos de opinião contrária por pessoas com opinião semelhante;
-* **Fatores externos** em direção à uma das opiniões, como por exemplo a mídia, podem fazer as transções $0\to 1$ e $1\to 0$ não necessariamente equiprováveis;
+* **Fatores externos** em direção à uma das opiniões, como por exemplo a mídia, podem fazer as transções $-1\to 1$ e $1\to -1$ não necessariamente equiprováveis;
 * **Influência assimétrica**, ou seja, você consome muito mais informação do que você informa, portanto as relações de troca de informação não são necessariamente simétricas;
 * **Efeito das massas**, e.g. as pessoas 'maria-vai-com-as-outras' que seguem a opinião da maioria;
 * **Efeito de opinião duradoura**, i.e. uma pessoa que acaba de trocar de opinião é mais provável que a troque também, enquanto uma pessoa que mantém sua opinião há longos tempos tem uma menor probabilidade de trocar de opinião. 
@@ -445,13 +466,58 @@ No nosso modelo, podemos pensar sobre a introdução de alguns dos novos fatores
 
 # Universalidade
 
-Discussão da implementação dos efeitos escolhidos pelos alunos. A proposta agora é perceber que, através do uso de matemática e de redes complexas, é possível unificar problemas em um único framework. Discutir como poderíamos interpretar nossos resultados em termos de campo magnético spin, ao invés de opiniões. Como interpretação em termos de evolução, onde a opinião é vista como um fenótipo/traço da população e o processo de polarização é visto como especiação. A ideia desse dia é os alunos explorarem a generalidade dos resultados que eles encontraram nos últimos quatro dias e pensar na "equivalência matemática" dos diversos processos. Conceito fundamental do dia: sistemas complexos, como dinâmica individual gera padrões coletivos. 
+A proposta agora é perceber que, através do uso de matemática e de redes complexas, é possível unificar problemas em um único framework. 
 
+## Problemas multi-escala
+
+Se a gente parar para pensar em quais são os principais desafios da física
+do século XXI, o que vocês responderiam? Muito provável que mencionem coisas das grandes escalas astronômicas, como matéria escura, 
+energia escura, buracos negros, ondas gravitacionais, instantes primordiais, expansão do universo,..., ou também algo das pequenas escalas atômicas, como o modelo padrão, novas partículas, mecanismos de Higgs, supercordas, supercondutores, femto- e nanotecnologia,...
+
+Mas vocês já pararam para refletir onde mora o desafio em entender os processos e mecanismos que moram em escalas espacais no meio disso tudo?
+Justamente o fato de morarem em **escalas espacais intermediárias e comunicantes** fazem com que os sistemas ligados à biologia sejam muito desafiadores para físicos e matemáticos. A gente diz que essas escalas são comunicantes quando o micro influencia o macro e o macro influecia o micro, através dos chamados **feedback loops**.
+
+Um vírus, centenas de vezes menor que uma célula, é capaz de derrubar o PIB de um país de milhões de pessoas, enquanto que o investimento de grande países em uma vacina para impedir a transmissão do vírus nas menores escalas. Ou ainda a mutação de uma base nitrogenada no núcleo de uma célula durante a sua reprodução é capaz de alterar um traço de um indivíduo formado por bilhões de células, alterando a forma como a sociedade o incluí e alterando a sua reprodução na macro-escala. 
+
+Assim como no quadro multi-escalas do Van Gogh abaixo, existem processos interessantes em várias escalas espaciais e todas elas interagem, formam padrões, colaboram ou competem tornando seus efeitos desafiadores de serem estudados. 
+
+{% include image.html image="/projects/ictp-jovens/multiescala.png" text="Um quadro multi-escala do VanGogh" %}
+
+
+## Quando o todo é maior que a soma das partes
+
+Essa grande classe de problemas multi-escalas são chamados **Sistemas Complexos**. São sistemas em que o **o todo é maior que a soma de suas partes.** Uma frase muito famosa em sistemas complexos é que o dividir um cavalo ao meio, você não tem dois pequenos cavalos. 
+
+A ideia desse dia é os alunos explorarem a generalidade dos resultados que eles encontraram nos últimos quatro dias e pensar na "equivalência matemática" dos diversos processos. Conceito fundamental do dia: sistemas complexos, como dinâmica individual gera padrões coletivos. 
+
+
+Em geral na física a gente sempre supõe a superposição das coisas. Superposição de estados, superposição de partículas, superposição de efeitos,... e isso nos levas as várias **equações lineares** que temos e que representam essa visão de física *reducionista*. Porém os sistemas complexos são o extremo oposto da superposição, eles são *intrinscicamente* não-lineares. 
+
+
+## As lentes matemáticas
+
+
+E por que criar modelos matemáticos para descrever o mundo? 
+* Entender mecanismos 
+e padrões
+* Propor novos conceitos
+* Conectar processos e testar hipóteses
+* Prever *um* futuro
+
+Discutir como poderíamos interpretar nossos resultados em termos de campo magnético spin, ao invés de opiniões. Como interpretação em termos de evolução, onde a opinião é vista como um fenótipo/traço da população e o processo de polarização é visto como especiação. 
+
+
+{% include image.html image="/projects/ictp-jovens/modelagem.png" text="Modelos matemáticos permitem criar novas relações entre informação" %}
+
+
+---
+
+# Apresentação 
 
 Preparem uma apresentção bem legal amanhã - dormir é para os fracos, os legais viram a noite programando (*hahah*)! 
 
 Vou deixar aqui algumas **dicas** para guiar vocês na contrução da apresentação de amanhã, mas não hesitem em me mandar quaisquer dúvidas:
-* A apresentação é para ser **em torno de 20 minutos**, isso sigfinica que são necessários **em torno de 15 slides**. Um truque interessante é colocar slides 'escondidos' no final para ajudar vocês nas respostas caso alguém pergunte sobre algo que não estava na apresentação. 
+* A apresentação é para ser **em torno de 20 minutos**, isso sigfinica que são necessários **em torno de 15 slides**. Um truque interessante é colocar slides 'escondidos' no final para ajudar vocês nas respostas caso alguém pergunte detalhes sobre algo que não estava na apresentação. 
 * Tenham em mente que uma apresentação de projeto científico tem uma **estrutura** de introdução (justificativa + problema), métodos, resultados, discussão, conclusão, agradecimentos (em especial lembrem-se de agradecer aos organizadores da escola) e um último slide de referências. 
 * Lembrem-se de colocar **os créditos e fontes** ao usar citações ou imagens de outros autores. 
 * Sejam **criativos e bem-humorados**... cada apresentador tem seu estilo, mas não pensem que uma apresentação científica é necessariamente vinculada à uma apresentação séria e rígida. 
