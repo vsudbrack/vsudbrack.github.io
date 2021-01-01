@@ -11,7 +11,7 @@ permalink: /about/
 
 **I'm Vítor Sudbrack**, Brazilian scientist, pursuing a Physics Master program at the *Institute of Theoretical Physics (IFT - Unesp)* in São Paulo - SP, Brazil; and currently working at the *Institute for Cross-Disciplinary Physics and Complex Systems (IFISC - UiB)* Palma de Mallorca, Spain, to get a *sandwich degree*. :brazil: :es:
 
-My career ~~overdrinking coffee~~:coffee: in Physics started in 2014, but back then I was just learning calculus. In 2019, I was laureated **Bachelor in Physics with honors**:1st_place_medal: by the *Federal University of Rio Grande do Sul (UFRGS)* in Porto Alegre - RS.
+I started ~~overdrinking coffee~~:coffee: in Physics in 2014, and in the beginning of 2019 I was laureated **Bachelor in Physics with honors**:1st_place_medal: by the Institute of Physics of the *Federal University of Rio Grande do Sul (UFRGS)* in Porto Alegre - RS.
 
 My regular work is done at IFT under the supervision of professors *Roberto A. Kraenkel* and *Renato M. Coutinho*. Together, we numerically study **population dynamics in highly fragmented landscapes**. We aim to understand the effects of fragmentation and habitat spatial features into species and ecological systems. You can read much more about it [here](/projects/frag.html). 
 
@@ -36,12 +36,12 @@ I like to think **I create universes on a computer screen...**, but 95% percent 
 
 {% include image.html url="/assets/docs/projects/mathbio/slidesDDNetworks.pdf" image="projects/mathbio/slides.jpg" text="IFISC - UiB (2020)" %}
 {% include image.html url="/assets/docs/projects/mathbio/slidesDDNetworks.pdf" image="projects/mathbio/slides.jpg" text="IFT - Unesp (2019)" %}
-{% include image.html url="/assets/docs/projects/mathbio/slidesDDNetworks.pdf" image="projects/mathbio/slides.jpg" text="Fluid - IMPA (2019)" %}
+{% include image.html url="/assets/docs/projects/mathbio/slidesDDNetworks.pdf" image="projects/mathbio/slides.jpg" text="Fluid - IMPA (2018)" %}
 {% include image.html url="/assets/docs/projects/mathbio/slidesDDNetworks.pdf" image="projects/mathbio/slides.jpg" text="IF - UFRGS (2014)" %} -->
 
 # About this homepage
 
-This is a personal portfolio theme created with Jekyll by [LeNPaul](https://github.com/LeNPaul). You can [check out the demo](https://lenpaul.github.io/portfolio-jekyll-theme/) to see his work. All images in this website are marked with "reuse for non-commercial purposes" CC-licenses. Additional codings are my own (*I really have fun doing these things...*).
+This is a personal portfolio theme created with Jekyll by [LeNPaul](https://github.com/LeNPaul). You can [check out the demo](https://lenpaul.github.io/portfolio-jekyll-theme/) to see his work. All images in this website are marked with "reuse for non-commercial purposes" CC-licenses. Lots of additional codings are my own (*I really have fun doing these things...*).
 
 :exclamation: *All opinions in this website are my own*.
 
