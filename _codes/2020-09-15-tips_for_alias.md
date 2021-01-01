@@ -136,7 +136,7 @@ git add .
 echo -n "Enter the commit message with quotes: "
 read TEXT
 
-if [[ -n $TEXT ]]
+if [[ -z TEXT ]]
 then
 	git commit -m $TEXT #If you enter a particular message
 else
