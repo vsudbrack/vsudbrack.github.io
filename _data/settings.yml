@@ -3,10 +3,10 @@
 
 menu:
 #- {name: 'Projects', url: '#'}
-- {name: 'About', url: 'about/'}
-- {name: 'Courses', url: 'pages/courses/'}
-- {name: 'Codes', url: 'pages/codes/'}
-- {name: 'Contact', url: 'contact/'}
+- {name: 'About', url: 'about'}
+- {name: 'Courses', url: 'pages/courses'}
+- {name: 'Codes', url: 'pages/codes'}
+- {name: 'Contact', url: 'contact'}
 
 seo:
 -  {description: 'Vitor Sudbrack personal page'}
