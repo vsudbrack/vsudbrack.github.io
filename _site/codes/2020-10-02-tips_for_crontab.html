@@ -53,7 +53,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-10-02T00:00:00+02:00" />
 <script type="application/ld+json">
-{"description":"Brief tutorial on how to schedule codes to run automatically on Ubuntu.","@type":"BlogPosting","headline":"Scheduling programs to run with crontab","dateModified":"2020-10-02T00:00:00+02:00","datePublished":"2020-10-02T00:00:00+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/codes/2020-10-02-tips_for_crontab.html"},"url":"http://localhost:4000/codes/2020-10-02-tips_for_crontab.html","author":{"@type":"Person","name":"Vitor Sudbrack"},"@context":"https://schema.org"}</script>
+{"description":"Brief tutorial on how to schedule codes to run automatically on Ubuntu.","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/codes/2020-10-02-tips_for_crontab.html"},"@type":"BlogPosting","headline":"Scheduling programs to run with crontab","dateModified":"2020-10-02T00:00:00+02:00","datePublished":"2020-10-02T00:00:00+02:00","url":"http://localhost:4000/codes/2020-10-02-tips_for_crontab.html","author":{"@type":"Person","name":"Vitor Sudbrack"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -137,7 +137,7 @@
 <p>Everyday you can <strong>clear your cache files that are celebrating birthday</strong>, ie. that are 1-year old. With this simple line in your <em>crontab</em>, you will remove all files within <em>~/.cache</em> whose last modification date is more than 365 days ago.</p>
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@daily chronic find ~/.cache <span class="nt">-depth</span> <span class="nt">-type</span> f <span class="nt">-mtime</span> +365 <span class="nt">-delete</span>
 </code></pre></div></div>
-<p>This will avoid you saving things of websites you hardly visited the last year and have more space for the files that matter <img class="emoji" title=":+1:" alt=":+1:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png" height="20" width="20"></p>
+<p>This will avoid you saving things of websites you hardly visited the last year and have more space for the files that matter <img class="emoji" title=":+1:" alt=":+1:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f44d.png" height="20" width="20"></p>
 
 <p>You also can <strong>daily check for updates of your programs and your packages</strong>, some routine of maintenance of your PC would be like</p>
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">LOGFILE</span><span class="o">=</span><span class="s2">"</span><span class="nv">$/</span><span class="s2">.script/outputs/autoupdate_daily.log"</span>
@@ -174,7 +174,7 @@
 
 <h4 id="automated-robots">Automated robots</h4>
 
-<p>First, to <strong>automate one program</strong> <img class="emoji" title=":robot:" alt=":robot:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f916.png" height="20" width="20">, you have to call it from the <em>crontab</em> and not write it directly there. So in the <em>crontab</em> there is no big deal, just use something like</p>
+<p>First, to <strong>automate one program</strong> <img class="emoji" title=":robot:" alt=":robot:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f916.png" height="20" width="20">, you have to call it from the <em>crontab</em> and not write it directly there. So in the <em>crontab</em> there is no big deal, just use something like</p>
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@hourly bash <span class="nv">$/</span>scripts/update_cases_covid19.sh
 </code></pre></div></div>
 
