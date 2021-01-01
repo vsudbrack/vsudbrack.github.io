@@ -13,8 +13,10 @@ sass:
 collections:
   courses:
     output: true
+    title: Courses
   codes:
     output: true
+    title: Codes
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 
