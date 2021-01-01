@@ -14,9 +14,13 @@ collections:
   courses:
     output: true
     title: Courses
+    directory: ./_courses
+
+
   codes:
     output: true
     title: Codes
+    directory: ./_codes
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 
