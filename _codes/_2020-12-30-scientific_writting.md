@@ -2,7 +2,8 @@
 layout: post
 title:  "Tips on scientific writing"
 date:   2020-12-30
-categories: page update
+categories: codes
+description: "List of tips to improve scientific writing process and English grammar."
 ---
 
 I've been recently focoused on writing my Master thesis and that was a moment of great insights on how to write (nothing more inspiring than deadlines, right?)

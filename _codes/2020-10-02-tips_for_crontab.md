@@ -2,7 +2,8 @@
 layout: post
 title:  "Scheduling programs to run with <i>crontab</i>"
 date:   2020-10-02
-categories: page update
+categories: codes
+description: "Brief tutorial on how to schedule codes to run automatically on Ubuntu."
 ---
 
 Tired of repeating the same command every once-in-a while? Looking forward to creating automated jobs? Then, I think you'll enjoy this tutorial. 

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Estourando a bolha:"
-subtitle: como informação se espalha na sociedade
+subtitle: "como informação se espalha na sociedade"
+description: "In Portuguese, <b>Pop the bubble: how information spreads on society</b> is a guided-study into networks, Voter model and complex systems to high school students."
 permalink: /ictp-jovens
 ---
 

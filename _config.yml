@@ -10,6 +10,12 @@ sass:
   sass_dir: assets/css
   style: :nested
 
+collections:
+  courses:
+    output: true
+  codes:
+    output: true
+
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 
 title:		     "Vitor Sudbrack"

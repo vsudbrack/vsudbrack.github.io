@@ -2,7 +2,8 @@
 layout: post
 title:  "A colorful terminal for scientists"
 date:   2020-11-10
-categories: page update
+categories: codes
+description: "How to color code files and datasets on Ubuntu terminal listing."
 ---
 
 Make your experience navigating in your files through the terminal nicer coloring your different types of files (folders, datasets, codes, ...) with this simple tutorial. 

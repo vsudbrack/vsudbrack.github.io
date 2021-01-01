@@ -1,0 +1,32 @@
+---
+layout: default
+title: Teaching
+---
+
+<section>
+
+  	<div class="page-container">
+		<h2>Courses</h2>
+        	<p> Find here a collection of <b>materials, summaries and study-guides on a variety of scientific subjects, including numerical methods, differential equations, complex systems, mathematical biology, statistics</b>. These texts are ongoing, and frequently updated... For quick hands-on tutorials, see <b><a href="/codes">Codes</a></b>. </p>
+	</div>
+
+  <div class="blog-container">
+    {% for post in site.courses %}
+      <div class="blog-unit" style="margin:20px">
+        <h1 style="margin-bottom:0"><a href="{{ site.github.url }}{{ post.url }}">{{ post.title }} {{ post.subtitle }}</a></h1>
+        <p style="margin-top:0;margin-bottom:0">{{ post.description }}</p>
+        <!-- <span class="blog-date">
+          {% assign d = post.date | date: "%-d"  %}
+          {{ post.date | date: "%B" }}
+          {% case d %}
+            {% when '1' or '21' or '31' %}{{ d }}st
+            {% when '2' or '22' %}{{ d }}nd
+            {% when '3' or '23' %}{{ d }}rd
+            {% else %}{{ d }}th{% endcase %},
+          {{ post.date | date: "%Y" }}
+        </span>-->
+      </div>
+    {% endfor %}
+  </div>
+
+</section>
