@@ -98,7 +98,7 @@ Aliases make our lives of **add, commit, pull and push** way faster... but be ca
 > alias gc='git commit -m' 
 > alias gb='git branch'
 > alias gco='git checkout'
-> alias gf='git status && git add . && git commit -m "Updates" && git push' # Only do this if it's your private repository...
+> alias gitall='bash ~/.script/gitall.sh' # Look below at 'Make you own bash scripts'
 > alias run_jekyll='bundle exec jekyll serve' # Useful if you have a website in jekyll
 ```
 
@@ -125,7 +125,30 @@ Your common typos can become your helpful aliases: this way you save time from r
 ```
 
 #### Make your own bash scripts 
-Sometimes I had matrices in a file and I wanted to transpose them quickly into a new file. So, I opened a hidden folder *~/.scripts/* in my home folder with an [algorithm](https://stackoverflow.com/questions/1729824/an-efficient-way-to-transpose-a-file-in-bash) in *awk* to transpose files. Finally, I wrote an alias that accesses this 'hidden file’ so that it becomes the simple terminal line *transpose*...
+
+You can create a hidden folder at *~/* called *.scripts* . There you can put all your bash scripts with long command lists to your hardest endeavours. 
+
+To use the alias *gitall* I mentioned before, create *gitall.sh* with
+```sh
+#!/usr/bin/env bash
+
+git add . 
+echo -n "Enter the commit message with quotes: "
+read TEXT
+
+if [[ -n $TEXT ]]
+then
+	git commit -m $TEXT #If you enter a particular message
+else
+	git commit -m "Add update" #General message for updates without message
+fi
+
+git push && \
+echo "**** Successfully pushed to Github. Status: ****" && \
+git status
+```
+
+Other examples, sometimes I had matrices in a file and I wanted to transpose them quickly into a new file. So, I opened in the hidden folder *~/.scripts/* a file with an [algorithm](https://stackoverflow.com/questions/1729824/an-efficient-way-to-transpose-a-file-in-bash) in *awk* to transpose files. Finally, I wrote an alias that accesses this 'hidden file’ so that it becomes the simple terminal line *transpose*...
 ```sh
 > alias transpose='awk -f ~/.scripts/transpose.awk'
 ```
@@ -135,7 +158,10 @@ and you can do the same using *Bash scripts*, *awk*, *Python*, *C*, and so on, t
 
 Thank you for reading up to here and I hope you enjoyed this list of useful **alias**! [**Retweet** this post](https://twitter.com/vitorsudbrack/status/1305998416816807942?s=20), tweet or DM me at *[@vitorsudbrack](https://twitter.com/vitorsudbrack)* if you have any **new ideas to add to the list**, I'll be happy to hear them from you and start using them too.
 
-Last update on Oct, 2nd. with more examples.
+***
+
+Updated on Oct, 2nd. with more examples.
+Last update on Jan, 1st. with new script.
 
 
 
