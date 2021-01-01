@@ -3,9 +3,9 @@ layout: post
 title: 'Mathematical Biology Projects'
 ---
 
-{% include quote.html text="Mathematics is Biology's next microscope, only better;<br>Biology is Mathematics' next Physics, only better." author="Joel E Cohen" %}
+{% include quote.html text="Mathematics is Biology's next microscope, only better; Biology is Mathematics' next Physics, only better." author="Joel E Cohen" %}
 
-Here, I wrote about a few of these lensings I've already worked on... 
+Here, I wrote about a few of these mathematical lensings I've already worked on. 
 
 ## Graph Theory Applied to Biology
 
