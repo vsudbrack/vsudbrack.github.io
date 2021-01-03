@@ -170,7 +170,7 @@
 <span class="o">&gt;</span> <span class="nb">alias </span><span class="nv">gc</span><span class="o">=</span><span class="s1">'git commit -m'</span> 
 <span class="o">&gt;</span> <span class="nb">alias </span><span class="nv">gb</span><span class="o">=</span><span class="s1">'git branch'</span>
 <span class="o">&gt;</span> <span class="nb">alias </span><span class="nv">gco</span><span class="o">=</span><span class="s1">'git checkout'</span>
-<span class="o">&gt;</span> <span class="nb">alias </span><span class="nv">gf</span><span class="o">=</span><span class="s1">'git status &amp;&amp; git add . &amp;&amp; git commit -m "Updates" &amp;&amp; git push'</span> <span class="c"># Only do this if it's your private repository...</span>
+<span class="o">&gt;</span> <span class="nb">alias </span><span class="nv">gitall</span><span class="o">=</span><span class="s1">'bash ~/.script/gitall.sh'</span> <span class="c"># Look below at 'Make you own bash scripts'</span>
 <span class="o">&gt;</span> <span class="nb">alias </span><span class="nv">run_jekyll</span><span class="o">=</span><span class="s1">'bundle exec jekyll serve'</span> <span class="c"># Useful if you have a website in jekyll</span>
 </code></pre></div></div>
 
@@ -194,7 +194,29 @@
 </code></pre></div></div>
 
 <h4 id="make-your-own-bash-scripts">Make your own bash scripts</h4>
-<p>Sometimes I had matrices in a file and I wanted to transpose them quickly into a new file. So, I opened a hidden folder <em>~/.scripts/</em> in my home folder with an <a href="https://stackoverflow.com/questions/1729824/an-efficient-way-to-transpose-a-file-in-bash">algorithm</a> in <em>awk</em> to transpose files. Finally, I wrote an alias that accesses this ‘hidden file’ so that it becomes the simple terminal line <em>transpose</em>…</p>
+
+<p>You can create a hidden folder at <em>~/</em> called <em>.scripts</em> . There you can put all your bash scripts with long command lists to your hardest endeavours.</p>
+
+<p>To use the alias <em>gitall</em> I mentioned before, create <em>gitall.sh</em> with</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/usr/bin/env bash</span>
+
+git add <span class="nb">.</span> 
+<span class="nb">echo</span> <span class="nt">-n</span> <span class="s2">"Enter the commit message with quotes: "</span>
+<span class="nb">read </span>TEXT
+
+<span class="k">if</span> <span class="o">[[</span> <span class="nt">-n</span> <span class="nv">$TEXT</span> <span class="o">]]</span>
+<span class="k">then
+	</span>git commit <span class="nt">-m</span> <span class="nv">$TEXT</span> <span class="c">#If you enter a particular message</span>
+<span class="k">else
+	</span>git commit <span class="nt">-m</span> <span class="s2">"Add update"</span> <span class="c">#General message for updates without message</span>
+<span class="k">fi
+
+</span>git push <span class="o">&amp;&amp;</span> <span class="se">\</span>
+<span class="nb">echo</span> <span class="s2">"**** Successfully pushed to Github. Status: ****"</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
+git status
+</code></pre></div></div>
+
+<p>Other examples, sometimes I had matrices in a file and I wanted to transpose them quickly into a new file. So, I opened in the hidden folder <em>~/.scripts/</em> a file with an <a href="https://stackoverflow.com/questions/1729824/an-efficient-way-to-transpose-a-file-in-bash">algorithm</a> in <em>awk</em> to transpose files. Finally, I wrote an alias that accesses this ‘hidden file’ so that it becomes the simple terminal line <em>transpose</em>…</p>
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> <span class="nb">alias </span><span class="nv">transpose</span><span class="o">=</span><span class="s1">'awk -f ~/.scripts/transpose.awk'</span>
 </code></pre></div></div>
 <p>and you can do the same using <em>Bash scripts</em>, <em>awk</em>, <em>Python</em>, <em>C</em>, and so on, to your most recurrent needs.</p>
@@ -203,7 +225,10 @@
 
 <p>Thank you for reading up to here and I hope you enjoyed this list of useful <strong>alias</strong>! <a href="https://twitter.com/vitorsudbrack/status/1305998416816807942?s=20"><strong>Retweet</strong> this post</a>, tweet or DM me at <em><a href="https://twitter.com/vitorsudbrack">@vitorsudbrack</a></em> if you have any <strong>new ideas to add to the list</strong>, I’ll be happy to hear them from you and start using them too.</p>
 
-<p>Last update on Oct, 2nd. with more examples.</p>
+<hr />
+
+<p>Updated on Oct, 2nd. with more examples.
+Last update on Jan, 1st. with new script.</p>
 
 </div>
   </div>
