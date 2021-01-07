@@ -7,6 +7,8 @@ title: 'Mathematical Biology Projects'
 
 Here, I wrote about a few of these mathematical lensings I've already worked on. 
 
+---
+
 ## Graph Theory Applied to Biology
 
 **Networks** (or graphs) are mathematical tools we use to model real problems (in biology, sociology, geography, economy,...) and study them systematically. In particular, it is possible to study *expanding networks*, given a node addition rule. We studied numerically the growth of some of these networks based on averages of random initializations and analytically, through a **master equation formulation** applied to these addition rules, accounting for all possible scenarios that may probabilistically happen within the model. 
@@ -21,6 +23,8 @@ This work is a collaboration with professors **[Leonardo G. Brunnet](http://pcle
 
 {% include image.html url="/assets/docs/projects/mathbio/slidesDDNetworks.pdf" image="projects/mathbio/slidesDDN.jpg" text="Check my presentation with main results" %}
 
+---
+
 ## Magnetoreception in Multicellular Magnetotactic Prokaryotes
 
 **Magnetosensibility** is the ability of organisms to respond to the presence of a magnetic field, changing their behavior. This can be achieved actively through **magnetoreception**, when organisms detect the geomagnetic field and use this vector information in their spatial orientation, or passively, as in **magnetotaxia**, when just like a needle, organisms behave as magnetic dipoles and align themselves with the lines of the Earth's magnetic field. These kinds of responses have been observed, for instance, in dogs, ants, several birds and bees.
@@ -34,4 +38,7 @@ by **[Centro Brasileiro de Pesquisas Físicas (CBPF)](http://www.cbpf.br/)** in 
 
 
 {% include image.html url="/assets/docs/projects/mathbio/slidesMMPs.pdf" image="projects/mathbio/slidesMMPs.jpg" text="Check this presentation with main results (pt)" %}
+
+
+---
 

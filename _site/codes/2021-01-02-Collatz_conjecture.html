@@ -53,7 +53,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-01-02T00:00:00+01:00" />
 <script type="application/ld+json">
-{"description":"Graph and circular-tree visualization of an intriguing open problem.","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/codes/2021-01-02-Collatz_conjecture.html"},"author":{"@type":"Person","name":"Vitor Sudbrack"},"@type":"BlogPosting","url":"http://localhost:4000/codes/2021-01-02-Collatz_conjecture.html","dateModified":"2021-01-02T00:00:00+01:00","datePublished":"2021-01-02T00:00:00+01:00","headline":"Visualizing Collatz conjecture","@context":"https://schema.org"}</script>
+{"description":"Graph and circular-tree visualization of an intriguing open problem.","@type":"BlogPosting","headline":"Visualizing Collatz conjecture","dateModified":"2021-01-02T00:00:00+01:00","datePublished":"2021-01-02T00:00:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/codes/2021-01-02-Collatz_conjecture.html"},"url":"http://localhost:4000/codes/2021-01-02-Collatz_conjecture.html","author":{"@type":"Person","name":"Vitor Sudbrack"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -89,7 +89,7 @@
 
 	<br>
 	<div class="project-load">
-<p>One of my favorite conjectures is the <strong>Collatz conjecture</strong>, for sure. Because it is so simple to pose and yet unsolved, it makes me think about the complexities in simplicity. And furthermore, you can share them with your family and friends.</p>
+<p>One of my favorite conjectures is the <strong>Collatz conjecture</strong>, for sure. Because it is so simple to pose and yet unsolved, it makes me think about the complexities in simplicity. And besides that, you can share it with your family and friends.</p>
 
 <div class="image-container">
 
@@ -105,23 +105,25 @@
 
 </div>
 
-<p>In this hands-on, I’ll present the conjecture and some of its properties as a general background. Afterwards, we move to simulating it in R, creating a graph and visualizing it. If you are familiar to the conjecture, skip to its visualization at the bottom of this page.</p>
+<p>In this hands-on, I’ll present the conjecture and some of its properties as a general background. Afterwards, we move to simulating it in R, creating a graph of iterations and visualizing it. If you are familiar to the conjecture, you might prefer to skip to its visualization at the bottom of this page.</p>
 
-<p><strong>Warning:</strong> Unfortunately, I couldn’t solve it (this time). Therefore, still a conjecture <em>hahahh</em>.</p>
+<p><strong>Warning:</strong> Unfortunately, I couldn’t solve it (this time). Therefore, it’s still a conjecture <em>hahahh</em>.</p>
 
 <h2 id="the-collatz-iteration">The Collatz iteration</h2>
 
-<p>Before understanding the conjecture itself, let’s take a look at the Collatz iteration (or mapping). An iteration is a function of a set of numbers on itself - and therefore it can repeatedly applied. This sequence of applications generates a sequence of numbers, represented as $x_n$, the number after $n$ iterations. The initial value is arbitrary and named $x_0$. On it, the <strong>Collatz map</strong> goes as follows:</p>
+<p>Before understanding the conjecture itself, let’s take a look at the Collatz iteration (or mapping). An iteration is a function of a set of numbers on itself - and therefore it can be repeatedly applied. This sequence of applications generates a sequence of numbers, represented as $x_n$ - the number after $n$ iterations. The initial value is arbitrary and named $x_0$. The <strong>Collatz map</strong> goes as follows:</p>
 
 \[x_{n+1} = \frac{x_n}{2} \textrm{, if } x_n \textrm{ even} \\
 x_{n+1} = 3x_n + 1 \textrm{, if } x_n \textrm{ odd}\]
 
-<p>In words: <em>if your number is even, divide it by 2; and if it is odd, multiply by 3 and sum 1.</em> Execute it on and on, until you reach $1$. For instance, one possible sequences is $3\to 10\to 5\to 16\to 8\to 4\to 2\to 1$. Notice that every sub-sequence is a possible sequence (a general property of autonomous maps). In R, the Collatz map can be generated in a naughty function of ifs.</p>
+<p>In words: <em>if your number is even, divide it by 2; and if it’s odd, multiply by 3 and add 1.</em> Execute it on and on. For instance, one possible sequence is $3\to 10\to 5\to 16\to 8\to 4\to 2\to 1$. Notice that every sub-sequence is a possible sequence (a general property of autonomous maps). Because the sequence $4\to 2\to 1\to 4$ is a closed loop, after you reach $1$ you stop iterating (it is thus called absorbing state).</p>
+
+<p>In R, the Collatz map can be generated in a naughty function of ifs.</p>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">collatz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">num</span><span class="p">){</span><span class="w">
 	</span><span class="k">if</span><span class="w"> </span><span class="p">((</span><span class="n">num</span><span class="o">%%</span><span class="m">2</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0</span><span class="p">){</span><span class="w"> </span><span class="nf">return</span><span class="p">(</span><span class="n">num</span><span class="o">/</span><span class="m">2</span><span class="p">)</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="c1"># If Even</span><span class="w">
-	</span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"> 	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">num</span><span class="o">==</span><span class="m">1</span><span class="p">){</span><span class="w"> </span><span class="nf">return</span><span class="p">(</span><span class="m">1</span><span class="p">)</span><span class="w"> 	</span><span class="p">}</span><span class="w">   </span><span class="c1"># If one</span><span class="w">
-		</span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nf">return</span><span class="p">((</span><span class="m">3</span><span class="o">*</span><span class="n">num</span><span class="m">+1</span><span class="p">))</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}</span><span class="c1"># If odd</span><span class="w">
+	</span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"> 	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">num</span><span class="o">==</span><span class="m">1</span><span class="p">){</span><span class="w"> </span><span class="nf">return</span><span class="p">(</span><span class="m">1</span><span class="p">)</span><span class="w"> 	</span><span class="p">}</span><span class="w">   </span><span class="c1"># If One</span><span class="w">
+		</span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nf">return</span><span class="p">((</span><span class="m">3</span><span class="o">*</span><span class="n">num</span><span class="m">+1</span><span class="p">))</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}</span><span class="c1"># If Odd</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span><span class="n">map_collatz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">vec</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="o">=</span><span class="m">1</span><span class="p">){</span><span class="w">
 	</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">n</span><span class="o">==</span><span class="m">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nf">return</span><span class="p">(</span><span class="n">sapply</span><span class="p">(</span><span class="n">vec</span><span class="p">,</span><span class="w"> </span><span class="n">collatz</span><span class="p">))</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="c1">#Applies collatz(num) to a vector</span><span class="w">
@@ -129,7 +131,7 @@ x_{n+1} = 3x_n + 1 \textrm{, if } x_n \textrm{ odd}\]
 </span><span class="p">}</span><span class="w"> 
 </span></code></pre></div></div>
 
-<p>One important type of graph to understand maps are called <strong>N-return graphs</strong>. It is a graph that relates numbers in the map sequences separated by $N$ iterations. For instance, first return graphs are scatter-plots of $x_{n+1}$ and $x_n$. Second return would be $x_{n+2}$ and $x_n$, and so on. Check six return-graphs for the Collatz map with initial values between 1 and 100, where points in red have reached 1.</p>
+<p>One important type of graph to understand maps are called <strong>N-return graphs</strong>. It is a graph that relates numbers in map sequences separated by $N$ iterations. For instance, first return graphs are scatter-plots of $x_{n+1}$ and $x_n$. Second return graphs would be $x_{n+2}$ and $x_n$, etc. Check six return graphs for the Collatz map with initial values between 1 and 100, where points in red have reached 1.</p>
 
 <div class="image-container">
 
@@ -145,30 +147,30 @@ x_{n+1} = 3x_n + 1 \textrm{, if } x_n \textrm{ odd}\]
 
 </div>
 
-<p>Notice that increasing the number of iterations increase the number of red points, i.e., points that reached 1. The <strong>Collatz conjecture states that any initial condition leads to 1 eventually</strong>. In other words, you can never get trapped in a mapping cycle.</p>
+<p>Notice that increasing the number of iterations increases the number of red points, i.e., points that reached 1. The <strong>Collatz conjecture states that any initial condition leads to 1 eventually</strong>. In other words, you can never get trapped in a loop, nor can numbers grow indefinitely. All sequences end in $1$.</p>
 
-<p>This statement has been extensively tested (for initial conditions up to billions!) and, yet, there is no formal proof of the affirmation. For the best of our knowledge, at any moment a computer can find a huge number that loops on itself and does not reach 1, breaking the conjecture. Although possible, mathematicians don’t think it is likely and the conjecture is very probably true - we’ve just got to find a way to prove it.</p>
-
-<p>So… if we can’t prove it, at least we can visualize it.</p>
+<p>This statement has been extensively confronted for initial conditions up to billions and, yet, there is no formal proof of the affirmation. For the best of our knowledge, at any moment a computer can find a huge number that loops on itself and does not reach 1, breaking the conjecture. Although possible, mathematicians don’t think it is likely and the conjecture is very likely true - we’ve just got to find a way to prove it.</p>
 
 <h4 id="its-irreducible-version">Its irreducible version</h4>
 
-<p>An iteration has the property of ‘self-application’ and, in other words, after iterating number, you find yourself back to the same problem - but with a different number. Actually, if you carefully inspect the conditions of even/odd numbers and their algebra, you find it is not the case for Collatz map.</p>
+<p>An iteration has the property of ‘self-application’ and, in other words, after iterating a number, you find yourself back to the same problem - but with a different number. Actually, if you carefully inspect the conditions of even/odd numbers and their algebra, you find it is not the case for Collatz map.</p>
 
 <p>Therefore, <strong>Collatz map can actually be simplified</strong> because the product of odd numbers is always odd, hence $3x_n$ is guaranteed to be an odd number - and summing $1$ to it will produce an even number for sure. Now, if in the original Collatz map we know always after an odd number comes an even number, then the system did not return to the previous state of ‘possibilities’ of evenness: we have an extra information about the next iteration and the problem has <strong>a redundant operation</strong> that could be eliminated automatically.</p>
 
-<p>We can encapsulate both operations when the number is odd, ending up with a <strong>short-cut Collatz map</strong></p>
+<p>Thus, we can encapsulate both operations when the number is odd, ending up with a <strong>short-cut Collatz map</strong></p>
 
 \[x_{n+1} = \frac{x_n}{2} \textrm{, if } x_n \textrm{ even} \\
 x_{n+1} = \frac32x_n + \frac12 \textrm{, if } x_n \textrm{ odd}\]
 
-<p>This is a very known computational optimization when calculating the number of iterations to reach $1$. But besides that, it highlights an fundamental fact: <strong>when we update even numbers, we actually reduce them more (by factor of $2$) than we increase odd numbers (factor $1.5$)</strong>. And hence the possibility of the conjecture. The mapping does not ‘blow-up’ for infinity in ever-increasing numbers.</p>
+<p>This is a very known computational optimization when calculating the number of iterations to reach $1$. But besides that, it highlights a fundamental fact: <strong>when we update even numbers, we actually reduce them more (by factor of $2$) than when we increase odd numbers (factor $1.5$)</strong>. And the conjecture is possible because the mapping does not ‘blow-up’ for infinity in ever-increasing numbers. Now the open problem in proving there aren’t loops on this map (in fact, it’s been proved that if a loop exists, it is huge!).</p>
 
 <h2 id="visualization">Visualization</h2>
 
-<h4 id="a-graph-of-interactions">A graph of interactions</h4>
+<p>So… if we can’t prove it, at least we can visualize it.</p>
 
-<p>All code used in this hands-on is available to download at the end of this page. The main point is generating the graph, as follows:</p>
+<h4 id="graphing-iterations">Graphing iterations</h4>
+
+<p>All code used in this hands-on is available to download at the end of this page. The main point of the code is generating the graph as follows:</p>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">igraph</span><span class="p">)</span><span class="w">
 </span><span class="n">TAM</span><span class="o">=</span><span class="m">8000</span><span class="w"> </span><span class="c1"># Limit size of numbers</span><span class="w">
@@ -180,7 +182,7 @@ x_{n+1} = \frac32x_n + \frac12 \textrm{, if } x_n \textrm{ odd}\]
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
-<p>After removing the unconnected vertices (not connected to 1 due to the finite size of the network), we can inspect the zoom below to observe that <strong>there are 3 kinds of numbers</strong> in our Collatz graph.  We realize that <strong>numbers are generally connected to other two numbers</strong> - its double and its half. I painted all these numbers in green. But eventually there are numbers that can be reached from both its double as its odd $\frac{x_{n-1}-1}{3}$ ancestor. These numbers end up being fundamental because <strong>they cause the bifurcations</strong> in this graph. I painted them in blue. Finally there are some large numbers with 1 neighbor, because its other neighbor is greater than the size of the network I drew. I painted them as gray in order to be ignored since they are the artificial effect of the finitude of the graph. The central number 1 in sparkling red.</p>
+<p>After removing the unconnected vertices (not connected to 1 due to the finite size of the graph), we can inspect the zoom below to observe that <strong>there are 3 kinds of numbers</strong> in our Collatz graph, three different players.</p>
 
 <div class="image-container">
 
@@ -196,7 +198,9 @@ x_{n+1} = \frac32x_n + \frac12 \textrm{, if } x_n \textrm{ odd}\]
 
 </div>
 
-<p>Looking at the whole graph in <em>layout_with_kk()</em> position, we see <strong>beautiful effects of these blue bifurcations and green elongations</strong>. The number one is sparkling on the <em>center rightish position</em>. Here is a reduced quality image, and clicking on it you can maximize to a high definition image and find all sequences you want to (or use it as your wallpaper, because that is totally what I’m going to do).</p>
+<p>We realize that <strong>numbers are generally connected to other two numbers</strong> - its double and its half. I painted all of these numbers in green. But eventually there are numbers that can be reached from both its double as its odd $\frac{x_{n}-1}{3}$ ancestor. These numbers end up being fundamental because <strong>they cause the bifurcations</strong> we see in this graph. I painted them in blue. Finally, there are some large numbers with 1 neighbor, because its other neighbor is greater than the size of the network I drew. I painted them as gray in order to be ignored since they are the artificial effect of the finitude of our graph. The central number $1$ is in sparkling red.</p>
+
+<p>Looking at the whole graph in <em>layout_with_kk()</em> position, we see <strong>beautiful effects of these blue bifurcations and green elongations</strong>. The number one is in a sparkling-red square on the <em>center rightish position</em>. Here is a reduced quality image, and by clicking on it you can maximize it to a high definition image and zoom it to find all sequences you want to (or use it as your wallpaper, because that is totally what I’m going to do).</p>
 
 <div class="image-container">
 <a href="/assets/img/blog/collatz_main.png" target="_blank">
@@ -212,7 +216,7 @@ x_{n+1} = \frac32x_n + \frac12 \textrm{, if } x_n \textrm{ odd}\]
 
 </div>
 
-<p>Collatz conjecture assures that there are no cycles in this directed graph, and therefore it is more precisely a <strong>tree</strong>. In a <strong>circular tree</strong> with number $1$ at its center, the possible sequences can be contemplated as follows (again, click to maximize).</p>
+<p>Collatz conjecture assures that there are no cycles in this directed graph and, hence, it is more precisely a <strong>tree</strong>. In a <strong>circular tree</strong> with number $1$ at its center, the possible sequences can be contemplated as follows (again, click to maximize).</p>
 
 <div class="image-container">
 <a href="/assets/img/blog/collatz_tree.png" target="_blank">
@@ -228,11 +232,11 @@ x_{n+1} = \frac32x_n + \frac12 \textrm{, if } x_n \textrm{ odd}\]
 
 </div>
 
-<p>Can you also see Patrick from Bob Sponge running right or have I watched too much Nickelodeon?</p>
+<p>Can you also see Patrick from Bob Sponge Square Pants running right or have I watched too much Nickelodeon?</p>
 
 <h4 id="higher-iteration-graphs">Higher iteration graphs</h4>
 
-<p>In the previous graphs, we connected $x_n$ and $x_{n+1}$ - two subsequent iterations. We can form <strong>high order of iteration graphs by connecting successive iterations</strong>, for instance a second iteration graph would connect $x_n$ with $x_{n+2}$. Compare the first, second and third iteration graphs.</p>
+<p>In the previous graphs, we connected $x_n$ and $x_{n+1}$ - two subsequent iterations. We can form <strong>higher iteration orders graphs by connecting successive iterations</strong>. For instance, a second iteration graph would connect $x_n$ with $x_{n+2}$. Compare the first, second and third iteration graphs below.</p>
 
 <div class="image-container">
 
@@ -248,36 +252,18 @@ x_{n+1} = \frac32x_n + \frac12 \textrm{, if } x_n \textrm{ odd}\]
 
 </div>
 
-<p>Because $1$ is an absorbing state - i.e. after you reach it, you stick to it - the graphs are condensing to its center more and more at each step, getting more and more directly connected to $1$.</p>
+<p>Because $1$ is an absorbing state - i.e. after you reach it, you stick to it -, the graphs are condensing to its center more and more at each step, getting more and more directly connected to $1$.</p>
 
 <h2 id="graph-properties">Graph Properties</h2>
 
-<h4 id="modularity">Modularity</h4>
-
-<p>What happens when searching for clusters (modules) employing a method of detection of clusters based on properties of distance? <strong>We can  actually recover the structure of sub-graphs of bifurcations</strong> by applying the <em>cluster_edge_betweenness</em> criterion, in which highly crossed edges in paths between any pairs of vertices are more likely to become an inter-module edge. Once again, you can click to maximize the result.</p>
-
-<div class="image-container">
-<a href="/assets/img/blog/collatz_mods.png" target="_blank">
-    <img src="/assets/img//blog/collatz_mods_red.png" alt="Avatar" class="image">
-    <div class="overlay">
-      <div class="text" style="color:">
-        Modularity of Collatz graph (click to maximize)
-	 <i class="fa fa-arrow-right" aria-hidden="true" style="color:"></i>
-      </div>
-    </div>
-
-</a>
-
-</div>
-
 <h4 id="distance-from-1">Distance from 1</h4>
 
-<p>The final question (<em>so far!</em>) is how the distance from $1$ increases as initiate with larger and larger numbers. We calculate distances on R using the following function.</p>
+<p>Although all numbers eventually reach $1$, some numbers take longer than others. In general, the distance from $1$ increases as we initiate the mapping with larger and larger numbers. We calculate the distances on R using the following function.</p>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">V</span><span class="p">(</span><span class="n">g</span><span class="p">)</span><span class="o">$</span><span class="n">dists</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">distances</span><span class="p">(</span><span class="n">g</span><span class="p">,</span><span class="w"> </span><span class="n">to</span><span class="o">=</span><span class="m">1</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
 
-<p>When we plot the <strong>distances as a function of the initial number</strong>, in which we observe they grow quite slowly, in fact it seems slower than any power-law. Numbers of order of magnitude $10^4$ present distances of tens of interactions. Also, there doesn’t seem to be different patterns regarding green (regular) or blue (bifurcations) vertices on the graph.</p>
+<p>When we plot the <strong>distances as a function of the initial number</strong>, in which we observe their distance grows quite slowly, and in fact it seems slower than any power-law (right-plot in log scale). Numbers of order of magnitude $10^4$ present distances as short as tens of interactions. Moreover, there doesn’t seem to be different patterns regarding green (regular) or blue (bifurcations) vertices on the graph.</p>
 
 <div class="image-container">
 
@@ -293,7 +279,25 @@ x_{n+1} = \frac32x_n + \frac12 \textrm{, if } x_n \textrm{ odd}\]
 
 </div>
 
-<p>In fact, the quickest numbers to converge are the powers of $2$, because they follow repeated reductions. The distance of $2^n$ is $n$, showing therefore that the <strong>lower-bound grows logarithmically</strong>.</p>
+<p>In fact, the quickest numbers to converge are the powers of $2$, because they follow sequential reductions. The distance of $2^n$ is $n$, and therefore the <strong>lower-bound of distances grows logarithmically</strong>.</p>
+
+<h4 id="modularity">Modularity</h4>
+
+<p>The final question (<em>so far!</em>) is what happens when we search for clusters (modules) employing a method of detection of clusters based on properties of distance, as seen before. It turns out that <strong>we can  actually recover the structure of sub-graphs of bifurcations</strong> by applying the <em>cluster_edge_betweenness</em> criterion, in which highly crossed edges in paths between any pairs of vertices (higher betwenness) are more likely to become an inter-module edge. Once again, you can click on it to maximize the result.</p>
+
+<div class="image-container">
+<a href="/assets/img/blog/collatz_mods.png" target="_blank">
+    <img src="/assets/img//blog/collatz_mods_red.png" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text" style="color:">
+        Modularity of Collatz graph (click to maximize)
+	 <i class="fa fa-arrow-right" aria-hidden="true" style="color:"></i>
+      </div>
+    </div>
+
+</a>
+
+</div>
 
 <h2 id="code-in-r">Code in R</h2>
 
@@ -301,18 +305,18 @@ x_{n+1} = \frac32x_n + \frac12 \textrm{, if } x_n \textrm{ odd}\]
 
 <p><a href="/assets/docs/blog/collatz_code.R"><button class="mybutton">Download the R code</button></a></p>
 
-<p>In the mean time, if you discover some nice property by playing with the code in R, feel free to send it to me on my email <em><a href="mailto:vitorsudbrack@gmail.com">vitorsudbrack@gmail.com</a></em>, or contact me on <em><a href="https://twitter.com/vitorsudbrack">Twitter @vitorsudbrack</a></em> about your experience playing with this hands-on.</p>
+<p>In the meantime, if you discover some nice property by playing with the code in R, feel free to send it to me on my email <em><a href="mailto:vitorsudbrack@gmail.com">vitorsudbrack@gmail.com</a></em>, or contact me on <em><a href="https://twitter.com/vitorsudbrack">Twitter @vitorsudbrack</a></em> about your experience playing with this hands-on. All feedback is appreciated.</p>
 
 <hr>
 
 <p>Thank you so much for reading this post! I hope you enjoyed reading it as much as I did writing. Remember to share with your friends and classmates and make sure to never take a map - as simple as it is - for granted.</p>
 
-<p><img class="emoji" title=":brazil:" alt=":brazil:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1e7-1f1f7.png" height="20" width="20"> This page does not have a version in Portuguese. If you are Brazilian and want to help me translating this post (or other contents of this webpage) to reach more easily Brazilian students, your help would be highly appreciated and acknowledged. Mail me.</p>
+<p><img class="emoji" title=":brazil:" alt=":brazil:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1e7-1f1f7.png" height="20" width="20"> This page does not have a version in Portuguese yet. If you are Brazilian and want to help me translating this post (or other contents of this webpage) to reach more easily Brazilian students, your help would be highly appreciated and acknowledged. Mail me! :)</p>
 
 </div>
   </div>
 
-<button id="scroll-to-top"><svg viewbox="0 0 24 24"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"></path></svg></button>
+<!-- <button id='scroll-to-top'><svg viewBox="0 0 24 24"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/></svg></button> //Not working in mobile. --> 
 
 </section>
 

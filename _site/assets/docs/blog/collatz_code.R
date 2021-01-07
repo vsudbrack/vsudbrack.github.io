@@ -1,3 +1,9 @@
+###########################################################################################
+## Visualizing Collatz conjecture							###
+## Code by Vitor Sudbrack 								###
+## Available at https://vsudbrack.github.io/codes/2021-01-02-Collatz_conjecture.html 	###
+###########################################################################################
+
 # Library igraph
 library(igraph)
 

@@ -16,7 +16,6 @@ collections:
     title: Courses
     directory: ./_courses
 
-
   codes:
     output: true
     title: Codes
