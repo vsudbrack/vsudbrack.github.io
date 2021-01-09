@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Estourando a bolha:"
-subtitle: "como informação se espalha na sociedade"
-description: "In Portuguese, <b>Pop the bubble: how information spreads on society</b> is a guided-study into networks, Voter model and complex systems to high school students."
+subtitle: "como opinião se espalha na sociedade"
+description: ":brazil: <b>Pop the bubble: how opinion spreads on society</b> is an entertaining guided-study to High School students about Network structure and Opinion dynamics, focusing on lessons of Mathematical modeling and Complex systems."
 permalink: /ictp-jovens
 ---
 
@@ -652,9 +652,9 @@ Vou deixar aqui algumas **dicas** para guiar vocês na contrução da apresenta�
 
 ---
 
-# Links, referências & conteúdo extra
+# Conteúdo extra
 
-Vou escrever aqui uma série de links que podem ajudar vocês no processo de construção do conhecimento, aprofundamento das questões tangenciais que a gente vai tratar, e engrandecer a apresentação final de vocês (lembrando que ao longo do próprio texto já tem várias referências interessantes!).
+Vou escrever aqui algumas recomendações para quem se interessou no tópico e quer aproveitar as férias fazendo uma boa e interessante leitura!
 
 * **Livro** *[Linked: How Everything Is Connected to Everything Else and What It Means for Business, Science, and Everyday Life](https://www.amazon.com.br/Linked-Everything-Connected-Business-Everyday-ebook/dp/B06XC9JM6Y/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=linked&qid=1608582248&sr=8-1)* do Barábasi. 
 * **Livro** *[Bursts: The Hidden Patterns Behind Everything We Do, from Your E-mail to Bloody Crusades](https://www.amazon.com.br/Bursts-Patterns-Everything-mail-Crusades-ebook/dp/B003NX7NBU/ref=pd_sbs_4?pd_rd_w=uENqo&pf_rd_p=dba274c4-9919-41b0-a2f8-76fb24466c03&pf_rd_r=9HBR8Q6VQAQ0RWCVZ40G&pd_rd_r=531ff5b1-82b5-49a8-b122-d0a36f17b533&pd_rd_wg=CJIR7&pd_rd_i=B003NX7NBU&psc=1)* do Barábasi.
@@ -662,3 +662,10 @@ Vou escrever aqui uma série de links que podem ajudar vocês no processo de con
 * Absolutamente qualquer livro do **Leonard Mlodinow**, em especial [O andar do bêbado: Como acaso determina nossas vidas](https://www.amazon.com.br/andar-b%C3%AAbado-acaso-determina-nossas-ebook/dp/B008FPZPRA/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=36CFNKA9C4AJX&dchild=1&keywords=o+andar+do+bebado&qid=1608582438&s=digital-text&sprefix=o+andar+do+%2Cdigital-text%2C325&sr=1-1). 
 
 {% include image.html image="/projects/ictp-jovens/leitura_ferias.jpg" text="Eu lendo Leonard Mlodinow nas férias =)" %}
+
+Existem oportunidades de **iniciação científica** nesse tópico caso vocês tenham gostado da atividade e querem começar uma pesquisa original com dinâmica em grafos aplicada a ecologia ou sociologia.
+
+---
+
+:gb: This page does not have a version in English yet. If want to help me adapting/translating this page (or other contents of this webpage) to reach more easily other students, your help would be highly appreciated and acknowledged. Mail me! :)
+

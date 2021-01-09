@@ -158,11 +158,7 @@ and you can do the same using *Bash scripts*, *awk*, *Python*, *C*, and so on, t
 
 Thank you for reading up to here and I hope you enjoyed this list of useful **alias**! [**Retweet** this post](https://twitter.com/vitorsudbrack/status/1305998416816807942?s=20), tweet or DM me at *[@vitorsudbrack](https://twitter.com/vitorsudbrack)* if you have any **new ideas to add to the list**, I'll be happy to hear them from you and start using them too.
 
-***
-
-Updated on Oct, 2nd. with more examples.
-Last update on Jan, 1st. with new script.
-
+:brazil: This page does not have a version in Portuguese yet. If you are Brazilian and want to help me translating this post (or other contents of this webpage) to reach more easily Brazilian students, your help would be highly appreciated and acknowledged. Mail me! :)
 
 
 

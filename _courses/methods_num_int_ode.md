@@ -181,4 +181,5 @@ The last note is to **avoid abrupt changes in $\Delta t$** for the stability of 
 
 My gratitude to Prof. Heitor Carpes Marques Fernandes, from *IF-UFRGS*, who was responsible for the course I was tutoring and helped me polish this summary in its first versions. 
 
+:brazil: This page does not have a version in Portuguese yet. If you are Brazilian and want to help me translating this post (or other contents of this webpage) to reach more easily Brazilian students, your help would be highly appreciated and acknowledged. Mail me! :)
 

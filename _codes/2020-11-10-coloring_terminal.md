@@ -122,3 +122,5 @@ Finally, I should mention we alter the user configurations. If you move the *.di
 *** 
 
 Thank you for reading up to here and I hope you found it useful for you. Take your time to also adapt the extensions to your most frequent types of files... and if you do so, tweet or DM me at *[@vitorsudbrack](https://twitter.com/vitorsudbrack)* with your **new extensions added to the lists**, it will be nice to hear them from you and I look forward to maybe using them too.
+
+:brazil: This page does not have a version in Portuguese yet. If you are Brazilian and want to help me translating this post (or other contents of this webpage) to reach more easily Brazilian students, your help would be highly appreciated and acknowledged. Mail me! :)

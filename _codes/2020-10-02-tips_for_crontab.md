@@ -129,4 +129,5 @@ I thank Professor **Renato Coutinho** who taught me this nice trick using it to 
 
 I also thank you for reading up to here and I hope you found it useful for you! Tweet or DM me at *[@vitorsudbrack](https://twitter.com/vitorsudbrack)* if you have any **new ideas of exemples to add to the list**, it will be nice to hear them from you and I look forward to using them too.
 
+:brazil: This page does not have a version in Portuguese yet. If you are Brazilian and want to help me translating this post (or other contents of this webpage) to reach more easily Brazilian students, your help would be highly appreciated and acknowledged. Mail me! :)
 
