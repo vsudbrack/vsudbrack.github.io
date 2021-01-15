@@ -128,6 +128,7 @@ A principal ideia da oficina é fazer a gente pensar sobre **modelagem matemáti
 
 Vamos construir um **diagrama de fases** para esquematizar quando observamos uma sociedade de opiniões aleatórias e quando observamos uma **sociedade parcimônica** (todos com a mesma opinião). Para tanto, a gente vai usar conceitos da **teoria de grafos e redes** e da **ciência da complexidade**, que são duas ciências irmãs e importantíssimas dentro da física e das demais áreas. 
 
+<!--
 ---
 
 # Redes de contato 
@@ -446,6 +447,8 @@ A primeira grande simplificação que vamos fazer é trabalhar com **opiniões b
 
 {% include image.html image="/projects/ictp-jovens/opiniao_binaria.jpeg" text="Exemplos de opiniões binárias polarizadas (esq.) e misturada (dir.)" %}
 
+Um exemplo real desses opiniões no Twitter pode ser visto [nesse tweet](https://twitter.com/fabiomalini/status/1350079250955689984?s=20) do [@fabiomalini](https://twitter.com/fabiomalini), onde ele conectou os retweets do Twitter (quanto maior o vértice mais retweetado - mais ligações). Ele faz parte do [Laboratório de Estudos sobre Imagem e Cibercultura](http://www.labic.net/).
+
 Para abstrair matematicamente, vamos representar as opiniões com dois números, por exemplo $-1$ e $1$. Vamos inicializar a rede com opiniões aleatórias
 ```r
 TAM = length(V(rede)) #Tamanho da rede
@@ -554,7 +557,6 @@ Existem dois grandes grupos de transições de fases - as de primeira e de segun
 {% include image.html image="/projects/ictp-jovens/transicao.png" text="As duas grandes classes de transição de fase" %}
 
 Vale ressaltar que essas descontinuidades acontecem apenas no **limite termodinâmico**, que é quando **o número de vértices é infinito**. Sabemos que no computador a gente não chega nem perto desse número, então precisamos de outras técnicas para averiguar o tipo de transição com um número finito de vértices. 
-<!-- A mais comum é o *scaling* (escalonamento - mas não o de matriz!), em que a gente aumenta a ordem de grandeza do número de vértices e verifica a tendência das curvas, e assim extrapolamos para um número infinito de vértices. Muitos físicos e matemáticos trabalham para estudar essas transições do ponto de vista analítico, usando teoremas e limites que possam indicar a convergência para uma transição de fase, porém nós nos restringiremos aos métodos computacionais. -->
 
 {% include colapse.html title="Pergunta"
 text="<b>A transição entre fases do diagrama de fases para uma rede aleatório de 512 vértices é uma transição de primeira ou de segunda ordem?</b> Lembra-se de considerar o <i>limite termodinâmico</i>." %}
@@ -649,6 +651,8 @@ Vou deixar aqui algumas **dicas** para guiar vocês na contrução da apresenta�
 
 
 {% include image.html image="/projects/ictp-jovens/postergar.jpeg" text="Prazo do trabalho: 00:00<br>Eu enviando o trabalho às 23:59" %}
+
+-->
 
 ---
 
