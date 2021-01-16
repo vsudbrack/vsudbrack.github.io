@@ -103,7 +103,7 @@ Mas em geral a gente é cabela dura e fica tentando rodar coisas até que uma va
 
 Não precisa ler a documentação agora, mas saibam que ela está lá e se surgir alguma dúvida vocês podem buscar exemplos e funções lá. 
 
-## Me mandar um email de apresentação
+<!--## Me mandar um email de apresentação
 
 Outra tarefa importantíssima de vocês será **escrever um email de apresentação**! Para mim é muito importante entender mais quem vocês são para eu posso organizar nossas tarefas e nosso grupo de forma que seja mais legal para vocês :)
 
@@ -115,6 +115,7 @@ Além das coisas básicas, como onde mora e estuda, quais os seus interesses em 
 Prepara um par de parágrafos com as informações que achar mais importantes de destacar e manda pro meu email, **[vitorsudbrack@gmail.com](mailto:vitorsudbrack@gmail.com)**. 
 
 O inverso também é importante, e **aqui no site vocês descobrem bastante sobre mim e sobre as coisas que eu trabalho e me interesso** - explorem-o. No nosso primeiro encontro a gente faz uma roda de apresentação também.
+-->
 
 ## A visão geral do projeto
 
