@@ -129,7 +129,6 @@ A principal ideia da oficina é fazer a gente pensar sobre **modelagem matemáti
 
 Vamos construir um **diagrama de fases** para esquematizar quando observamos uma sociedade de opiniões aleatórias e quando observamos uma **sociedade parcimônica** (todos com a mesma opinião). Para tanto, a gente vai usar conceitos da **teoria de grafos e redes** e da **ciência da complexidade**, que são duas ciências irmãs e importantíssimas dentro da física e das demais áreas. 
 
-<!--
 ---
 
 # Redes de contato 
@@ -435,7 +434,7 @@ text="<b>Faça uma tabela associando as principais propriedades de redes (grau m
 
 E por curiosidade, há também alguns sites, por exemplo [MovieGalaxies](https://moviegalaxies.com/), que fazem redes sociais a partir de **personagens de filmes**. Existem alguns artigos analisando as *character networks*, redes de personagens - por exemplo com [Senhor dos Anéis](https://arxiv.org/abs/1606.02610) e [Harry Potter e Crepúsculo](https://arxiv.org/abs/1608.00646).  
 
-
+<!--
 ---
 
 # Da estrutura para dinâmica
