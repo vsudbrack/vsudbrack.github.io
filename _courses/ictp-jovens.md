@@ -369,7 +369,7 @@ onde *anel* é o nome da variável que você salvou o grafo anelar no comando an
 
 Para adicionar ou ligações entre dois vértices, use os operadores de some e subtração junto com a função *add.edges* que diz que o objeto sendo adicionado ou subtraído é uma ligação. Por exemplo,
 ```r
-anel = anel + add.edges(anel, c("7","8")) #Adiciona uma ligação entre o nó 25 e 40
+anel = add.edges(anel, c("7","8")) #Adiciona uma ligação entre o nó 7 e 8
 anel = anel + delete_edges(anel, c("1","2")) #Remove a ligação entre o nó 1 e 2
 ```
 e assim você pode adicionar não-localidades. 
@@ -508,7 +508,7 @@ Por fim, repetir uma operação várias vezes é o que vimos ser um *loop for*. 
 ```r
 TF = 15 #Número de semanas
 medias = rep(0,TF)
-for (tempo in seq(2, TF) {
+for (tempo in seq(2, TF)) {
   V(rede)$opinion = update_opinions(rede)
   medias[tempo] = mean(V(rede)$opinion)
 }
