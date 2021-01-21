@@ -570,7 +570,7 @@ Vamos fixar as redes em **512 vértices** e número de ligações será variáve
 
 E comparando todos esses diagramas que vocês prepararam, vocês têm todas as ferramentas para discutir na **apresentação** de vocês: **Qual o efeito de termos mais contatos? Qual o efeito de termos mais contatos não-locais? (Redução do diâmetro da rede).  Qual o efeito de termos uma maior heterogeneidade na distribuição de contatos?  Qual a interpretação disso em termos de sociedade? São esses os efeitos que vocês observam no mundo real?**
 
-<!--
+
 ---
 
 # Mundo real, problemas reais
@@ -591,6 +591,7 @@ A própria palavra **modelo** já carrega um tom de idealização e de simplific
 
 Proponham as suas também! Vocês devem refletir sobre **qual desses ingredientes vocês acreditam ser(em) o(s) mais fundamental(is) em nossas interações sociais** para adicionar ao modelo. Implemente um dos efeitos que considera fundamental e repita as análises anteriores sobre o estado estacionário: **como o efeito escolhido altera as fases do modelo básico? Em quais redes esses efeitos são mais ou menos percebidos?**
 
+<!--
 ---
 
 # Modelagem matemática
