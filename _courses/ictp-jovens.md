@@ -633,6 +633,7 @@ Muito esforço dos físicos se concentra em criar modelos matemáticos. Hoje tem
 
 Por exemplo, **conectar processos**. Já pensaram que poderíamos interpretar nosso modelo básico em termos de *campo magnético spin* de partículas, ao invés de opiniões. Opinião $+1$ ou $-1$ poderiam ser *spin up* e *spin down* e o processo de troca de opinião seria o alinhamento de spin com o campo magnético gerado pelos spins vizinhos. Como você interpretaria as duas fases nesse contexto?
 
+-->
 
 ---
 
@@ -653,8 +654,6 @@ Vou deixar aqui algumas **dicas** para guiar vocês na contrução da apresenta�
 
 
 {% include image.html image="/projects/ictp-jovens/postergar.jpeg" text="Prazo do trabalho: 00:00<br>Eu enviando o trabalho às 23:59" %}
-
--->
 
 ---
 
