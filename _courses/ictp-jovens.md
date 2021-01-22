@@ -591,7 +591,6 @@ A própria palavra **modelo** já carrega um tom de idealização e de simplific
 
 Proponham as suas também! Vocês devem refletir sobre **qual desses ingredientes vocês acreditam ser(em) o(s) mais fundamental(is) em nossas interações sociais** para adicionar ao modelo. Implemente um dos efeitos que considera fundamental e repita as análises anteriores sobre o estado estacionário: **como o efeito escolhido altera as fases do modelo básico? Em quais redes esses efeitos são mais ou menos percebidos?**
 
-<!--
 ---
 
 # Modelagem matemática
@@ -632,8 +631,6 @@ Muito esforço dos físicos se concentra em criar modelos matemáticos. Hoje tem
 ## Universilidade
 
 Por exemplo, **conectar processos**. Já pensaram que poderíamos interpretar nosso modelo básico em termos de *campo magnético spin* de partículas, ao invés de opiniões. Opinião $+1$ ou $-1$ poderiam ser *spin up* e *spin down* e o processo de troca de opinião seria o alinhamento de spin com o campo magnético gerado pelos spins vizinhos. Como você interpretaria as duas fases nesse contexto?
-
--->
 
 ---
 
