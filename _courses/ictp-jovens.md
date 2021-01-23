@@ -6,17 +6,13 @@ description: ":brazil: <b>Pop the bubble: how opinion spreads on society</b> is 
 permalink: /ictp-jovens
 ---
 
-Olá Jovens na Física, 
 
-sejam muito bem-vindos e bem-vindas ao nosso projeto/oficina no **[ICTP-SAIFR Jovens na Física 2021](http://outreach.ictp-saifr.org/escolaverao/)**, onde vamos explorar conceitos em **dinâmica de opinião**, **sociofísica** e **sistemas complexos**! 
 
-Quero agradecer de coração vocês terem topado o desafio que vai ser essa semana - se preparem para bastante **conhecimento** e venham com o **ânimo** nas alturas e a mente aberta para **curiosidade**. Acima de tudo, a gente tá aqui para se divertir! Trabalhar na física é uma eterna diversão - tem pontos altos e baixos, como qualquer profissão, mas em geral é muito divertido. E nesse ponto é a gente que faz a diversão, né? Então venham animados, mesmo que as coisas não saiam como o esperado (o que é super normal *heheh*).
+sejam muito bem-vindos e bem-vindas ao nosso projeto/oficina no **[ICTP-SAIFR Jovens na Física 2021](http://outreach.ictp-saifr.org/escolaverao/)**, onde vamos explorar conceitos em **dinâmica de opinião**, **sociofísica** e **sistemas complexos**! Essa página que vai funcionar como uma "wiki" ou um diário do projeto...
 
-Então essa semana vocês vão ter um gostinho sobre **como um físico e uma física trabalham**. Para ajudar vocês nessa empreitada (em geral o caminho é mais pedroso *risos nervosos*), eu criei essa página que vai funcionar como uma "wiki" ou um diário do projeto... vou tentar **escrever e roteirizar aqui tudo que vocês precisam saber e fazer**, e ao longo da semana nós **discutiremos o conteúdo e a prática juntos nas lives**. 
+A dinâmica da oficina tá prevista em **5 encontros** pela tarde. As primeiras duas oficinas, acredito que serão mais expositivas, pois preciso introduzir vocês a linguagem de programação R e o conteúdo que trabalharemos. Depois que vocês pegarem o fio da meada, tenho certeza que vocês mesmos virão com idéias e melhorias ao nosso modelo. 
 
-Quero que vocês se sintam muito a vontade dentro do nosso grupo, e, principalmente, sempre que vocês quiserem perguntar algo, solicitar algo, comentar algo,..., **eu estou sempre a postos para ouví-los, não hesitem**! Os melhores jeitos são via meu email pessoal - **[vitorsudbrack@gmail.com](mailto:vitorsudbrack@gmail.com)** - ou a plataforma que usarmos: Slack, Discord, Whatsapp...
-
-A dinâmica da oficina tá prevista em **5 encontros** pela tarde, mas eu estou disponível para conversarmos a qualquer momento. As primeiras duas oficinas, acredito que serão mais expositivas, pois preciso introduzir vocês a linguagem de programação R e o conteúdo que trabalharemos. Depois que vocês pegarem o fio da meada, tenho certeza que vocês mesmos virão com idéias e melhorias ao nosso modelo. E para ajudar vocês a navegar por essa página, aqui está um sumário do conteúdo.
+E para ajudar vocês a navegar por essa página, aqui está um sumário dos conteúdos.
 
 * Table of contents
 {:toc}
