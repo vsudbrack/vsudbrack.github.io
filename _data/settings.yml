@@ -47,12 +47,16 @@ projects:
 # Contact Section
 
 social:
-- {icon: 'twitter', link: 'https://twitter.com/vitorsudbrack'}
-- {icon: 'facebook', link: 'https://www.facebook.com/vsudbrack'}
-- {icon: 'instagram', link: 'https://www.instagram.com/v_sud/'}
-- {icon: 'youtube', link: 'https://www.youtube.com/channel/UCNRrtOK8RIkds4VUFm04Ptw'}
-- {icon: 'github', link: 'https://github.com/vsudbrack'}
-- {icon: 'envelope', link: 'mailto:vitorsudbrack@gmail.com'} 
+- {icon: 'fa fa-envelope', link: 'mailto:vitorsudbrack@gmail.com'} 
+- {icon: 'fa fa-github', link: 'https://github.com/vsudbrack'}
+- {icon: 'ai ai-google-scholar', link: 'https://scholar.google.com/citations?user=fQ4x-1LZ-nEC'}
+- {icon: 'ai ai-researchgate', link: 'https://www.researchgate.net/profile/Vitor-Sudbrack'}
+- {icon: 'ai ai-orcid', link: 'https://orcid.org/0000-0002-4815-2092'}
+- {icon: 'fa fa-youtube', link: 'https://www.youtube.com/channel/UCNRrtOK8RIkds4VUFm04Ptw'}
+- {icon: 'fa fa-twitter', link: 'https://twitter.com/vitorsudbrack'}
+#- {icon: 'fa fa-facebook', link: 'https://www.facebook.com/vsudbrack'}
+#- {icon: 'fa fa-instagram', link: 'https://www.instagram.com/v_sud/'}
+
 
 #--------------------------------- 'twitter' 'facebook' 'github' 
 # 'pinterest' 'google-plus'  'linkedin' 'youtube'  'instagram' 
