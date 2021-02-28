@@ -9,28 +9,34 @@ permalink: /about/
 
 ## Hello,
 
-**I'm Vítor Sudbrack**, Brazilian scientist, pursuing a Physics Master program at the *Institute of Theoretical Physics (IFT - Unesp)* in São Paulo - SP, Brazil; and currently working at the *Institute for Cross-Disciplinary Physics and Complex Systems (IFISC - UiB)* Palma de Mallorca, Spain, to get a *sandwich degree*. :brazil: :es:
+**I'm Vítor Sudbrack**, Brazilian scientist. I'm currently a PhD candidate at the *[University of Lausanne](https://www.unil.ch/dee/en/home.html)* (*UNIL*, Switzerland), working at the **[Theoretical Evolutionary Ecology lab](https://charlesmullon.wordpress.com/)**  with professor *Charles Mullon*. :switzerland: 
 
-I started ~~overdrinking coffee~~:coffee: in Physics in 2014, and in the beginning of 2019 I was laureated **Bachelor in Physics with honors**:1st_place_medal: by the Institute of Physics of the *Federal University of Rio Grande do Sul (UFRGS)* in Porto Alegre - RS.
+I'm Master in Physics (2021) by the *[Institute of Theoretical Physics](https://www.ift.unesp.br/#!/en)* (*IFT - Unesp*) in São Paulo, Brazil, with a sandwich period at the *[Institute for Cross-Disciplinary Physics and Complex Systems](https://www.ifisc.uib-csic.es/en/)* (*IFISC - UiB*) in Palma de Mallorca, Spain. In my thesis, I studied *population dynamics in highly fragmented landscapes* :brazil: :es:
 
-My regular work is done at IFT under the supervision of professors *Roberto A. Kraenkel* and *Renato M. Coutinho*. Together, we numerically study **population dynamics in highly fragmented landscapes**. We aim to understand the effects of fragmentation and habitat spatial features into species and ecological systems. You can read much more about it [here](/projects/frag.html). 
+I was laureated *Bachelor in Physics with honors* (2019) by the Institute of Physics of the *Federal University of Rio Grande do Sul (UFRGS)* in Porto Alegre, southern Brazil. :1st_place_medal:
 
-During pandemic times, we joined an [Observatory](https://covid19br.github.io) - a collection of scientists from very complementary backgrounds - aiming to **understand and analyze the data from COVID-19 in Brazil**. You can imagine what a hard task that is...:man_facepalming:	
-
-I have already researched at the *[Fluid Lab - IMPA](http://fluid.impa.br/Home)* with professor *Alexei Mailybaev* in Rio de Janeiro, RJ. There, we studied fully developed bidimensional turbulence in the case of *Kelvin-Helmholtz instability* :ocean:. And I worked as well at the *Laboratory for Cellular Structure (LabCel - UFRGS)*, both during my undergraduate years. Since then, I am working with mathematical biology, **uncracking the puzzles of life**! 
-
-Studying and researching allowed me knowing **many nice people, many interesting places and many awesome wonders** of this universe. I share for science the same feeling *Lise Meitner* described to physics in this quote below 
+Studying and researching has allowed me knowing **many nice people, many interesting places and many awesome wonders** of this universe. I share for science the same feeling *Lise Meitner* described to physics in her following quote :thought_balloon:
 
 {% include quote.html author="Lise Meitner" text="I love physics with all my heart.
 It is a kind of personal love, as one has for a person to whom one is grateful for many things." %}
 
 # My scientific interests
 
-I am mostly **interested** in (macroscopic) *mathematical biology*, for instance modeling **population dynamics, ecological and evolution processes, and complex systems**. Also, I enjoy some mathematical ~~monsters~~ puzzles such as nonlinear differential equations and graph theory. 
+I am mostly interested in (*macroscopic*) **mathematical biology**, for instance modeling **population dynamics, ecological and evolutionary processes, and complex systems**. Also, I enjoy some mathematical ~~monsters~~ puzzles from nonlinear differential equations, graph theory, numerical methods. Much of my quick investigations are saved here as code tutorials. 
 
-I love giving seminars and telling people about my research and other interesting things, specially for outreach purposes. Hence, invitations are always welcome!
+I love giving seminars and telling people about my research and other interesting things, specially for outreach purposes. Hence, invitations are always welcome by email! 
 
 I like to think **I create universes on a computer screen...**, but 95% percent of the job is pogramming and looking at data on this same computer screen *hahah* :joy:
+
+
+# Previous works
+
+My Master thesis was done at IFT under the supervision of professors *Roberto A. Kraenkel* and *Renato M. Coutinho*. Together, we numerically studied **population dynamics in highly fragmented landscapes**. We explored the effects of fragmentation and habitat spatial features into species and ecological systems. You can read much more about it [here](/projects/frag.html). 
+
+Throughout the COVID-19 pandemic, I joined an [Observatory](https://covid19br.github.io) - a collection of scientists from very complementary backgrounds aiming to **understand and analyze the data from COVID-19 in Brazil**. We performed nowcasting and developed modelings. You can take a look at the website itself, or a personal English report of this experience [here](/projects/obs.html).
+
+During my undergraduate years, I have researched at the *[Fluid Lab - IMPA](http://fluid.impa.br/Home)* with professor *Alexei Mailybaev* in Rio de Janeiro, Brazil. There, we studied fully developed bidimensional turbulence in the case of *Kelvin-Helmholtz instability* :ocean:. And I worked as well at the *Laboratory for Cellular Structure (LabCel - UFRGS)*, where I described the statistical time evolution of a mathematical model for protein interaction using graphs. Since then, I am working with mathematical biology, **uncracking the puzzles of life with mathematical lensing**! 
+
 
 <!--## Places
 
