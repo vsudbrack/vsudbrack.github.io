@@ -18,11 +18,11 @@
 </url>
 <url>
 <loc>http://localhost:4000/ictp-jovens</loc>
-<lastmod>2021-01-09T16:13:09+01:00</lastmod>
+<lastmod>2021-02-28T17:40:23+01:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/odes</loc>
-<lastmod>2021-01-09T16:13:09+01:00</lastmod>
+<lastmod>2021-02-28T17:40:23+01:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/about/</loc>
@@ -66,6 +66,10 @@
 <url>
 <loc>http://localhost:4000/assets/docs/projects/ictp-jovens/metricas.pdf</loc>
 <lastmod>2020-02-21T18:39:03+01:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/assets/docs/projects/ictp-jovens/pop_bubble_slides.pdf</loc>
+<lastmod>2021-01-23T19:36:00+01:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/assets/docs/projects/mathbio/slidesDDNetworks.pdf</loc>

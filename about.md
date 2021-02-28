@@ -49,5 +49,5 @@ During my undergraduate years, I have researched at the *[Fluid Lab - IMPA](http
 
 This is a personal portfolio theme created with Jekyll by [LeNPaul](https://github.com/LeNPaul). You can [check out the demo](https://lenpaul.github.io/portfolio-jekyll-theme/) to see his work. All images in this website are marked with "reuse for non-commercial purposes" CC-licenses. Lots of additional codings are my own (*I really have fun doing these things...*).
 
-:exclamation: *All opinions in this website are my own*.
+:exclamation: *Disclaimer:* All opinions in this website are my own.
 

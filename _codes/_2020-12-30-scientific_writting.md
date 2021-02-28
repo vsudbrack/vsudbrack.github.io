@@ -103,5 +103,18 @@ The last three require comma in this particular order, but they don't require co
 
 
 
+#### Slides
+
+
+* A apresentação é para ser **em torno de 20 minutos**, isso sigfinica que são necessários **em torno de 20 slides**. Um truque interessante é colocar slides 'escondidos' no final para ajudar vocês nas respostas caso alguém pergunte detalhes sobre algo que não estava na apresentação. 
+* Tenham em mente que uma apresentação de projeto científico tem uma **estrutura** de introdução (justificativa + problema), métodos (deixem os detalhes para as perguntas), resultados, discussão, conclusão e um último slide de agradecimentos (em especial lembrem-se de agradecer aos organizadores da escola). 
+* Lembrem-se de colocar **os créditos e fontes** ao usar citações ou imagens de outros autores. Todos os gráficos precisam ter **eixos nomeados e título**.
+* Uma imagem e um gráfico é mais que mil palavras! **Não lotem os slides de texto**.
+* Para colocar equações nos slides, geram elas [aqui](https://kylewoodward.com/latex.php).
+* Nem sempre a ordem cronológica em que as coisas foram feitas é a melhor **ordem de apresentação dos resultados** - pensem que vocês querem ir do resultado mais simples ao mais complexo. 
+* Sejam **criativos e bem-humorados**... cada apresentador tem seu estilo, mas não pensem que uma apresentação científica é necessariamente vinculada à uma apresentação séria e rígida. 
+* Ensaiem antes - *quem sabe faz ao vivo* em geral só funciona para os incríveis convidados do Faustão.
+
+
 ---
 Some of these tips are from the videos of Karen L. McKee, as [this one](https://www.youtube.com/watch?v=IkOMgGLEqHE).

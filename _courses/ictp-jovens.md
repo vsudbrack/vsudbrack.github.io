@@ -8,7 +8,7 @@ permalink: /ictp-jovens
 
 
 
-sejam muito bem-vindos e bem-vindas ao nosso projeto/oficina no **[ICTP-SAIFR Jovens na Física 2021](http://outreach.ictp-saifr.org/escolaverao/)**, onde vamos explorar conceitos em **dinâmica de opinião**, **sociofísica** e **sistemas complexos**! Essa página que vai funcionar como uma "wiki" ou um diário do projeto...
+sejam muito bem-vindos e bem-vindas ao nosso projeto/oficina no **[ICTP-SAIFR Jovens na Física 2021](http://outreach.ictp-saifr.org/escolaverao/)**, onde vamos explorar conceitos em **dinâmica de opinião**, **sociofísica** e **sistemas complexos**! Essa página que vai funcionar como uma "wiki" ou um diário do projeto... e ficará disponível para futuros interessados no assunto. 
 
 A dinâmica da oficina tá prevista em **5 encontros** pela tarde. As primeiras duas oficinas, acredito que serão mais expositivas, pois preciso introduzir vocês a linguagem de programação R e o conteúdo que trabalharemos. Depois que vocês pegarem o fio da meada, tenho certeza que vocês mesmos virão com idéias e melhorias ao nosso modelo. 
 
@@ -88,6 +88,8 @@ Nós colocamos esse argumento da função chamado 'dependencies' como verdadeiro
 ```r
 library(igraph)
 ```
+
+Alguns estudantes tiveram um erro ao instalar o pacote *igraph* no Windows. O erro foi corrigido ao deleter o arquivo *\R\win-library\4.0/00LOCK’* presente na parte onde o *R* foi instalado. 
 
 Por fim, cada pacote tem sua **documentação**. A documentação de um pacote é onda você encontra toda a informação sobre as funções que o pacote tem, e o que elas fazem. Vou deixar aqui as documentações desses pacotes que usaremos para vocês consultarem ao longo da semana.
 
@@ -616,7 +618,9 @@ Em geral na física a gente sempre supõe a superposição das coisas. Superposi
 
 ## As lentes matemáticas
 
-Muito esforço dos físicos se concentra em criar modelos matemáticos. Hoje temos excelentes modelos para descrever processos ecológicos e evolutivos, de materiais complexos, do mercado financeiro, de jogos... mas **por que criar modelos matemáticos** para descrever o mundo? Com eles a gente pode
+Muito esforço dos físicos se concentra em criar modelos matemáticos. Hoje temos excelentes modelos para descrever processos ecológicos e evolutivos, de materiais complexos, do mercado financeiro, de jogos... mas **por que criar modelos matemáticos** para descrever o mundo? 
+
+Com eles a gente pode
 * Entender mecanismos e padrões
 * Propor novos conceitos
 * Conectar processos e testar hipóteses
@@ -624,32 +628,26 @@ Muito esforço dos físicos se concentra em criar modelos matemáticos. Hoje tem
 
 {% include image.html image="/projects/ictp-jovens/modelagem.png" text="Modelos matemáticos permitem criar novas relações entre informação" %}
 
-## Universilidade
-
-Por exemplo, **conectar processos**. Já pensaram que poderíamos interpretar nosso modelo básico em termos de *campo magnético spin* de partículas, ao invés de opiniões. Opinião $+1$ ou $-1$ poderiam ser *spin up* e *spin down* e o processo de troca de opinião seria o alinhamento de spin com o campo magnético gerado pelos spins vizinhos. Como você interpretaria as duas fases nesse contexto?
+Por exemplo, considere a possibilidade de **conectar processos**. Já pensaram que poderíamos interpretar nosso modelo básico em termos de *campo magnético spin* de partículas, ao invés de opiniões. Opinião $+1$ ou $-1$ poderiam ser *spin up* e *spin down* e o processo de troca de opinião seria o alinhamento de spin com o campo magnético gerado pelos spins vizinhos. Como você interpretaria as duas fases nesse contexto?
 
 ---
 
 # Apresentação 
 
-Preparem uma apresentção bem legal amanhã - dormir é para os fracos, os legais viram a noite programando (*hahah*)! 
+Por fim, confira os **slides** da apresentação final feitas pelos alunos **Jadson** Araujo Costa (Instituto Federal de Alagoas - Campus Maceió), **Jeann** da Rocha Silva (Colégio Fantástico), **Letícia** Vieira da Silva (IFCE - Campus Juazeiro do Norte) e **Maria Clara** Couto Lorena (IFRN - Campus Macau). Todos os conteúdos e gráficos foram realizados por eles durante os cinco dias de oficina da *Escola de Verão ICTP-SAIFR para Jovens na Física* 2021. 
 
-Vou deixar aqui algumas **dicas** para guiar vocês na contrução da apresentação de amanhã, mas não hesitem em me mandar quaisquer dúvidas:
-
-* A apresentação é para ser **em torno de 20 minutos**, isso sigfinica que são necessários **em torno de 20 slides**. Um truque interessante é colocar slides 'escondidos' no final para ajudar vocês nas respostas caso alguém pergunte detalhes sobre algo que não estava na apresentação. 
-* Tenham em mente que uma apresentação de projeto científico tem uma **estrutura** de introdução (justificativa + problema), métodos (deixem os detalhes para as perguntas), resultados, discussão, conclusão e um último slide de agradecimentos (em especial lembrem-se de agradecer aos organizadores da escola). 
-* Lembrem-se de colocar **os créditos e fontes** ao usar citações ou imagens de outros autores. Todos os gráficos precisam ter **eixos nomeados e título**.
-* Uma imagem e um gráfico é mais que mil palavras! **Não lotem os slides de texto**.
-* Para colocar equações nos slides, geram elas [aqui](https://kylewoodward.com/latex.php).
-* Nem sempre a ordem cronológica em que as coisas foram feitas é a melhor **ordem de apresentação dos resultados** - pensem que vocês querem ir do resultado mais simples ao mais complexo. 
-* Sejam **criativos e bem-humorados**... cada apresentador tem seu estilo, mas não pensem que uma apresentação científica é necessariamente vinculada à uma apresentação séria e rígida. 
-* Ensaiem antes - *quem sabe faz ao vivo* em geral só funciona para os incríveis convidados do Faustão.
+{% include image.html image="/projects/ictp-jovens/pop_bubble.png" text="Slides da apresentação final do grupo" url="assets/docs/projects/ictp-jovens/pop_bubble_slides.pdf" %}
 
 
-{% include image.html image="/projects/ictp-jovens/postergar.jpeg" text="Prazo do trabalho: 00:00<br>Eu enviando o trabalho às 23:59" %}
+E a **apresentação dos resultados finais** dos alunos também está disponível no canal do *Youtube* do ICTP-SAIFR.
+
+{% include video.html src="https://www.youtube.com/embed/Yb9C2z4Uds8" %}
+
+Nossos agradecimentos especiais aos organizadores da escola, Nathan Berkovits (ICTP-SAIFR/IFT-UNESP)
+Lucas David Feitosa C. (ICTP-SAIFR/ETEC Guaracy Silveira), João Viana Lopes (Universidade do Porto), Pedro Vieira (ICTP-SAIFR/Perimeter Institute). Todos os projetos estão disponíveis em vídeo na **[página do evento](http://outreach.ictp-saifr.org/escolaverao/)**, bem como informações sobre futuras edições.
 
 ---
-
+<!--
 # Conteúdo extra
 
 Vou escrever aqui algumas recomendações para quem se interessou no tópico e quer aproveitar as férias fazendo uma boa e interessante leitura!
@@ -664,6 +662,7 @@ Vou escrever aqui algumas recomendações para quem se interessou no tópico e q
 Existem oportunidades de **iniciação científica** nesse tópico caso vocês tenham gostado da atividade e querem começar uma pesquisa original com dinâmica em grafos aplicada a ecologia ou sociologia.
 
 ---
+-->
 
 :gb: This page does not have a version in English yet. If want to help me adapting/translating this page (or other contents of this webpage) to reach more easily other students, your help would be highly appreciated and acknowledged. Mail me! :)
 
