@@ -6,7 +6,7 @@ permalink: /contact/
 
 # Get in touch!
 
-:incoming_envelope: You may contact me through my email, **[vitorsudbrack@gmail.com](mailto:vitorsudbrack@gmail.com)**. I'll be glad to answer you as soon as possible!
+:incoming_envelope: You may contact me through my email, **[vitorsudbrack@gmail.com](mailto:vitorsudbrack@gmail.com)**, or my institutional email **[vitor.sudbrack@unil.ch](mailto:vitor.sudbrack@unil.ch)**. I'll be glad to answer you as soon as possible!
 
 :paperclip: I also have digital copies of all my published material, so please, feel free to ask me for any! It is also possible to provide the diagrams in editable formats in case you need translations of them. *#ColaborativeScience* *#ColaborativeTeaching*
 
