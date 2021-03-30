@@ -29,7 +29,7 @@ is yet no theoretical description in the literature of **bidimensional turbulenc
 
 {% include cite.html title="Estudo da turbulência bidimensional na instabilidade de Kelvin-Helmholtz: descrição fenomenológica" author="V. Sudbrack" journal="Federal University of Rio Grande do Sul repository" year="2018" url="/assets/docs/projects/turb/tcc.pdf" %}
 
-This work was done under **[Alexei Mailybaev](http://alexei.impa.br/)** supervision and in collaboration with **Simon Thalabard** at the [Fluid Lab - IMPA](http://fluid.impa.br/Home). It was funded by the federal government (CNPq).
+This work was done under **[Alexei Mailybaev](http://alexei.impa.br/)** supervision and in collaboration with **Simon Thalabard** at the [Fluid Lab - IMPA](http://fluid.impa.br/). It was funded by the federal government (CNPq).
 
 {% include image.html url="/assets/docs/projects/turb/TCC_slides.pdf" image="/projects/turb/slides.jpg" text="Check my presentation about this project" %}
 
