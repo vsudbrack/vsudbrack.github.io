@@ -11,7 +11,7 @@
 
   <title>
     
-      Observatório Covid-19 BR | Vitor Sudbrack
+      Observatório<br> Covid-19 BR | Vitor Sudbrack
     
   </title>
 
@@ -52,7 +52,7 @@
 <meta property="og:url" content="http://localhost:4000/projects/obs.html" />
 <meta property="og:site_name" content="Vitor Sudbrack" />
 <script type="application/ld+json">
-{"description":"The personal homepage of Vitor Sudbrack","@type":"WebPage","url":"http://localhost:4000/projects/obs.html","author":{"@type":"Person","name":"Vitor Sudbrack"},"headline":"Observatório Covid-19 BR","@context":"https://schema.org"}</script>
+{"@type":"WebPage","url":"http://localhost:4000/projects/obs.html","headline":"Observatório Covid-19 BR","author":{"@type":"Person","name":"Vitor Sudbrack"},"description":"The personal homepage of Vitor Sudbrack","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -84,7 +84,7 @@
   <div class="work-container">
 
 
-    <h1 class="project-title">Observatório Covid-19 BR</h1>
+    <h1 class="project-title">Observatório<br> Covid-19 BR</h1>
 
 	<br>
 	<div class="project-load"><p>I joined a group of over 50 trans-disciplinary researches in the <strong>Observatório COVID-19 BR</strong> (Observatory COVID-19 BR), a project meant to make real-time studies of COVID-19 data and micro-data, to inform the population and guide authorities with scientific analysis in Brazil. We established partnerships with the Secretaries of Health of São Paulo State, 9 northeast Brazilian states (<em>Consórcio Nordeste</em>) and a few municipalities.</p>
@@ -107,15 +107,19 @@
 
 </div>
 
+<p>Next, I briefly point to some of the contributions of the group <em>Observatório COVID-19 BR</em> I participated: interviews, data curation, publications and analysis.</p>
+
 <h2 id="how-can-mathematical-concepts-help-us-to-understand-this-pandemic-crisis">How can mathematical concepts help us to understand this pandemic crisis?</h2>
 
-<p>In this interview on G1 by Laís Modelli and Lara Pinheiro, <strong><a href="https://g1.globo.com/bemestar/coronavirus/noticia/2020/03/31/crescimento-exponencial-e-curva-epidemica-entenda-os-principais-conceitos-matematicos-que-explicam-a-pandemia-de-coronavirus.ghtml">Exponential growth and epidemic curve: understand the main mathematical concepts that explain the coronavirus pandemic</a></strong> (in portuguese), we give some of the main epidemiological concepts to understand an epidemic curve, such as the epidemic cycle that is formed by three stages: exponential growth, saturation and exponential delay.</p>
+<p>In this interview on G1 by Laís Modelli and Lara Pinheiro, <strong><a href="https://g1.globo.com/bemestar/coronavirus/noticia/2020/03/31/crescimento-exponencial-e-curva-epidemica-entenda-os-principais-conceitos-matematicos-que-explicam-a-pandemia-de-coronavirus.ghtml">Exponential growth and epidemic curve: understand the main mathematical concepts that explain the coronavirus pandemic</a></strong> (in portuguese), we give some of the main epidemiological concepts to understand an epidemic curve, such as the epidemic cycle that is formed by three stages: exponential growth, saturation and exponential decay.</p>
 
 <p>Besides the exponential growth in the number of case of the COVID-19, there is, however, a more <strong>complex underlying dynamics</strong>, because not only the local transmission of the virus happens through the <strong>dynamics of spread</strong> by contagion (from one person to other people), but also by a <strong>dynamical spread of focuses</strong> - intercommunications between countries/states resulting new focuses of communitary transmission.</p>
 
+<p>Some metrics helped us to understand the <strong>pace of the pandemics</strong> in its beginning, as the <em>doubling time</em>, i.e., the time it takes to double the number of (notified) cases. We estimated this doubling time to several countries based on data from John Hopkins University, as reported by Eduardo Pierre from G1 Saúde in <strong><a href="https://g1.globo.com/bemestar/coronavirus/noticia/2020/04/23/curva-de-mortes-de-covid-19-no-brasil-esta-mais-rapida-que-a-da-espanha-dizem-universidades.ghtml">Covid-19 death curve in Brazil is faster than in Spain, say academics</a></strong> (in portuguese).</p>
+
 <h2 id="why-should-we-correct-notification-delays">Why should we correct notification delays?</h2>
 
-<p>Daily notified cases come from the results of confirming laboratory exams, such as RT-PCR. But the results confirmed today belong to patients who got infected a few days ago - this is the so-called <strong>notification delay</strong>. It is the time interval between infection and notification, and it includes many bureaucratic and epidemiological stages, such as the incubation period of SARS-Cov-2, the time for having symptoms, going to a health care unit and collecting the sample, the time to analyze that sample and, finally, the time to type the result into the database of cases - which in Brazil is the SIVEP and eSUS-VE.</p>
+<p>Daily notified cases come from the results of confirming laboratory exams, such as PCR. But the results confirmed today belong to patients who got infected a few days ago - this is the so-called <strong>notification delay</strong>. It is the time interval between infection and notification, and it includes many bureaucratic and epidemiological stages, such as the incubation period of SARS-Cov-2, the time for having symptoms, going to a health care unit and collecting the sample, the time to analyze that sample and, finally, the time to type the result into the database of cases - which in Brazil is the SIVEP and eSUS-VE.</p>
 
 <p>Such <strong>statistical technique</strong> is called <em>nowcasting</em> and it’s based on Bayesian statistics. It allows a more <strong>realistic and accurate real-time epidemic curve</strong> of cases and deaths. I talk more about it in this interview with Karina Toleto to Agência FAPESP, <strong><a href="https://agencia.fapesp.br/ferramenta-permite-monitorar-em-tempo-real-o-avanco-da-covid-19-na-cidade-de-sao-paulo/32987/">Tool allows monitoring realtime progress of COVID-19 in São Paulo city</a></strong> (in portuguese):</p>
 
@@ -132,9 +136,48 @@
   </div>
 </div>
 
-<p>You can see <strong>nowcasted data of cases and deaths</strong> of a few <a href="https://covid19br.github.io/municipios.html?aba=aba1&amp;uf=SP&amp;mun=Sao_Paulo&amp;q=dia">Brazilian municipalities</a> and all <a href="https://covid19br.github.io/estados.html?aba=aba1&amp;uf=SP&amp;q=dia">Brazilian states</a>, updated as soon as new microdata is available by the Ministry of Health. Based on nowcasted data, we calculate the \(R_{eff}\), an index to measure the progression of the pandemic in cities and states.</p>
+<p>You can see <strong>nowcasted data of cases and deaths</strong> of a few <a href="https://covid19br.github.io/municipios.html?aba=aba1&amp;uf=SP&amp;mun=Sao_Paulo&amp;q=dia">Brazilian municipalities</a>, <a href="https://covid19br.github.io/drs.html?aba=aba1&amp;uf=SP&amp;mun=Grande_Sao_Paulo&amp;q=dia">health regions of SUS</a> and all <a href="https://covid19br.github.io/estados.html?aba=aba1&amp;uf=SP&amp;q=dia">Brazilian states</a>, updated as soon as new microdata is available by the Ministry of Health. Based on nowcasted data, we calculate the \(R_{eff}\), an index to measure the progression of the pandemic in cities and states.</p>
 
-<h2 id="how-does-this-pandemic-affect-brazilian-social-inequality">How does this pandemic affect Brazilian social inequality?</h2>
+<h2 id="how-to-model-non-pharmaceutical-interventions-in-sars-cov-2-disease-dynamics">How to model non-pharmaceutical interventions in SARS-CoV-2 disease dynamics?</h2>
+
+<p>Authorities had to dynamically adapt the response to the pandemics in order to preserve lives. Most SIR-like models in literature treat these non-pharmaceutical interventions (NPIs) in SARS-CoV-2 disease dynamics by reducing the contagious rate linearly with coverage of social distancing and mobility loss - which works as a good approximation to cases of soft NPIs - or fitting a contagious rate as a function of time - easily leading to overfittings.</p>
+
+<p>In this work, we explore how SIR-like models can import the <strong>implementation of strict NPIs</strong>, i.e. those that move the system far from the assumptions of well-mixed population, fundamental to the kind of compartmental models typically employed. We start from a SIR-like model with compartments divided on epidemiological stages, ages, hospital dynamics and notification system, as summarized in the following diagram.</p>
+
+<div class="image-container">
+<a href="https://www.medrxiv.org/content/10.1101/2021.06.07.21258403v1" target="_blank">
+    <img src="/assets/img/projects/obs/epimodel_diagram.jpg" alt="Avatar" class="image" />
+    <div class="overlay">
+      <div class="text" style="color:">
+        Checkout our preprint!
+	 <i class="fa fa-arrow-right" aria-hidden="true" style="color:"></i>
+      </div>
+    </div>
+
+</a>
+
+</div>
+
+<p>The properties of connectivity and connectance are related to the <strong>theory of percolation</strong> in contact networks among people or households. As the communication between nodes are continuously removed, the response of the graph in transmitting information (or a disease) across the network varies non-linearly. At some point known as the <em>percolation threshold</em>, the global communication of the graph is lost.  With 2 extra parameters to be adjusted to data, the <strong>non-linear response can be incorporated to the SIR-like model</strong>, resulting in a better fitting to daily cases and deaths in São Paulo city and improving the plausibility between data and model (measured by AIC).</p>
+
+<p>This work is available at the following pre-print, led by <a href="https://scholar.google.com/citations?user=S7lUYf0AAAAJ&amp;hl=en">Caroline Franco</a>.</p>
+
+<table class="rwd-table">
+  <tr> 
+    <td data-th="Title" colspan="4" style="font-weight: bold"><a href="https://www.medrxiv.org/content/10.1101/2021.06.07.21258403v1" target="_blank">Percolation across households in mechanistic models of non-pharmaceutical interventions in SARS-CoV-2 disease dynamics</a></td>
+  </tr>
+  <tr>
+    <td data-th="Authors" colspan="4">C.Franco, L.S. Ferreira, V. Sudbrack, M.E. Borges, S. Poloni,P.I. Prado, L.J. White, R. Águas, R.A. Kraenkel,R.M. Coutinho</td>
+  </tr>
+  <tr>
+    <td data-th="Journal" colspan="3">Preprint at medRxiv<a href="https://www.medrxiv.org/content/10.1101/2021.06.07.21258403v1" target="_blank"><strong>↗</strong></a></td>
+    <td data-th="Year">2021</td>
+  </tr>
+</table>
+
+<p>Besides better agreement to data, this new methodology employed can also allow us to access a more reliable estimation of the impact of NPIs on the epidemiological dynamics.</p>
+
+<h2 id="how-does-this-pandemics-affect-brazilian-social-inequality">How does this pandemics affect Brazilian social inequality?</h2>
 
 <p>The pandemic clearly <strong>accentuated</strong> the huge Brazilian social inequality. The (mis-)belief that the health crisis and financial crisis belong to opposite ideals boosted all over the country. The following quote describes the Brazilian scenario of this pandemic in a nutshell.</p>
 
