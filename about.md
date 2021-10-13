@@ -9,7 +9,7 @@ permalink: /about/
 
 ## Hello,
 
-**I'm Vítor Sudbrack**, Brazilian scientist. I'm currently a PhD candidate at the *[University of Lausanne](https://www.unil.ch/dee/en/home.html)* (*UNIL*, Switzerland), working at the **[Theoretical Evolutionary Ecology lab](https://charlesmullon.wordpress.com/)**  with professor *Charles Mullon*. :switzerland: 
+**I'm Vítor Sudbrack**, Brazilian scientist. I'm currently a PhD candidate at the *[University of Lausanne](https://www.unil.ch/dee/en/home.html)* (*UNIL*, Switzerland), working at the **[Theoretical Evolutionary Ecology lab](https://lab-mullon.github.io/)**  with professor *Charles Mullon*. :switzerland: 
 
 I'm Master in Physics (2021) by the *[Institute of Theoretical Physics](https://www.ift.unesp.br/#!/en)* (*IFT - Unesp*) in São Paulo, Brazil, with a sandwich period at the *[Institute for Cross-Disciplinary Physics and Complex Systems](https://www.ifisc.uib-csic.es/en/)* (*IFISC - UiB*) in Palma de Mallorca, Spain. In my thesis, I studied *population dynamics in highly fragmented landscapes* :brazil: :es:
 
