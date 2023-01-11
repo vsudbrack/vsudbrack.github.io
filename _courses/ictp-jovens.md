@@ -302,9 +302,6 @@ transitivity(rede) # A transitividade média da rede
 transitivity(rede, type='local') # A transitividade de cada vértice
 ```
 
-#{% include colapse.html title="Pergunta"
-#text="<b>Qual a relação matemática entre o número total de triângulos ($T$), o tamanho da rede ($N$) e a transitividade da rede ($C_T$)?</b>" %}
-
 A **assortatividade** da rede é uma medida da correlação entre o grau de vértices vizinhos, e por ser uma correlação assume valores no intervalo $[-1,1]$. Você pode calcular ela com a seguinte função
 ```r
 assortativity_degree(rede)
