@@ -22,7 +22,7 @@ png('~/Pictures/mapping.png', width=600, height=400, pointsize = 18, type = "cai
 par(mfrow = c(2,3), mar = c(4.1,4.1,0.5,0.5))
 XN=105; XZ = 1
 for (n in c(1,2,4,10,50,100)) {
-  m = map_collpaz(seq(XZ, XN), n)
+  m = map_collatz(seq(XZ, XN), n)
   plot(seq(XZ, XN), m, type='p', pch=16, col=c('blue', 'red')[1*(m==1)+1], xlab="x(n)", ylab=paste0("x(n+",as.character(n),")"))
 }
 dev.off()
