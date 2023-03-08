@@ -302,9 +302,6 @@ transitivity(rede) # A transitividade média da rede
 transitivity(rede, type='local') # A transitividade de cada vértice
 ```
 
-{% include colapse.html title="Pergunta"
-text="<b>Qual a relação matemática entre o número total de triângulos ($T$), o tamanho da rede ($N$) e a transitividade da rede ($C_T$)?</b>" %}
-
 A **assortatividade** da rede é uma medida da correlação entre o grau de vértices vizinhos, e por ser uma correlação assume valores no intervalo $[-1,1]$. Você pode calcular ela com a seguinte função
 ```r
 assortativity_degree(rede)
@@ -368,7 +365,7 @@ onde *anel* é o nome da variável que você salvou o grafo anelar no comando an
 Para adicionar ou ligações entre dois vértices, use os operadores de some e subtração junto com a função *add.edges* que diz que o objeto sendo adicionado ou subtraído é uma ligação. Por exemplo,
 ```r
 anel = add.edges(anel, c("7","8")) #Adiciona uma ligação entre o nó 7 e 8
-anel = anel + delete_edges(anel, c("1","2")) #Remove a ligação entre o nó 1 e 2
+anel = delete_edges(anel, 3) #Remove a terceira ligação E(anel)[3]
 ```
 e assim você pode adicionar não-localidades. 
 
