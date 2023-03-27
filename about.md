@@ -15,7 +15,9 @@ I have a Master degree in Physics (2021) by the *[Institute of Theoretical Physi
 
 I was laureated *Bachelor in Physics with honors* (2019) by the Institute of Physics of the *Federal University of Rio Grande do Sul (UFRGS)* in Porto Alegre, southern Brazil. :1st_place_medal:
 
-Studying and researching has allowed me knowing **many nice people, many interesting places and many awesome wonders** of this universe. I share for science the same feeling *Lise Meitner* described to physics in her following quote :thought_balloon:
+Studying and researching has allowed me knowing **many nice people, many interesting places and many awesome wonders** of this universe. 
+I gathered in this **[map](/map)** some of my advantures around the globe. 
+I share for science the same feeling *Lise Meitner* described to physics in her following quote :thought_balloon:
 
 {% include quote.html author="Lise Meitner" text="I love physics with all my heart.
 It is a kind of personal love, as one has for a person to whom one is grateful for many things." %}
@@ -38,12 +40,8 @@ Throughout the COVID-19 pandemic, I joined an [Observatory](https://covid19br.gi
 During my undergraduate years, I have researched at the *[Fluid Lab - IMPA](http://fluid.impa.br/Home)* with professor *Alexei Mailybaev* in Rio de Janeiro, Brazil. There, we studied fully developed bidimensional turbulence in the case of *Kelvin-Helmholtz instability* :ocean:. And I worked as well at the *Laboratory for Cellular Structure (LabCel - UFRGS)*, where I described the statistical time evolution of a mathematical model for protein interaction using graphs. Since then, I am working with mathematical biology, **uncracking the puzzles of life with mathematical lensing**! 
 
 
-<!--## Places
+<!--## Off science -->
 
-{% include image.html url="/assets/docs/projects/mathbio/slidesDDNetworks.pdf" image="projects/mathbio/slides.jpg" text="IFISC - UiB (2020)" %}
-{% include image.html url="/assets/docs/projects/mathbio/slidesDDNetworks.pdf" image="projects/mathbio/slides.jpg" text="IFT - Unesp (2019)" %}
-{% include image.html url="/assets/docs/projects/mathbio/slidesDDNetworks.pdf" image="projects/mathbio/slides.jpg" text="Fluid - IMPA (2018)" %}
-{% include image.html url="/assets/docs/projects/mathbio/slidesDDNetworks.pdf" image="projects/mathbio/slides.jpg" text="IF - UFRGS (2014)" %} -->
 
 # About this homepage
 

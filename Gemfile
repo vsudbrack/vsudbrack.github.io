@@ -11,6 +11,7 @@ source "https://rubygems.org"
 gem "jekyll", "~> 3.9.0"
 gem "kramdown", ">= 2.3.1"
 gem "kramdown-parser-gfm"
+gem 'bundler', '1.17.1' 
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.5.1"
@@ -30,6 +31,10 @@ gem 'jekyll-paginate'
 gem 'jekyll-sitemap'
 gem 'jekyll-seo-tag'
 gem "nokogiri", ">= 1.11.0.rc4"
+
+# Map of countries
+gem 'rough'
+gem 'jekyll-geo-pattern'
 
 # Acess to emojis
 gem 'jemoji'

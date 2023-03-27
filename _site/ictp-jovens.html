@@ -40,9 +40,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
   <!-- Use Jekyll SEO plugin -->
-  <!-- Begin Jekyll SEO tag v2.6.1 -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Estourando a bolha: | Vitor Sudbrack</title>
-<meta name="generator" content="Jekyll v3.9.0" />
+<meta name="generator" content="Jekyll v3.9.3" />
 <meta property="og:title" content="Estourando a bolha:" />
 <meta name="author" content="Vitor Sudbrack" />
 <meta property="og:locale" content="en_US" />
@@ -52,9 +52,11 @@
 <meta property="og:url" content="http://localhost:4000/ictp-jovens" />
 <meta property="og:site_name" content="Vitor Sudbrack" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-06-12T16:14:42+02:00" />
+<meta property="article:published_time" content="2023-03-27T22:52:24+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Estourando a bolha:" />
 <script type="application/ld+json">
-{"datePublished":"2021-06-12T16:14:42+02:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/ictp-jovens"},"url":"http://localhost:4000/ictp-jovens","author":{"@type":"Person","name":"Vitor Sudbrack"},"headline":"Estourando a bolha:","dateModified":"2021-06-12T16:14:42+02:00","description":":brazil: Pop the bubble: how opinion spreads on society is an entertaining guided-study to High School students about Network structure and Opinion dynamics, focusing on lessons of Mathematical modeling and Complex systems.","@context":"https://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Vitor Sudbrack"},"dateModified":"2023-03-27T22:52:24+02:00","datePublished":"2023-03-27T22:52:24+02:00","description":":brazil: Pop the bubble: how opinion spreads on society is an entertaining guided-study to High School students about Network structure and Opinion dynamics, focusing on lessons of Mathematical modeling and Complex systems.","headline":"Estourando a bolha:","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/ictp-jovens"},"url":"http://localhost:4000/ictp-jovens"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -603,18 +605,6 @@ Anteriormente usamos o $p$ como a própria densidade de ligações ($l$). De fat
 </span><span class="n">transitivity</span><span class="p">(</span><span class="n">rede</span><span class="p">,</span><span class="w"> </span><span class="n">type</span><span class="o">=</span><span class="s1">'local'</span><span class="p">)</span><span class="w"> </span><span class="c1"># A transitividade de cada vértice</span><span class="w">
 </span></code></pre></div></div>
 
-<details>
-
-<summary>
-	<para>Pergunta</para>
-</summary>
-
-<b>Qual a relação matemática entre o número total de triângulos ($T$), o tamanho da rede ($N$) e a transitividade da rede ($C_T$)?</b>
-
-	
-
-</details>
-
 <p>A <strong>assortatividade</strong> da rede é uma medida da correlação entre o grau de vértices vizinhos, e por ser uma correlação assume valores no intervalo $[-1,1]$. Você pode calcular ela com a seguinte função</p>
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">assortativity_degree</span><span class="p">(</span><span class="n">rede</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
@@ -693,7 +683,7 @@ Estamos interessados na mudança estrutural das redes de contato na sociedade. E
 
 <p>Para adicionar ou ligações entre dois vértices, use os operadores de some e subtração junto com a função <em>add.edges</em> que diz que o objeto sendo adicionado ou subtraído é uma ligação. Por exemplo,</p>
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">anel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">add.edges</span><span class="p">(</span><span class="n">anel</span><span class="p">,</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"7"</span><span class="p">,</span><span class="s2">"8"</span><span class="p">))</span><span class="w"> </span><span class="c1">#Adiciona uma ligação entre o nó 7 e 8</span><span class="w">
-</span><span class="n">anel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">anel</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">delete_edges</span><span class="p">(</span><span class="n">anel</span><span class="p">,</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"1"</span><span class="p">,</span><span class="s2">"2"</span><span class="p">))</span><span class="w"> </span><span class="c1">#Remove a ligação entre o nó 1 e 2</span><span class="w">
+</span><span class="n">anel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">delete_edges</span><span class="p">(</span><span class="n">anel</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">)</span><span class="w"> </span><span class="c1">#Remove a terceira ligação E(anel)[3]</span><span class="w">
 </span></code></pre></div></div>
 <p>e assim você pode adicionar não-localidades.</p>
 
@@ -1241,7 +1231,7 @@ $(document).ready(function() {
     </div>
 	
   </div>
-<p style="text-align:center;font-size:10px;margin-bottom:2px">Contents © 2020 <a href="mailto:vitorsudbrack@gmail.com">Vitor Sudbrack</a>.</p>
+<p style="text-align:center;font-size:10px;margin-bottom:2px">Contents © 2023 <a href="mailto:vitorsudbrack@gmail.com">Vitor Sudbrack</a>.</p>
 <p style="text-align:center;font-size:10px"><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:2px;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a></p>
 </footer>
 

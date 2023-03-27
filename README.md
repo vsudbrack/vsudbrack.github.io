@@ -1,3 +1,3 @@
-Personal page of [Vítor Sudbrack](https://vsudbrack.github.io/). 
-Credits on [About page](https://vsudbrack.github.io/about/). 
+Personal page of [Vítor Sudbrack](http://sudbrack.me). 
+Credits on [About page](http://sudbrack.me/about/). 
 :+1:

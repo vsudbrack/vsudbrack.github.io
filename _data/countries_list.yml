@@ -1,0 +1,900 @@
+-
+  index: map_1
+  country_name: Afghanistan
+  visited: false
+  URL: ./
+-
+  index: map_2
+  country_name: Albania
+  visited: false
+  URL: ./
+-
+  index: map_3
+  country_name: Algeria
+  visited: false
+  URL: ./
+-
+  index: map_4
+  country_name: Andorra
+  visited: false
+  URL: ./
+-
+  index: map_5
+  country_name: Angola
+  visited: false
+  URL: ./
+-
+  index: map_6
+  country_name: Argentina
+  visited: true
+  URL: ./
+-
+  index: map_7
+  country_name: Armenia
+  visited: false
+  URL: ./
+-
+  index: map_8
+  country_name: Australia
+  visited: false
+  URL: ./
+-
+  index: map_9
+  country_name: Austria
+  visited: false
+  URL: ./
+-
+  index: map_10
+  country_name: Azerbaijan
+  visited: false
+  URL: ./
+-
+  index: map_11
+  country_name: Bahamas
+  visited: false
+  URL: ./
+-
+  index: map_12
+  country_name: Bahrain
+  visited: false
+  URL: ./
+-
+  index: map_13
+  country_name: Bangladesh
+  visited: false
+  URL: ./
+-
+  index: map_14
+  country_name: Belarus
+  visited: false
+  URL: ./
+-
+  index: map_15
+  country_name: Belgium
+  visited: true
+  URL: ./
+-
+  index: map_16
+  country_name: Belize
+  visited: false
+  URL: ./
+-
+  index: map_17
+  country_name: Benin
+  visited: false
+  URL: ./
+-
+  index: map_18
+  country_name: Bhutan
+  visited: false
+  URL: ./
+-
+  index: map_19
+  country_name: Bolivia
+  visited: false
+  URL: ./
+-
+  index: map_20
+  country_name: Bosnia And Herzegovina
+  visited: false
+  URL: ./
+-
+  index: map_21
+  country_name: Botswana
+  visited: false
+  URL: ./
+-
+  index: map_22
+  country_name: Brazil
+  visited: true
+  URL: ./
+-
+  index: map_23
+  country_name: Brunei
+  visited: false
+  URL: ./
+-
+  index: map_24
+  country_name: Bulgaria
+  visited: false
+  URL: ./
+-
+  index: map_25
+  country_name: Burkina Faso
+  visited: false
+  URL: ./
+-
+  index: map_26
+  country_name: Burundi
+  visited: false
+  URL: ./
+-
+  index: map_27
+  country_name: Cambodia
+  visited: false
+  URL: ./
+-
+  index: map_28
+  country_name: Cameroon
+  visited: false
+  URL: ./
+-
+  index: map_29
+  country_name: Canada
+  visited: true
+  URL: ./
+-
+  index: map_30
+  country_name: Central African Republic
+  visited: false
+  URL: ./
+-
+  index: map_31
+  country_name: Chad
+  visited: false
+  URL: ./
+-
+  index: map_32
+  country_name: Chile
+  visited: true
+  URL: ./
+-
+  index: map_33
+  country_name: China
+  visited: false
+  URL: ./
+-
+  index: map_34
+  country_name: Colombia
+  visited: false
+  URL: ./
+-
+  index: map_35
+  country_name: Comoros
+  visited: false
+  URL: ./
+-
+  index: map_36
+  country_name: Congo
+  visited: false
+  URL: ./
+-
+  index: map_37
+  country_name: Costa Rica
+  visited: false
+  URL: ./
+-
+  index: map_38
+  country_name: Croatia
+  visited: false
+  URL: ./
+-
+  index: map_39
+  country_name: Cuba
+  visited: false
+  URL: ./
+-
+  index: map_40
+  country_name: Cyprus
+  visited: false
+  URL: ./
+-
+  index: map_41
+  country_name: Czech Republic
+  visited: false
+  URL: ./
+-
+  index: map_42
+  country_name: Côte D&#39;Ivoire
+  visited: false
+  URL: ./
+-
+  index: map_43
+  country_name: Democratic Republic Of The Congo
+  visited: false
+  URL: ./
+-
+  index: map_44
+  country_name: Denmark
+  visited: true
+  URL: ./
+-
+  index: map_45
+  country_name: Djibouti
+  visited: false
+  URL: ./
+-
+  index: map_46
+  country_name: Dominican Republic
+  visited: false
+  URL: ./
+-
+  index: map_47
+  country_name: Ecuador
+  visited: false
+  URL: ./
+-
+  index: map_48
+  country_name: Egypt
+  visited: false
+  URL: ./
+-
+  index: map_49
+  country_name: El Salvador
+  visited: false
+  URL: ./
+-
+  index: map_50
+  country_name: Equatorial Guinea
+  visited: false
+  URL: ./
+-
+  index: map_51
+  country_name: Eritrea
+  visited: false
+  URL: ./
+-
+  index: map_52
+  country_name: Estonia
+  visited: false
+  URL: ./
+-
+  index: map_53
+  country_name: Ethiopia
+  visited: false
+  URL: ./
+-
+  index: map_54
+  country_name: Fiji
+  visited: false
+  URL: ./
+-
+  index: map_55
+  country_name: Finland
+  visited: true
+  URL: ./
+-
+  index: map_56
+  country_name: France
+  visited: true
+  URL: ./
+-
+  index: map_57
+  country_name: French Guiana
+  visited: false
+  URL: ./
+-
+  index: map_58
+  country_name: Gabon
+  visited: false
+  URL: ./
+-
+  index: map_59
+  country_name: Georgia
+  visited: false
+  URL: ./
+-
+  index: map_60
+  country_name: Germany
+  visited: true
+  URL: ./
+-
+  index: map_61
+  country_name: Ghana
+  visited: false
+  URL: ./
+-
+  index: map_62
+  country_name: Greece
+  visited: false
+  URL: ./
+-
+  index: map_63
+  country_name: Greenland
+  visited: false
+  URL: ./
+-
+  index: map_64
+  country_name: Guatemala
+  visited: false
+  URL: ./
+-
+  index: map_65
+  country_name: Guinea
+  visited: false
+  URL: ./
+-
+  index: map_66
+  country_name: Guinea-Bissau
+  visited: false
+  URL: ./
+-
+  index: map_67
+  country_name: Guyana
+  visited: false
+  URL: ./
+-
+  index: map_68
+  country_name: Haiti
+  visited: false
+  URL: ./
+-
+  index: map_69
+  country_name: Honduras
+  visited: false
+  URL: ./
+-
+  index: map_70
+  country_name: Hungary
+  visited: false
+  URL: ./
+-
+  index: map_71
+  country_name: Iceland
+  visited: false
+  URL: ./
+-
+  index: map_72
+  country_name: India
+  visited: false
+  URL: ./
+-
+  index: map_73
+  country_name: Indonesia
+  visited: false
+  URL: ./
+-
+  index: map_74
+  country_name: Iran
+  visited: false
+  URL: ./
+-
+  index: map_75
+  country_name: Iraq
+  visited: false
+  URL: ./
+-
+  index: map_76
+  country_name: Ireland
+  visited: false
+  URL: ./
+-
+  index: map_77
+  country_name: Isreal
+  visited: false
+  URL: ./
+-
+  index: map_78
+  country_name: Italy
+  visited: true
+  URL: ./
+-
+  index: map_79
+  country_name: Jamaica
+  visited: false
+  URL: ./
+-
+  index: map_80
+  country_name: Japan
+  visited: false
+  URL: ./
+-
+  index: map_81
+  country_name: Jordan
+  visited: false
+  URL: ./
+-
+  index: map_82
+  country_name: Kazakhstan
+  visited: false
+  URL: ./
+-
+  index: map_83
+  country_name: Kenya
+  visited: false
+  URL: ./
+-
+  index: map_84
+  country_name: Kosovo
+  visited: false
+  URL: ./
+-
+  index: map_85
+  country_name: Kuwait
+  visited: false
+  URL: ./
+-
+  index: map_86
+  country_name: Kyrgyzstan
+  visited: false
+  URL: ./
+-
+  index: map_87
+  country_name: Laos
+  visited: false
+  URL: ./
+-
+  index: map_88
+  country_name: Latvia
+  visited: false
+  URL: ./
+-
+  index: map_89
+  country_name: Lebanon
+  visited: false
+  URL: ./
+-
+  index: map_90
+  country_name: Lesotho
+  visited: false
+  URL: ./
+-
+  index: map_91
+  country_name: Liberia
+  visited: false
+  URL: ./
+-
+  index: map_92
+  country_name: Libya
+  visited: false
+  URL: ./
+-
+  index: map_93
+  country_name: Liechtenstein
+  visited: false
+  URL: ./
+-
+  index: map_94
+  country_name: Lithuania
+  visited: false
+  URL: ./
+-
+  index: map_95
+  country_name: Luxembourg
+  visited: false
+  URL: ./
+-
+  index: map_96
+  country_name: Macedonia
+  visited: false
+  URL: ./
+-
+  index: map_97
+  country_name: Madagascar
+  visited: false
+  URL: ./
+-
+  index: map_98
+  country_name: Malawi
+  visited: false
+  URL: ./
+-
+  index: map_99
+  country_name: Malaysia
+  visited: false
+  URL: ./
+-
+  index: map_100
+  country_name: Maldives
+  visited: false
+  URL: ./
+-
+  index: map_101
+  country_name: Mali
+  visited: false
+  URL: ./
+-
+  index: map_102
+  country_name: Malta
+  visited: false
+  URL: ./
+-
+  index: map_103
+  country_name: Mauritania
+  visited: false
+  URL: ./
+-
+  index: map_104
+  country_name: Mauritius
+  visited: false
+  URL: ./
+-
+  index: map_105
+  country_name: Mexico
+  visited: false
+  URL: ./
+-
+  index: map_106
+  country_name: Moldova
+  visited: false
+  URL: ./
+-
+  index: map_107
+  country_name: Mongolia
+  visited: false
+  URL: ./
+-
+  index: map_108
+  country_name: Montenegro
+  visited: false
+  URL: ./
+-
+  index: map_109
+  country_name: Morocco
+  visited: false
+  URL: ./
+-
+  index: map_110
+  country_name: Mozambique
+  visited: false
+  URL: ./
+-
+  index: map_111
+  country_name: Myanmar
+  visited: false
+  URL: ./
+-
+  index: map_112
+  country_name: Namibia
+  visited: false
+  URL: ./
+-
+  index: map_113
+  country_name: Nepal
+  visited: false
+  URL: ./
+-
+  index: map_114
+  country_name: Netherlands
+  visited: true
+  URL: ./
+-
+  index: map_115
+  country_name: New Zealand
+  visited: false
+  URL: ./
+-
+  index: map_116
+  country_name: Nicaragua
+  visited: false
+  URL: ./
+-
+  index: map_117
+  country_name: Niger
+  visited: false
+  URL: ./
+-
+  index: map_118
+  country_name: Nigeria
+  visited: false
+  URL: ./
+-
+  index: map_119
+  country_name: North Korea
+  visited: false
+  URL: ./
+-
+  index: map_120
+  country_name: Norway
+  visited: false
+  URL: ./
+-
+  index: map_121
+  country_name: Oman
+  visited: false
+  URL: ./
+-
+  index: map_122
+  country_name: Pakistan
+  visited: false
+  URL: ./
+-
+  index: map_123
+  country_name: Palestine
+  visited: false
+  URL: ./
+-
+  index: map_124
+  country_name: Panama
+  visited: false
+  URL: ./
+-
+  index: map_125
+  country_name: Papua New Guinea
+  visited: false
+  URL: ./
+-
+  index: map_126
+  country_name: Paraguay
+  visited: true
+  URL: ./
+-
+  index: map_127
+  country_name: Peru
+  visited: false
+  URL: ./
+-
+  index: map_128
+  country_name: Philippines
+  visited: false
+  URL: ./
+-
+  index: map_129
+  country_name: Poland
+  visited: false
+  URL: ./
+-
+  index: map_130
+  country_name: Portugal
+  visited: true
+  URL: ./
+-
+  index: map_131
+  country_name: Puetro Rico
+  visited: false
+  URL: ./
+-
+  index: map_132
+  country_name: Qatar
+  visited: false
+  URL: ./
+-
+  index: map_133
+  country_name: Romania
+  visited: false
+  URL: ./
+-
+  index: map_134
+  country_name: Russia
+  visited: false
+  URL: ./
+-
+  index: map_135
+  country_name: Rwanda
+  visited: false
+  URL: ./
+-
+  index: map_136
+  country_name: Saudi Arabia
+  visited: false
+  URL: ./
+-
+  index: map_137
+  country_name: Senegal
+  visited: false
+  URL: ./
+-
+  index: map_138
+  country_name: Serbia
+  visited: false
+  URL: ./
+-
+  index: map_139
+  country_name: Seychelles
+  visited: false
+  URL: ./
+-
+  index: map_140
+  country_name: Sierra Leone
+  visited: false
+  URL: ./
+-
+  index: map_141
+  country_name: Singapore
+  visited: false
+  URL: ./
+-
+  index: map_142
+  country_name: Slovakia
+  visited: false
+  URL: ./
+-
+  index: map_143
+  country_name: Slovenia
+  visited: false
+  URL: ./
+-
+  index: map_144
+  country_name: Solomon Islands
+  visited: false
+  URL: ./
+-
+  index: map_145
+  country_name: Somalia
+  visited: false
+  URL: ./
+-
+  index: map_146
+  country_name: South Africa
+  visited: false
+  URL: ./
+-
+  index: map_147
+  country_name: South Korea
+  visited: false
+  URL: ./
+-
+  index: map_148
+  country_name: South Sudan
+  visited: false
+  URL: ./
+-
+  index: map_149
+  country_name: Spain
+  visited: true
+  URL: ./
+-
+  index: map_150
+  country_name: Sri Lanka
+  visited: false
+  URL: ./
+-
+  index: map_151
+  country_name: Sudan
+  visited: false
+  URL: ./
+-
+  index: map_152
+  country_name: Suriname
+  visited: false
+  URL: ./
+-
+  index: map_153
+  country_name: Swaziland
+  visited: false
+  URL: ./
+-
+  index: map_154
+  country_name: Sweden
+  visited: false
+  URL: ./
+-
+  index: map_155
+  country_name: Switzerland
+  visited: true
+  URL: ./
+-
+  index: map_156
+  country_name: Syria
+  visited: false
+  URL: ./
+-
+  index: map_157
+  country_name: São Tomé And Príncipe
+  visited: false
+  URL: ./
+-
+  index: map_158
+  country_name: Taiwan
+  visited: false
+  URL: ./
+-
+  index: map_159
+  country_name: Tajikistan
+  visited: false
+  URL: ./
+-
+  index: map_160
+  country_name: Tanzania
+  visited: false
+  URL: ./
+-
+  index: map_161
+  country_name: Thailand
+  visited: false
+  URL: ./
+-
+  index: map_162
+  country_name: The Gambia
+  visited: false
+  URL: ./
+-
+  index: map_163
+  country_name: Timor-Leste
+  visited: false
+  URL: ./
+-
+  index: map_164
+  country_name: Togo
+  visited: false
+  URL: ./
+-
+  index: map_165
+  country_name: Tunisia
+  visited: false
+  URL: ./
+-
+  index: map_166
+  country_name: Turkey
+  visited: false
+  URL: ./
+-
+  index: map_167
+  country_name: Turkmenistan
+  visited: false
+  URL: ./
+-
+  index: map_168
+  country_name: Uganda
+  visited: false
+  URL: ./
+-
+  index: map_169
+  country_name: Ukraine
+  visited: false
+  URL: ./
+-
+  index: map_170
+  country_name: United Arab Emirates
+  visited: false
+  URL: ./
+-
+  index: map_171
+  country_name: United Kingdom
+  visited: true
+  URL: ./
+-
+  index: map_172
+  country_name: United States
+  visited: false
+  URL: ./
+-
+  index: map_173
+  country_name: Uruguay
+  visited: true
+  URL: ./
+-
+  index: map_174
+  country_name: Uzbekistan
+  visited: false
+  URL: ./
+-
+  index: map_175
+  country_name: Venezuela
+  visited: false
+  URL: ./
+-
+  index: map_176
+  country_name: Vietnam
+  visited: false
+  URL: ./
+-
+  index: map_177
+  country_name: Western Sahara
+  visited: false
+  URL: ./
+-
+  index: map_178
+  country_name: Yemen
+  visited: false
+  URL: ./
+-
+  index: map_179
+  country_name: Zambia
+  visited: false
+  URL: ./
+-
+  index: map_180
+  country_name: Zimbabwe
+  visited: false
+  URL: ./
