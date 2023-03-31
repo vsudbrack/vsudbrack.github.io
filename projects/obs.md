@@ -42,11 +42,23 @@ In this work, we explore how SIR-like models can import the **implementation of 
 
 The properties of connectivity and connectance are related to the **theory of percolation** in contact networks among people or households. As the communication between nodes are continuously removed, the response of the graph in transmitting information (or a disease) across the network varies non-linearly. At some point known as the *percolation threshold*, the global communication of the graph is lost.  With 2 extra parameters to be adjusted to data, the **non-linear response can be incorporated to the SIR-like model**, resulting in a better fitting to daily cases and deaths in São Paulo city and improving the plausibility between data and model (measured by AIC). 
 
-This work is available at the following pre-print, led by [Caroline Franco](https://scholar.google.com/citations?user=S7lUYf0AAAAJ&hl=en). 
+This work is available at the following publication, led by [Caroline Franco](https://scholar.google.com/citations?user=S7lUYf0AAAAJ&hl=en). 
 
-{% include cite.html title="Percolation across households in mechanistic models of non-pharmaceutical interventions in SARS-CoV-2 disease dynamics" author="C.Franco, L.S. Ferreira, V. Sudbrack, M.E. Borges, S. Poloni,P.I. Prado, L.J. White, R. Águas, R.A. Kraenkel,R.M. Coutinho" journal="Preprint at medRxiv" year="2021" url="https://www.medrxiv.org/content/10.1101/2021.06.07.21258403v1" %}
+{% include cite.html title="Percolation across households in mechanistic models of non-pharmaceutical interventions in SARS-CoV-2 disease dynamics" author="C.Franco, L.S. Ferreira, V. Sudbrack, M.E. Borges, S. Poloni,P.I. Prado, L.J. White, R. Águas, R.A. Kraenkel, R.M. Coutinho" journal="Epidemics" year="2021" url="https://doi.org/10.1016/j.epidem.2022.100551" %}
 
 Besides better agreement to data, this new methodology employed can also allow us to access a more reliable estimation of the impact of NPIs on the epidemiological dynamics.
+
+## What vaccination schedule strategy minimizes deaths?
+
+With limited vaccine supplies and the need to vaccinate as many people as possible, many countries are considered **delaying the second dose of the vaccine** to increase the number of individuals who receive the first dose.
+
+We used a mathematical model to explore the impact of delaying the second dose of the vaccine on the overall number of deaths. We found that the optimal strategy for delaying the second dose depends on several factors, including the vaccine production rate, the relative efficacy of the first dose, and the efficacy of the second dose for different types of vaccines.
+
+Interestingly, the study found that the rate of spread of the infection does not significantly affect the thresholds of the best window, but it is an important factor in the absolute number of total deaths. Therefore, it is essential to consider both vaccine characteristics and the speed of vaccine rollout to optimize the outcome of vaccination strategies.
+
+This work is available at the following publication, led by [Leonardo Souto Ferreira](https://scholar.google.com/citations?user=L_htG4AAAAAJ&hl=en). 
+
+{% include cite.html title="Assessing the best time interval between doses in a two-dose vaccination regimen to reduce the number of deaths in an ongoing epidemic of SARS-CoV-2" author="L.S. Ferreira, O. Canton, R.L.P. da Silva, S. Poloni, V. Sudbrack, M.E. Borges, C. Franco, F.M.D. Marquitti, J.C. de Moraes, M.A.M. Veras, R.A. Kraenkel, R.M. Coutinho" journal="Plos Computational Biology" year="2022" url="https://doi.org/10.1371/journal.pcbi.1009978" %}
 
 ## How does this pandemics affect Brazilian social inequality?
 

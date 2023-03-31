@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /about
 ---
 
 ![Hello](../assets/img/projects/about/myperfil.jpg){:style="float: right;margin-right: -25px;margin-left: 25px;margin-top: 7px; margin-bottom: 17px;max-width: 40%;border: 4px solid #c99065;border-radius: 28px "}

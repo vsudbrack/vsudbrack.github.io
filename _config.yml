@@ -1,10 +1,11 @@
 # Build settings
 
 markdown: kramdown
-permalink: none
 plugins:             [jekyll-sitemap, jekyll-feed,  jekyll-seo-tag, jemoji]
 
 port: 4000
+
+include: ["_pages"]
 
 sass:
   sass_dir: assets/css

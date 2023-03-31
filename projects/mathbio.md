@@ -50,3 +50,18 @@ You can also check a summary of main points in this group presentation at the sc
 
 ---
 
+## What is the future of ecological and evolutionary theory?
+
+As the world continues to face unprecedented environmental challenges, it becomes increasingly important to understand the complex relationships between different ecological and environmental factors. This is where **synthesis research** comes in. By bringing together data, ideas, and tools from a range of disciplines and sources, synthesis research can help us gain a **better understanding of the challenges we face** and develop effective management strategies to address them.
+
+I participed in a **virtual workshop at the National Center for Ecological Analysis and Synthesis (NCEAS)** to examine how synthesis research can address key questions and themes in ecology and environmental science in the coming decade. Through this workshop, seven **priority research topics emerged**, including diversity, equity, inclusion, and justice; human and natural systems; actionable and use-inspired science; scale; generality; complexity and resilience; and predictability. The outcomes of the discussions during this workshop can be found in the publication below.
+
+
+{% include cite.html title="Priorities for synthesis research in ecology and environmental science
+" author="Several authors, led by Benjamin S. Halpern" journal="Ecosphere" year="2023" url="https://doi.org/10.1002/ecs2.4342" %}
+
+
+I do believe that this project is a critical step forward in our collective efforts to address the environmental challenges we face today. By working together and **bringing our diverse perspectives and expertise to the table**, we can develop a more global understanding of the complex relationships between human and natural systems and develop effective solutions to the challenges we face.
+
+---
+
