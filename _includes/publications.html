@@ -1,0 +1,27 @@
+<li>
+  <h2 class="bibliography">{{ paper.year }}</h2>
+  <div id="test">
+      <div class="title" style="max-width: 80%;">{{ paper.title }}</div>
+      <p class="author">{{ paper.author }}</p>
+      <p class="third-line">{{ paper.journal }}, {{ paper.year }}.</p>
+      <!-- Links/Buttons -->
+      <div class="links">
+        <ul id="icons" style="margin: 3px 0 0 0; text-align: center;">
+          {% if paper.url %}
+          <li>
+            <a href="{{ paper.url }}" target="_blank" title="Preprint">
+              <i class="ai ai-biorxiv"></i>
+            </a>
+          </li>
+          {% endif %}
+          {% if paper.doi %}
+          <li>
+            <a href="{{ paper.doi }}" target="_blank" title="Journal">
+              <i class="ai ai-closed-access"></i>
+            </a>
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+</li>

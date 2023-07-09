@@ -1,0 +1,12 @@
+<section id="recentpubs">
+  <div class="recentpubs-wrap">
+    <p class="title">LATEST PUBLICATIONS</p>
+
+      <ol class="bibliography">
+        {% for paper in site.data.publications reversed limit: 2 %}
+        {% include publications.html %}
+        {% endfor %}
+      </ol>
+
+    </div>
+  </section>

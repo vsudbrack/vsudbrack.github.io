@@ -1,69 +1,11 @@
----
----
-
 <!DOCTYPE html>
-<html class="">
-<head>
-  <meta charset="UTF-8">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="{{ site.data.settings.seo.description }}">
-  <meta rel="author" href="{{ site.data.settings.seo.rel-author }}">
-  <meta rel="publisher" href="{{ site.data.settings.seo.rel-publisher }}">
-  <meta property="og:image" content="https://raw.githubusercontent.com/vsudbrack/vsudbrack.github.io/master/assets/img/general/banner_square.png">
-
-  <title>
-    {% if page.title == "Home" %}
-      {{ site.title }}
-    {% else %}
-      {{ page.title }} | {{ site.title }}
-    {% endif %}
-  </title>
-
-  <link rel="stylesheet" href="{{ site.github.url }}/assets/css/all.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-
-  <!-- Use Atom -->
-  {% feed_meta %}
-
-  <script type="text/javascript" async
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
-  </script>
-
-  <!-- Math equations -->
-  <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [['$','$'], ['\\(','\\)']],
-      processEscapes: true
-    }
-  });
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-
-  <!-- Use Jekyll SEO plugin -->
-  {% seo %}
-
-</head>
+<html lang="en">
+{% include head.html %}
+{% include scripts/jquery.html %}
 <body>
-
-<div class="site-container">
-
-  {% include header.html %}
-
-  {{ content }} 
-
-  {% include footer.html %}
-
-</div>
-
-  {% include analytics.html %}
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="{{ site.github.url }}/assets/js/functions.js"></script>
-
+  <div class="container">
+    {{ content }}
+  </div>
 </body>
+
 </html>

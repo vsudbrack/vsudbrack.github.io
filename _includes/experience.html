@@ -1,0 +1,10 @@
+<p class="title">STUDIES</p>
+<ul class="exper-list">
+  {% for exp in site.data.profile.experience %}
+  <li class="meta">
+    <p class="date">{{ exp.start }} &ndash; {{ exp.end }}</p>
+    <p class="description">{{ exp.experience }}</p>
+    {% if exp.supervisor %} <h8>with {{ exp.supervisor }}</h8>{% endif %}
+  </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,40 @@
+<div id="{{ id }}" class="modal">
+  <div class="modal-background" onClick="close_modal()">
+  </div>
+    <div class="modal-content">
+      <div class="close-modal" onClick="close_modal()">
+        <p>&times;</p>
+      </div>
+
+      <div class="header">
+        <p class="date">   {{ project.development }}</p>
+        <img src="{{ project.image }}" width="80%" style="margin: 10px 10%;">
+        <p class="title">  {{ project.title }}      </p>
+        <p class="summary">{{ project.question }}   </p>
+        <!-- Links/Buttons -->
+        <div class="links">
+          <ul id="icons" style="margin: 3px 0 0 0; text-align: center;">
+            {% if project.biorxiv %}
+            <li>
+              <a href="{{ project.biorxiv }}" target="_blank" title="Preprint">
+                <i class="ai ai-biorxiv"></i>
+              </a>
+            </li>
+            {% endif %}
+            {% if project.doi %}
+            <li>
+              <a href="{{ project.doi }}" target="_blank" title="Journal">
+                <i class="ai ai-closed-access"></i>
+              </a>
+            </li>
+            {% endif %}
+          </ul>
+        </div>
+      </div>
+
+      <div class="content">
+        {{ project.content }}
+      </div>
+
+    </div>
+</div>

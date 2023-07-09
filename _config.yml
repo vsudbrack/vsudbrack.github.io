@@ -1,29 +1,80 @@
-# Build settings
+# Site Settings
+# Do not use trailing slash (i.e. "/Sample"). For skipping base URL, leave empty quotes ("")
+baseurl: "/"
 
-markdown: kramdown
-plugins:             [jekyll-sitemap, jekyll-feed,  jekyll-seo-tag, jemoji]
+# Features Setting
+# Turn subpages on or off
+publications: Off
+presentations: Off
+blog: Off
 
-port: 4000
+# Language of the website
+lang: en
 
-include: ["_pages"]
+# Search engine optimization settings
+title: "Vitor Sudbrack"
+tagline: "The personal homepage of Vitor Sudbrack"
+description: "The personal homepage of Vitor Sudbrack"
+author: "Vitor Sudbrack"
+twitter:
+  username: vsudbrack
+  card: A jekyll theme for academic portfolios
+logo: /assets/img/smile.png
+social:
+  name: Vitor Sudbrack
+  links:
+    - https://twitter.com/vitorsudbrack
+    - https://github.com/vsudbrack
+locale: fr_CH
 
+# Page Settings
+theme_settings:
+  title: Vitor Sudbrack
+
+  experience_title: Studies
+  interests_title: Research interests
+  skills_title: SKILLS
+  awards_title: AWARDS
+  projects_title: Projects
+  recentpubs_title: Recent Publications
+
+# Pagination
+paginate: 5
+paginate_path: "blog/page:num"
+
+# Build Settings
 sass:
-  sass_dir: assets/css
-  style: :nested
+  sass_dir: _sass
+  style: :compressed
+plugins: ['jekyll-paginate', 'jekyll/scholar', 'jekyll-seo-tag']
+bootstrap:
+  assets: true
+
+# Bibliography settings
+scholar:
+  bibliography: publications.bib
+  bibliography_template: pubstemplate
+  style: apa
+  locale: en
+  last_name: Sudbrack
+  first_name: [Sudbrack, V.]
+  sort_by: year
+  order: descending
+
+filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website] # Filter out certain bibtex entry keywords used internally from the bib output
+
+academicons:
+  version: "1.9.1"
+  integrity: "sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg="
+fontawesome:
+  version: "5.15.4"
+  integrity: "sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4="
+jquery:
+  version: "3.6.0"
+  integrity: "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
 
 collections:
-  courses:
+  projects:
     output: true
-    title: Courses
-    directory: ./_courses
-
-  codes:
-    output: true
-    title: Codes
-    directory: ./_codes
-
-# Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-
-title:		     "Vitor Sudbrack"
-description:	     "The personal homepage of Vitor Sudbrack"
-author:              "Vitor Sudbrack"
+    title: Projects
+    directory: ./_projects

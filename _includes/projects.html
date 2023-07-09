@@ -1,0 +1,45 @@
+<section id="project">
+  <div class="project-wrap">
+    <p class="title">PROJECTS</p>
+
+    <div class="card-container" style="height: 500px;">
+      {% for project in site.projects %}
+      {% assign project = project.project %}
+      {% assign id = id | plus: 1 %}
+      <div class="card-wrapper">
+        <div class="card" >
+          {% if project.image %}
+          <a title="{{ id }}" onClick="open_modal(this.title)" class="modal-btn"><div class="img-wrap">
+            <img src="{{ project.image }}" alt="{{ project.image.alt }}">
+          </div></a>
+          {% endif %}
+          <div class="text-wrap {% if project.image %}{% endif %}">
+            <div class="title-wrap">
+              <p class="date">{{ project.development }}</p>
+              <a title="{{ id }}" onClick="open_modal(this.title)" class="modal-btn"><div class="title">{{ project.title }}</div></a>
+            </div>
+          <div class="description">{{ project.question }}</div>
+          </div>
+          <div class="icons">
+            {% if project.biorxiv %}
+            <a href="{{ project.biorxiv }}" target="_blank"><i class="ai ai-biorxiv"></i></a>
+            {% endif %}
+            {% if project.modal %}
+            <a title="{{ id }}" onClick="open_modal(this.title)" class="modal-btn"><i class="fas fa-plus"></i></a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      <!-- Modal Box -->
+      {% if project.modal %}
+      {% include modal.html %}
+      {% endif %}
+      <!-- Modal Box -->
+      {% endfor %}
+    </div>
+  </div>
+  <div class="bg"></div>
+</section>
+
+<!-- modal -->
+<script type="text/javascript" src="{{ '/assets/js/modal.js' | relative_url }}"></script>

@@ -1,0 +1,37 @@
+- 2018master:
+  title: "Master equation for the degree distribution of a Duplication and Divergence network"
+  author: "Vitor Sudbrack, Leonardo G Brunnet, Rita MC de Almeida, Ricardo M Ferreira and Daniel Gamermann"
+  journal: "Physica A: Statistical Mechanics and its Applications"
+  year: 2018
+  doi: https://doi.org/10.1016/j.physa.2018.06.066
+  url: https://arxiv.org/abs/1711.09844
+
+- 2020magnetoreception:
+  title: "Magnetoreception in multicellular magnetotactic prokaryotes: a new analysis of escape motility trajectories in different magnetic fields"
+  author: "Ana Gabriela Veiga,..., Vitor Sudbrack and Daniel Acosta-Avalos"
+  journal: "European Biophysics Journal"
+  year: 2020
+  doi: https://doi.org/10.1007/s00249-020-01467-4
+
+- 2022percolation:
+  title: "Percolation across households in mechanistic models of non-pharmaceutical interventions in SARS-CoV-2 disease dynamics"
+  author: "Caroline Franco,..., Vitor Sudbrack and others"
+  journal: "Epidemics"
+  year: 2022
+  doi: https://doi.org/10.1016/j.epidem.2022.100551
+  url: https://www.medrxiv.org/content/10.1101/2021.06.07.21258403v1
+
+- 2022assessing:
+  title: "Assessing the best time interval between doses in a two-dose vaccination regimen to reduce the number of deaths in an ongoing epidemic of SARS-CoV-2"
+  author: "Leonardo Souto Ferreira,..., Vitor Sudbrack and others"
+  journal: "PLoS Computational Biology"
+  year: "2022"
+  doi: https://doi.org/10.1371/journal.pcbi.1009978
+  url: https://www.medrxiv.org/content/10.1101/2021.07.28.21261200v1
+
+- 2023tempo:
+  title: "Tempo of hard and soft sweeps in subdivided populations"
+  author: Vitor Sudbrack and Charles Mullon
+  journal: BioRxiv (preprint)
+  year: 2023
+  url: https://doi.org/10.1101/2023.07.07.548167

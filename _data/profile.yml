@@ -1,0 +1,46 @@
+image: assets/img/profile_pic_sq.jpeg
+username: Vitor Sudbrack
+description: "Brazilian scientist working in Theoretical Evolutionary Ecology in Lausanne, Switzerland. Always enthusiastic, sometimes blogger, puns intended. He/him/his"
+webpage: www.sudbrack.me
+
+experience: 
+  - start: Mar 2021
+    end: now
+    experience: PhD at Theoretical Evolutionary Ecology lab, Lausanne
+    supervisor: Charles Mullon
+  - start: March 2019
+    end: Feb 2021
+    experience: MSc at Institute for Theoretical Physics, Sao Paulo
+    supervisor: Roberto A. Kraenkel
+  - start: 2013
+    end: 2018
+    experience: BSc at Federal University of Rio Grande do Sul, Porto Alegre 
+
+interests: 
+  - Population Genetics
+  - Evolutionary Biology
+  - Theoretical Ecology
+  - Mathematical Biology
+  - Diffusion Approximation
+  - JEBED
+
+
+social:
+  email:  "vitor.sudbrack@unil.ch"
+  orcid: 0000-0002-4815-2092
+  scholar: fQ4x-1LZ-nEC
+  publons: 
+  research_gate: Sudbrack
+  dblp:  # Full URL
+  semantic_scholar:  # Full URL
+  linkedin:  # Full URL 
+  github: vsudbrack
+  gitlab: 
+  bitbucket: 
+  google_plus:
+  mastodon: 
+  twitter: vitorsudbrack
+  youtube:
+  facebook:
+  instagram:
+  

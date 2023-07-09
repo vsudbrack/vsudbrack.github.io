@@ -1,10 +1,41 @@
-<header>
-  <div class="logo">
-    <a href="{{ site.github.url }}/">{{ site.title }}</a>
-  </div>
-  <nav>
-    {% for item in site.data.settings.menu %}
-      <a href="{{ site.github.url }}/{{ item.url }}">{{ item.name }}</a>
-    {% endfor %}
-  </nav>
-</header>
+{% assign _url = page.url | split: "/" %}
+{% assign current = _url[-1] | split: "." %}
+<section id="header-nav">
+  <header>
+    <nav>
+      <ul>
+        {% case current[0] %}
+        <!-- home -->
+        {% when none %}
+        <li class="current">Home</li>
+        <a href="{{ '/about' | relative_url }}"><li class="btn-nav">About me</li></a>
+        <a href="{{ '/publications' | relative_url }}"><li class="btn-nav">Publications</li></a>
+        <a href="{{ '/contact' | relative_url }}"><li class="btn-nav">Contact</li></a>
+        <!-- publications -->
+        {% when 'about' %} 
+        <a href="{{ '/'' | relative_url }}"><li class="btn-nav">Home</li></a>
+        <li class="current">About me</li>
+        <a href="{{ '/publications' | relative_url }}"><li class="btn-nav">Publications</li></a>
+        <a href="{{ '/contact' | relative_url }}"><li class="btn-nav">Contact</li></a>       
+        <!-- publications -->
+        {% when 'publications' %}
+        <a href="{{ '/'' | relative_url }}"><li class="btn-nav">Home</li></a>
+        <a href="{{ '/about' | relative_url }}"><li class="btn-nav">About me</li></a>
+        <li class="current">Publications</li>
+        <a href="{{ '/contact' | relative_url }}"><li class="btn-nav">Contact</li></a>
+        {% when 'contact' %}
+        <a href="{{ '/'' | relative_url }}"><li class="btn-nav">Home</li></a>
+        <a href="{{ '/about' | relative_url }}"><li class="btn-nav">About me</li></a>
+        <a href="{{ '/publications' | relative_url }}"><li class="btn-nav">Publications</li></a>
+        <li class="current">Contact</li>
+        {% else %}
+        <!-- others -->
+        <a href="{{ '/' | relative_url }}"><li class="btn-nav">Home</li></a>
+        <a href="{{ '/about' | relative_url }}"><li class="btn-nav">About me</li></a>
+        <a href="{{ '/publications' | relative_url }}"><li class="btn-nav">Publications</li></a>
+        <a href="{{ '/contact' | relative_url }}"><li class="btn-nav">Contact</li></a>
+        {% endcase %}
+      </ul>
+    </nav>
+  </header>
+</section>
