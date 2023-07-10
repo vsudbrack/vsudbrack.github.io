@@ -108,6 +108,7 @@ DEPENDENCIES
   jekyll-paginate
   jekyll-scholar
   jekyll-seo-tag
+  kramdown
   kramdown-parser-gfm
   rake
   webrick
