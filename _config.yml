@@ -1,12 +1,5 @@
 # Site Settings
 # Do not use trailing slash (i.e. "/Sample"). For skipping base URL, leave empty quotes ("")
-baseurl: ""
-
-# Features Setting
-# Turn subpages on or off
-publications: Off
-presentations: Off
-blog: Off
 
 # Language of the website
 lang: en
