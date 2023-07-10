@@ -3,8 +3,8 @@
     <p class="title">LATEST PUBLICATIONS</p>
 
       <ol class="bibliography">
-        {% for paper in site.data.publications limit: 2 %}
-        {% if latest == "yes" %}
+        {% for paper in site.data.publications %}
+        {% if paper.latest == "yes" %}
         {% include publications.html %}
         {% endif %}
         {% endfor %}
