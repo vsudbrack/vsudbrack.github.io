@@ -2,7 +2,7 @@
 print: True  
 modal: True  
 biorxiv: https://www.biorxiv.org/content/10.1101/2023.07.07.548167
-image: "assets/project/tempo.jpeg"
+image: "assets/project/tempo.png"
 date: '06-07-2023'
 development: Ongoing &middot; Preprint available 
 title: Rate of adaptation in subdivided populations
