@@ -1,6 +1,6 @@
 # Site Settings
 # Do not use trailing slash (i.e. "/Sample"). For skipping base URL, leave empty quotes ("")
-baseurl: "/"
+baseurl: ""
 
 # Features Setting
 # Turn subpages on or off
@@ -41,8 +41,10 @@ theme_settings:
 # Build Settings
 sass:
   sass_dir: _sass
-  style: :compressed
-plugins: ['jekyll/scholar', 'jekyll-seo-tag']
+  style: compressed
+
+plugins: ['jekyll-seo-tag']
+
 bootstrap:
   assets: true
 
