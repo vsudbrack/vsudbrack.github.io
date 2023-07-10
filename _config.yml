@@ -3,6 +3,8 @@
 
 # Language of the website
 lang: en
+encoding: UTF-8
+
 
 # Search engine optimization settings
 title: "Vitor Sudbrack"

@@ -2,6 +2,14 @@
 //
 // Generate semantic grid columns with these mixins.
 
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
 @mixin make-container($gutter: $grid-gutter-width) {
   width: 100%;
   padding-right: calc($gutter / 2);
@@ -38,14 +46,14 @@
 }
 
 @mixin make-col($size, $columns: $grid-columns) {
-  flex: 0 0 percentage(calc($size / $columns));
+  flex: 0 0 percentage(strip-unit(calc($size / $columns)));
   // Add a `max-width` to ensure content within each column does not blow out
   // the width of the column. Applies to IE10+ and Firefox. Chrome and Safari
   // do not appear to require this.
-  max-width: percentage(calc($size / $columns));
+  max-width: percentage(strip-unit(calc($size / $columns)));
 }
 
 @mixin make-col-offset($size, $columns: $grid-columns) {
-  $num: calc($size / $columns);
+  $num: strip-unit(calc($size / $columns));
   margin-left: if($num == 0, 0, percentage($num));
 }
