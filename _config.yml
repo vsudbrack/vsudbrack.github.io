@@ -40,7 +40,7 @@ theme_settings:
 
 # Build Settings
 sass:
-  sass_dir: _sass
+  sass_dir: ./_sass
   style: compressed
 
 plugins: ['jekyll-seo-tag']
