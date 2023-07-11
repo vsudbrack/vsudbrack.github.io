@@ -7,17 +7,31 @@
       <!-- Links/Buttons -->
       <div class="links">
         <ul id="icons" style="margin: 3px 0 0 0; text-align: center;">
-          {% if paper.url %}
+          {% if paper.url-preprint %}
           <li>
-            <a href="{{ paper.url }}" target="_blank" title="Preprint">
+            <a href="{{ paper.url-preprint }}" target="_blank" title="Preprint">
               <i class="ai ai-biorxiv"></i>
             </a>
           </li>
           {% endif %}
-          {% if paper.doi %}
+          {% if paper.url-closed %}
           <li>
-            <a href="{{ paper.doi }}" target="_blank" title="Journal">
+            <a href="{{ paper.url-closed }}" target="_blank" title="Closed access journal">
               <i class="ai ai-closed-access"></i>
+            </a>
+          </li>
+          {% endif %}
+          {% if paper.url-open %}
+          <li>
+            <a href="{{ paper.url-open }}" target="_blank" title="Open access journal">
+              <i class="ai ai-open-access"></i>
+            </a>
+          </li>
+          {% endif %}
+          {% if paper.url-repo %}
+          <li>
+            <a href="{{ paper.url-repo }}" target="_blank" title="Github repository">
+              <i class="fab fa-github"></i>
             </a>
           </li>
           {% endif %}
