@@ -5,7 +5,7 @@ permalink: /contact
 ---
 
 
-You may contact me through my email, **[vitorsudbrack@gmail.com](mailto:vitorsudbrack@gmail.com)**, or my institutional email **[vitor.sudbrack@unil.ch](mailto:vitor.sudbrack@unil.ch)**.
+You can contact me through my email, **[vitorsudbrack@gmail.com](mailto:vitorsudbrack@gmail.com)**, or my institutional email **[vitor.sudbrack@unil.ch](mailto:vitor.sudbrack@unil.ch)**.
 
 
 You can find me on social media, especially **[Twitter](http://twitter.com/vitorsudbrack)**, to be updated about my researches. You can find me on **[GoogleScholar](https://scholar.google.com/citations?user=fQ4x-1LZ-nEC&hl)**, **[OrcID](https://orcid.org/0000-0002-4815-2092)** or **[ResearchGate](https://www.researchgate.net/profile/Vitor_Sudbrack)**, and Brazilian researches can also find me on **[Lattes Platform](http://lattes.cnpq.br/1687206263257247)**.
