@@ -54,6 +54,6 @@
 }
 
 @mixin make-col-offset($size, $columns: $grid-columns) {
-  $num: 0.5; //calc($size / $columns);
+  $num: 0.50; //calc($size / $columns);
   margin-left: if($num == 0, 0, percentage($num));
 }

@@ -13,13 +13,13 @@ layout: page
 
 <div id="portfolio">
   <section id="about-me">
-    <div class="row">
-      <div class="img-wrap col-12 col-md-4">
-        <div class="img" style="border: solid white 4px">
+    <div class="row" style="text-align: center;">
+      <div class="img-wrap col-12 col-md-4" style="min-width: 350px;">
+        <div class="img" style="border: solid white 4px; margin-top: auto; margin-bottom: auto;">
           <img src="{{ imgurl }}" >
         </div>
       </div>
-      <div class="text-wrap col-12 col-md-8">
+      <div class="text-wrap col-12 col-md-8" style="min-width: 350px;">
         <h2 class="username">{{ profile.username }}</h2>
         <div class="description">{{ profile.description | markdownify }}</div>
 
@@ -28,7 +28,7 @@ layout: page
         </ul>
 
         <div style="margin-top: 10px;">
-          <a href="https://lab-mullon.github.io/" target="_blank"><img src="/assets/img/LOGO_TEE_white.svg" width="25%" style="margin-bottom: 5px;"></a>
+          <a href="https://lab-mullon.github.io/" target="_blank"><img src="/assets/img/LOGO_TEE_white.svg" style="margin-bottom: 5px; width:25%; min-width: 150px"></a>
         </div>
         
       </div>
@@ -39,11 +39,9 @@ layout: page
   <section id="career" class="row">
     <article class="exper col-12 col-md-6">
       {% include experience.html %}
-      {% include awards.html %}
     </article>
     <article class="skills col-12 col-md-6">
       {% include interests.html %}
-      {% include skills.html %}
     </article>
   </section>
 

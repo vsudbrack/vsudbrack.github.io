@@ -2,7 +2,7 @@
   <div class="project-wrap">
     <p class="title">PROJECTS</p>
 
-    <div class="card-container" style="height: 500px;">
+    <div class="card-container" style="flex-direction: row; order: 1; align-items: stretch">
       {% for project in site.projects %}
       {% assign project = project.project %}
       {% assign id = id | plus: 1 %}
