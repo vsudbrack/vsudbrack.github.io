@@ -1,0 +1,15 @@
+<div id="portfolio">
+  <section id="career" class="row" style="margin: 0; padding: 0;">
+    <article class="exper" style="margin: 0; padding: 0;">
+    <ul class="exper-list col-12 col-md-8" style="max-width: 100%; margin: 0%; padding: 0;">
+      {% for exp in site.data.profile.events %}
+      <li class="meta">
+        <p class="date" style="margin: 3px; text-indent: 0">{{ exp.date }}</p>
+        <p class="description" style="margin: 3px; text-indent: 0">{{ exp.name }}</p>
+        <h8  style="margin: 3px;">in {{ exp.place }}</h8>
+      </li>
+      {% endfor %}
+    </ul>
+    </article>
+  </section>
+</div>

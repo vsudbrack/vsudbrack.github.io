@@ -16,6 +16,13 @@ experience:
     end: Dec 2018
     experience: BSc in Computational Physics at Federal University of Rio Grande do Sul UFRGS, Porto Alegre 
 
+events: 
+  - date: Sept 2023
+    name: 'Sex unfolded: sex, asex, sexes'
+    place: Roscoff, FR
+  - date: Jan 2024
+    name: '[TBC] 57 Population Genetics Group (PopGroup)'
+    place: St. Andrews, UK
 
 interests: 
   - Population Genetics
@@ -29,18 +36,8 @@ social:
   email:  "vitor.sudbrack@unil.ch"
   orcid: 0000-0002-4815-2092
   scholar: fQ4x-1LZ-nEC
-  publons: 
   research_gate: Sudbrack
-  dblp:  # Full URL
-  semantic_scholar:  # Full URL
-  linkedin:  # Full URL 
   github: vsudbrack
-  gitlab: 
-  bitbucket: 
-  google_plus:
-  mastodon: 
   twitter: vitorsudbrack
-  youtube:
-  facebook:
-  instagram:
+
   
