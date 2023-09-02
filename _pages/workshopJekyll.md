@@ -1,13 +1,13 @@
 ---
 layout: content
-title: 'Workshop YourNewHomepage.github.io'
+title: 'YourNewHomepage.github.io'
 permalink: /workshop
 ---
 	
 
 ###### By myself and [Ehouarn Le Faou](https://elefaou.github.io/), for the DEE Department Retreat, Sept. 3-4th 2023. 
 
-******
+![Github Pages for academics](../assets/img/workshopJekyll/example-pages.png)
 
 We all do fantastic work in terms of research, but in order to succeed in this increasingly competitive environment, we need to become experts in the tools that allow us to promote and disseminate our amazing discoveries. 
 
@@ -30,10 +30,13 @@ We hope that by the end of this tutorial, you’ll have a simple page setup that
 ******
 ## Overviews
 
+![GitHub Pages logo](../assets/img/workshopJekyll/github-logo.png){:style="float: right;margin-left: 25px;margin-top: 7px; margin-bottom: 17px;max-width: 40%;"}
+
 ### GitHub Pages 
 
 Users can create and publish websites directly from their GitHub repositories using GitHub Pages, a free hosting service that GitHub offers. It serves as a platform for hosting static websites, documentation, personal portfolios, project pages, and more. GitHub Pages simplifies the process of deploying and maintaining websites, making it a popular choice for both individual developers and larger open-source projects.
 
+![Jekyll logo](../assets/img/workshopJekyll/jekyll-logo.png){:style="float: right;margin-left: 25px;margin-top: 7px; margin-bottom: 17px;max-width: 40%;"}
 
 ### Jekyll templates
 
@@ -130,7 +133,7 @@ In R Markdown, you can use simple markup syntax to format text, add links, and i
    ```
 
 4. **Images:**
-   To insert an image, use an exclamation mark `!`, followed by square brackets `[]` to add alt text (alternative text), and then parentheses `()` to provide the image URL or file path.
+   To insert an image, use an exclamation mark `!`, followed by square brackets `[]` to add alt text (alternative text), and then parentheses `()` to provide the image URL or file path and, optionally, `{:style="..."}` to add any CSS style. 
 
    Example:
    ```
