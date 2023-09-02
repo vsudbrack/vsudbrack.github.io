@@ -5,6 +5,7 @@
 lang: en
 encoding: UTF-8
 
+include: ["_pages"]
 
 # Search engine optimization settings
 title: "Vitor Sudbrack"
