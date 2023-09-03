@@ -61,6 +61,8 @@ Other options is [https://jekyll-themes.com/](https://jekyll-themes.com/category
 ******
 ## Customization
 
+![Folders in Jekyll](../assets/img/workshopJekyll/folders-jekyll.png){:style="float: right;margin-left: 25px;margin-top: 7px; margin-bottom: 17px;max-width: 40%;"}
+
 ### Modify configuration files
 
 - *_config.yml*: this file stores various settings and configurations, such as site title, description, base URL, and other user-defined options.
@@ -77,6 +79,8 @@ Jekyll is Markdown-friendly, meaning you can write content in Markdown syntax, a
 
 ******
 ## Content
+
+![Posts in Jekyll](../assets/img/workshopJekyll/post-jekyll.png){:style="float: right;margin-left: 25px;margin-top: 7px; margin-bottom: 17px;max-width: 40%;"}
 
 ### Front Matter
 
