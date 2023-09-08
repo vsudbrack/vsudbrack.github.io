@@ -22,7 +22,10 @@
           </div>
           <div class="icons">
             {% if project.biorxiv %}
-            <a href="{{ project.biorxiv }}" target="_blank"><i class="ai ai-biorxiv"></i></a>
+            <a href="{{ project.biorxiv }}" target="_blank" title="Read the preprint on BioRxiv"><i class="ai ai-biorxiv"></i></a>
+            {% endif %}
+            {% if project.poster %}
+            <a href="{{ project.poster }}" target="_blank" title="View poster"><i class="fas fa-image fa-rotate-90"></i></a>
             {% endif %}
             {% if project.modal %}
             <a title="{{ id }}" onClick="open_modal(this.title)" class="modal-btn"><i class="fas fa-plus"></i></a>

@@ -2,6 +2,7 @@
 print: True  
 modal: True 
 image: "assets/project/recomb.png"
+poster: "assets/posters/TR_SUDBRACK_Roscoff.pdf"
 date: '07-07-2023'
 development: Ongoing
 title: Genetic structural variation in populations
