@@ -4,7 +4,7 @@ title: About me
 permalink: /about
 ---
 
-![Hello](../assets/img/profile_pic_sq.jpeg){:style="float: right;margin-left: 25px;margin-top: 7px; margin-bottom: 17px;max-width: 40%;border: 5px solid #3D7C76;border-radius: 28px "}
+![Hello](../assets/img/profile_pic_sq.png){:style="float: right;margin-left: 25px;margin-top: 7px; margin-bottom: 17px;max-width: 30%;"}
 
 
 ## Hello,

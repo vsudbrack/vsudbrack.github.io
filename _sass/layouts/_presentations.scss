@@ -4,15 +4,19 @@
         content: "";
         position: absolute;
         z-index: -1;
-        width: 100%;
-        top: 105px;
-        left:0%;
+        width: 70%;
+        margin-left: auto;
+        margin-right:auto;
+        top: 62px;
+        left:15%;
         height: 95px;
         background-color: $theme-dark;
     }
     h1.title{
         color:#fff;
-        margin-bottom: 30px;
+        position: absolute;
+        margin-bottom: 60px;
+        top: 92px;
     }
     ol.presentations-list{
         list-style-type: none;
