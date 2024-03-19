@@ -3,8 +3,10 @@
   overflow: hidden;
   .recentpubs-wrap {
     @extend %page-padding;
-    padding-top: 50px!important;
-    margin-bottom: 55px;
+    padding-top: 35px !important;
+    @media (min-width: 600px) { 
+      max-width: 75%;
+    }
     p.title {
       color: $theme-dark;
       font-size: 25px;

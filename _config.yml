@@ -15,7 +15,6 @@ author: "Vitor Sudbrack"
 twitter:
   username: vsudbrack
   card: A jekyll theme for academic portfolios
-logo: /assets/img/smile.png
 social:
   name: Vitor Sudbrack
   links:
@@ -29,8 +28,6 @@ theme_settings:
 
   experience_title: Studies
   interests_title: Research interests
-  skills_title: SKILLS
-  awards_title: AWARDS
   projects_title: Projects
   recentpubs_title: Recent Publications
 

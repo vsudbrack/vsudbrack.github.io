@@ -18,7 +18,7 @@ You can find me on social media, especially **[Twitter](http://twitter.com/vitor
 ### Where to find me
 
 <p style="margin: 1px 0 20px 40px; text-indent: 0px;">
-Building Biophore, office 4301.1 <br>
+Building Biophore, office 4305 <br>
 University of Lausanne <br>
 CH1015 - Lausanne <br>
 Switzerland

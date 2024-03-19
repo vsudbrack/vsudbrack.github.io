@@ -15,5 +15,8 @@
         position: absolute;
         margin-bottom: 60px;
         top: 92px;
+        @media (max-width: 576px){
+            margin-left: 15%;
+        }
     }
 }

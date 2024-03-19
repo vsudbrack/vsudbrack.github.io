@@ -20,7 +20,9 @@ events:
   - date: 'June 2024'
     name:  'SLiM Workshop'
     place:  'Edinburgh, UK'
-
+  - date: 'July 2024'
+    name:  'MEME2024'
+    place:  'Vienna, AT'
 
 interests: 
   - Population Genetics
@@ -34,7 +36,6 @@ social:
   email:  "vitor.sudbrack@unil.ch"
   orcid: 0000-0002-4815-2092
   scholar: fQ4x-1LZ-nEC
-  research_gate: Sudbrack
   github: vsudbrack
   twitter: vitorsudbrack
 
