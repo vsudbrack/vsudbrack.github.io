@@ -6,15 +6,18 @@ webpage: www.sudbrack.me
 experience: 
   - start: Mar 2021
     end: now
-    experience: PhD at Theoretical Evolutionary Ecology lab, Lausanne
+    experience: PhD in Theoretical Evolutionary Ecology 
+    uni: University of Lausanne, Switzerland
     supervisor: Charles Mullon
   - start: Mar 2019
     end: Feb 2021
-    experience: MSc in Physics at Institute for Theoretical Physics IFT-Unesp, São Paulo
+    experience: MSc in Theoretical Physics
+    uni: Institute for Theoretical Physics IFT/Unesp, Brazil
     supervisor: Roberto A. Kraenkel
   - start: Mar 2013
     end: Dec 2018
-    experience: BSc in Computational Physics at Federal University of Rio Grande do Sul UFRGS, Porto Alegre 
+    experience: BSc in Computational Physics
+    uni: Federal University of Rio Grande do Sul UFRGS, Brazil 
 
 events: 
   - date: 'June 2024'
@@ -31,6 +34,25 @@ interests:
   - Evolutionary Ecology
   - Mathematical Biology
   - JEBED
+
+teaching: 
+  - name: Sex, Ageing and Foraging Theory 
+    level: MSc
+    uni: UNIL
+    after: 2022
+    prof: Prof. Charles Mullon
+    url: https://lab-mullon.github.io/SAF
+  - name: Genes, Populations and Evolution
+    level: MSc
+    uni: UNIL
+    after: 2021
+    prof: Prof. Laurent Lehmann
+  - name: Génétique des Populations
+    level: BSc
+    uni: UNIL
+    after: 2021
+    prof: Prof. Jerôme Goudet
+
 
 social:
   email:  "vitor.sudbrack@unil.ch"

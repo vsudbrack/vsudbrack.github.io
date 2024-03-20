@@ -4,7 +4,8 @@
   <li class="meta">
     <p class="date">{{ exp.start }} &ndash; {{ exp.end }}</p>
     <p class="description">{{ exp.experience }}</p>
-    {% if exp.supervisor %} <h8>with {{ exp.supervisor }}</h8>{% endif %}
+    <p style="margin: 3px; text-indent: 0; font-size: 0.8rem;">{{ exp.uni }}</p>
+    {% if exp.supervisor %} <h8 style="margin: 3px; text-indent: 0;">with {{ exp.supervisor }}</h8>{% endif %}
   </li>
   {% endfor %}
 </ul>

@@ -36,12 +36,13 @@ layout: page
     <div class="bg"></div>
   </section>
 
-  <section id="career" class="row">
-    <article class="exper col-12 col-md-6">
+  <section id="career" class="row" style="display: flex; flex-wrap: wrap;">
+    <article class="exper col-12 col-md-6" style="flex: 1; margin: 5px;">
       {% include experience.html %}
     </article>
-    <article class="skills col-12 col-md-6">
+    <article class="exper col-12 col-md-6" style="flex: 1; margin: 5px;">
       {% include interests.html %}
+      {% include teaching.html %}
     </article>
   </section>
 

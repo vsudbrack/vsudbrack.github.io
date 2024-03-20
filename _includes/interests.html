@@ -1,7 +1,9 @@
 <p class="title">INTERESTS</p>
 
-<ul class="interests-list">
+<ul class="exper-list col-12 col-md-8" style="max-width: 100%; margin: 0%; padding: 0 !important; border-left: 0px; ">
   {% for interest in site.data.profile.interests %}
-  <li class="interest">{{ interest }}</li>
+  <li class="meta">
+    <p class="description" style="margin: 0px; text-indent: 0">{{ interest }}</p>
+  </li>
   {% endfor %}
 </ul>

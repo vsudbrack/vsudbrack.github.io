@@ -1,0 +1,11 @@
+<p class="title" style="margin-top: 25px;">TEACHING</p>
+<ul class="exper-list col-12 col-md-8" style="max-width: 100%; margin: 0%; padding: 0; border-left: 0px;">
+  {% for course in site.data.profile.teaching %}
+  <li class="meta">
+    <p class="date" style="margin: 3px; text-indent: 0">Since {{ course.after }}</p>
+    <p class="description" style="margin: 3px; text-indent: 0">{% if course.url %}<a href="{{ course.url }}" target="_blank">{{ course.name }}</a> {% else %} {{ course.name }} {% endif %}</p>
+    <p style="margin: 3px; text-indent: 0; font-size: 0.8rem;">{{ course.level }}, {{ course.uni }}</p>
+    <h8  style="margin: 3px;">Assisting {{ course.prof }}</h8>
+  </li>
+  {% endfor %}
+</ul>
