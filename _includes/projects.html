@@ -2,11 +2,11 @@
   <div class="project-wrap">
     <p class="title">PROJECTS</p>
 
-    <div class="card-container" style="flex-direction: row; order: 1; align-items: stretch">
+    <div class="card-container" style="flex-direction: row; order: 1; align-items: stretch; height: auto;">
       {% for project in site.projects %}
       {% assign project = project.project %}
       {% assign id = id | plus: 1 %}
-      <div class="card-wrapper">
+      <div class="card-wrapper" style="margin-bottom: auto;">
         <div class="card" >
           {% if project.image %}
           <a title="{{ id }}" onClick="open_modal(this.title)" class="modal-btn"><div class="img-wrap">
@@ -21,6 +21,9 @@
           <div class="description">{{ project.question }}</div>
           </div>
           <div class="icons">
+            {% if project.url-open %}
+            <a href="{{ project.url-open }}" target="_blank" title="Read the publication"><i class="ai ai-open-access"></i></a>
+            {% endif %}
             {% if project.biorxiv %}
             <a href="{{ project.biorxiv }}" target="_blank" title="Read the preprint on BioRxiv"><i class="ai ai-biorxiv"></i></a>
             {% endif %}

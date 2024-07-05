@@ -25,7 +25,7 @@
   title: "Assessing the best time interval between doses in a two-dose vaccination regimen to reduce the number of deaths in an ongoing epidemic of SARS-CoV-2"
   author: "Leonardo Souto Ferreira,..., Vitor Sudbrack and others"
   journal: "PLoS Computational Biology"
-  year: "2022"
+  year: 2022
   url-open: https://doi.org/10.1371/journal.pcbi.1009978
   url-preprint: https://www.medrxiv.org/content/10.1101/2021.07.28.21261200v1
   url-repo: https://github.com/covid19br/VaxModel-paper
@@ -33,8 +33,9 @@
 - 2023tempo:
   title: "Fixation times of <i>de novo</i> and standing beneficial variants in subdivided populations"
   author: Vitor Sudbrack and Charles Mullon
-  journal: Genetics (accepted)
+  journal: Genetics
   year: 2024
+  url-open: https://doi.org/10.1093/genetics/iyae043
   url-preprint: https://doi.org/10.1101/2023.07.07.548167
   url-repo: https://github.com/vsudbrack/SweepsUnderLimitedDispersal
   latest: "yes"

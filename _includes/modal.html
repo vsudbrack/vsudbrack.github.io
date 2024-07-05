@@ -9,11 +9,18 @@
       <div class="header">
         <p class="date">   {{ project.development }}</p>
         <img src="{{ project.image }}" width="80%" style="margin: 10px 10%;">
-        <p class="title">  {{ project.title }}      </p>
-        <p class="summary">{{ project.question }}   </p>
+        <p class="title" style="text-align: center;">  {{ project.title }}      </p>
+        <p class="summary" style="text-align: center;">{{ project.description }}   </p>
         <!-- Links/Buttons -->
         <div class="links">
           <ul id="icons" style="margin: 3px 0 0 0; text-align: center;">
+            {% if project.url-open %}
+            <li>
+              <a href="{{ project.url-open }}" target="_blank" title="Read the publication">
+                <i class="ai ai-open-access"></i>
+              </a>
+            </li>
+            {% endif %}
             {% if project.biorxiv %}
             <li>
               <a href="{{ project.biorxiv }}" target="_blank" title="Preprint">

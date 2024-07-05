@@ -1,13 +1,13 @@
 ---
 print: True  
 modal: True  
-biorxiv: https://www.biorxiv.org/content/10.1101/2023.07.07.548167
+url-open: https://doi.org/10.1093/genetics/iyae043
 image: "assets/project/tempo.png"
 date: '06-07-2023'
-development: Ongoing &middot; Preprint available 
+development: Ongoing &middot; Publication available 
 title: Adaptation in subdivided populations
 description: How fast adaptive alleles sweep under dispersal limitation?
-question:  How fast can subdivided populations adapt?
+question:  How quickly can subdivided populations adapt, and what genomic signatures indicate this adaptation?
 ---
 
 We have long been interested in understanding how populations adapt to both fixed and changing environments. 
@@ -22,4 +22,4 @@ We also found that the mode of adaptation (i.e. "hard" or "soft" sweeps) can aff
 Overall, our study highlights the complex interplay between dispersal, selection, and genetic drift in the process of adaptation. 
 By shedding light on these factors, we hope to contribute to our understanding of how species respond to changing environments, and how we can better conserve biodiversity in the face of global change.
 
-The preprint of this work with my PhD supervisor, Charles Mullon, is available on BioRxiv. 
+The first publication of this work with my PhD supervisor, Charles Mullon, is available on Genetics. 

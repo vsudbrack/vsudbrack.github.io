@@ -8,24 +8,24 @@ experience:
     end: now
     experience: PhD in Theoretical Evolutionary Ecology 
     uni: University of Lausanne, Switzerland
-    supervisor: Charles Mullon
+    supervisor: Prof. Charles Mullon
   - start: Mar 2019
     end: Feb 2021
     experience: MSc in Theoretical Physics
     uni: Institute for Theoretical Physics IFT/Unesp, Brazil
-    supervisor: Roberto A. Kraenkel
+    supervisor: Prof. Roberto A. Kraenkel
   - start: Mar 2013
     end: Dec 2018
     experience: BSc in Computational Physics
     uni: Federal University of Rio Grande do Sul UFRGS, Brazil 
 
 events: 
-  - date: 'June 2024'
-    name:  'SLiM Workshop'
-    place:  'Edinburgh, UK'
   - date: 'July 2024'
     name:  'MEME2024'
     place:  'Vienna, AT'
+  - date: 'July 2024'
+    name:  '3rd Joint Congress on Evolutionary Biology'
+    place:  'Montreal, CA (virtual participation)'  
 
 interests: 
   - Population Genetics
