@@ -40,10 +40,10 @@
   url-repo: https://github.com/vsudbrack/SweepsUnderLimitedDispersal
   latest: "yes"
 
-- 2024leishmaniasis:
-    title: "Bayesian spatio-temporal modeling to assess the effect of land-use changes on the incidence of Cutaneous Leishmaniasis in the Brazilian Amazon"
-    author: "Tatiana P. Portella, Vitor Sudbrack and others"
-    journal: Science of the Total Environment
-    year: 2024
-    url-open: https://doi.org/10.1016/j.scitotenv.2024.176064
-    url-repo: https://github.com/portellatp/leish_amazon
+- 2024leish:
+  title: "Bayesian spatio-temporal modeling to assess the effect of land-use changes on the incidence of Cutaneous Leishmaniasis in the Brazilian Amazon"
+  author: "Tatiana P. Portella, Vitor Sudbrack and others"
+  journal: "Science of the Total Environment"
+  year: 2024
+  url-open: "https://doi.org/10.1016/j.scitotenv.2024.176064"
+  url-repo: "https://github.com/portellatp/leish_amazon"
