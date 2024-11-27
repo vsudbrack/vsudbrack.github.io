@@ -59,6 +59,27 @@
       background-color: $theme-dark;
     }
   }
+  #interests {
+    @extend %page-padding;
+    margin-bottom: 55px;
+    margin-top: 55px;
+    .title {
+      margin: auto;
+      margin-left: 0;
+      margin-right: 15px;
+      color: $theme-dark;
+      font-size: 25px;
+      font-weight: 600;
+    }
+    .description {
+      line-height: 1rem;
+      font-size: 1rem;
+      font-weight: 600;
+      margin: auto;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
   #career {
     @extend %page-padding;
     margin-bottom: 55px;
