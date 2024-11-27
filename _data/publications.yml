@@ -23,7 +23,7 @@
 
 - 2022assessing:
   title: "Assessing the best time interval between doses in a two-dose vaccination regimen to reduce the number of deaths in an ongoing epidemic of SARS-CoV-2"
-  author: "Leonardo Souto Ferreira,..., Vitor Sudbrack and others"
+  author: "Leonardo S. Ferreira,..., Vitor Sudbrack and others"
   journal: "PLoS Computational Biology"
   year: 2022
   url-open: https://doi.org/10.1371/journal.pcbi.1009978
@@ -39,3 +39,11 @@
   url-preprint: https://doi.org/10.1101/2023.07.07.548167
   url-repo: https://github.com/vsudbrack/SweepsUnderLimitedDispersal
   latest: "yes"
+
+- 2024leishmaniasis:
+    title: "Bayesian spatio-temporal modeling to assess the effect of land-use changes on the incidence of Cutaneous Leishmaniasis in the Brazilian Amazon"
+    author: "Tatiana P. Portella, Vitor Sudbrack and others"
+    journal: Science of the Total Environment
+    year: 2024
+    url-open: https://doi.org/10.1016/j.scitotenv.2024.176064
+    url-repo: https://github.com/portellatp/leish_amazon
