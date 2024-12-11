@@ -1,4 +1,4 @@
 <p class="title">INTERESTS</p> 
 {% for interest in site.data.profile.interests %} 
-<p class="description">{{ interest }}{% if forloop.last == false %}&nbsp·&nbsp{% endif %}</p>
+<p class="description">{{ interest }}{% if forloop.last == false %}<p class="description" style="color:#4d7b76;font-size: 30px;">&nbsp·&nbsp</p>{% endif %}</p>
 {% endfor %}
