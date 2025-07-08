@@ -3,7 +3,7 @@
     <p class="title">SELECTED PUBLICATIONS</p>
 
       <ol class="bibliography">
-        {% for paper in site.data.publications %}
+        {% for paper in site.data.publications reversed %}
         {% if paper.latest == "yes" %}
         {% include publications.html %}
         {% endif %}

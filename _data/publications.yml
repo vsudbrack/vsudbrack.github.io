@@ -47,3 +47,12 @@
   year: 2024
   url-open: "https://doi.org/10.1016/j.scitotenv.2024.176064"
   url-repo: "https://github.com/portellatp/leish_amazon"
+
+- 2025tandemRepeats:
+  title: "The evolution of tandem repeat sequences under partial selfing and different modes of selection"
+  author: Vitor Sudbrack and Charles Mullon
+  journal: BioRxiv (preprint)
+  year: 2025
+  url-preprint: https://www.biorxiv.org/content/10.1101/2025.07.04.663195
+  url-repo: https://github.com/vsudbrack/TandemRepeatsSM
+  latest: "yes"
