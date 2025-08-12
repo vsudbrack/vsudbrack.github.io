@@ -37,18 +37,18 @@ teaching:
   - name: Sex, Ageing and Foraging Theory 
     level: MSc
     uni: UNIL
-    after: 2022
+    after: "2022 - 2024"
     prof: Prof. Charles Mullon
     url: https://lab-mullon.github.io/SAF
   - name: Genes, Populations and Evolution
     level: MSc
     uni: UNIL
-    after: 2021
+    after: "Since 2021"
     prof: Prof. Laurent Lehmann
   - name: Génétique des Populations
     level: BSc
     uni: UNIL
-    after: 2021
+    after: "Since 2021"
     prof: Prof. Jerôme Goudet
 
 
