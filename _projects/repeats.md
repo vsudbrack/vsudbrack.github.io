@@ -3,9 +3,9 @@ print: True
 modal: True 
 image: "assets/project/recomb.png"
 poster: "assets/posters/TR_SUDBRACK_Roscoff.pdf"
-url-open: https://www.biorxiv.org/content/10.1101/2025.07.04.663195
+url-open: https://www.nature.com/articles/s41437-026-00820-1
 date: '07-07-2023'
-development: Ongoing &middot; Preprint available 
+development: Ongoing &middot; Publication available 
 title: Genetic structural variation in selfing populations
 question: How does inbreeding influence the abundance and diversity of repetitive DNA in the genome?
 description:  How selfers accumulate satellite DNA in their genome?
