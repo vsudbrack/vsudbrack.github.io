@@ -14,17 +14,24 @@
             </a>
           </li>
           {% endif %}
+          {% if paper.doc %}
+          <li>
+            <a href="{{ paper.doc }}" target="_blank" title="Document">
+              <i class="fas fa-file-alt" aria-hidden="true"></i>
+            </a>
+          </li>
+          {% endif %}
           {% if paper.url-closed %}
           <li>
             <a href="{{ paper.url-closed }}" target="_blank" title="Closed access journal">
-              <i class="ai ai-closed-access"></i>
+              <i class="fa fa-link"></i>
             </a>
           </li>
           {% endif %}
           {% if paper.url-open %}
           <li>
             <a href="{{ paper.url-open }}" target="_blank" title="Open access journal">
-              <i class="ai ai-open-access"></i>
+              <i class="fa fa-link"></i>
             </a>
           </li>
           {% endif %}

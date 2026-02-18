@@ -2,13 +2,14 @@
 print: True  
 modal: True 
 image: "assets/project/recomb.png"
-poster: "assets/posters/TR_SUDBRACK_Roscoff.pdf"
+#poster: "assets/posters/TR_SUDBRACK_Roscoff.pdf"
 url-open: https://www.nature.com/articles/s41437-026-00820-1
 date: '07-07-2023'
-development: Ongoing &middot; Publication available 
+development: On hold &middot; Publication available 
 title: Genetic structural variation in selfing populations
 question: How does inbreeding influence the abundance and diversity of repetitive DNA in the genome?
 description:  How selfers accumulate satellite DNA in their genome?
+doc: "/assets/publications/SudbrackMullon2026.pdf"
 ---
 
 Tandem Repeat sequences (TRs) are a significant source of genetic structural variation within and between populations. These sequences occur when a short DNA motif is repeated head-to-tail along a chromosome. Variation in TRs is thought to reflect a balance between purifying selection, amplification, unequal recombination, and genetic drift. 

@@ -6,7 +6,7 @@ webpage: www.sudbrack.me
 
 experience: 
   - start: Mar 2021
-    end: now
+    end: Feb 2026
     experience: PhD in Theoretical Evolutionary Ecology 
     uni: University of Lausanne UNIL, Switzerland
     supervisor: Prof. Charles Mullon
@@ -21,42 +21,51 @@ experience:
     uni: Federal University of Rio Grande do Sul UFRGS, Brazil 
 
 events: 
-  - date: 'July 2025'
-    name:  'SLiM Workshop (organizer)'
-    place:  'Lausanne, CH'
+  - date: 'From June 2026'
+    name:  "Postdoctoral position at Sachdeva's lab"
+    place:  'Vienna, AT'
+  - date: 'July 2026'
+    name:  'MMEE26'
+    place:  'Cork, IE'
 
 
 interests: 
   - Population Genetics
   - Complex Traits
+  - Structural Variants
   - Genetic Architecture 
   - Evolutionary Ecology
-  - Mathematical Biology
 
 teaching: 
+  - name: Modelling for Evolutionary Biology 
+    level: Summer School
+    uni: UNIL
+    after: "Since 2025"
+    prof: Prof. Charles Mullon
+    url: https://lab-mullon.github.io/MEB
   - name: Sex, Ageing and Foraging Theory 
     level: MSc
     uni: UNIL
     after: "2022 - 2024"
     prof: Prof. Charles Mullon
-    url: https://lab-mullon.github.io/SAF
   - name: Genes, Populations and Evolution
     level: MSc
     uni: UNIL
-    after: "Since 2021"
+    after: "2021 - 2025"
     prof: Prof. Laurent Lehmann
   - name: Génétique des Populations
     level: BSc
     uni: UNIL
-    after: "Since 2021"
+    after: "2021 - 2025"
     prof: Prof. Jerôme Goudet
 
 
 social:
-  email:  "vitor.sudbrack@unil.ch"
+  email:  "vitorsudbrack@gmail.com"
   orcid: 0000-0002-4815-2092
   scholar: fQ4x-1LZ-nEC
   github: vsudbrack
   twitter: vitorsudbrack
+  bluesky: vsudbrack.bsky.social
 
   

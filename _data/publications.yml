@@ -36,8 +36,9 @@
   journal: Genetics
   year: 2024
   url-open: https://doi.org/10.1093/genetics/iyae043
-  url-preprint: https://doi.org/10.1101/2023.07.07.548167
+  #url-preprint: https://doi.org/10.1101/2023.07.07.548167
   url-repo: https://github.com/vsudbrack/SweepsUnderLimitedDispersal
+  doc: "/assets/publications/SudbrackMullon2024.pdf"
   latest: "yes"
 
 - 2024leish:
@@ -53,7 +54,8 @@
   author: Vitor Sudbrack and Charles Mullon
   journal: Heredity
   year: 2026
-  url-preprint: https://www.biorxiv.org/content/10.1101/2025.07.04.663195
+  #url-preprint: https://www.biorxiv.org/content/10.1101/2025.07.04.663195
   url-repo: https://github.com/vsudbrack/TandemRepeatsSM
   url-closed: https://www.nature.com/articles/s41437-026-00820-1
+  doc: "/assets/publications/SudbrackMullon2026.pdf"
   latest: "yes"
