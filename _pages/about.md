@@ -9,23 +9,19 @@ permalink: /about
 
 ## Hello,
 
-**I'm Vitor Sudbrack**, a Brazilian theoretician and modeller. I am currently a PhD student at the *[University of Lausanne](https://www.unil.ch/dee/en/home.html)*, working in the **[Theoretical Evolutionary Ecology Lab](https://lab-mullon.github.io/)** with *Charles Mullon*. 
+**I'm Vitor Sudbrack**, a Brazilian theoretical biologist and modeller. I recently completed my PhD at the *[University of Lausanne](https://www.unil.ch/dee/en/home.html)*, where I worked in the **[Theoretical Evolutionary Ecology Lab](https://lab-mullon.github.io/)** with *Charles Mullon*.  
 
-Broadly, I'm a theoretical population geneticist with a background in physics. My research aims to better understand the evolutionary and genetic basis of complex traits influenced by multiple loci. I investigate **how ecological factors, such as limited dispersal or resource variation, leave signatures in genomes and shape the genetic architecture of traits**. My PhD projects have taken me from exploring the diffusion approximation in population genetics to running individual-based simulations in *SLiM*.
+My research is in theoretical population genetics and evolutionary genetics. I study how complex traits, which are usually controlled by many loci, evolve under different ecological scenarios. In particular, I focused on **how factors such as limited dispersal, mating systems or resource variation leave detectable signatures in genomes and shape the genetic architecture of traits** during my PhD. To address these questions, I use analytical frameworks from **population dynamics**, **population genetics**, and **quantitative genetics**, and individual-based simulations using *SLiM*. 
 
-### My scientific interests
+More broadly, I am interested in how complex polymorphic traits emerge and persist in natural populations, and how such diversity of forms is encoded in DNA (e.g. using structural variants). Using a combination of modelling and simulation, I aim to **connect ecological processes to evolutionary outcomes** by identifying the mechanisms linking genomic variation to the rich variety of forms and organisms we observe in nature.
 
-I'm fascinated by how complex polymorphic traits emerge and persist in natural populations, and how they are encoded in a structure as simple as a DNA string (only four letters for the whole diversity we see!). At the end of the day, my work is about connecting the dots between ecological processes and evolutionary outcomes, and discovering hidden patterns that link DNA to the rich variety of forms we see out there.
-
-For that, I use models of **population dynamics**, **population genetics**, and, more recently, **quantitative genetics**. When it comes to simulations, I like to think **I create universes on a computer screen...**, but 95% of the job is programming and looking at data on that same computer screen.
-
-Studying and researching have introduced me to many wonderful people, fascinating places, and exciting problems of this universe, and I am grateful for all of it.
-
+<!--
 ### My studies
 
 I have a Master's degree in Theoretical Physics (2021) from the *[Institute of Theoretical Physics](https://www.ift.unesp.br/#!/en)* (*IFT - Unesp*) in São Paulo, Brazil, with a sandwich period at the *[Institute for Cross-Disciplinary Physics and Complex Systems](https://www.ifisc.uib-csic.es/en/)* (*IFISC - UiB*) in Palma de Mallorca, Spain. In my Master's thesis, I studied *population dynamics in highly fragmented landscapes*. During the COVID-19 pandemic, I joined an [Observatory](https://covid19br.github.io), a collective of scientists from diverse backgrounds aiming to **understand and analyse COVID-19 data in Brazil**. We performed nowcasting and developed models to keep the population (and sometimes even authorities) informed. 
 
 Before that, I graduated *Bachelor's in Physics with honours* (2019) from the Institute of Physics at the *Federal University of Rio Grande do Sul (UFRGS)* in Porto Alegre, southern Brazil. During my undergraduate years, I worked at the *[Fluid Lab - IMPA](http://fluid.impa.br/Home)* with Professor *Alexei Mailybaev* in Rio de Janeiro, Brazil, where we studied fully developed bidimensional turbulence in the case of *Kelvin–Helmholtz instability*. I also worked at the *Laboratory for Cellular Structure (LabCel - UFRGS)*, where I described the statistical time evolution of a mathematical model for protein interaction using graphs.
+-->
 
 ### Off-science me: accordion, coffee, hikes & orchids
 

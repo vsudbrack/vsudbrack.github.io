@@ -25,10 +25,12 @@ events:
     name:  "Postdoctoral position at Sachdeva's lab"
     place:  'Vienna, AT'
   - date: 'July 2026'
+    name:  'TiBE-STRiVE Conference'
+    place:  'Porto, PT'
+  - date: 'July 2026'
     name:  'MMEE26'
     place:  'Cork, IE'
-
-
+    
 interests: 
   - Population Genetics
   - Complex Traits

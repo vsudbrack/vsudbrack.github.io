@@ -4,23 +4,6 @@ title: Contact
 permalink: /contact
 ---
 
-
-You can contact me through my email: 
-
-<div style="text-align: center;">
-<a href="mailto:vitorsudbrack@gmail.com">
-<i class="fa-solid fa-envelope" style="margin-right:6px;"></i>
-<strong>vitorsudbrack@gmail.com</strong>
-</a>
-</div>
-
-<span style="font-size:0.8em; display:inline-flex; align-items:center;">
-  <i class="fa-solid fa-triangle-exclamation"
-     style="margin-right:3px; color:#3d7c76;"></i>
-  My institutional email at UNIL (@unil.ch) will be deactivated soon, so please avoid it.
-</span>
-
-### Other links
 <style>
   /* remove list markers + indentation */
   #icons { list-style: none !important; padding-left: 0 !important; margin-left: 0 !important; }
@@ -40,7 +23,7 @@ You can contact me through my email:
   #icons li::before { content: none !important; }
 </style>
 
-<div style="text-align: center;">
+<div style="text-align: center; margin-top: 20px;">
 <ul id="icons">
     {% include social.html %}
     <li>
@@ -55,6 +38,19 @@ You can contact me through my email:
     </li>
 </ul>
 </div>
+
+Get in touch by email: 
+
+<div style="text-align: center;">
+<a href="mailto:vitorsudbrack@gmail.com">
+<i class="fa-solid fa-envelope" style="margin-right:6px;"></i>
+<strong>vitorsudbrack@gmail.com</strong>
+</a>
+</div>
+
+<span style="font-size:0.8em; vertical-align: middle;">
+  <i class="fa-solid fa-triangle-exclamation" style="margin-right:3px; color:#3d7c76;"></i> My institutional email at UNIL (@unil.ch) will be deactivated soon, so please avoid it.
+</span>
 
 ### Where I will be next
 
