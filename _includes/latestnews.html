@@ -1,0 +1,93 @@
+<p class="title">LATEST NEWS</p>
+
+<div class="news-list" style="padding: 15px 0 15px 30px;">
+  {% for item in site.data.news reversed limit: 7  %}
+
+    <div 
+      class="news-item"
+      style="
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 0.8rem;
+        vertical-align: top;
+      "
+    >
+
+      <p style="
+        margin: 0;
+        min-width: 90px;
+        font-size: 0.9rem;
+        color: #515151;
+        font-weight: 600;
+        text-align: right;
+      ">
+        {{ item.date }}
+      </p>
+
+      <p style="
+        margin: 0;
+        line-height: 1.4;
+        font-size: 1.05rem;
+        text-indent: 0px;
+        vertical-align: middle;
+      ">
+        {{ item.text }} 
+{% if item.url %}
+<a href="{{ item.url }}" target="_blank" title="More">
+  <span
+    style="
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      vertical-align: middle;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #f4f4f4;
+      color: #515151;">
+    <i class="fa fa-arrow-right" style="font-size: 11px;"></i>
+  </span></a>
+
+{% endif %}
+      </p>
+      
+
+    </div>
+
+  {% endfor %}
+</div>
+
+
+<div class="links" style="text-align: right;">
+  <a 
+    href="/news" 
+    title="See more news"
+    style="
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: #f4f4f4;
+      color: #515151;
+      text-decoration: none;
+      font-weight: 500;
+    "
+  >
+    <span style="font-size: 11pt;">See more</span>
+    <span
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #4d7a75;
+        color: #f0f0f0;
+      "
+    >
+      <i class="fa fa-arrow-right" style="font-size: 11pt;"></i>
+    </span>
+  </a>
+</div>

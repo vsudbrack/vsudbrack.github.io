@@ -5,7 +5,7 @@ url-open: https://doi.org/10.1093/genetics/iyae043
 image: "assets/project/tempo.png"
 date: '06-07-2023'
 development: On hold &middot; Publication available 
-title: Adaptation in subdivided populations
+title: Genetic adaptation in subdivided populations
 description: How fast adaptive alleles sweep under dispersal limitation?
 question:  How quickly can subdivided populations adapt, and what genomic signatures indicate this adaptation?
 doc: "/assets/publications/SudbrackMullon2024.pdf"

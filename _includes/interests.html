@@ -1,4 +1,20 @@
-<p class="title">INTERESTS</p> 
-{% for interest in site.data.profile.interests %} 
-<p class="description">{{ interest }}{% if forloop.last == false %}<p class="description" style="color:#4d7b76;font-size: 30px;">&nbsp·&nbsp</p>{% endif %}</p>
-{% endfor %}
+<p class="title">INTERESTS</p>
+
+<div style="margin: auto;">
+    <p class="description" style="text-align: center;">
+    {% for interest in site.data.profile.interests %}
+    <span style="white-space: nowrap; display: inline-block;">
+        {{ interest }}
+        {% unless forloop.last %}
+        <span style="
+            color:#4d7b76;
+            font-size:30px;
+            vertical-align: middle;">
+            &nbsp;·&nbsp;
+        </span>
+        {% endunless %}
+    </span>
+    {% endfor %}
+    </p>
+</div>
+

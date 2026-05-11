@@ -1,9 +1,20 @@
 <li>
-  <h2 class="bibliography">{{ paper.year }}</h2>
+  
+  {% unless include.front_page %}
+    <h2 class="bibliography">{{ paper.year }}</h2>
+  {% endunless %}
+
   <div id="test">
-      <div class="title" style="max-width: 80%;">{{ paper.title }}</div>
+
+      {% if include.front_page %}
+      <p style="font-weight: bolder;">{{ paper.title }}</p>
+      {% else %}
+      <div class="title" style="max-width: 80%; font-weight: bolder;">{{ paper.title }}</div>
+      {% endif %}
+
       <p class="author">{{ paper.author }}</p>
-      <p class="third-line">{{ paper.journal }}, {{ paper.year }}.</p>
+      <p class="third-line">{{ paper.journal }}, {{ paper.year }}</p>
+
       <!-- Links/Buttons -->
       <div class="links">
         <ul id="icons" style="margin: 3px 0 0 0; text-align: center;">
