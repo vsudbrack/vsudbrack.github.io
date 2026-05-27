@@ -8,8 +8,13 @@ permalink: news
 <div id="publications">
     <section class="bg"></section>
     <h1 class="title">News</h1>
-     
+
 <div class="news-list" style="padding: 70px 0 15px 30px;">
+
+<div style="text-align:center; margin-bottom: 30px;font-size: 0.8rem;">
+  <span style="color: #577975;font-size: 0.8rem;"> Green dates </span> indicate upcoming events.
+</div>
+
   {% for item in site.data.news reversed  %}
 
     <div 
@@ -22,11 +27,11 @@ permalink: news
       "
     >
 
-      <p style="
+    <p style="
         margin: 0;
         min-width: 90px;
         font-size: 0.9rem;
-        color: #515151;
+        color: {% if item.future %}#577975{% else %}#515151{% endif %};
         font-weight: 600;
         text-align: right;
       ">
