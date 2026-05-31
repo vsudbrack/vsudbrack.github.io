@@ -22,14 +22,22 @@ layout: page
       <div class="text-wrap col-12 col-md-6" style="min-width:350px; width: 100%; margin: auto;">
         <h2 class="username">{{ profile.username }}</h2>
         <p class="subtitle">{{ profile.subtitle }}</p>
-        <div class="description">{{ profile.description | markdownify }}</div>
+        <div class="description" style="margin-top:20px">{{ profile.description | markdownify }}</div>
 
         <ul id="icons">
           {% include social.html %}
         </ul>
 
-        <div style="margin-top: 10px;">
-          <a href="https://lab-mullon.github.io/" target="_blank"><img src="/assets/img/LOGO_TEE_white.svg" style="margin-bottom: 5px; width:25%; min-width: 150px"></a>
+        <div style="margin: 20px auto 20px auto; display:flex; align-items:center; justify-content:flex-start; gap:40px; width:max-content;">
+          <a href="https://www.univie.ac.at/" target="_blank" style="display:block; flex:0 0 auto;">
+            <img src="/assets/img/LOGO_uniVie_white.svg"
+                 style="display:block; height:auto; width:150px;">
+          </a>
+        
+          <a href="https://www.evolvienna.at/" target="_blank" style="display:block; flex:0 0 auto;">
+            <img src="/assets/img/LOGO_evolVienna_white.svg"
+                 style="display:block; height:auto; width:150px;">
+          </a>
         </div>
         
       </div>
@@ -84,7 +92,6 @@ PhD Defense warning end -->
   </article>
 
 </section>
-
 
 
 {% include projects.html %}

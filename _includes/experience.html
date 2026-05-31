@@ -1,4 +1,4 @@
-<p class="title">STUDIES</p>
+<p class="title">EXPERIENCES</p>
 <ul class="exper-list">
   {% for exp in site.data.profile.experience %}
   <li class="meta">
@@ -6,6 +6,10 @@
     <p class="description">{{ exp.experience }}</p>
     <p style="margin: 3px; text-indent: 0; font-size: 0.8rem;">{{ exp.uni }}</p>
     {% if exp.supervisor %} <h8 style="margin: 3px; text-indent: 0;">with {{ exp.supervisor }}</h8>{% endif %}
+    {% if exp.logo %}<a href="{{ exp.url }}" target="_blank" style="display:block; flex:0 0 auto;">
+      <img src="{{ exp.logo }}"
+           style="display:block; height:auto; width:150px;">
+    </a>{% endif %}
   </li>
   {% endfor %}
 </ul>

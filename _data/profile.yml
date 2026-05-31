@@ -1,15 +1,22 @@
 image: assets/img/profile_pic_sq.jpeg
 username: Vitor Sudbrack
 subtitle: "He/him/his"
-description: "Brazilian scientist working on Theoretical Evolutionary Ecology in Lausanne, Switzerland"
+description: "Brazilian scientist working on<br>**Theoretical Evolutionary Genetics**<br> in Vienna, Austria"
 webpage: www.sudbrack.me
 
 experience: 
+  - start: Jun 2026
+    end: now
+    experience: Postdoctoral Fellow  
+    uni: University of Vienna, Austria
+    supervisor: Prof. Himani Sachdeva
   - start: Mar 2021
     end: Feb 2026
     experience: PhD in Theoretical Evolutionary Ecology 
-    uni: University of Lausanne UNIL, Switzerland
+    uni: University of Lausanne, Switzerland
     supervisor: Prof. Charles Mullon
+    logo: /assets/img/LOGO_TEE_teal.svg
+    url: https://lab-mullon.github.io/
   - start: Mar 2019
     end: Feb 2021
     experience: MSc in Theoretical Physics
@@ -18,7 +25,7 @@ experience:
   - start: Mar 2013
     end: Dec 2018
     experience: BSc in Computational Physics
-    uni: Federal University of Rio Grande do Sul UFRGS, Brazil 
+    uni: Federal University of Rio Grande do Sul, Brazil 
 
 events: 
   - date: 'From June 2026'
