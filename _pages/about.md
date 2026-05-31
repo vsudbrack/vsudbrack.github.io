@@ -9,7 +9,7 @@ permalink: /about
 
 ## Hello,
 
-**I'm Vitor Sudbrack**, a Brazilian theoretical biologist and modeller. I recently completed my PhD at the *[University of Lausanne](https://www.unil.ch/dee/en/home.html)*, where I worked in the **[Theoretical Evolutionary Ecology Lab](https://lab-mullon.github.io/)** with *Charles Mullon*.  
+**I'm Vitor Sudbrack**, a Brazilian theoretical biologist and modeller. I am currently a postdoctoral fellow in the **[Sachdeva Lab](https://mathevogen.github.io/index.html)** at the *[University of Vienna](https://www.univie.ac.at/en/)*, working on models of polygenic adaptation in structured populations. I recently completed my PhD at the *[University of Lausanne](https://www.unil.ch/dee/en/home.html)*, where I worked in the **[Theoretical Evolutionary Ecology Lab](https://lab-mullon.github.io/)** with *Charles Mullon*.  
 
 My research is in theoretical population genetics and evolutionary genetics. I study how complex traits, which are usually controlled by many loci, evolve under different ecological scenarios. In particular, I focused on **how factors such as limited dispersal, mating systems or resource variation leave detectable signatures in genomes and shape the genetic architecture of traits** during my PhD. To address these questions, I use analytical frameworks from **population dynamics**, **population genetics**, and **quantitative genetics**, and individual-based simulations using *SLiM*. 
 
