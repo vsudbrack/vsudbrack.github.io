@@ -83,7 +83,3 @@ Get in touch by email:
 </div>
 
 
-### Where I will be next
-
-{% include events.html %}
-
