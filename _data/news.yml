@@ -1,0 +1,24 @@
+- date: Apr/2026
+  text: "I got my PhD in Life Sciences from the University of Lausanne. Many many people to thanks, Charles Mullon in particular!"
+  url: https://iris.unil.ch/handle/iris/281577
+
+- date: May/2026
+  text: "This website got an update, including this new News section."
+
+- date: May/2026
+  text: "I had a great time visiting the Hartfield Lab at the University of Edinburgh between 24 and 30th May."
+  url: https://hartfieldlab.com/
+
+- date: Jun/2026
+  text: "I started as a postdoctoral fellow in the Sachdeva Lab at the University of Vienna, working on polygenic adaptation."
+  url: https://mathevogen.github.io/
+
+- date: July/2026
+  text: "I will be giving a talk at the TiBE-STRiVE Conference, in Porto."
+  url: https://structuralvariantsstn.github.io/
+  future: true
+
+- date: July/2026
+  text: "I'm organizing a mini-symposyum at the Mathematical Models in Ecology and Evolution MMEE26, in Cork."
+  url: https://www.ucc.ie/en/matsci/events/mmee/
+  future: true

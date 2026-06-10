@@ -22,10 +22,13 @@
           </div>
           <div class="icons">
             {% if project.url-open %}
-            <a href="{{ project.url-open }}" target="_blank" title="Read the publication"><i class="ai ai-open-access"></i></a>
+            <a href="{{ project.url-open }}" target="_blank" title="Read the publication"><i class="fa fa-link"></i></a>
             {% endif %}
             {% if project.biorxiv %}
             <a href="{{ project.biorxiv }}" target="_blank" title="Read the preprint on BioRxiv"><i class="ai ai-biorxiv"></i></a>
+            {% endif %}
+            {% if project.doc %}
+            <a href="{{ project.doc }}" target="_blank" title="Read the publication"><i class="fas fa-file-alt"></i></a>
             {% endif %}
             {% if project.poster %}
             <a href="{{ project.poster }}" target="_blank" title="View poster"><i class="fas fa-image fa-rotate-90"></i></a>

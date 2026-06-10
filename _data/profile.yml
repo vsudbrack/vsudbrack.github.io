@@ -1,14 +1,22 @@
 image: assets/img/profile_pic_sq.jpeg
 username: Vitor Sudbrack
-description: "Brazilian scientist working on Theoretical Evolutionary Ecology in Lausanne, Switzerland. He/him/his"
+subtitle: "He/him/his"
+description: "Brazilian scientist working on<br>**Theoretical Evolutionary Genetics**<br> in Vienna, Austria"
 webpage: www.sudbrack.me
 
 experience: 
-  - start: Mar 2021
+  - start: Jun 2026
     end: now
+    experience: Postdoctoral Researcher  
+    uni: University of Vienna, Austria
+    supervisor: Prof. Himani Sachdeva
+  - start: Mar 2021
+    end: Feb 2026
     experience: PhD in Theoretical Evolutionary Ecology 
     uni: University of Lausanne, Switzerland
     supervisor: Prof. Charles Mullon
+    logo: /assets/img/LOGO_TEE_teal.svg
+    url: https://lab-mullon.github.io/
   - start: Mar 2019
     end: Feb 2021
     experience: MSc in Theoretical Physics
@@ -17,48 +25,46 @@ experience:
   - start: Mar 2013
     end: Dec 2018
     experience: BSc in Computational Physics
-    uni: Federal University of Rio Grande do Sul UFRGS, Brazil 
-
-events: 
-  - date: 'July 2024'
-    name:  'MEME2024'
-    place:  'Vienna, AT'
-  - date: 'July 2024'
-    name:  '3rd Joint Congress on Evolutionary Biology'
-    place:  'Montreal, CA (virtual participation)'  
-
+    uni: Federal University of Rio Grande do Sul, Brazil 
+    
 interests: 
   - Population Genetics
+  - Quantitative Genetics
   - Complex Traits
+  - Structural Variants
   - Genetic Architecture 
   - Evolutionary Ecology
-  - Mathematical Biology
-  - JEBED
 
 teaching: 
+  - name: Modelling for Evolutionary Biology 
+    level: Summer School
+    uni: UNIL
+    after: "Since 2025"
+    prof: Prof. Charles Mullon
+    url: https://lab-mullon.github.io/MEB
   - name: Sex, Ageing and Foraging Theory 
     level: MSc
     uni: UNIL
-    after: 2022
+    after: "2022 - 2024"
     prof: Prof. Charles Mullon
-    url: https://lab-mullon.github.io/SAF
   - name: Genes, Populations and Evolution
     level: MSc
     uni: UNIL
-    after: 2021
+    after: "2021 - 2025"
     prof: Prof. Laurent Lehmann
   - name: Génétique des Populations
     level: BSc
     uni: UNIL
-    after: 2021
+    after: "2021 - 2025"
     prof: Prof. Jerôme Goudet
 
 
 social:
-  email:  "vitor.sudbrack@unil.ch"
+  email:  "vitorsudbrack@gmail.com"
   orcid: 0000-0002-4815-2092
   scholar: fQ4x-1LZ-nEC
   github: vsudbrack
   twitter: vitorsudbrack
+  bluesky: vsudbrack.bsky.social
 
   

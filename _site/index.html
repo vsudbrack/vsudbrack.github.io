@@ -17,7 +17,7 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
   <!-- Fonts & Icons -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" rel="stylesheet">
   <!-- CSS -->
   <link rel="stylesheet" href="/assets/css/main.css">
@@ -72,7 +72,7 @@
 
 <div id="portfolio">
   <section id="about-me">
-    <div class="row" style="text-align: center;">
+    <div class="row" style="text-align: center; margin-bottom: 60px">
       <div class="img-wrap col-12 col-md-6" style="min-width:350px; width: 100%; margin: auto;">
         <div class="img" style="width: 100%; height: 100%;">
           <img src="/assets/img/cover.png">
@@ -80,14 +80,15 @@
       </div>
       <div class="text-wrap col-12 col-md-6" style="min-width:350px; width: 100%; margin: auto;">
         <h2 class="username">Vitor Sudbrack</h2>
-        <div class="description"><p>Brazilian scientist working on Theoretical Evolutionary Ecology in Lausanne, Switzerland. He/him/his</p>
+        <p class="subtitle">He/him/his</p>
+        <div class="description" style="margin-top:20px"><p>Brazilian scientist working on<br /><strong>Theoretical Evolutionary Genetics</strong><br /> in Vienna, Austria</p>
 </div>
 
         <ul id="icons">
           
 
 <li>
-  <a href="mailto:%76%69%74%6F%72.%73%75%64%62%72%61%63%6B@%75%6E%69%6C.%63%68" target="_blank" title="Email">
+  <a href="mailto:%76%69%74%6F%72%73%75%64%62%72%61%63%6B@%67%6D%61%69%6C.%63%6F%6D" target="_blank" title="Email">
     <i class="fas fa-envelope"></i>
   </a>
 </li>
@@ -148,10 +149,26 @@
 
 
 
+
+
+<li>
+  <a href="https://bsky.app/profile/vsudbrack.bsky.social" target="_blank" title="Bluesky">
+    <i class="fa-brands fa-bluesky"></i>
+  </a>
+</li>
+
         </ul>
 
-        <div style="margin-top: 10px;">
-          <a href="https://lab-mullon.github.io/" target="_blank"><img src="/assets/img/LOGO_TEE_white.svg" style="margin-bottom: 5px; width:25%; min-width: 150px"></a>
+        <div style="margin: 20px auto 20px auto; display:flex; align-items:center; justify-content:flex-start; gap:40px; width:max-content;">
+          <a href="https://www.univie.ac.at/" target="_blank" style="display:block; flex:0 0 auto;">
+            <img src="/assets/img/LOGO_uniVie_white.svg"
+                 style="display:block; height:auto; width:150px;">
+          </a>
+        
+          <a href="https://www.evolvienna.at/" target="_blank" style="display:block; flex:0 0 auto;">
+            <img src="/assets/img/LOGO_evolVienna_white.svg"
+                 style="display:block; height:auto; width:150px;">
+          </a>
         </div>
         
       </div>
@@ -159,95 +176,559 @@
     <div class="bg"></div>
   </section>
 
-  <section id="career" class="row" style="display: flex; flex-wrap: wrap;">
-    <article class="exper col-12 col-md-6" style="flex: 1; margin: 5px;">
-      <p class="title">STUDIES</p>
-<ul class="exper-list">
-  
-  <li class="meta">
-    <p class="date">Mar 2021 &ndash; now</p>
-    <p class="description">PhD in Theoretical Evolutionary Ecology</p>
-    <p style="margin: 3px; text-indent: 0; font-size: 0.8rem;">University of Lausanne, Switzerland</p>
-     <h8 style="margin: 3px; text-indent: 0;">with Prof. Charles Mullon</h8>
-  </li>
-  
-  <li class="meta">
-    <p class="date">Mar 2019 &ndash; Feb 2021</p>
-    <p class="description">MSc in Theoretical Physics</p>
-    <p style="margin: 3px; text-indent: 0; font-size: 0.8rem;">Institute for Theoretical Physics IFT/Unesp, Brazil</p>
-     <h8 style="margin: 3px; text-indent: 0;">with Prof. Roberto A. Kraenkel</h8>
-  </li>
-  
-  <li class="meta">
-    <p class="date">Mar 2013 &ndash; Dec 2018</p>
-    <p class="description">BSc in Computational Physics</p>
-    <p style="margin: 3px; text-indent: 0; font-size: 0.8rem;">Federal University of Rio Grande do Sul UFRGS, Brazil</p>
+  <!--- PhD Defense warning
+  <section id="interests" style="display:flex; justify-content:center; margin-top:2rem; margin-bottom:-2rem;">
+    <div style="
+      position:relative;
+      background:#ededed;
+      border-radius:16px;
+      padding: 20px;
+      max-width: 600px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.1);
+      text-align:center;
+    ">
     
-  </li>
-  
-</ul>
-    </article>
-    <article class="exper col-12 col-md-6" style="flex: 1; margin: 5px;">
-      <p class="title">INTERESTS</p>
+      <p style="font-weight:bold; font-size:1.2rem; margin-bottom:10px; color:#3d7c76">
+        PUBLIC PhD DEFENSE
+      </p>
 
-<ul class="exper-list col-12 col-md-8" style="max-width: 100%; margin: 0%; padding: 0 !important; border-left: 0px; ">
-  
-  <li class="meta">
-    <p class="description" style="margin: 0px; text-indent: 0">Population Genetics</p>
-  </li>
-  
-  <li class="meta">
-    <p class="description" style="margin: 0px; text-indent: 0">Complex Traits</p>
-  </li>
-  
-  <li class="meta">
-    <p class="description" style="margin: 0px; text-indent: 0">Genetic Architecture</p>
-  </li>
-  
-  <li class="meta">
-    <p class="description" style="margin: 0px; text-indent: 0">Evolutionary Ecology</p>
-  </li>
-  
-  <li class="meta">
-    <p class="description" style="margin: 0px; text-indent: 0">Mathematical Biology</p>
-  </li>
-  
-  <li class="meta">
-    <p class="description" style="margin: 0px; text-indent: 0">JEBED</p>
-  </li>
-  
-</ul>
+      <p>
+        Join me for my public PhD defense on <b>April 16<span style="vertical-align: super; font-size: 0.7em;">th</span>, 5:00 pm</b> (CEST)
+      </p>
 
-      <p class="title" style="margin-top: 25px;">TEACHING</p>
-<ul class="exper-list col-12 col-md-8" style="max-width: 100%; margin: 0%; padding: 0; border-left: 0px;">
-  
-  <li class="meta">
-    <p class="date" style="margin: 3px; text-indent: 0">Since 2022</p>
-    <p class="description" style="margin: 3px; text-indent: 0"><a href="https://lab-mullon.github.io/SAF" target="_blank">Sex, Ageing and Foraging Theory</a> </p>
-    <p style="margin: 3px; text-indent: 0; font-size: 0.8rem;">MSc, UNIL</p>
-    <h8  style="margin: 3px;">Assisting Prof. Charles Mullon</h8>
-  </li>
-  
-  <li class="meta">
-    <p class="date" style="margin: 3px; text-indent: 0">Since 2021</p>
-    <p class="description" style="margin: 3px; text-indent: 0"> Genes, Populations and Evolution </p>
-    <p style="margin: 3px; text-indent: 0; font-size: 0.8rem;">MSc, UNIL</p>
-    <h8  style="margin: 3px;">Assisting Prof. Laurent Lehmann</h8>
-  </li>
-  
-  <li class="meta">
-    <p class="date" style="margin: 3px; text-indent: 0">Since 2021</p>
-    <p class="description" style="margin: 3px; text-indent: 0"> Génétique des Populations </p>
-    <p style="margin: 3px; text-indent: 0; font-size: 0.8rem;">BSc, UNIL</p>
-    <h8  style="margin: 3px;">Assisting Prof. Jerôme Goudet</h8>
-  </li>
-  
-</ul>
+      <p style="margin:6px 0; font-size:0.95rem;">
+        <a href="/assets/docs/THESIS_Abstracts.pdf" style="color:#3d7c76; font-weight:bold;" class="modal-btn"><i class="fa fa-file-text"></i> View thesis abstract</a>
+      </p>
 
-    </article>
+      <p style="margin:6px 0; font-size:0.95rem;">
+        <a href="https://rec.unil.ch/lives/live_80807/" style="color:#3d7c76; font-weight:bold;" class="modal-btn"><i class="fa fa-play-circle"></i> Watch live here!</a>
+      </p>
+    </div>
   </section>
+PhD Defense warning end -->
 
-  <section id="project">
+
+<section id="career" class="row" style="display: flex; flex-wrap: wrap;">
+
+  <article id="selectedpublications" class="exper col-12 col-md-6" style="flex: 1; margin: 5px;">
+      <p class="title">SELECTED PUBLICATIONS</p>
+
+<ol class="bibliography" style="margin-top: 0px">
+
+      
+        <li>
+  
+  
+
+  <div id="test">
+
+      
+      <p style="font-weight: bolder;">The evolution of tandem repeat sequences under partial selfing and different modes of selection</p>
+      
+
+      <p class="author">Vitor Sudbrack and Charles Mullon</p>
+      <p class="third-line">Heredity, 2026</p>
+
+      <!-- Links/Buttons -->
+      <div class="links">
+        <ul id="icons" style="margin: 3px 0 0 0; text-align: center;">
+          
+          
+          <li>
+            <a href="/assets/publications/SudbrackMullon2026.pdf" target="_blank" title="Document">
+              <i class="fas fa-file-alt" aria-hidden="true"></i>
+            </a>
+          </li>
+          
+          
+          <li>
+            <a href="https://www.nature.com/articles/s41437-026-00820-1" target="_blank" title="Closed access journal">
+              <i class="fa fa-link"></i>
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="https://github.com/vsudbrack/TandemRepeatsSM" target="_blank" title="Github repository">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+</li>
+
+      
+
+      
+
+      
+        <li>
+  
+  
+
+  <div id="test">
+
+      
+      <p style="font-weight: bolder;">Fixation times of de novo and standing beneficial variants in subdivided populations</p>
+      
+
+      <p class="author">Vitor Sudbrack and Charles Mullon</p>
+      <p class="third-line">Genetics, 2024</p>
+
+      <!-- Links/Buttons -->
+      <div class="links">
+        <ul id="icons" style="margin: 3px 0 0 0; text-align: center;">
+          
+          
+          <li>
+            <a href="/assets/publications/SudbrackMullon2024.pdf" target="_blank" title="Document">
+              <i class="fas fa-file-alt" aria-hidden="true"></i>
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="https://doi.org/10.1093/genetics/iyae043" target="_blank" title="Open access journal">
+              <i class="fa fa-link"></i>
+            </a>
+          </li>
+          
+          
+          <li>
+            <a href="https://github.com/vsudbrack/SweepsUnderLimitedDispersal" target="_blank" title="Github repository">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+</li>
+
+      
+
+      
+
+      
+
+      
+
+      
+
+</ol>
+
+<div class="links" style="text-align: right;">
+  <a 
+    href="/publications" 
+    title="See more publications"
+    style="
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: #f4f4f4;
+      color: #515151;
+      text-decoration: none;
+      font-weight: 500;
+    "
+  >
+    <span style="font-size: 11pt;">See more</span>
+    <span
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #4d7a75;
+        color: #f0f0f0;
+      "
+    >
+      <i class="fa fa-arrow-right" style="font-size: 11pt;"></i>
+    </span>
+  </a>
+</div>
+  </article>
+
+  <article id="latestnews" class="exper col-12 col-md-6" style="flex: 1; margin: 5px;">
+    <p class="title">LATEST NEWS</p>
+
+<div class="news-list" style="padding: 15px 0 15px 30px;">
+  
+
+    <div 
+      class="news-item"
+      style="
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 0.8rem;
+        vertical-align: top;
+      "
+    >
+
+      <p style="
+        margin: 0;
+        min-width: 90px;
+        font-size: 0.9rem;
+        color: #577975;
+        font-weight: 600;
+        text-align: right;
+      ">
+        July/2026
+      </p>
+
+      <p style="
+        margin: 0;
+        line-height: 1.4;
+        font-size: 1.05rem;
+        text-indent: 0px;
+        vertical-align: middle;
+      ">
+        I will giving a talk at the TiBE-STRiVE Conference, in Porto. 
+
+<a href="https://structuralvariantsstn.github.io/" target="_blank" title="More">
+  <span
+    style="
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      vertical-align: middle;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #f4f4f4;
+      color: #515151;">
+    <i class="fa fa-arrow-right" style="font-size: 11px;"></i>
+  </span></a>
+
+
+      </p>
+      
+
+    </div>
+
+  
+
+    <div 
+      class="news-item"
+      style="
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 0.8rem;
+        vertical-align: top;
+      "
+    >
+
+      <p style="
+        margin: 0;
+        min-width: 90px;
+        font-size: 0.9rem;
+        color: #515151;
+        font-weight: 600;
+        text-align: right;
+      ">
+        Jun/2026
+      </p>
+
+      <p style="
+        margin: 0;
+        line-height: 1.4;
+        font-size: 1.05rem;
+        text-indent: 0px;
+        vertical-align: middle;
+      ">
+        I started as a postdoctoral fellow in the Sachdeva Lab at the University of Vienna, working on polygenic adaptation. 
+
+<a href="https://mathevogen.github.io/" target="_blank" title="More">
+  <span
+    style="
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      vertical-align: middle;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #f4f4f4;
+      color: #515151;">
+    <i class="fa fa-arrow-right" style="font-size: 11px;"></i>
+  </span></a>
+
+
+      </p>
+      
+
+    </div>
+
+  
+
+    <div 
+      class="news-item"
+      style="
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 0.8rem;
+        vertical-align: top;
+      "
+    >
+
+      <p style="
+        margin: 0;
+        min-width: 90px;
+        font-size: 0.9rem;
+        color: #515151;
+        font-weight: 600;
+        text-align: right;
+      ">
+        May/2026
+      </p>
+
+      <p style="
+        margin: 0;
+        line-height: 1.4;
+        font-size: 1.05rem;
+        text-indent: 0px;
+        vertical-align: middle;
+      ">
+        I had a great time visiting the Hartfield Lab at the University of Edinburgh between 24 and 30th May. 
+
+<a href="https://hartfieldlab.com/" target="_blank" title="More">
+  <span
+    style="
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      vertical-align: middle;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #f4f4f4;
+      color: #515151;">
+    <i class="fa fa-arrow-right" style="font-size: 11px;"></i>
+  </span></a>
+
+
+      </p>
+      
+
+    </div>
+
+  
+
+    <div 
+      class="news-item"
+      style="
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 0.8rem;
+        vertical-align: top;
+      "
+    >
+
+      <p style="
+        margin: 0;
+        min-width: 90px;
+        font-size: 0.9rem;
+        color: #515151;
+        font-weight: 600;
+        text-align: right;
+      ">
+        May/2026
+      </p>
+
+      <p style="
+        margin: 0;
+        line-height: 1.4;
+        font-size: 1.05rem;
+        text-indent: 0px;
+        vertical-align: middle;
+      ">
+        This website got an update, including this new News section. 
+
+      </p>
+      
+
+    </div>
+
+  
+
+    <div 
+      class="news-item"
+      style="
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 0.8rem;
+        vertical-align: top;
+      "
+    >
+
+      <p style="
+        margin: 0;
+        min-width: 90px;
+        font-size: 0.9rem;
+        color: #515151;
+        font-weight: 600;
+        text-align: right;
+      ">
+        Apr/2026
+      </p>
+
+      <p style="
+        margin: 0;
+        line-height: 1.4;
+        font-size: 1.05rem;
+        text-indent: 0px;
+        vertical-align: middle;
+      ">
+        I got my PhD in Life Sciences from the University of Lausanne. Many many people to thanks, Charles Mullon in particular! 
+
+<a href="https://iris.unil.ch/handle/iris/281577" target="_blank" title="More">
+  <span
+    style="
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      vertical-align: middle;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #f4f4f4;
+      color: #515151;">
+    <i class="fa fa-arrow-right" style="font-size: 11px;"></i>
+  </span></a>
+
+
+      </p>
+      
+
+    </div>
+
+  
+</div>
+
+
+<div class="links" style="text-align: right;">
+  <a 
+    href="/news" 
+    title="See more news"
+    style="
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: #f4f4f4;
+      color: #515151;
+      text-decoration: none;
+      font-weight: 500;
+    "
+  >
+    <span style="font-size: 11pt;">See more</span>
+    <span
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #4d7a75;
+        color: #f0f0f0;
+      "
+    >
+      <i class="fa fa-arrow-right" style="font-size: 11pt;"></i>
+    </span>
+  </a>
+</div>
+  </article>
+
+  <article id="interests" class="row" style="padding: 20px !important;">
+  <p class="title">INTERESTS</p>
+
+<div style="margin: auto;">
+    <p class="description" style="text-align: center;">
+    
+    <span style="white-space: nowrap; display: inline-block;">
+        Population Genetics
+        
+        <span style="
+            color:#4d7b76;
+            font-size:30px;
+            vertical-align: middle;">
+            &nbsp;·&nbsp;
+        </span>
+        
+    </span>
+    
+    <span style="white-space: nowrap; display: inline-block;">
+        Quantitative Genetics
+        
+        <span style="
+            color:#4d7b76;
+            font-size:30px;
+            vertical-align: middle;">
+            &nbsp;·&nbsp;
+        </span>
+        
+    </span>
+    
+    <span style="white-space: nowrap; display: inline-block;">
+        Complex Traits
+        
+        <span style="
+            color:#4d7b76;
+            font-size:30px;
+            vertical-align: middle;">
+            &nbsp;·&nbsp;
+        </span>
+        
+    </span>
+    
+    <span style="white-space: nowrap; display: inline-block;">
+        Structural Variants
+        
+        <span style="
+            color:#4d7b76;
+            font-size:30px;
+            vertical-align: middle;">
+            &nbsp;·&nbsp;
+        </span>
+        
+    </span>
+    
+    <span style="white-space: nowrap; display: inline-block;">
+        Genetic Architecture
+        
+        <span style="
+            color:#4d7b76;
+            font-size:30px;
+            vertical-align: middle;">
+            &nbsp;·&nbsp;
+        </span>
+        
+    </span>
+    
+    <span style="white-space: nowrap; display: inline-block;">
+        Evolutionary Ecology
+        
+    </span>
+    
+    </p>
+</div>
+
+
+  </article>
+
+</section>
+
+
+<section id="project">
   <div class="project-wrap">
     <p class="title">PROJECTS</p>
 
@@ -264,15 +745,18 @@
           
           <div class="text-wrap ">
             <div class="title-wrap">
-              <p class="date">Ongoing &middot; Publication available</p>
-              <a title="1" onClick="open_modal(this.title)" class="modal-btn"><div class="title">Adaptation in subdivided populations</div></a>
+              <p class="date">On hold &middot; Publication available</p>
+              <a title="1" onClick="open_modal(this.title)" class="modal-btn"><div class="title">Genetic adaptation in subdivided populations</div></a>
             </div>
           <div class="description">How quickly can subdivided populations adapt, and what genomic signatures indicate this adaptation?</div>
           </div>
           <div class="icons">
             
-            <a href="https://doi.org/10.1093/genetics/iyae043" target="_blank" title="Read the publication"><i class="ai ai-open-access"></i></a>
+            <a href="https://doi.org/10.1093/genetics/iyae043" target="_blank" title="Read the publication"><i class="fa fa-link"></i></a>
             
+            
+            
+            <a href="/assets/publications/SudbrackMullon2024.pdf" target="_blank" title="Read the publication"><i class="fas fa-file-alt"></i></a>
             
             
             
@@ -292,9 +776,9 @@
       </div>
 
       <div class="header">
-        <p class="date">   Ongoing &middot; Publication available</p>
+        <p class="date">   On hold &middot; Publication available</p>
         <img src="assets/project/tempo.png" width="80%" style="margin: 10px 10%;">
-        <p class="title" style="text-align: center;">  Adaptation in subdivided populations      </p>
+        <p class="title" style="text-align: center;">  Genetic adaptation in subdivided populations      </p>
         <p class="summary" style="text-align: center;">How fast adaptive alleles sweep under dispersal limitation?   </p>
         <!-- Links/Buttons -->
         <div class="links">
@@ -302,11 +786,18 @@
             
             <li>
               <a href="https://doi.org/10.1093/genetics/iyae043" target="_blank" title="Read the publication">
-                <i class="ai ai-open-access"></i>
+                <i class="fa fa-link"></i>
               </a>
             </li>
             
             
+            
+            
+            <li>
+              <a href="/assets/publications/SudbrackMullon2024.pdf" target="_blank" title="Publication">
+                <i class="fa fa-file-alt"></i>
+              </a>
+            </li>
             
           </ul>
         </div>
@@ -345,16 +836,19 @@ By shedding light on these factors, we hope to contribute to our understanding o
           
           <div class="text-wrap ">
             <div class="title-wrap">
-              <p class="date">Ongoing</p>
-              <a title="2" onClick="open_modal(this.title)" class="modal-btn"><div class="title">Genetic structural variation in populations</div></a>
+              <p class="date">On hold &middot; Publication available</p>
+              <a title="2" onClick="open_modal(this.title)" class="modal-btn"><div class="title">Genetic structural variation in selfing populations</div></a>
             </div>
           <div class="description">How does inbreeding influence the abundance and diversity of repetitive DNA in the genome?</div>
           </div>
           <div class="icons">
             
+            <a href="https://www.nature.com/articles/s41437-026-00820-1" target="_blank" title="Read the publication"><i class="fa fa-link"></i></a>
             
             
-            <a href="assets/posters/TR_SUDBRACK_Roscoff.pdf" target="_blank" title="View poster"><i class="fas fa-image fa-rotate-90"></i></a>
+            
+            <a href="/assets/publications/SudbrackMullon2026.pdf" target="_blank" title="Read the publication"><i class="fas fa-file-alt"></i></a>
+            
             
             
             <a title="2" onClick="open_modal(this.title)" class="modal-btn"><i class="fas fa-plus"></i></a>
@@ -373,24 +867,37 @@ By shedding light on these factors, we hope to contribute to our understanding o
       </div>
 
       <div class="header">
-        <p class="date">   Ongoing</p>
+        <p class="date">   On hold &middot; Publication available</p>
         <img src="assets/project/recomb.png" width="80%" style="margin: 10px 10%;">
-        <p class="title" style="text-align: center;">  Genetic structural variation in populations      </p>
+        <p class="title" style="text-align: center;">  Genetic structural variation in selfing populations      </p>
         <p class="summary" style="text-align: center;">How selfers accumulate satellite DNA in their genome?   </p>
         <!-- Links/Buttons -->
         <div class="links">
           <ul id="icons" style="margin: 3px 0 0 0; text-align: center;">
             
+            <li>
+              <a href="https://www.nature.com/articles/s41437-026-00820-1" target="_blank" title="Read the publication">
+                <i class="fa fa-link"></i>
+              </a>
+            </li>
             
+            
+            
+            
+            <li>
+              <a href="/assets/publications/SudbrackMullon2026.pdf" target="_blank" title="Publication">
+                <i class="fa fa-file-alt"></i>
+              </a>
+            </li>
             
           </ul>
         </div>
       </div>
 
       <div class="content">
-        <p>Tandem Repeat sequences (TRs) are a significant source of genetic structural variation within and between individuals. These sequences occur when a short DNA motif is repeated head-to-tail along a chromosome. Variation in TRs is thought to reflect a balance between purifying selection, amplification, unequal recombination, and genetic drift.</p>
+        <p>Tandem Repeat sequences (TRs) are a significant source of genetic structural variation within and between populations. These sequences occur when a short DNA motif is repeated head-to-tail along a chromosome. Variation in TRs is thought to reflect a balance between purifying selection, amplification, unequal recombination, and genetic drift.</p>
 
-<p>The influence of these evolutionary processes on TRs is well understood in large haploid populations where individuals mate randomly. But many organisms are capable of selfing, which leads to inbreeding and an excess of homozygosity with relevant consequences for the evolutionary processes that shape variation in TRs. In this project, we use mathematical modeling to investigate the evolutionary dynamics of homologous TRs under the joint actions of purifying selection, amplification, unequal recombination, and genetic drift in a population of partially selfing diploids.</p>
+<p>The influence of these evolutionary processes on TRs is well understood in large haploid populations where individuals mate randomly. But many organisms are capable of selfing, which is a form of inbreeding and leads to an excess of homozygosity with relevant consequences for the evolutionary processes that shape variation in TRs. In this project, we use mathematical modeling to investigate the evolutionary dynamics of homologous TRs under the joint actions of purifying selection, amplification, unequal recombination, and genetic drift in a population of partially selfing diploids.</p>
 
 <p>With my PhD supervisor Charles Mullon, we find that the equilibrium distribution of TRs in the population depends on the interaction between unequal recombination and selfing. When the selfing rate is low and homologous sequences within individuals tend to be different, unequal recombination reduces variation. However, when selfing is common and homologous sequences within individuals are more similar, unequal recombination increases the variation in TRs.  In addition, because selfing increases variation between individuals relative to within individuals, purifying selection tends to be stronger in selfers compared to outcrossers. As a result, selfers have on average shorter TRs, in spite of experiencing increased genetic drift.</p>
 
@@ -423,6 +930,7 @@ By shedding light on these factors, we hope to contribute to our understanding o
             
             
             
+            
             <a title="3" onClick="open_modal(this.title)" class="modal-btn"><i class="fas fa-plus"></i></a>
             
           </div>
@@ -449,6 +957,7 @@ By shedding light on these factors, we hope to contribute to our understanding o
             
             
             
+            
           </ul>
         </div>
       </div>
@@ -456,7 +965,7 @@ By shedding light on these factors, we hope to contribute to our understanding o
       <div class="content">
         <p>In subdivided populations, different ecological processes drive intraspecific phenotypic variation at different spatial scales. While spatial heterogeneity promote distinct morphs in different patches leading to local adaptation, negative-frequency dependent selection arising from local competition favours polymorphism within patches. The emergence and maintenance of these different phenotypes is not straightforward when traits are polygenic as hybridization breaks up adaptive allele combinations. In this case, selection acts on genetic architecture to concentrate allelic effects onto as few independently segregating loci as possible. This concentration may be achieved via different genetic mechanisms such as amplifiers of allele effect size or suppressors of recombination, but it remains unclear whether selection favours different mechanisms in different ecological settings.</p>
 
-<p>In this project, together with my PhD supervisor Charles Mullon and the postdoc at out lab Ewan O. Flintham, we use computational models to study the evolution of a trait’s genetic architecture through various modifiers of allelic effects and of recombination, varying the extent to which polymorphism in the trait is favoured by spatial heterogeneity or local competition. We show that owing to more frequent hybridisation, local competition exerts stronger selection on genetic architecture than spatial heterogeneity. Furthermore, these different ecological processes favour different levels of genetic dominance and different patterns of recombination. In particular, local adaptation often involves large regions of recombination suppression when local competition generally sees multiple smaller regions scattered across the genome.</p>
+<p>In this project, together with my PhD supervisor Charles Mullon and the postdoc at our lab Ewan O. Flintham, we use computational models to study the evolution of a trait’s genetic architecture through various modifiers of allelic effects and of recombination, varying the extent to which polymorphism in the trait is favoured by spatial heterogeneity or local competition. We show that owing to more frequent hybridisation, local competition exerts stronger selection on genetic architecture than spatial heterogeneity. Furthermore, these different ecological processes favour different levels of genetic dominance and different patterns of recombination. In particular, local competition often involves large regions of recombination suppression while local adaptation generally sees many smaller regions scattered across the genome.</p>
 
 
       </div>
@@ -474,69 +983,93 @@ By shedding light on these factors, we hope to contribute to our understanding o
 <!-- modal -->
 <script type="text/javascript" src="/assets/js/modal.js"></script>
 
-  <section id="recentpubs">
-  <div class="recentpubs-wrap">
-    <p class="title">LATEST PUBLICATIONS</p>
+<section id="career" class="row" style="display: flex; flex-wrap: wrap;">
 
-      <ol class="bibliography">
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <li>
-  <h2 class="bibliography">2024</h2>
-  <div id="test">
-      <div class="title" style="max-width: 80%;">Fixation times of <i>de novo</i> and standing beneficial variants in subdivided populations</div>
-      <p class="author">Vitor Sudbrack and Charles Mullon</p>
-      <p class="third-line">Genetics, 2024.</p>
-      <!-- Links/Buttons -->
-      <div class="links">
-        <ul id="icons" style="margin: 3px 0 0 0; text-align: center;">
-          
-          <li>
-            <a href="https://doi.org/10.1101/2023.07.07.548167" target="_blank" title="Preprint">
-              <i class="ai ai-biorxiv"></i>
-            </a>
-          </li>
-          
-          
-          
-          <li>
-            <a href="https://doi.org/10.1093/genetics/iyae043" target="_blank" title="Open access journal">
-              <i class="ai ai-open-access"></i>
-            </a>
-          </li>
-          
-          
-          <li>
-            <a href="https://github.com/vsudbrack/SweepsUnderLimitedDispersal" target="_blank" title="Github repository">
-              <i class="fab fa-github"></i>
-            </a>
-          </li>
-          
-        </ul>
-      </div>
-    </div>
-</li>
+  <article class="exper col-12 col-md-6" style="flex: 1; margin: 5px;">
+    <p class="title">EXPERIENCES</p>
+<ul class="exper-list">
+  
+  <li class="meta">
+    <p class="date">Jun 2026 &ndash; now</p>
+    <p class="description">Postdoctoral Fellow</p>
+    <p style="margin: 3px; text-indent: 0; font-size: 0.8rem;">University of Vienna, Austria</p>
+     <h8 style="margin: 3px; text-indent: 0;">with Prof. Himani Sachdeva</h8>
+    
+  </li>
+  
+  <li class="meta">
+    <p class="date">Mar 2021 &ndash; Feb 2026</p>
+    <p class="description">PhD in Theoretical Evolutionary Ecology</p>
+    <p style="margin: 3px; text-indent: 0; font-size: 0.8rem;">University of Lausanne, Switzerland</p>
+     <h8 style="margin: 3px; text-indent: 0;">with Prof. Charles Mullon</h8>
+    <a href="https://lab-mullon.github.io/" target="_blank" style="display:block; flex:0 0 auto;">
+      <img src="/assets/img/LOGO_TEE_teal.svg"
+           style="display:block; height:auto; width:150px;">
+    </a>
+  </li>
+  
+  <li class="meta">
+    <p class="date">Mar 2019 &ndash; Feb 2021</p>
+    <p class="description">MSc in Theoretical Physics</p>
+    <p style="margin: 3px; text-indent: 0; font-size: 0.8rem;">Institute for Theoretical Physics IFT/Unesp, Brazil</p>
+     <h8 style="margin: 3px; text-indent: 0;">with Prof. Roberto A. Kraenkel</h8>
+    
+  </li>
+  
+  <li class="meta">
+    <p class="date">Mar 2013 &ndash; Dec 2018</p>
+    <p class="description">BSc in Computational Physics</p>
+    <p style="margin: 3px; text-indent: 0; font-size: 0.8rem;">Federal University of Rio Grande do Sul, Brazil</p>
+    
+    
+  </li>
+  
+</ul>
+  </article>
 
-        
-        
-      </ol>
+  <article class="exper col-12 col-md-6" style="flex: 1; margin: 5px;">
+    <p class="title">TEACHING</p>
+<ul class="exper-list col-12 col-md-8" style="max-width: 100%; margin: 0%; padding: 0; border-left: 0px;">
+  
+  <li class="meta">
+    <p class="date" style="margin: 3px; text-indent: 0">Since 2025</p>
+    <p class="description" style="margin: 3px; text-indent: 0"><a href="https://lab-mullon.github.io/MEB" target="_blank">Modelling for Evolutionary Biology</a> </p>
+    <p style="margin: 3px; text-indent: 0; font-size: 0.8rem;">Summer School, UNIL</p>
+    <h8  style="margin: 3px;">Assisting Prof. Charles Mullon</h8>
+  </li>
+  
+  <li class="meta">
+    <p class="date" style="margin: 3px; text-indent: 0">2022 - 2024</p>
+    <p class="description" style="margin: 3px; text-indent: 0"> Sex, Ageing and Foraging Theory </p>
+    <p style="margin: 3px; text-indent: 0; font-size: 0.8rem;">MSc, UNIL</p>
+    <h8  style="margin: 3px;">Assisting Prof. Charles Mullon</h8>
+  </li>
+  
+  <li class="meta">
+    <p class="date" style="margin: 3px; text-indent: 0">2021 - 2025</p>
+    <p class="description" style="margin: 3px; text-indent: 0"> Genes, Populations and Evolution </p>
+    <p style="margin: 3px; text-indent: 0; font-size: 0.8rem;">MSc, UNIL</p>
+    <h8  style="margin: 3px;">Assisting Prof. Laurent Lehmann</h8>
+  </li>
+  
+  <li class="meta">
+    <p class="date" style="margin: 3px; text-indent: 0">2021 - 2025</p>
+    <p class="description" style="margin: 3px; text-indent: 0"> Génétique des Populations </p>
+    <p style="margin: 3px; text-indent: 0; font-size: 0.8rem;">BSc, UNIL</p>
+    <h8  style="margin: 3px;">Assisting Prof. Jerôme Goudet</h8>
+  </li>
+  
+</ul>
 
-    </div>
-  </section>
+  </article>
+</section>
+
 
 </div>
 
 <!-- Footer -->
 <footer>
-<div class="footer">Copyright © 2024. Vitor Sudbrack.</div>
+<div class="footer">Copyright © 2026. Vitor Sudbrack.</div>
 
 <!-- Default Statcounter code for Vsudbrack Homepage
 https://vsudbrack.github.io/ -->

@@ -1,14 +1,43 @@
-<section id="recentpubs">
-  <div class="recentpubs-wrap">
-    <p class="title">LATEST PUBLICATIONS</p>
+<p class="title">SELECTED PUBLICATIONS</p>
 
-      <ol class="bibliography">
-        {% for paper in site.data.publications %}
-        {% if paper.latest == "yes" %}
-        {% include publications.html %}
-        {% endif %}
-        {% endfor %}
-      </ol>
+<ol class="bibliography" style="margin-top: 0px">
+{% for paper in site.data.publications reversed %}
+      {% if paper.latest == "yes" %}
+        {% include publications.html front_page=true %}
+      {% endif %}
+{% endfor %}
+</ol>
 
-    </div>
-  </section>
+<div class="links" style="text-align: right;">
+  <a 
+    href="/publications" 
+    title="See more publications"
+    style="
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: #f4f4f4;
+      color: #515151;
+      text-decoration: none;
+      font-weight: 500;
+    "
+  >
+    <span style="font-size: 11pt;">See more</span>
+    <span
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #4d7a75;
+        color: #f0f0f0;
+      "
+    >
+      <i class="fa fa-arrow-right" style="font-size: 11pt;"></i>
+    </span>
+  </a>
+</div>

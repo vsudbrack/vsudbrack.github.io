@@ -1,9 +1,20 @@
 <li>
-  <h2 class="bibliography">{{ paper.year }}</h2>
+  
+  {% unless include.front_page %}
+    <h2 class="bibliography">{{ paper.year }}</h2>
+  {% endunless %}
+
   <div id="test">
-      <div class="title" style="max-width: 80%;">{{ paper.title }}</div>
+
+      {% if include.front_page %}
+      <p style="font-weight: bolder;">{{ paper.title }}</p>
+      {% else %}
+      <div class="title" style="max-width: 80%; font-weight: bolder;">{{ paper.title }}</div>
+      {% endif %}
+
       <p class="author">{{ paper.author }}</p>
-      <p class="third-line">{{ paper.journal }}, {{ paper.year }}.</p>
+      <p class="third-line">{{ paper.journal }}, {{ paper.year }}</p>
+
       <!-- Links/Buttons -->
       <div class="links">
         <ul id="icons" style="margin: 3px 0 0 0; text-align: center;">
@@ -14,17 +25,24 @@
             </a>
           </li>
           {% endif %}
+          {% if paper.doc %}
+          <li>
+            <a href="{{ paper.doc }}" target="_blank" title="Document">
+              <i class="fas fa-file-alt" aria-hidden="true"></i>
+            </a>
+          </li>
+          {% endif %}
           {% if paper.url-closed %}
           <li>
             <a href="{{ paper.url-closed }}" target="_blank" title="Closed access journal">
-              <i class="ai ai-closed-access"></i>
+              <i class="fa fa-link"></i>
             </a>
           </li>
           {% endif %}
           {% if paper.url-open %}
           <li>
             <a href="{{ paper.url-open }}" target="_blank" title="Open access journal">
-              <i class="ai ai-open-access"></i>
+              <i class="fa fa-link"></i>
             </a>
           </li>
           {% endif %}

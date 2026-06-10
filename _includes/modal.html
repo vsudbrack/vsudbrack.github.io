@@ -17,7 +17,7 @@
             {% if project.url-open %}
             <li>
               <a href="{{ project.url-open }}" target="_blank" title="Read the publication">
-                <i class="ai ai-open-access"></i>
+                <i class="fa fa-link"></i>
               </a>
             </li>
             {% endif %}
@@ -31,7 +31,14 @@
             {% if project.doi %}
             <li>
               <a href="{{ project.doi }}" target="_blank" title="Journal">
-                <i class="ai ai-closed-access"></i>
+                <i class="fa fa-link"></i>
+              </a>
+            </li>
+            {% endif %}
+            {% if project.doc %}
+            <li>
+              <a href="{{ project.doc }}" target="_blank" title="Publication">
+                <i class="fa fa-file-alt"></i>
               </a>
             </li>
             {% endif %}
