@@ -59,3 +59,13 @@
   url-closed: https://www.nature.com/articles/s41437-026-00820-1
   doc: "/assets/publications/SudbrackMullon2026.pdf"
   latest: "yes"
+
+- 2026sexAllocation:
+  title: "Sex allocation of hermaphrodites in metapopulations withfrequent population extinction and recolonization"
+  author: Charles Mullon, Vitor Sudbrack, Camille Roux and John R. Pannell
+  journal: Evolution
+  year: 2026
+  #url-preprint: https://www.biorxiv.org/content/10.1101/2025.07.04.663195
+  url-repo: https://github.com/vsudbrack/SexAllocationInMetapopulations
+  url-closed: https://doi.org/10.1093/evolut/qpag109
+
